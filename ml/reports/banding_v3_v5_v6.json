@@ -1,0 +1,126 @@
+{
+  "ringkas": [
+    {
+      "model": "v3",
+      "f1_cv": 0.7288,
+      "acc_indep": 0.7557,
+      "fp_lapor_rate": 0.6842105263157895,
+      "fp_lapor_berkas": 26,
+      "n_lapor_other": 38,
+      "recall_target_lapor": 0.6956521739130435,
+      "pool_cv": {
+        "n_xc": 894,
+        "n_non_xc": 7335,
+        "n_train_val": 8229,
+        "sha256_xc_ids": "2c3a5bfae796a2323096a6c46b52e874464236ce03de0dc0dd4cd17084cbc8bc",
+        "sha256_non_xc_ids": "25164a24eb5b3c7f6085d6cdb3436fbd57df8598da84eb8bf7356e2623b0939b",
+        "pool_override": false
+      },
+      "pool_e2e": {
+        "n_total": 451,
+        "n_field": 318,
+        "n_uji_independen": 133,
+        "n_pilih": 164,
+        "n_lapor": 287,
+        "sha256_daftar_berkas": "663d9ce53990808753ebc6b835b1319cbb567ffb97eaca36b092c0dcd29cdb16"
+      },
+      "pool_indep": {
+        "n_klip": 131,
+        "sha256_clip_ids": "4d3eae31d86601b536a2693ce6794773c06b49b0c8d0a8b0ff90f92de5bb2d5f"
+      }
+    },
+    {
+      "model": "v5",
+      "f1_cv": 0.728,
+      "acc_indep": 0.7405,
+      "fp_lapor_rate": 0.7368421052631579,
+      "fp_lapor_berkas": 28,
+      "n_lapor_other": 38,
+      "recall_target_lapor": 0.6608695652173913,
+      "pool_cv": {
+        "n_xc": 894,
+        "n_non_xc": 4130,
+        "n_train_val": 6506,
+        "sha256_xc_ids": "2c3a5bfae796a2323096a6c46b52e874464236ce03de0dc0dd4cd17084cbc8bc",
+        "sha256_non_xc_ids": "5acb7ec07cb2d9f9bf4a1ca91d268d0d05dae5be3d10d53ebf86733a1da5d6d3",
+        "pool_override": true
+      },
+      "pool_e2e": {
+        "n_total": 451,
+        "n_field": 318,
+        "n_uji_independen": 133,
+        "n_pilih": 164,
+        "n_lapor": 287,
+        "sha256_daftar_berkas": "663d9ce53990808753ebc6b835b1319cbb567ffb97eaca36b092c0dcd29cdb16"
+      },
+      "pool_indep": {
+        "n_klip": 131,
+        "sha256_clip_ids": "4d3eae31d86601b536a2693ce6794773c06b49b0c8d0a8b0ff90f92de5bb2d5f"
+      },
+      "g2_lulus": false,
+      "g2_checks": {
+        "G2-1": true,
+        "G2-2": false,
+        "G2-3": false,
+        "G2-4": true,
+        "G2-5": true,
+        "G2-6": false
+      },
+      "delta_vs_v3": {
+        "f1_cv": -0.0008000000000000229,
+        "acc_indep": -0.015199999999999991,
+        "fp_lapor_rate": 0.05263157894736836,
+        "recall_target_lapor": -0.034782608695652195
+      }
+    },
+    {
+      "model": "v6",
+      "f1_cv": 0.7338,
+      "acc_indep": 0.7557,
+      "fp_lapor_rate": 0.7631578947368421,
+      "fp_lapor_berkas": 29,
+      "n_lapor_other": 38,
+      "recall_target_lapor": 0.7043478260869566,
+      "pool_cv": {
+        "n_xc": 894,
+        "n_non_xc": 7335,
+        "n_train_val": 9711,
+        "sha256_xc_ids": "2c3a5bfae796a2323096a6c46b52e874464236ce03de0dc0dd4cd17084cbc8bc",
+        "sha256_non_xc_ids": "25164a24eb5b3c7f6085d6cdb3436fbd57df8598da84eb8bf7356e2623b0939b",
+        "pool_override": true
+      },
+      "pool_e2e": {
+        "n_total": 451,
+        "n_field": 318,
+        "n_uji_independen": 133,
+        "n_pilih": 164,
+        "n_lapor": 287,
+        "sha256_daftar_berkas": "663d9ce53990808753ebc6b835b1319cbb567ffb97eaca36b092c0dcd29cdb16"
+      },
+      "pool_indep": {
+        "n_klip": 131,
+        "sha256_clip_ids": "4d3eae31d86601b536a2693ce6794773c06b49b0c8d0a8b0ff90f92de5bb2d5f"
+      },
+      "g2_lulus": false,
+      "g2_checks": {
+        "G2-1": true,
+        "G2-2": false,
+        "G2-3": true,
+        "G2-4": true,
+        "G2-5": true,
+        "G2-6": false
+      },
+      "delta_vs_v3": {
+        "f1_cv": 0.0050000000000000044,
+        "acc_indep": 0.0,
+        "fp_lapor_rate": 0.07894736842105265,
+        "recall_target_lapor": 0.008695652173913104
+      }
+    }
+  ],
+  "pool_sha": {
+    "e2e": "663d9ce53990808753ebc6b835b1319cbb567ffb97eaca36b092c0dcd29cdb16",
+    "cv_xc": "2c3a5bfae796a2323096a6c46b52e874464236ce03de0dc0dd4cd17084cbc8bc",
+    "indep": "4d3eae31d86601b536a2693ce6794773c06b49b0c8d0a8b0ff90f92de5bb2d5f"
+  }
+}

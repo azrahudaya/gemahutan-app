@@ -1,0 +1,109 @@
+[19:27:53] === pipeline v5 menunggu unduhan bird selesai ===
+[21:56:57] unduhan bird selesai.
+[21:56:57] klip negatif burung: 1482
+[21:56:57] --- unduh negatif non-burung ---
+=== Unduh Negatif Non-Burung (Orthoptera + Kelelawar) ===
+  grasshoppers/indonesia hal 4 gagal: HTTP Error 400: Bad Request
+  grasshoppers/brunei hal 3 gagal: HTTP Error 400: Bad Request
+  grasshoppers/philippines hal 4 gagal: HTTP Error 400: Bad Request
+  bats/indonesia hal 2 gagal: HTTP Error 400: Bad Request
+  bats/malaysia hal 2 gagal: HTTP Error 400: Bad Request
+  bats/singapore hal 2 gagal: HTTP Error 400: Bad Request
+  bats/philippines hal 2 gagal: HTTP Error 400: Bad Request
+  bats/thailand hal 2 gagal: HTTP Error 400: Bad Request
+Spesies kandidat non-burung: 16
+[22:04:15] non-burung GAGAL
+[22:04:15] --- bangun korpus v5 ---
+Manifest ekstraksi: 1482 klip -> /home/fuudaya/Projects/gemahutan/ml/data/manifest_negatif_xc_extract.csv
+Klip negatif XC untuk diekstrak: 1482
+Menjalankan: /home/fuudaya/Projects/gemahutan/.venv/bin/python /home/fuudaya/Projects/gemahutan/ml/data/extract_embeddings.py --manifest /home/fuudaya/Projects/gemahutan/ml/data/manifest_negatif_xc_extract.csv --out-dir /home/fuudaya/Projects/gemahutan/ml/embeddings_negatif_xc --ckpt-dir /home/fuudaya/Projects/gemahutan/ml/checkpoints_v5_extract --force
+Manifest: /home/fuudaya/Projects/gemahutan/ml/data/manifest_negatif_xc_extract.csv (1482 klip)
+Keluaran: /home/fuudaya/Projects/gemahutan/ml/embeddings_negatif_xc
+Loading BirdNET model...
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+I0000 00:00:1790633056.226161  271160 port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+I0000 00:00:1790633057.054786  271160 port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+Labels loaded.
+load model True
+INFO: Created TensorFlow Lite XNNPACK delegate for CPU.
+Model loaded.
+Labels loaded.
+load_species_list_model
+Meta model loaded.
+Model: /home/fuudaya/Projects/gemahutan/.venv/lib/python3.12/site-packages/birdnetlib/models/analyzer/BirdNET_GLOBAL_6K_V2.4_Model_FP32.tflite
+Species: 1 (multi-window=False, stride=1.5s)
+Warning: Xing stream size off by more than 1%, fuzzy seeking may be even more fuzzy than by design!
+Warning: Xing stream size off by more than 1%, fuzzy seeking may be even more fuzzy than by design!
+  Processing 100/1482 (windows: 0)...
+  Processing 200/1482 (windows: 0)...
+  Processing 300/1482 (windows: 0)...
+Warning: Xing stream size off by more than 1%, fuzzy seeking may be even more fuzzy than by design!
+Warning: Xing stream size off by more than 1%, fuzzy seeking may be even more fuzzy than by design!
+  Processing 400/1482 (windows: 0)...
+Warning: Xing stream size off by more than 1%, fuzzy seeking may be even more fuzzy than by design!
+Warning: Xing stream size off by more than 1%, fuzzy seeking may be even more fuzzy than by design!
+Warning: Xing stream size off by more than 1%, fuzzy seeking may be even more fuzzy than by design!
+  Processing 500/1482 (windows: 0)...
+  Processing 600/1482 (windows: 0)...
+  Processing 700/1482 (windows: 0)...
+Warning: Xing stream size off by more than 1%, fuzzy seeking may be even more fuzzy than by design!
+  Processing 800/1482 (windows: 0)...
+Warning: Xing stream size off by more than 1%, fuzzy seeking may be even more fuzzy than by design!
+  Processing 900/1482 (windows: 0)...
+  Processing 1000/1482 (windows: 0)...
+Warning: Xing stream size off by more than 1%, fuzzy seeking may be even more fuzzy than by design!
+  Processing 1100/1482 (windows: 0)...
+  Processing 1200/1482 (windows: 0)...
+  Processing 1300/1482 (windows: 0)...
+Warning: Xing stream size off by more than 1%, fuzzy seeking may be even more fuzzy than by design!
+Warning: Xing stream size off by more than 1%, fuzzy seeking may be even more fuzzy than by design!
+  Processing 1400/1482 (windows: 0)...
+Warning: Xing stream size off by more than 1%, fuzzy seeking may be even more fuzzy than by design!
+
+Extracted 1482 BirdNET embeddings (1024-dim)
+Classes: 1, Skipped: 0, Multi-window: False
+Saved to /home/fuudaya/Projects/gemahutan/ml/embeddings_negatif_xc
+Normalisasi: /home/fuudaya/Projects/gemahutan/ml/checkpoints_v5_extract/normalization.npz
+v3: 8356 klip, 26 kelas, _negative idx 25
+negatif XC: 1482 klip, kelas 1
+iNat dibuang dari v3: 3205
+v5 gabungan: 6633 klip
+splits_v5: latih 6379, val 127, uji 127
+verifikasi uji tidak berubah: True
+verifikasi val tidak berubah: True
+normalisasi v5 dari 6379 klip latih -> /home/fuudaya/Projects/gemahutan/ml/checkpoints_v5
+manifest_v5: 6506 baris
+
+SELESAI. Artefak v3 dan checkpoint produksi tidak disentuh.
+[22:05:04] korpus v5 selesai
+[22:05:04] --- latih logreg v5 ---
+Melatih LogReg pada 5490 klip (negatif dibatasi 3000)...
+kalibrasi: T=1.7300  NLL 1.1667 -> 0.8406 (27.95 persen)
+selisih forward terhadap sklearn: 0.00000000
+
+checkpoint : ml/checkpoints_logreg_v5/best_model.npz
+normalisasi: ml/checkpoints_logreg_v5/normalization.npz
+ambang     : ml/reports_logreg_v5/thresholds.json
+[22:05:12] --- CV bersarang v5 ---
+Memuat data...
+XC: 2376 klip, 1704 grup perekam, non-XC: 4130
+Lipatan 1: C=0.1, acc=0.8333, F1=0.6535, presisi_th=0.7349, recall_th=0.6740, global_th=0.3495
+Lipatan 2: C=0.1, acc=0.8593, F1=0.6675, presisi_th=0.7742, recall_th=0.6358, global_th=0.2853
+Lipatan 3: C=0.1, acc=0.8699, F1=0.6891, presisi_th=0.8000, recall_th=0.6623, global_th=0.3763
+Lipatan 4: C=0.1, acc=0.8660, F1=0.6568, presisi_th=0.8376, recall_th=0.6447, global_th=0.3961
+Lipatan 5: C=0.1, acc=0.8596, F1=0.6765, presisi_th=0.7319, recall_th=0.6645, global_th=0.3206
+
+Aggregat OOF: acc 0.8573, F1 0.6939
+Aggregat pada ambang: presisi 0.7716, recall 0.6569
+CI95 acc: [0.8401, 0.8766]
+CI95 f1:  [0.6446, 0.7229]
+
+Output: eval_bersarang.json, oof_bersarang.npz, evalb_per_spesies.json
+[22:15:17] --- bandingkan v5 vs produksi ---
+Pool uji: 127
+Akurasi v3 0.7795, v5 0.7559 (selisih -0.0236)
+Spesies turun recall > 0.15: 3
+Output: /home/fuudaya/Projects/gemahutan/ml/reports/bandingkan_v5.json
+Output: /home/fuudaya/Projects/gemahutan/ml/reports/bandingkan_v5.md
+[22:15:17] === pipeline v5 selesai ===

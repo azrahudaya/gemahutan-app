@@ -1,0 +1,44 @@
+[
+  {
+    "pengali": 1.0,
+    "deteksi_palsu": 0.5741379310344827,
+    "deteksi_independen": 0.833555259653795,
+    "akurasi_independen": 0.6717557251908397
+  },
+  {
+    "pengali": 1.5,
+    "deteksi_palsu": 0.44655172413793104,
+    "deteksi_independen": 0.7576564580559254,
+    "akurasi_independen": 0.6717557251908397
+  },
+  {
+    "pengali": 2.0,
+    "deteksi_palsu": 0.3017241379310345,
+    "deteksi_independen": 0.6551264980026631,
+    "akurasi_independen": 0.6717557251908397
+  },
+  {
+    "pengali": 3.0,
+    "deteksi_palsu": 0.18275862068965518,
+    "deteksi_independen": 0.521970705725699,
+    "akurasi_independen": 0.6717557251908397
+  },
+  {
+    "pengali": 4.0,
+    "deteksi_palsu": 0.11206896551724138,
+    "deteksi_independen": 0.4647137150466045,
+    "akurasi_independen": 0.6717557251908397
+  },
+  {
+    "pengali": 6.0,
+    "deteksi_palsu": 0.0706896551724138,
+    "deteksi_independen": 0.38348868175765644,
+    "akurasi_independen": 0.6717557251908397
+  },
+  {
+    "pengali": 8.0,
+    "deteksi_palsu": 0.05862068965517241,
+    "deteksi_independen": 0.2769640479360852,
+    "akurasi_independen": 0.6717557251908397
+  }
+]

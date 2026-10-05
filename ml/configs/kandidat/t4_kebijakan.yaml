@@ -1,0 +1,20 @@
+# Konfigurasi CascadeEngine (Track A BirdNET + Track B classifier).
+# Dibaca oleh ml/engines/cascade.py. Ubah nilai, lalu jalankan evaluasi.
+
+# Ambang minimum BirdNET untuk spesies NON-TARGET (di luar 25 spesies lokal).
+ambang_birdnet_nontarget: 0.5
+
+# Kalau true, deteksi Track B hanya diterima bila spesies yang sama juga
+# terdeteksi BirdNET (konfirmasi silang). Menurunkan recall drastis (0.80->0.64),
+# jadi default false.
+trackb_wajib_birdnet: false
+
+# Margin minimal antara keyakinan top-1 dan top-2 Track B.
+margin_top1_top2: 0.3
+
+# Kalau true, pakai skor energi (logsumexp logits) sebagai penolak.
+pakai_energi: false
+ambang_energi: 0.0
+
+min_kemunculan_ulang: 2
+ambang_kuat: 0.5

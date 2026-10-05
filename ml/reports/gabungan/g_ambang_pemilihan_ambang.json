@@ -1,0 +1,212 @@
+{
+  "run_sumber": "g_k3_k1",
+  "n_berkas_pilih_dipakai": 163,
+  "target_presisi": 0.8,
+  "min_deteksi": 5,
+  "n_spesies_ambang_naik": 14,
+  "n_spesies_target_tidak_tercapai": 1,
+  "n_spesies_deteksi_terlalu_sedikit": 10,
+  "catatan_batas": "Skor berasal dari cache deteksi yang sudah melewati ambang produksi, jadi ambang hanya bisa NAIK. Ambang baru selalu >= ambang produksi.",
+  "thresholds_baru": "ml/runs/g_ambang/thresholds.json",
+  "rincian": {
+    "Aegithina tiphia": {
+      "n_deteksi_pilih": 11,
+      "presisi_pada_ambang_produksi": 0.7273,
+      "ambang_produksi": 0.99,
+      "ambang_baru": 0.9989,
+      "presisi_pada_ambang_baru": 0.8333,
+      "n_deteksi_lolos": 6,
+      "n_benar_lolos": 5,
+      "keputusan": "naik"
+    },
+    "Amaurornis phoenicurus": {
+      "n_deteksi_pilih": 4,
+      "keputusan": "dibiarkan di ambang produksi 0.3000, deteksi < 5",
+      "ambang_baru": 0.3
+    },
+    "Anthreptes malacensis": {
+      "n_deteksi_pilih": 13,
+      "presisi_pada_ambang_produksi": 0.2308,
+      "ambang_produksi": 0.5,
+      "ambang_baru": 0.9962,
+      "presisi_pada_ambang_baru": 1.0,
+      "n_deteksi_lolos": 1,
+      "n_benar_lolos": 1,
+      "keputusan": "naik"
+    },
+    "Aplonis panayensis": {
+      "n_deteksi_pilih": 13,
+      "presisi_pada_ambang_produksi": 0.5385,
+      "ambang_produksi": 0.3,
+      "ambang_baru": 0.9159,
+      "presisi_pada_ambang_baru": 0.8571,
+      "n_deteksi_lolos": 7,
+      "n_benar_lolos": 6,
+      "keputusan": "naik"
+    },
+    "Arachnothera longirostra": {
+      "n_deteksi_pilih": 2,
+      "keputusan": "dibiarkan di ambang produksi 0.3000, deteksi < 5",
+      "ambang_baru": 0.3
+    },
+    "Centropus bengalensis": {
+      "n_deteksi_pilih": 5,
+      "presisi_pada_ambang_produksi": 1.0,
+      "ambang_produksi": 0.3,
+      "ambang_baru": 0.9997,
+      "presisi_pada_ambang_baru": 1.0,
+      "n_deteksi_lolos": 5,
+      "n_benar_lolos": 5,
+      "keputusan": "naik"
+    },
+    "Chalcophaps indica": {
+      "n_deteksi_pilih": 4,
+      "keputusan": "dibiarkan di ambang produksi 0.2000, deteksi < 5",
+      "ambang_baru": 0.2
+    },
+    "Cinnyris jugularis": {
+      "n_deteksi_pilih": 9,
+      "presisi_pada_ambang_produksi": 0.0,
+      "keputusan": "TARGET TIDAK TERCAPAI pada ambang mana pun, dipakai skor tertinggi",
+      "ambang_baru": 0.9967
+    },
+    "Cisticola juncidis": {
+      "n_deteksi_pilih": 4,
+      "keputusan": "dibiarkan di ambang produksi 0.3000, deteksi < 5",
+      "ambang_baru": 0.3
+    },
+    "Corvus macrorhynchos": {
+      "n_deteksi_pilih": 0,
+      "keputusan": "dibiarkan di ambang produksi 0.6000, deteksi < 5",
+      "ambang_baru": 0.6
+    },
+    "Dicrurus macrocercus": {
+      "n_deteksi_pilih": 12,
+      "presisi_pada_ambang_produksi": 0.6667,
+      "ambang_produksi": 0.3,
+      "ambang_baru": 0.9754,
+      "presisi_pada_ambang_baru": 1.0,
+      "n_deteksi_lolos": 3,
+      "n_benar_lolos": 3,
+      "keputusan": "naik"
+    },
+    "Gallus gallus": {
+      "n_deteksi_pilih": 16,
+      "presisi_pada_ambang_produksi": 0.5625,
+      "ambang_produksi": 0.2,
+      "ambang_baru": 0.7348,
+      "presisi_pada_ambang_baru": 0.8182,
+      "n_deteksi_lolos": 11,
+      "n_benar_lolos": 9,
+      "keputusan": "naik"
+    },
+    "Geopelia striata": {
+      "n_deteksi_pilih": 11,
+      "presisi_pada_ambang_produksi": 0.7273,
+      "ambang_produksi": 0.3,
+      "ambang_baru": 0.9705,
+      "presisi_pada_ambang_baru": 0.8,
+      "n_deteksi_lolos": 10,
+      "n_benar_lolos": 8,
+      "keputusan": "naik"
+    },
+    "Haliastur indus": {
+      "n_deteksi_pilih": 5,
+      "presisi_pada_ambang_produksi": 1.0,
+      "ambang_produksi": 0.3,
+      "ambang_baru": 0.9338,
+      "presisi_pada_ambang_baru": 1.0,
+      "n_deteksi_lolos": 5,
+      "n_benar_lolos": 5,
+      "keputusan": "naik"
+    },
+    "Hirundo tahitica": {
+      "n_deteksi_pilih": 3,
+      "keputusan": "dibiarkan di ambang produksi 0.2000, deteksi < 5",
+      "ambang_baru": 0.2
+    },
+    "Lonchura punctulata": {
+      "n_deteksi_pilih": 9,
+      "presisi_pada_ambang_produksi": 0.3333,
+      "ambang_produksi": 0.5,
+      "ambang_baru": 1.0,
+      "presisi_pada_ambang_baru": 1.0,
+      "n_deteksi_lolos": 2,
+      "n_benar_lolos": 2,
+      "keputusan": "naik"
+    },
+    "Merops philippinus": {
+      "n_deteksi_pilih": 5,
+      "presisi_pada_ambang_produksi": 0.4,
+      "ambang_produksi": 0.3,
+      "ambang_baru": 0.9758,
+      "presisi_pada_ambang_baru": 1.0,
+      "n_deteksi_lolos": 2,
+      "n_benar_lolos": 2,
+      "keputusan": "naik"
+    },
+    "Orthotomus sutorius": {
+      "n_deteksi_pilih": 10,
+      "presisi_pada_ambang_produksi": 0.8,
+      "ambang_produksi": 0.3,
+      "ambang_baru": 0.9226,
+      "presisi_pada_ambang_baru": 0.8,
+      "n_deteksi_lolos": 10,
+      "n_benar_lolos": 8,
+      "keputusan": "naik"
+    },
+    "Passer montanus": {
+      "n_deteksi_pilih": 3,
+      "keputusan": "dibiarkan di ambang produksi 0.3000, deteksi < 5",
+      "ambang_baru": 0.3
+    },
+    "Prinia familiaris": {
+      "n_deteksi_pilih": 5,
+      "presisi_pada_ambang_produksi": 0.8,
+      "ambang_produksi": 0.2,
+      "ambang_baru": 0.3027,
+      "presisi_pada_ambang_baru": 0.8,
+      "n_deteksi_lolos": 5,
+      "n_benar_lolos": 4,
+      "keputusan": "naik"
+    },
+    "Pycnonotus aurigaster": {
+      "n_deteksi_pilih": 3,
+      "keputusan": "dibiarkan di ambang produksi 0.5000, deteksi < 5",
+      "ambang_baru": 0.5
+    },
+    "Pycnonotus goiavier": {
+      "n_deteksi_pilih": 6,
+      "presisi_pada_ambang_produksi": 1.0,
+      "ambang_produksi": 0.7,
+      "ambang_baru": 0.9435,
+      "presisi_pada_ambang_baru": 1.0,
+      "n_deteksi_lolos": 6,
+      "n_benar_lolos": 6,
+      "keputusan": "naik"
+    },
+    "Rhipidura javanica": {
+      "n_deteksi_pilih": 3,
+      "keputusan": "dibiarkan di ambang produksi 0.9900, deteksi < 5",
+      "ambang_baru": 0.99
+    },
+    "Spilopelia chinensis": {
+      "n_deteksi_pilih": 12,
+      "presisi_pada_ambang_produksi": 1.0,
+      "ambang_produksi": 0.7,
+      "ambang_baru": 0.9143,
+      "presisi_pada_ambang_baru": 1.0,
+      "n_deteksi_lolos": 12,
+      "n_benar_lolos": 12,
+      "keputusan": "naik"
+    },
+    "Todiramphus chloris": {
+      "n_deteksi_pilih": 3,
+      "keputusan": "dibiarkan di ambang produksi 0.2000, deteksi < 5",
+      "ambang_baru": 0.2
+    },
+    "_negative": {
+      "keputusan": "tidak disentuh (bukan kelas target)"
+    }
+  }
+}

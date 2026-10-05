@@ -1,0 +1,217 @@
+{
+  "method": "StratifiedGroupKFold",
+  "n_folds": 5,
+  "n_xc_clips": 1021,
+  "n_non_xc_clips": 7335,
+  "n_classes": 26,
+  "C": 1.0,
+  "seed": 2026,
+  "aggregate": {
+    "accuracy": 0.7365,
+    "accuracy_ci95": [
+      0.7091,
+      0.763
+    ],
+    "macro_f1": 0.7302,
+    "macro_f1_ci95": [
+      0.6979,
+      0.7559
+    ],
+    "ece": 0.1435
+  },
+  "per_fold": [
+    {
+      "fold": 0,
+      "n_train": 8151,
+      "n_val": 205,
+      "acc": 0.6732,
+      "f1_macro": 0.6462
+    },
+    {
+      "fold": 1,
+      "n_train": 8152,
+      "n_val": 204,
+      "acc": 0.7941,
+      "f1_macro": 0.7845
+    },
+    {
+      "fold": 2,
+      "n_train": 8152,
+      "n_val": 204,
+      "acc": 0.7157,
+      "f1_macro": 0.6982
+    },
+    {
+      "fold": 3,
+      "n_train": 8152,
+      "n_val": 204,
+      "acc": 0.7647,
+      "f1_macro": 0.7455
+    },
+    {
+      "fold": 4,
+      "n_train": 8152,
+      "n_val": 204,
+      "acc": 0.7353,
+      "f1_macro": 0.7339
+    }
+  ],
+  "per_species": {
+    "Aegithina tiphia": {
+      "f1": 0.6571,
+      "precision": 0.6389,
+      "recall": 0.6765,
+      "support": 34
+    },
+    "Amaurornis phoenicurus": {
+      "f1": 0.8254,
+      "precision": 0.963,
+      "recall": 0.7222,
+      "support": 36
+    },
+    "Anthreptes malacensis": {
+      "f1": 0.6567,
+      "precision": 0.7857,
+      "recall": 0.5641,
+      "support": 39
+    },
+    "Aplonis panayensis": {
+      "f1": 0.6429,
+      "precision": 0.75,
+      "recall": 0.5625,
+      "support": 32
+    },
+    "Arachnothera longirostra": {
+      "f1": 0.7797,
+      "precision": 0.9583,
+      "recall": 0.6571,
+      "support": 35
+    },
+    "Centropus bengalensis": {
+      "f1": 0.7463,
+      "precision": 0.8621,
+      "recall": 0.6579,
+      "support": 38
+    },
+    "Chalcophaps indica": {
+      "f1": 0.8333,
+      "precision": 0.9259,
+      "recall": 0.7576,
+      "support": 33
+    },
+    "Cinnyris jugularis": {
+      "f1": 0.6852,
+      "precision": 0.5781,
+      "recall": 0.8409,
+      "support": 44
+    },
+    "Cisticola juncidis": {
+      "f1": 0.8919,
+      "precision": 1.0,
+      "recall": 0.8049,
+      "support": 41
+    },
+    "Corvus macrorhynchos": {
+      "f1": 0.9153,
+      "precision": 0.9643,
+      "recall": 0.871,
+      "support": 31
+    },
+    "Dicrurus macrocercus": {
+      "f1": 0.5862,
+      "precision": 0.7391,
+      "recall": 0.4857,
+      "support": 35
+    },
+    "Gallus gallus": {
+      "f1": 0.2667,
+      "precision": 0.5,
+      "recall": 0.1818,
+      "support": 22
+    },
+    "Geopelia striata": {
+      "f1": 0.8169,
+      "precision": 0.8286,
+      "recall": 0.8056,
+      "support": 36
+    },
+    "Haliastur indus": {
+      "f1": 0.7949,
+      "precision": 0.8857,
+      "recall": 0.7209,
+      "support": 43
+    },
+    "Hirundo tahitica": {
+      "f1": 0.5172,
+      "precision": 0.5172,
+      "recall": 0.5172,
+      "support": 29
+    },
+    "Lonchura punctulata": {
+      "f1": 0.8571,
+      "precision": 0.9429,
+      "recall": 0.7857,
+      "support": 42
+    },
+    "Merops philippinus": {
+      "f1": 0.9157,
+      "precision": 0.9268,
+      "recall": 0.9048,
+      "support": 42
+    },
+    "Orthotomus sutorius": {
+      "f1": 0.825,
+      "precision": 0.7857,
+      "recall": 0.8684,
+      "support": 38
+    },
+    "Passer montanus": {
+      "f1": 0.7857,
+      "precision": 0.8049,
+      "recall": 0.7674,
+      "support": 43
+    },
+    "Prinia familiaris": {
+      "f1": 0.3077,
+      "precision": 1.0,
+      "recall": 0.1818,
+      "support": 11
+    },
+    "Pycnonotus aurigaster": {
+      "f1": 0.6933,
+      "precision": 0.8125,
+      "recall": 0.6047,
+      "support": 43
+    },
+    "Pycnonotus goiavier": {
+      "f1": 0.8108,
+      "precision": 0.8824,
+      "recall": 0.75,
+      "support": 40
+    },
+    "Rhipidura javanica": {
+      "f1": 0.8732,
+      "precision": 0.9118,
+      "recall": 0.8378,
+      "support": 37
+    },
+    "Spilopelia chinensis": {
+      "f1": 0.9041,
+      "precision": 0.8684,
+      "recall": 0.9429,
+      "support": 35
+    },
+    "Todiramphus chloris": {
+      "f1": 0.7879,
+      "precision": 0.8667,
+      "recall": 0.7222,
+      "support": 36
+    },
+    "_negative": {
+      "f1": 0.6087,
+      "precision": 0.4628,
+      "recall": 0.8889,
+      "support": 126
+    }
+  }
+}

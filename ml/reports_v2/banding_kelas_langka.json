@@ -1,0 +1,83 @@
+[
+  {
+    "checkpoint": "/home/fuudaya/Projects/gemahutan/ml/checkpoints",
+    "semua_jendela": {
+      "n": 751,
+      "akurasi": 0.511318242343542,
+      "ic95": [
+        0.4755666977042717,
+        0.5470697869828123
+      ]
+    },
+    "jendela_pertama": {
+      "n": 131,
+      "akurasi": 0.6412213740458015,
+      "ic95": [
+        0.559084589010568,
+        0.723358159081035
+      ]
+    },
+    "jendela_paling_yakin": {
+      "n": 131,
+      "akurasi": 0.6335877862595419,
+      "ic95": [
+        0.5510773672183379,
+        0.716098205300746
+      ]
+    }
+  },
+  {
+    "checkpoint": "/home/fuudaya/Projects/gemahutan/ml/checkpoints_logreg_langka",
+    "semua_jendela": {
+      "n": 751,
+      "akurasi": 0.5539280958721704,
+      "ic95": [
+        0.5183759978493299,
+        0.5894801938950109
+      ]
+    },
+    "jendela_pertama": {
+      "n": 131,
+      "akurasi": 0.6717557251908397,
+      "ic95": [
+        0.591343016458085,
+        0.7521684339235944
+      ]
+    },
+    "jendela_paling_yakin": {
+      "n": 131,
+      "akurasi": 0.6717557251908397,
+      "ic95": [
+        0.591343016458085,
+        0.7521684339235944
+      ]
+    }
+  },
+  {
+    "checkpoint": "/home/fuudaya/Projects/gemahutan/ml/checkpoints_logreg_v3",
+    "semua_jendela": {
+      "n": 751,
+      "akurasi": 0.5539280958721704,
+      "ic95": [
+        0.5183759978493299,
+        0.5894801938950109
+      ]
+    },
+    "jendela_pertama": {
+      "n": 131,
+      "akurasi": 0.6717557251908397,
+      "ic95": [
+        0.591343016458085,
+        0.7521684339235944
+      ]
+    },
+    "jendela_paling_yakin": {
+      "n": 131,
+      "akurasi": 0.6717557251908397,
+      "ic95": [
+        0.591343016458085,
+        0.7521684339235944
+      ]
+    }
+  }
+]

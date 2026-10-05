@@ -1,0 +1,200 @@
+{
+  "xc-105148.mp3": [
+    {
+      "species": "Amaurornis phoenicurus",
+      "confidence": 0.9964,
+      "start_s": 0.0,
+      "end_s": 19.0,
+      "engine": "CascadeEngine(B)"
+    },
+    {
+      "species": "Urosphena subulata",
+      "confidence": 0.9423501491546631,
+      "start_s": 0.0,
+      "end_s": 3.0,
+      "engine": "CascadeEngine(A)"
+    },
+    {
+      "species": "Urosphena subulata",
+      "confidence": 0.6024632453918457,
+      "start_s": 12.0,
+      "end_s": 15.0,
+      "engine": "CascadeEngine(A)"
+    }
+  ],
+  "xc-1157493.mp3": [
+    {
+      "species": "Anthreptes malacensis",
+      "confidence": 0.9989,
+      "start_s": 0.0,
+      "end_s": 14.99,
+      "engine": "CascadeEngine(B)"
+    }
+  ],
+  "xc-151987.mp3": [
+    {
+      "species": "Paradisaea rubra",
+      "confidence": 0.547781765460968,
+      "start_s": 0.0,
+      "end_s": 3.0,
+      "engine": "CascadeEngine(A)"
+    },
+    {
+      "species": "Centropus bengalensis",
+      "confidence": 0.7662,
+      "start_s": 2.0,
+      "end_s": 5.0,
+      "engine": "CascadeEngine(B)"
+    },
+    {
+      "species": "Centropus bengalensis",
+      "confidence": 0.961,
+      "start_s": 8.0,
+      "end_s": 13.0,
+      "engine": "CascadeEngine(B)"
+    },
+    {
+      "species": "Centropus bengalensis",
+      "confidence": 0.6586,
+      "start_s": 16.0,
+      "end_s": 19.0,
+      "engine": "CascadeEngine(B)"
+    }
+  ],
+  "xc-350538.mp3": [
+    {
+      "species": "Corvus macrorhynchos",
+      "confidence": 0.9793,
+      "start_s": 0.0,
+      "end_s": 3.0,
+      "engine": "CascadeEngine(B)"
+    },
+    {
+      "species": "Corvus enca",
+      "confidence": 0.899716854095459,
+      "start_s": 0.0,
+      "end_s": 3.0,
+      "engine": "CascadeEngine(A)"
+    },
+    {
+      "species": "Gavia stellata",
+      "confidence": 0.5604046583175659,
+      "start_s": 0.0,
+      "end_s": 3.0,
+      "engine": "CascadeEngine(A)"
+    },
+    {
+      "species": "Corvus macrorhynchos",
+      "confidence": 0.9757,
+      "start_s": 15.0,
+      "end_s": 21.0,
+      "engine": "CascadeEngine(B)"
+    },
+    {
+      "species": "Corvus enca",
+      "confidence": 0.7015072107315063,
+      "start_s": 18.0,
+      "end_s": 21.0,
+      "engine": "CascadeEngine(A)"
+    }
+  ],
+  "xc-38341.mp3": [
+    {
+      "species": "Lonchura punctulata",
+      "confidence": 0.9689,
+      "start_s": 6.0,
+      "end_s": 21.0,
+      "engine": "CascadeEngine(B)"
+    }
+  ],
+  "xc-46911.mp3": [
+    {
+      "species": "Merops philippinus",
+      "confidence": 0.9955,
+      "start_s": 0.0,
+      "end_s": 7.0,
+      "engine": "CascadeEngine(B)"
+    },
+    {
+      "species": "Dendrocygna arcuata",
+      "confidence": 0.8932060599327087,
+      "start_s": 9.0,
+      "end_s": 15.0,
+      "engine": "CascadeEngine(A)"
+    }
+  ],
+  "xc-598171.mp3": [
+    {
+      "species": "Geopelia striata",
+      "confidence": 0.9999,
+      "start_s": 2.0,
+      "end_s": 33.0,
+      "engine": "CascadeEngine(B)"
+    }
+  ],
+  "xc-938488.mp3": [
+    {
+      "species": "Pycnonotus goiavier",
+      "confidence": 0.9917,
+      "start_s": 0.0,
+      "end_s": 3.0,
+      "engine": "CascadeEngine(B)"
+    },
+    {
+      "species": "Hirundo tahitica",
+      "confidence": 0.2197,
+      "start_s": 4.0,
+      "end_s": 7.0,
+      "engine": "CascadeEngine(B)"
+    },
+    {
+      "species": "Pycnonotus goiavier",
+      "confidence": 0.9969,
+      "start_s": 8.0,
+      "end_s": 12.0,
+      "engine": "CascadeEngine(B)"
+    },
+    {
+      "species": "Aplonis panayensis",
+      "confidence": 0.3944,
+      "start_s": 12.0,
+      "end_s": 15.0,
+      "engine": "CascadeEngine(B)"
+    },
+    {
+      "species": "Hirundo tahitica",
+      "confidence": 0.222,
+      "start_s": 12.0,
+      "end_s": 15.0,
+      "engine": "CascadeEngine(B)"
+    },
+    {
+      "species": "Pycnonotus goiavier",
+      "confidence": 0.9794,
+      "start_s": 14.0,
+      "end_s": 19.0,
+      "engine": "CascadeEngine(B)"
+    },
+    {
+      "species": "Hirundo tahitica",
+      "confidence": 0.2459,
+      "start_s": 18.0,
+      "end_s": 21.0,
+      "engine": "CascadeEngine(B)"
+    },
+    {
+      "species": "Aplonis panayensis",
+      "confidence": 0.5131,
+      "start_s": 20.0,
+      "end_s": 23.0,
+      "engine": "CascadeEngine(B)"
+    },
+    {
+      "species": "Pycnonotus goiavier",
+      "confidence": 0.9959,
+      "start_s": 21.0,
+      "end_s": 24.68,
+      "engine": "CascadeEngine(B)"
+    }
+  ]
+}

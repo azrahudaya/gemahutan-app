@@ -1,0 +1,94 @@
+{
+  "Aegithina tiphia": {
+    "n_best": 6,
+    "acc_best": 0.6667
+  },
+  "Amaurornis phoenicurus": {
+    "n_best": 7,
+    "acc_best": 0.8571
+  },
+  "Anthreptes malacensis": {
+    "n_best": 6,
+    "acc_best": 0.1667
+  },
+  "Aplonis panayensis": {
+    "n_best": 9,
+    "acc_best": 0.6667
+  },
+  "Arachnothera longirostra": {
+    "n_best": 11,
+    "acc_best": 0.9091
+  },
+  "Centropus bengalensis": {
+    "n_best": 3,
+    "acc_best": 1.0
+  },
+  "Chalcophaps indica": {
+    "n_best": 4,
+    "acc_best": 1.0
+  },
+  "Cinnyris jugularis": {
+    "n_best": 2,
+    "acc_best": 1.0
+  },
+  "Corvus macrorhynchos": {
+    "n_best": 5,
+    "acc_best": 1.0
+  },
+  "Dicrurus macrocercus": {
+    "n_best": 2,
+    "acc_best": 0.0
+  },
+  "Gallus gallus": {
+    "n_best": 9,
+    "acc_best": 0.7778
+  },
+  "Geopelia striata": {
+    "n_best": 9,
+    "acc_best": 0.8889
+  },
+  "Haliastur indus": {
+    "n_best": 4,
+    "acc_best": 1.0
+  },
+  "Hirundo tahitica": {
+    "n_best": 2,
+    "acc_best": 1.0
+  },
+  "Merops philippinus": {
+    "n_best": 4,
+    "acc_best": 1.0
+  },
+  "Orthotomus sutorius": {
+    "n_best": 8,
+    "acc_best": 0.875
+  },
+  "Passer montanus": {
+    "n_best": 3,
+    "acc_best": 0.3333
+  },
+  "Prinia familiaris": {
+    "n_best": 1,
+    "acc_best": 1.0
+  },
+  "Pycnonotus aurigaster": {
+    "n_best": 5,
+    "acc_best": 0.6
+  },
+  "Pycnonotus goiavier": {
+    "n_best": 6,
+    "acc_best": 1.0
+  },
+  "Rhipidura javanica": {
+    "n_best": 9,
+    "acc_best": 0.7778
+  },
+  "Spilopelia chinensis": {
+    "n_best": 6,
+    "acc_best": 0.8333
+  },
+  "Todiramphus chloris": {
+    "n_best": 10,
+    "acc_best": 0.8
+  }
+}

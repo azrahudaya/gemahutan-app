@@ -1,0 +1,80 @@
+name: E2E
+
+# Uji klik menyeluruh atas stack yang benar-benar hidup.
+#
+# Dijalankan terjadwal dan bisa dipicu manual, bukan di setiap push: job ini
+# membangun seluruh image dari nol dan menjalankan Chromium, jadi jauh lebih
+# lambat daripada job lint, test, dan build biasa.
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "0 2 * * 1"
+
+jobs:
+  clickthrough:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Siapkan berkas lingkungan
+        run: |
+          cp .env.example .env
+          python - <<'PY'
+          import pathlib, secrets
+          p = pathlib.Path(".env")
+          isi = p.read_text()
+          isi = isi.replace("JWT_SECRET=change-me-in-production", f"JWT_SECRET={secrets.token_urlsafe(32)}")
+          isi = isi.replace("SECRET_KEY=change-me-in-production", f"SECRET_KEY={secrets.token_urlsafe(32)}")
+          p.write_text(isi)
+          PY
+
+      - name: Jalankan stack
+        run: docker compose up -d --build
+
+      - name: Tunggu API sehat
+        run: |
+          for i in $(seq 1 60); do
+            if curl -sf http://localhost:8000/healthz > /dev/null; then
+              echo "API siap"; break
+            fi
+            sleep 5
+          done
+          curl -sf http://localhost:8000/healthz | python -m json.tool
+
+      - name: Isi data demo
+        run: |
+          docker compose exec -T api python -m app.seed
+          docker compose exec -T api python -m app.seed_demo --purge-orphans
+
+      - name: Tunggu web siap
+        run: |
+          for i in $(seq 1 40); do
+            if curl -sf http://localhost:3001/login > /dev/null; then
+              echo "web siap"; exit 0
+            fi
+            sleep 5
+          done
+          echo "web tidak siap"; docker compose logs web | tail -40; exit 1
+
+      - name: Pasang Playwright
+        run: |
+          pip install playwright
+          python -m playwright install --with-deps chromium
+
+      - name: Click-through seluruh halaman dan kontrol
+        run: python3 ops/e2e_clickthrough.py
+
+      - name: Log container kalau gagal
+        if: failure()
+        run: docker compose logs --tail=80
+
+      - name: Bersihkan
+        if: always()
+        run: docker compose down -v

@@ -1,0 +1,10 @@
+{
+  "durasi_audio_s": 3600,
+  "waktu_s": 94.6,
+  "rss_maks_mb": 1134,
+  "invoke_birdnet_per_segmen": 1,
+  "identik_8_demo": true,
+  "sha256_checkpoint": "ff01eb96e002bb32d58120ea5c347cf6398c4b3435121f7b367e2a6dbbad808e",
+  "perintah": "source .venv/bin/activate && python -c \"from ml.engines.cascade import CascadeEngine; import time; e=CascadeEngine(); e._ensure_loaded(); t0=time.time(); r=e.predict('ml/data/bench_60min.mp3'); print(f'{len(r)} deteksi, {time.time()-t0:.1f}s')\"",
+  "mesin": "Intel N100 4-core, 8 GB RAM, Ubuntu 24.04, Python 3.12, TensorFlow CPU 2.20, TFLite"
+}

@@ -1,0 +1,15 @@
+{
+  "f1_cv": 0.729,
+  "f1_cv_ci95": [
+    0.69,
+    0.751
+  ],
+  "acc_independen": 0.756,
+  "f1_independen": 0.607,
+  "e2e_presisi": 0.677,
+  "e2e_recall": 0.729,
+  "fp_pengecoh_berkas": 0.443,
+  "latensi_60m_s": null,
+  "sha256_checkpoint": "ff01eb96e002bb32d58120ea5c347cf6398c4b3435121f7b367e2a6dbbad808e",
+  "dibuat": "2026-09-27T17:11:13.136646+00:00"
+}

@@ -1,0 +1,9 @@
+{
+  "menit_terverifikasi": 2.1,
+  "n_deteksi_terverifikasi": 2,
+  "presisi_per_spesies": {
+    "Anthreptes malacensis": 1.0,
+    "Accipiter badius": 1.0
+  },
+  "dibuat": "2026-09-27T17:10:57.292618+00:00"
+}

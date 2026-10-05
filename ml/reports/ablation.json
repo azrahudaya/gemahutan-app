@@ -1,0 +1,22 @@
+{
+  "a_baseline_embedding_norm_threshold": {
+    "test_acc": 0.72,
+    "macro_f1": 0.6478021978021977,
+    "n": 50
+  },
+  "b_tanpa_embedding_melspec": {
+    "test_acc": 0.24,
+    "macro_f1": 0.15512820512820513,
+    "n": 50
+  },
+  "c_tanpa_normalisasi": {
+    "test_acc": 0.5,
+    "macro_f1": 0.46330891330891333,
+    "n": 50
+  },
+  "d_tanpa_threshold": {
+    "test_acc": 0.78,
+    "macro_f1": 0.6736263736263737,
+    "n": 50
+  }
+}

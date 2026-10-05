@@ -1,0 +1,5 @@
+{
+  "model_type": "logistic_regression_multikelas",
+  "activation": "linear",
+  "C": 1.0
+}

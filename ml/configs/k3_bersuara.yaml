@@ -1,0 +1,33 @@
+# K3 (ML_10): resep produksi LR v3, embedding dari JENDELA BERSUARA.
+#
+# Satu perubahan terhadap produksi: embedding tiap klip dihitung dari rata-rata
+# seluruh jendela 3 detik yang lolos ambang energi RMS 0,01, bukan dari 3 detik
+# pertama saja. Daftar klip latih sama dengan K2 (29 klip ND sudah dibuang).
+#
+# PENTING soal ckpt_in: latih_produksi.py MEMBACA normalization.npz dari sini,
+# bukan menghitungnya. Embedding K3 distribusinya BERBEDA dari embeddings_v3,
+# jadi memakai `ckpt_in: ml/checkpoints` akan menerapkan mean/std produksi pada
+# distribusi lain dan membuat seluruh angka evaluasi palsu. Direktori di bawah
+# dibuat oleh ml/siapkan_norm_kandidat.py dari klip LATIH versi ini saja.
+#
+# report_dir TIDAK boleh ml/reports: di sana ada thresholds.json produksi yang
+# dilacak git dan dipakai worker.
+
+model:
+  type: logistic_regression
+  activation: linear
+
+training:
+  C: 1.0
+  class_weight: balanced
+  maks_negatif: 3000
+  seed: 2024
+
+data:
+  emb_dir: ml/embeddings_bersuara_v3_klip
+  splits_file: ml/data/splits_v3_nd_bersih.json
+  ckpt_in: ml/runs/k3_ckpt_in
+
+output:
+  ckpt_dir: ml/runs/k3_bersuara_model
+  report_dir: ml/runs/k3_bersuara_model

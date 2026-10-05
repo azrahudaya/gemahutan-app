@@ -1,0 +1,45 @@
+{
+  "pilih": {
+    "n_pengecoh": 59,
+    "fp_berkas": 6,
+    "fp_rate": 0.1017,
+    "n_target": 104,
+    "recall_target": 0.75
+  },
+  "lapor": {
+    "n_pengecoh": 38,
+    "c13_fp_pengecoh_berkas": 0.3158,
+    "c13_recall_target": 0.664,
+    "c13_n_target": 247,
+    "c13_lulus_nilai8": false,
+    "c13_lulus_nilai7": false,
+    "c15_inat_presisi": 0.8125,
+    "c15_inat_recall": 0.4727,
+    "c15_n_inat": 55,
+    "c15_lulus": false
+  },
+  "pool": {
+    "n_total": 451,
+    "n_field": 318,
+    "n_uji_independen": 133,
+    "n_pilih": 164,
+    "n_lapor": 287,
+    "sha256_daftar_berkas": "663d9ce53990808753ebc6b835b1319cbb567ffb97eaca36b092c0dcd29cdb16"
+  },
+  "sha256_checkpoint": "6541716e651921438872ef7f7a3ae2ec3028f9f1f6e7bc5166111896162b7dd7",
+  "id": "g_ambang",
+  "waktu_e2e_s": 253.3,
+  "config_cascade": {
+    "ambang_birdnet_nontarget": 0.1,
+    "trackb_wajib_birdnet": true,
+    "margin_top1_top2": 0.0,
+    "pakai_energi": false,
+    "ambang_energi": 0.0,
+    "min_kemunculan_ulang": 2,
+    "ambang_kuat": 0.5,
+    "trackb_konfirmasi_skor_min_lunak": 0.9
+  },
+  "checkpoint_dir": "/home/fuudaya/Projects/gemahutan/ml/runs/k3_bersuara_model",
+  "thresholds_file": "ml/runs/g_ambang/thresholds.json",
+  "sha256_cascade_produksi_setelah_run": "5fc2d62743e5b35f"
+}

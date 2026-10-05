@@ -1,0 +1,84 @@
+{
+  "dijalankan": "2026-09-28T14:01:05.792131+00:00",
+  "total_elapsed_s": 1612.9,
+  "konfigurasi": [
+    {
+      "label": "baseline",
+      "wajib_bn": false,
+      "ambang_nontarget": 0.1,
+      "margin": 0.0,
+      "elapsed_s": 276.1,
+      "presisi": 0.6409,
+      "recall": 0.7322,
+      "spesies_nontarget_per_berkas": null,
+      "deteksi_palsu_pengecoh": null,
+      "phone_presisi": 0.7083,
+      "phone_recall": 0.6126
+    },
+    {
+      "label": "wajib-bn-010",
+      "wajib_bn": true,
+      "ambang_nontarget": 0.1,
+      "margin": 0.0,
+      "elapsed_s": 266.5,
+      "presisi": 0.8235,
+      "recall": 0.5983,
+      "spesies_nontarget_per_berkas": null,
+      "deteksi_palsu_pengecoh": null,
+      "phone_presisi": 0.8551,
+      "phone_recall": 0.5315
+    },
+    {
+      "label": "wajib-bn-020",
+      "wajib_bn": true,
+      "ambang_nontarget": 0.2,
+      "margin": 0.0,
+      "elapsed_s": 266.5,
+      "presisi": 0.8235,
+      "recall": 0.5983,
+      "spesies_nontarget_per_berkas": null,
+      "deteksi_palsu_pengecoh": null,
+      "phone_presisi": 0.8551,
+      "phone_recall": 0.5315
+    },
+    {
+      "label": "wajib-bn-010-margin-01",
+      "wajib_bn": true,
+      "ambang_nontarget": 0.1,
+      "margin": 0.1,
+      "elapsed_s": 262.4,
+      "presisi": 0.8235,
+      "recall": 0.5983,
+      "spesies_nontarget_per_berkas": null,
+      "deteksi_palsu_pengecoh": null,
+      "phone_presisi": 0.8551,
+      "phone_recall": 0.5315
+    },
+    {
+      "label": "wajib-bn-020-margin-01",
+      "wajib_bn": true,
+      "ambang_nontarget": 0.2,
+      "margin": 0.1,
+      "elapsed_s": 269.2,
+      "presisi": 0.8235,
+      "recall": 0.5983,
+      "spesies_nontarget_per_berkas": null,
+      "deteksi_palsu_pengecoh": null,
+      "phone_presisi": 0.8551,
+      "phone_recall": 0.5315
+    },
+    {
+      "label": "wajib-bn-030",
+      "wajib_bn": true,
+      "ambang_nontarget": 0.3,
+      "margin": 0.0,
+      "elapsed_s": 272.1,
+      "presisi": 0.8235,
+      "recall": 0.5983,
+      "spesies_nontarget_per_berkas": null,
+      "deteksi_palsu_pengecoh": null,
+      "phone_presisi": 0.8551,
+      "phone_recall": 0.5315
+    }
+  ]
+}

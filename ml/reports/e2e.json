@@ -1,0 +1,5942 @@
+{
+  "jalur": "CascadeEngine.predict",
+  "sha256_checkpoint": "ff01eb96e002bb32d58120ea5c347cf6398c4b3435121f7b367e2a6dbbad808e",
+  "korpus": [
+    "field/inat",
+    "field/xc_noisy",
+    "field/other",
+    "uji_independen"
+  ],
+  "agregat": {
+    "presisi": 0.6772,
+    "recall": 0.7293
+  },
+  "per_korpus": {
+    "field/inat": {
+      "presisi": 0.764,
+      "recall": 0.6126,
+      "n_berkas": 111
+    },
+    "field/xc_noisy": {
+      "presisi": 0.8087,
+      "recall": 0.8611,
+      "n_berkas": 108
+    },
+    "field/other": {
+      "deteksi_palsu_per_menit": 1.2318,
+      "berkas_dengan_deteksi_target": 43,
+      "n_berkas": 97
+    },
+    "uji_independen": {
+      "presisi": 0.7851,
+      "recall": 0.7197,
+      "n_berkas": 132
+    }
+  },
+  "per_spesies": {
+    "Aegithina tiphia": {
+      "presisi": 0.75,
+      "recall": 0.2,
+      "n_berkas": 15
+    },
+    "Amaurornis phoenicurus": {
+      "presisi": 1.0,
+      "recall": 0.8,
+      "n_berkas": 20
+    },
+    "Anthreptes malacensis": {
+      "presisi": 0.5625,
+      "recall": 0.6429,
+      "n_berkas": 14
+    },
+    "Aplonis panayensis": {
+      "presisi": 0.5909,
+      "recall": 0.6842,
+      "n_berkas": 19
+    },
+    "Arachnothera longirostra": {
+      "presisi": 0.875,
+      "recall": 0.8235,
+      "n_berkas": 17
+    },
+    "Centropus bengalensis": {
+      "presisi": 0.65,
+      "recall": 0.9286,
+      "n_berkas": 14
+    },
+    "Chalcophaps indica": {
+      "presisi": 0.8462,
+      "recall": 0.9167,
+      "n_berkas": 12
+    },
+    "Cinnyris jugularis": {
+      "presisi": 0.4,
+      "recall": 1.0,
+      "n_berkas": 8
+    },
+    "Cisticola juncidis": {
+      "presisi": 0.875,
+      "recall": 1.0,
+      "n_berkas": 7
+    },
+    "Corvus macrorhynchos": {
+      "presisi": 0.8,
+      "recall": 0.6667,
+      "n_berkas": 12
+    },
+    "Dicrurus macrocercus": {
+      "presisi": 0.7143,
+      "recall": 0.5556,
+      "n_berkas": 9
+    },
+    "Gallus gallus": {
+      "presisi": 0.8824,
+      "recall": 0.75,
+      "n_berkas": 20
+    },
+    "Geopelia striata": {
+      "presisi": 0.8182,
+      "recall": 0.9,
+      "n_berkas": 20
+    },
+    "Haliastur indus": {
+      "presisi": 0.8,
+      "recall": 0.8,
+      "n_berkas": 10
+    },
+    "Hirundo tahitica": {
+      "presisi": 0.2,
+      "recall": 0.625,
+      "n_berkas": 8
+    },
+    "Lonchura punctulata": {
+      "presisi": 0.3529,
+      "recall": 1.0,
+      "n_berkas": 6
+    },
+    "Merops philippinus": {
+      "presisi": 0.5,
+      "recall": 0.8889,
+      "n_berkas": 9
+    },
+    "Orthotomus sutorius": {
+      "presisi": 0.6429,
+      "recall": 0.9474,
+      "n_berkas": 19
+    },
+    "Passer montanus": {
+      "presisi": 0.9167,
+      "recall": 0.7333,
+      "n_berkas": 15
+    },
+    "Prinia familiaris": {
+      "presisi": 0.6667,
+      "recall": 0.3636,
+      "n_berkas": 11
+    },
+    "Pycnonotus aurigaster": {
+      "presisi": 0.5385,
+      "recall": 0.5,
+      "n_berkas": 14
+    },
+    "Pycnonotus goiavier": {
+      "presisi": 0.9231,
+      "recall": 0.75,
+      "n_berkas": 16
+    },
+    "Rhipidura javanica": {
+      "presisi": 1.0,
+      "recall": 0.25,
+      "n_berkas": 20
+    },
+    "Spilopelia chinensis": {
+      "presisi": 0.7778,
+      "recall": 0.8235,
+      "n_berkas": 17
+    },
+    "Todiramphus chloris": {
+      "presisi": 0.75,
+      "recall": 0.9474,
+      "n_berkas": 19
+    }
+  },
+  "spesies_nontarget_per_berkas": 0.4129,
+  "per_berkas": [
+    {
+      "berkas": "field/audio/inat/Aegithina_tiphia/inat-248315927.wav",
+      "korpus": "field/inat",
+      "bagian": "lapor",
+      "durasi_s": 31.41,
+      "benar": [
+        "Aegithina tiphia"
+      ],
+      "terdeteksi": [],
+      "nontarget": []
+    },
+    {
+      "berkas": "field/audio/inat/Aegithina_tiphia/inat-260649800.m4a",
+      "korpus": "field/inat",
+      "bagian": "pilih",
+      "durasi_s": 0.0,
+      "benar": [
+        "Aegithina tiphia"
+      ],
+      "terdeteksi": [],
+      "nontarget": []
+    },
+    {
+      "berkas": "field/audio/inat/Aegithina_tiphia/inat-365735568.mp3",
+      "korpus": "field/inat",
+      "bagian": "pilih",
+      "durasi_s": 28.65,
+      "benar": [
+        "Aegithina tiphia"
+      ],
+      "terdeteksi": [],
+      "nontarget": []
+    },
+    {
+      "berkas": "field/audio/inat/Aegithina_tiphia/inat-45492987.wav",
+      "korpus": "field/inat",
+      "bagian": "lapor",
+      "durasi_s": 12.89,
+      "benar": [
+        "Aegithina tiphia"
+      ],
+      "terdeteksi": [],
+      "nontarget": [
+        "Copsychus saularis"
+      ]
+    },
+    {
+      "berkas": "field/audio/inat/Aegithina_tiphia/inat-76490623.m4a",
+      "korpus": "field/inat",
+      "bagian": "lapor",
+      "durasi_s": 0.0,
+      "benar": [
+        "Aegithina tiphia"
+      ],
+      "terdeteksi": [],
+      "nontarget": []
+    },
+    {
+      "berkas": "field/audio/inat/Aegithina_tiphia/inat-85864507.mp3",
+      "korpus": "field/inat",
+      "bagian": "pilih",
+      "durasi_s": 26.66,
+      "benar": [
+        "Aegithina tiphia"
+      ],
+      "terdeteksi": [
+        "Aegithina tiphia"
+      ],
+      "nontarget": [
+        "Chloris chloris"
+      ]
+    },
+    {
+      "berkas": "field/audio/inat/Amaurornis_phoenicurus/inat-106530375.wav",
+      "korpus": "field/inat",
+      "bagian": "lapor",
+      "durasi_s": 26.9,
+      "benar": [
+        "Amaurornis phoenicurus"
+      ],
+      "terdeteksi": [
+        "Amaurornis phoenicurus",
+        "Geopelia striata"
+      ],
+      "nontarget": []
+    },
+    {
+      "berkas": "field/audio/inat/Amaurornis_phoenicurus/inat-163907990.m4a",
+      "korpus": "field/inat",
+      "bagian": "lapor",
+      "durasi_s": 0.0,
+      "benar": [
+        "Amaurornis phoenicurus"
+      ],
+      "terdeteksi": [
+        "Todiramphus chloris"
+      ],
+      "nontarget": []
+    },
+    {
+      "berkas": "field/audio/inat/Amaurornis_phoenicurus/inat-307471223.m4a",
+      "korpus": "field/inat",
+      "bagian": "pilih",
+      "durasi_s": 0.0,
+      "benar": [
+        "Amaurornis phoenicurus"
+      ],
+      "terdeteksi": [
+        "Amaurornis phoenicurus"
+      ],
+      "nontarget": []
+    },
+    {
+      "berkas": "field/audio/inat/Amaurornis_phoenicurus/inat-328165050.wav",
+      "korpus": "field/inat",
+      "bagian": "lapor",
+      "durasi_s": 30.53,
+      "benar": [
+        "Amaurornis phoenicurus"
+      ],
+      "terdeteksi": [
+        "Hirundo tahitica"
+      ],
+      "nontarget": []
+    },
+    {
+      "berkas": "field/audio/inat/Amaurornis_phoenicurus/inat-367918191.m4a",
+      "korpus": "field/inat",
+      "bagian": "pilih",
+      "durasi_s": 0.0,
+      "benar": [
+        "Amaurornis phoenicurus"
+      ],
+      "terdeteksi": [
+        "Amaurornis phoenicurus"
+      ],
+      "nontarget": []
+    },
+    {
+      "berkas": "field/audio/inat/Amaurornis_phoenicurus/inat-40277801.mp3",
+      "korpus": "field/inat",
+      "bagian": "lapor",
+      "durasi_s": 8.06,
+      "benar": [
+        "Amaurornis phoenicurus"
+      ],
+      "terdeteksi": [
+        "Amaurornis phoenicurus"
+      ],
+      "nontarget": []
+    },
+    {
+      "berkas": "field/audio/inat/Anthreptes_malacensis/inat-165165769.wav",
+      "korpus": "field/inat",
+      "bagian": "lapor",
+      "durasi_s": 11.72,
+      "benar": [
+        "Anthreptes malacensis"
+      ],
+      "terdeteksi": [
+        "Anthreptes malacensis"
+      ],
+      "nontarget": [
+        "Horornis annae"
+      ]
+    },
+    {
+      "berkas": "field/audio/inat/Anthreptes_malacensis/inat-207889833.m4a",
+      "korpus": "field/inat",
+      "bagian": "lapor",
+      "durasi_s": 0.0,
+      "benar": [
+        "Anthreptes malacensis"
+      ],
+      "terdeteksi": [],
+      "nontarget": [
+        "Empidonax virescens"
+      ]
+    },
+    {
+      "berkas": "field/audio/inat/Anthreptes_malacensis/inat-230684361.wav",
+      "korpus": "field/inat",
+      "bagian": "pilih",
+      "durasi_s": 4.78,
+      "benar": [
+        "Anthreptes malacensis"
+      ],
+      "terdeteksi": [
+        "Anthreptes malacensis"
+      ],
+      "nontarget": []
+    },
+    {
+      "berkas": "field/audio/inat/Anthreptes_malacensis/inat-298085126.m4a",
+      "korpus": "field/inat",
+      "bagian": "pilih",
+      "durasi_s": 0.0,
+      "benar": [
+        "Anthreptes malacensis"
+      ],
+      "terdeteksi": [
+        "Anthreptes malacensis"
+      ],
+      "nontarget": []
+    },
+    {
+      "berkas": "field/audio/inat/Anthreptes_malacensis/inat-395121974.m4a",
+      "korpus": "field/inat",
+      "bagian": "lapor",
+      "durasi_s": 0.0,
+      "benar": [
+        "Anthreptes malacensis"
+      ],
+      "terdeteksi": [],
+      "nontarget": []
+    },
+    {
+      "berkas": "field/audio/inat/Aplonis_panayensis/inat-219032565.m4a",
+      "korpus": "field/inat",
+      "bagian": "pilih",
+      "durasi_s": 0.0,
+      "benar": [
+        "Aplonis panayensis"
+      ],
+      "terdeteksi": [],
+      "nontarget": []
+    },
+    {
+      "berkas": "field/audio/inat/Aplonis_panayensis/inat-223287911.wav",
+      "korpus": "field/inat",
+      "bagian": "pilih",
+      "durasi_s": 9.6,
+      "benar": [
+        "Aplonis panayensis"
+      ],
+      "terdeteksi": [
+        "Aplonis panayensis"
+      ],
+      "nontarget": []
+    },
+    {
+      "berkas": "field/audio/inat/Aplonis_panayensis/inat-35271756.wav",
+      "korpus": "field/inat",
+      "bagian": "pilih",
+      "durasi_s": 20.32,
+      "benar": [
+        "Aplonis panayensis"
+      ],
+      "terdeteksi": [
+        "Aplonis panayensis"
+      ],
+      "nontarget": []
+    },
+    {
+      "berkas": "field/audio/inat/Aplonis_panayensis/inat-367927434.m4a",
+      "korpus": "field/inat",
+      "bagian": "pilih",
+      "durasi_s": 0.0,
+      "benar": [
+        "Aplonis panayensis"
+      ],
+      "terdeteksi": [
+        "Geopelia striata"
+      ],
+      "nontarget": []
+    },
+    {
+      "berkas": "field/audio/inat/Aplonis_panayensis/inat-367927855.m4a",
+      "korpus": "field/inat",
+      "bagian": "lapor",
+      "durasi_s": 0.0,
+      "benar": [
+        "Aplonis panayensis"
+      ],
+      "terdeteksi": [
+        "Aplonis panayensis"
+      ],
+      "nontarget": []
+    },
+    {
+      "berkas": "field/audio/inat/Aplonis_panayensis/inat-40265107.mp3",
+      "korpus": "field/inat",
+      "bagian": "lapor",
+      "durasi_s": 5.05,
+      "benar": [
+        "Aplonis panayensis"
+      ],
+      "terdeteksi": [
+        "Aplonis panayensis"
+      ],
+      "nontarget": []
+    },
+    {
+      "berkas": "field/audio/inat/Arachnothera_longirostra/inat-135370733.m4a",
+      "korpus": "field/inat",
+      "bagian": "pilih",
+      "durasi_s": 0.0,
+      "benar": [
+        "Arachnothera longirostra"
+      ],
+      "terdeteksi": [
+        "Arachnothera longirostra"
+      ],
+      "nontarget": [
+        "Lanius cristatus"
+      ]
+    },
+    {
+      "berkas": "field/audio/inat/Arachnothera_longirostra/inat-142463256.mp3",
+      "korpus": "field/inat",
+      "bagian": "lapor",
+      "durasi_s": 6.49,
+      "benar": [
+        "Arachnothera longirostra"
+      ],
+      "terdeteksi": [
+        "Arachnothera longirostra"
+      ],
+      "nontarget": [
+        "Myzomela rubratra"
+      ]
+    },
+    {
+      "berkas": "field/audio/inat/Arachnothera_longirostra/inat-166985793.wav",
+      "korpus": "field/inat",
+      "bagian": "lapor",
+      "durasi_s": 10.94,
+      "benar": [
+        "Arachnothera longirostra"
+      ],
+      "terdeteksi": [
+        "Arachnothera longirostra"
+      ],
+      "nontarget": [
+        "Cyornis tickelliae"
+      ]
+    },
+    {
+      "berkas": "field/audio/inat/Arachnothera_longirostra/inat-199258047.wav",
+      "korpus": "field/inat",
+      "bagian": "lapor",
+      "durasi_s": 30.21,
+      "benar": [
+        "Arachnothera longirostra"
+      ],
+      "terdeteksi": [
+        "Orthotomus sutorius"
+      ],
+      "nontarget": []
+    },
+    {
+      "berkas": "field/audio/inat/Arachnothera_longirostra/inat-323398615.mp3",
+      "korpus": "field/inat",
+      "bagian": "lapor",
+      "durasi_s": 22.43,
+      "benar": [
+        "Arachnothera longirostra"
+      ],
+      "terdeteksi": [],
+      "nontarget": [
+        "Argusianus argus"
+      ]
+    },
+    {
+      "berkas": "field/audio/inat/Arachnothera_longirostra/inat-338781717.wav",
+      "korpus": "field/inat",
+      "bagian": "pilih",
+      "durasi_s": 22.83,
+      "benar": [
+        "Arachnothera longirostra"
+      ],
+      "terdeteksi": [
+        "Arachnothera longirostra"
+      ],
+      "nontarget": [
+        "Psilopogon oorti"
+      ]
+    },
+    {
+      "berkas": "field/audio/inat/Centropus_bengalensis/inat-118353811.mp3",
+      "korpus": "field/inat",
+      "bagian": "lapor",
+      "durasi_s": 7.35,
+      "benar": [
+        "Centropus bengalensis"
+      ],
+      "terdeteksi": [
+        "Centropus bengalensis"
+      ],
+      "nontarget": []
+    },
+    {
+      "berkas": "field/audio/inat/Centropus_bengalensis/inat-249262326.m4a",
+      "korpus": "field/inat",
+      "bagian": "lapor",
+      "durasi_s": 0.0,
+      "benar": [
+        "Centropus bengalensis"
+      ],
+      "terdeteksi": [
+        "Centropus bengalensis"
+      ],
+      "nontarget": []
+    },
+    {
+      "berkas": "field/audio/inat/Centropus_bengalensis/inat-311599525.wav",
+      "korpus": "field/inat",
+      "bagian": "pilih",
+      "durasi_s": 11.54,
+      "benar": [
+        "Centropus bengalensis"
+      ],
+      "terdeteksi": [
+        "Centropus bengalensis"
+      ],
+      "nontarget": []
+    },
+    {
+      "berkas": "field/audio/inat/Centropus_bengalensis/inat-338650760.m4a",
+      "korpus": "field/inat",
+      "bagian": "pilih",
+      "durasi_s": 0.0,
+      "benar": [
+        "Centropus bengalensis"
+      ],
+      "terdeteksi": [
+        "Centropus bengalensis"
+      ],
+      "nontarget": []
+    },
+    {
+      "berkas": "field/audio/inat/Centropus_bengalensis/inat-341479245.mp3",
+      "korpus": "field/inat",
+      "bagian": "pilih",
+      "durasi_s": 6.47,
+      "benar": [
+        "Centropus bengalensis"
+      ],
+      "terdeteksi": [
+        "Centropus bengalensis"
+      ],
+      "nontarget": []
+    },
+    {
+      "berkas": "field/audio/inat/Centropus_bengalensis/inat-378740263.m4a",
+      "korpus": "field/inat",
+      "bagian": "lapor",
+      "durasi_s": 0.0,
+      "benar": [
+        "Centropus bengalensis"
+      ],
+      "terdeteksi": [
+        "Centropus bengalensis"
+      ],
+      "nontarget": []
+    },
+    {
+      "berkas": "field/audio/inat/Chalcophaps_indica/inat-295560775.wav",
+      "korpus": "field/inat",
+      "bagian": "pilih",
+      "durasi_s": 12.09,
+      "benar": [
+        "Chalcophaps indica"
+      ],
+      "terdeteksi": [
+        "Chalcophaps indica"
+      ],
+      "nontarget": []
+    },
+    {
+      "berkas": "field/audio/inat/Chalcophaps_indica/inat-339080699.wav",
+      "korpus": "field/inat",
+      "bagian": "pilih",
+      "durasi_s": 16.25,
+      "benar": [
+        "Chalcophaps indica"
+      ],
+      "terdeteksi": [
+        "Chalcophaps indica"
+      ],
+      "nontarget": []
+    },
+    {
+      "berkas": "field/audio/inat/Chalcophaps_indica/inat-339951242.mp3",
+      "korpus": "field/inat",
+      "bagian": "lapor",
+      "durasi_s": 17.45,
+      "benar": [
+        "Chalcophaps indica"
+      ],
+      "terdeteksi": [
+        "Chalcophaps indica"
+      ],
+      "nontarget": []
+    },
+    {
+      "berkas": "field/audio/inat/Chalcophaps_indica/inat-342401912.wav",
+      "korpus": "field/inat",
+      "bagian": "lapor",
+      "durasi_s": 11.98,
+      "benar": [
+        "Chalcophaps indica"
+      ],
+      "terdeteksi": [
+        "Centropus bengalensis"
+      ],
+      "nontarget": []
+    },
+    {
+      "berkas": "field/audio/inat/Cisticola_juncidis/inat-290890239.wav",
+      "korpus": "field/inat",
+      "bagian": "pilih",
+      "durasi_s": 5.72,
+      "benar": [
+        "Cisticola juncidis"
+      ],
+      "terdeteksi": [
+        "Cisticola juncidis"
+      ],
+      "nontarget": []
+    },
+    {
+      "berkas": "field/audio/inat/Cisticola_juncidis/inat-338469153.wav",
+      "korpus": "field/inat",
+      "bagian": "pilih",
+      "durasi_s": 27.15,
+      "benar": [
+        "Cisticola juncidis"
+      ],
+      "terdeteksi": [
+        "Cisticola juncidis"
+      ],
+      "nontarget": [
+        "Cisticola cherina"
+      ]
+    },
+    {
+      "berkas": "field/audio/inat/Cisticola_juncidis/inat-340391416.m4a",
+      "korpus": "field/inat",
+      "bagian": "lapor",
+      "durasi_s": 0.0,
+      "benar": [
+        "Cisticola juncidis"
+      ],
+      "terdeteksi": [
+        "Cisticola juncidis"
+      ],
+      "nontarget": []
+    },
+    {
+      "berkas": "field/audio/inat/Corvus_macrorhynchos/inat-120967793.m4a",
+      "korpus": "field/inat",
+      "bagian": "pilih",
+      "durasi_s": 0.0,
+      "benar": [
+        "Corvus macrorhynchos"
+      ],
+      "terdeteksi": [
+        "Aplonis panayensis"
+      ],
+      "nontarget": [
+        "Orthotomus ruficeps"
+      ]
+    },
+    {
+      "berkas": "field/audio/inat/Corvus_macrorhynchos/inat-194437837.m4a",
+      "korpus": "field/inat",
+      "bagian": "pilih",
+      "durasi_s": 0.0,
+      "benar": [
+        "Corvus macrorhynchos"
+      ],
+      "terdeteksi": [],
+      "nontarget": []
+    },
+    {
+      "berkas": "field/audio/inat/Corvus_macrorhynchos/inat-248104026.wav",
+      "korpus": "field/inat",
+      "bagian": "lapor",
+      "durasi_s": 17.68,
+      "benar": [
+        "Corvus macrorhynchos"
+      ],
+      "terdeteksi": [
+        "Corvus macrorhynchos"
+      ],
+      "nontarget": [
+        "Corvus frugilegus"
+      ]
+    },
+    {
+      "berkas": "field/audio/inat/Corvus_macrorhynchos/inat-40524088.m4a",
+      "korpus": "field/inat",
+      "bagian": "lapor",
+      "durasi_s": 0.0,
+      "benar": [
+        "Corvus macrorhynchos"
+      ],
+      "terdeteksi": [
+        "Corvus macrorhynchos"
+      ],
+      "nontarget": []
+    },
+    {
+      "berkas": "field/audio/inat/Dicrurus_macrocercus/inat-53821777.wav",
+      "korpus": "field/inat",
+      "bagian": "lapor",
+      "durasi_s": 16.11,
+      "benar": [
+        "Dicrurus macrocercus"
+      ],
+      "terdeteksi": [],
+      "nontarget": [
+        "Copsychus malabaricus"
+      ]
+    },
+    {
+      "berkas": "field/audio/inat/Gallus_gallus/inat-167342910.wav",
+      "korpus": "field/inat",
+      "bagian": "pilih",
+      "durasi_s": 3.0,
+      "benar": [
+        "Gallus gallus"
+      ],
+      "terdeteksi": [
+        "Gallus gallus"
+      ],
+      "nontarget": []
+    },
+    {
+      "berkas": "field/audio/inat/Gallus_gallus/inat-167342912.wav",
+      "korpus": "field/inat",
+      "bagian": "pilih",
+      "durasi_s": 3.0,
+      "benar": [
+        "Gallus gallus"
+      ],
+      "terdeteksi": [
+        "Gallus gallus"
+      ],
+      "nontarget": []
+    },
+    {
+      "berkas": "field/audio/inat/Gallus_gallus/inat-167343483.wav",
+      "korpus": "field/inat",
+      "bagian": "pilih",
+      "durasi_s": 3.0,
+      "benar": [
+        "Gallus gallus"
+      ],
+      "terdeteksi": [
+        "Gallus gallus"
+      ],
+      "nontarget": []
+    },
+    {
+      "berkas": "field/audio/inat/Gallus_gallus/inat-167343486.wav",
+      "korpus": "field/inat",
+      "bagian": "pilih",
+      "durasi_s": 3.0,
+      "benar": [
+        "Gallus gallus"
+      ],
+      "terdeteksi": [
+        "Gallus gallus"
+      ],
+      "nontarget": []
+    },
+    {
+      "berkas": "field/audio/inat/Gallus_gallus/inat-167343496.wav",
+      "korpus": "field/inat",
+      "bagian": "pilih",
+      "durasi_s": 3.0,
+      "benar": [
+        "Gallus gallus"
+      ],
+      "terdeteksi": [
+        "Gallus gallus"
+      ],
+      "nontarget": []
+    },
+    {
+      "berkas": "field/audio/inat/Gallus_gallus/inat-327944024.m4a",
+      "korpus": "field/inat",
+      "bagian": "pilih",
+      "durasi_s": 0.0,
+      "benar": [
+        "Gallus gallus"
+      ],
+      "terdeteksi": [
+        "Gallus gallus"
+      ],
+      "nontarget": []
+    },
+    {
+      "berkas": "field/audio/inat/Geopelia_striata/inat-222179148.m4a",
+      "korpus": "field/inat",
+      "bagian": "lapor",
+      "durasi_s": 0.0,
+      "benar": [
+        "Geopelia striata"
+      ],
+      "terdeteksi": [
+        "Geopelia striata",
+        "Lonchura punctulata"
+      ],
+      "nontarget": []
+    },
+    {
+      "berkas": "field/audio/inat/Geopelia_striata/inat-222798920.wav",
+      "korpus": "field/inat",
+      "bagian": "pilih",
+      "durasi_s": 7.11,
+      "benar": [
+        "Geopelia striata"
+      ],
+      "terdeteksi": [
+        "Aegithina tiphia"
+      ],
+      "nontarget": [
+        "Timalia pileata"
+      ]
+    },
+    {
+      "berkas": "field/audio/inat/Geopelia_striata/inat-305131732.m4a",
+      "korpus": "field/inat",
+      "bagian": "pilih",
+      "durasi_s": 0.0,
+      "benar": [
+        "Geopelia striata"
+      ],
+      "terdeteksi": [
+        "Geopelia striata"
+      ],
+      "nontarget": []
+    },
+    {
+      "berkas": "field/audio/inat/Geopelia_striata/inat-307644219.wav",
+      "korpus": "field/inat",
+      "bagian": "lapor",
+      "durasi_s": 56.52,
+      "benar": [
+        "Geopelia striata"
+      ],
+      "terdeteksi": [
+        "Geopelia striata",
+        "Lonchura punctulata"
+      ],
+      "nontarget": []
+    },
+    {
+      "berkas": "field/audio/inat/Geopelia_striata/inat-367913553.mp3",
+      "korpus": "field/inat",
+      "bagian": "pilih",
+      "durasi_s": 12.5,
+      "benar": [
+        "Geopelia striata"
+      ],
+      "terdeteksi": [
+        "Geopelia striata"
+      ],
+      "nontarget": []
+    },
+    {
+      "berkas": "field/audio/inat/Geopelia_striata/inat-38136962.m4a",
+      "korpus": "field/inat",
+      "bagian": "lapor",
+      "durasi_s": 0.0,
+      "benar": [
+        "Geopelia striata"
+      ],
+      "terdeteksi": [
+        "Geopelia striata"
+      ],
+      "nontarget": []
+    },
+    {
+      "berkas": "field/audio/inat/Haliastur_indus/inat-323616737.wav",
+      "korpus": "field/inat",
+      "bagian": "pilih",
+      "durasi_s": 25.86,
+      "benar": [
+        "Haliastur indus"
+      ],
+      "terdeteksi": [
+        "Anthreptes malacensis",
+        "Haliastur indus"
+      ],
+      "nontarget": [
+        "Empidonax flaviventris"
+      ]
+    },
+    {
+      "berkas": "field/audio/inat/Lonchura_punctulata/inat-254888730.wav",
+      "korpus": "field/inat",
+      "bagian": "pilih",
+      "durasi_s": 14.86,
+      "benar": [
+        "Lonchura punctulata"
+      ],
+      "terdeteksi": [
+        "Lonchura punctulata"
+      ],
+      "nontarget": [
+        "Dendrocygna javanica"
+      ]
+    },
+    {
+      "berkas": "field/audio/inat/Lonchura_punctulata/inat-370572252.mp3",
+      "korpus": "field/inat",
+      "bagian": "lapor",
+      "durasi_s": 22.46,
+      "benar": [
+        "Lonchura punctulata"
+      ],
+      "terdeteksi": [
+        "Lonchura punctulata"
+      ],
+      "nontarget": [
+        "Chrysomma sinense",
+        "Ploceus philippinus"
+      ]
+    },
+    {
+      "berkas": "field/audio/inat/Merops_philippinus/inat-268342336.m4a",
+      "korpus": "field/inat",
+      "bagian": "pilih",
+      "durasi_s": 0.0,
+      "benar": [
+        "Merops philippinus"
+      ],
+      "terdeteksi": [
+        "Merops philippinus"
+      ],
+      "nontarget": []
+    },
+    {
+      "berkas": "field/audio/inat/Merops_philippinus/inat-326631922.wav",
+      "korpus": "field/inat",
+      "bagian": "lapor",
+      "durasi_s": 15.01,
+      "benar": [
+        "Merops philippinus"
+      ],
+      "terdeteksi": [],
+      "nontarget": []
+    },
+    {
+      "berkas": "field/audio/inat/Orthotomus_sutorius/inat-125737790.mp3",
+      "korpus": "field/inat",
+      "bagian": "pilih",
+      "durasi_s": 6.61,
+      "benar": [
+        "Orthotomus sutorius"
+      ],
+      "terdeteksi": [
+        "Orthotomus sutorius"
+      ],
+      "nontarget": [
+        "Actitis macularius"
+      ]
+    },
+    {
+      "berkas": "field/audio/inat/Orthotomus_sutorius/inat-151274166.m4a",
+      "korpus": "field/inat",
+      "bagian": "pilih",
+      "durasi_s": 0.0,
+      "benar": [
+        "Orthotomus sutorius"
+      ],
+      "terdeteksi": [
+        "Orthotomus sutorius"
+      ],
+      "nontarget": []
+    },
+    {
+      "berkas": "field/audio/inat/Orthotomus_sutorius/inat-164748812.m4a",
+      "korpus": "field/inat",
+      "bagian": "lapor",
+      "durasi_s": 0.0,
+      "benar": [
+        "Orthotomus sutorius"
+      ],
+      "terdeteksi": [
+        "Orthotomus sutorius"
+      ],
+      "nontarget": []
+    },
+    {
+      "berkas": "field/audio/inat/Orthotomus_sutorius/inat-222800375.wav",
+      "korpus": "field/inat",
+      "bagian": "pilih",
+      "durasi_s": 4.21,
+      "benar": [
+        "Orthotomus sutorius"
+      ],
+      "terdeteksi": [
+        "Orthotomus sutorius"
+      ],
+      "nontarget": []
+    },
+    {
+      "berkas": "field/audio/inat/Orthotomus_sutorius/inat-237980742.wav",
+      "korpus": "field/inat",
+      "bagian": "pilih",
+      "durasi_s": 4.86,
+      "benar": [
+        "Orthotomus sutorius"
+      ],
+      "terdeteksi": [
+        "Orthotomus sutorius"
+      ],
+      "nontarget": []
+    },
+    {
+      "berkas": "field/audio/inat/Orthotomus_sutorius/inat-365232969.m4a",
+      "korpus": "field/inat",
+      "bagian": "pilih",
+      "durasi_s": 0.0,
+      "benar": [
+        "Orthotomus sutorius"
+      ],
+      "terdeteksi": [
+        "Orthotomus sutorius"
+      ],
+      "nontarget": []
+    },
+    {
+      "berkas": "field/audio/inat/Passer_montanus/inat-198011859.m4a",
+      "korpus": "field/inat",
+      "bagian": "lapor",
+      "durasi_s": 0.0,
+      "benar": [
+        "Passer montanus"
+      ],
+      "terdeteksi": [
+        "Passer montanus"
+      ],
+      "nontarget": []
+    },
+    {
+      "berkas": "field/audio/inat/Passer_montanus/inat-215893271.mp3",
+      "korpus": "field/inat",
+      "bagian": "lapor",
+      "durasi_s": 5.8,
+      "benar": [
+        "Passer montanus"
+      ],
+      "terdeteksi": [
+        "Hirundo tahitica",
+        "Orthotomus sutorius"
+      ],
+      "nontarget": []
+    },
+    {
+      "berkas": "field/audio/inat/Passer_montanus/inat-235639026.m4a",
+      "korpus": "field/inat",
+      "bagian": "lapor",
+      "durasi_s": 0.0,
+      "benar": [
+        "Passer montanus"
+      ],
+      "terdeteksi": [
+        "Hirundo tahitica",
+        "Passer montanus"
+      ],
+      "nontarget": []
+    },
+    {
+      "berkas": "field/audio/inat/Passer_montanus/inat-281693716.mp3",
+      "korpus": "field/inat",
+      "bagian": "lapor",
+      "durasi_s": 8.65,
+      "benar": [
+        "Passer montanus"
+      ],
+      "terdeteksi": [
+        "Passer montanus"
+      ],
+      "nontarget": []
+    },
+    {
+      "berkas": "field/audio/inat/Passer_montanus/inat-392047975.m4a",
+      "korpus": "field/inat",
+      "bagian": "pilih",
+      "durasi_s": 0.0,
+      "benar": [
+        "Passer montanus"
+      ],
+      "terdeteksi": [],
+      "nontarget": []
+    },
+    {
+      "berkas": "field/audio/inat/Passer_montanus/inat-50953479.wav",
+      "korpus": "field/inat",
+      "bagian": "pilih",
+      "durasi_s": 38.32,
+      "benar": [
+        "Passer montanus"
+      ],
+      "terdeteksi": [
+        "Passer montanus"
+      ],
+      "nontarget": []
+    },
+    {
+      "berkas": "field/audio/inat/Prinia_familiaris/inat-248280762.wav",
+      "korpus": "field/inat",
+      "bagian": "lapor",
+      "durasi_s": 24.75,
+      "benar": [
+        "Prinia familiaris"
+      ],
+      "terdeteksi": [
+        "Pycnonotus goiavier"
+      ],
+      "nontarget": []
+    },
+    {
+      "berkas": "field/audio/inat/Prinia_familiaris/inat-259636579.m4a",
+      "korpus": "field/inat",
+      "bagian": "pilih",
+      "durasi_s": 0.0,
+      "benar": [
+        "Prinia familiaris"
+      ],
+      "terdeteksi": [],
+      "nontarget": [
+        "Oporornis agilis"
+      ]
+    },
+    {
+      "berkas": "field/audio/inat/Prinia_familiaris/inat-303669368.mp3",
+      "korpus": "field/inat",
+      "bagian": "pilih",
+      "durasi_s": 14.49,
+      "benar": [
+        "Prinia familiaris"
+      ],
+      "terdeteksi": [
+        "Orthotomus sutorius"
+      ],
+      "nontarget": []
+    },
+    {
+      "berkas": "field/audio/inat/Prinia_familiaris/inat-329558947.wav",
+      "korpus": "field/inat",
+      "bagian": "lapor",
+      "durasi_s": 8.37,
+      "benar": [
+        "Prinia familiaris"
+      ],
+      "terdeteksi": [],
+      "nontarget": [
+        "Orthotomus sepium"
+      ]
+    },
+    {
+      "berkas": "field/audio/inat/Prinia_familiaris/inat-330313223.m4a",
+      "korpus": "field/inat",
+      "bagian": "pilih",
+      "durasi_s": 0.0,
+      "benar": [
+        "Prinia familiaris"
+      ],
+      "terdeteksi": [],
+      "nontarget": []
+    },
+    {
+      "berkas": "field/audio/inat/Prinia_familiaris/inat-342404059.wav",
+      "korpus": "field/inat",
+      "bagian": "lapor",
+      "durasi_s": 6.58,
+      "benar": [
+        "Prinia familiaris"
+      ],
+      "terdeteksi": [
+        "Orthotomus sutorius"
+      ],
+      "nontarget": [
+        "Orthotomus sepium"
+      ]
+    },
+    {
+      "berkas": "field/audio/inat/Pycnonotus_aurigaster/inat-146752304.m4a",
+      "korpus": "field/inat",
+      "bagian": "lapor",
+      "durasi_s": 0.0,
+      "benar": [
+        "Pycnonotus aurigaster"
+      ],
+      "terdeteksi": [],
+      "nontarget": [
+        "Artamus fuscus"
+      ]
+    },
+    {
+      "berkas": "field/audio/inat/Pycnonotus_aurigaster/inat-146752336.m4a",
+      "korpus": "field/inat",
+      "bagian": "lapor",
+      "durasi_s": 0.0,
+      "benar": [
+        "Pycnonotus aurigaster"
+      ],
+      "terdeteksi": [
+        "Pycnonotus aurigaster"
+      ],
+      "nontarget": []
+    },
+    {
+      "berkas": "field/audio/inat/Pycnonotus_aurigaster/inat-146752677.m4a",
+      "korpus": "field/inat",
+      "bagian": "lapor",
+      "durasi_s": 0.0,
+      "benar": [
+        "Pycnonotus aurigaster"
+      ],
+      "terdeteksi": [],
+      "nontarget": []
+    },
+    {
+      "berkas": "field/audio/inat/Pycnonotus_aurigaster/inat-367416446.mp3",
+      "korpus": "field/inat",
+      "bagian": "lapor",
+      "durasi_s": 28.5,
+      "benar": [
+        "Pycnonotus aurigaster"
+      ],
+      "terdeteksi": [
+        "Hirundo tahitica"
+      ],
+      "nontarget": []
+    },
+    {
+      "berkas": "field/audio/inat/Pycnonotus_aurigaster/inat-378688850.m4a",
+      "korpus": "field/inat",
+      "bagian": "lapor",
+      "durasi_s": 0.0,
+      "benar": [
+        "Pycnonotus aurigaster"
+      ],
+      "terdeteksi": [
+        "Hirundo tahitica",
+        "Pycnonotus aurigaster"
+      ],
+      "nontarget": []
+    },
+    {
+      "berkas": "field/audio/inat/Pycnonotus_aurigaster/inat-52148746.wav",
+      "korpus": "field/inat",
+      "bagian": "lapor",
+      "durasi_s": 12.24,
+      "benar": [
+        "Pycnonotus aurigaster"
+      ],
+      "terdeteksi": [],
+      "nontarget": []
+    },
+    {
+      "berkas": "field/audio/inat/Pycnonotus_goiavier/inat-126284625.m4a",
+      "korpus": "field/inat",
+      "bagian": "lapor",
+      "durasi_s": 0.0,
+      "benar": [
+        "Pycnonotus goiavier"
+      ],
+      "terdeteksi": [],
+      "nontarget": []
+    },
+    {
+      "berkas": "field/audio/inat/Pycnonotus_goiavier/inat-126289349.mp3",
+      "korpus": "field/inat",
+      "bagian": "pilih",
+      "durasi_s": 2.25,
+      "benar": [
+        "Pycnonotus goiavier"
+      ],
+      "terdeteksi": [],
+      "nontarget": []
+    },
+    {
+      "berkas": "field/audio/inat/Pycnonotus_goiavier/inat-167343344.wav",
+      "korpus": "field/inat",
+      "bagian": "pilih",
+      "durasi_s": 3.0,
+      "benar": [
+        "Pycnonotus goiavier"
+      ],
+      "terdeteksi": [
+        "Pycnonotus goiavier"
+      ],
+      "nontarget": []
+    },
+    {
+      "berkas": "field/audio/inat/Pycnonotus_goiavier/inat-326778825.wav",
+      "korpus": "field/inat",
+      "bagian": "lapor",
+      "durasi_s": 15.19,
+      "benar": [
+        "Pycnonotus goiavier"
+      ],
+      "terdeteksi": [],
+      "nontarget": []
+    },
+    {
+      "berkas": "field/audio/inat/Pycnonotus_goiavier/inat-47943898.wav",
+      "korpus": "field/inat",
+      "bagian": "lapor",
+      "durasi_s": 8.97,
+      "benar": [
+        "Pycnonotus goiavier"
+      ],
+      "terdeteksi": [],
+      "nontarget": []
+    },
+    {
+      "berkas": "field/audio/inat/Rhipidura_javanica/inat-178907520.wav",
+      "korpus": "field/inat",
+      "bagian": "lapor",
+      "durasi_s": 31.84,
+      "benar": [
+        "Rhipidura javanica"
+      ],
+      "terdeteksi": [
+        "Hirundo tahitica"
+      ],
+      "nontarget": []
+    },
+    {
+      "berkas": "field/audio/inat/Rhipidura_javanica/inat-225467563.m4a",
+      "korpus": "field/inat",
+      "bagian": "pilih",
+      "durasi_s": 0.0,
+      "benar": [
+        "Rhipidura javanica"
+      ],
+      "terdeteksi": [],
+      "nontarget": []
+    },
+    {
+      "berkas": "field/audio/inat/Rhipidura_javanica/inat-228903563.wav",
+      "korpus": "field/inat",
+      "bagian": "pilih",
+      "durasi_s": 5.2,
+      "benar": [
+        "Rhipidura javanica"
+      ],
+      "terdeteksi": [],
+      "nontarget": []
+    },
+    {
+      "berkas": "field/audio/inat/Rhipidura_javanica/inat-329562262.wav",
+      "korpus": "field/inat",
+      "bagian": "lapor",
+      "durasi_s": 11.15,
+      "benar": [
+        "Rhipidura javanica"
+      ],
+      "terdeteksi": [],
+      "nontarget": []
+    },
+    {
+      "berkas": "field/audio/inat/Rhipidura_javanica/inat-363340150.mp3",
+      "korpus": "field/inat",
+      "bagian": "pilih",
+      "durasi_s": 19.72,
+      "benar": [
+        "Rhipidura javanica"
+      ],
+      "terdeteksi": [],
+      "nontarget": [
+        "Tachybaptus ruficollis"
+      ]
+    },
+    {
+      "berkas": "field/audio/inat/Rhipidura_javanica/inat-96441943.m4a",
+      "korpus": "field/inat",
+      "bagian": "pilih",
+      "durasi_s": 0.0,
+      "benar": [
+        "Rhipidura javanica"
+      ],
+      "terdeteksi": [],
+      "nontarget": [
+        "Dinopium javanense"
+      ]
+    },
+    {
+      "berkas": "field/audio/inat/Spilopelia_chinensis/inat-121981278.mp3",
+      "korpus": "field/inat",
+      "bagian": "lapor",
+      "durasi_s": 42.62,
+      "benar": [
+        "Spilopelia chinensis"
+      ],
+      "terdeteksi": [
+        "Spilopelia chinensis"
+      ],
+      "nontarget": [
+        "Columbina inca",
+        "Geopelia humeralis",
+        "Streptopelia chinensis"
+      ]
+    },
+    {
+      "berkas": "field/audio/inat/Spilopelia_chinensis/inat-123912826.mp3",
+      "korpus": "field/inat",
+      "bagian": "pilih",
+      "durasi_s": 62.99,
+      "benar": [
+        "Spilopelia chinensis"
+      ],
+      "terdeteksi": [
+        "Spilopelia chinensis"
+      ],
+      "nontarget": [
+        "Streptopelia chinensis"
+      ]
+    },
+    {
+      "berkas": "field/audio/inat/Spilopelia_chinensis/inat-198011718.m4a",
+      "korpus": "field/inat",
+      "bagian": "lapor",
+      "durasi_s": 0.0,
+      "benar": [
+        "Spilopelia chinensis"
+      ],
+      "terdeteksi": [
+        "Spilopelia chinensis"
+      ],
+      "nontarget": [
+        "Streptopelia chinensis"
+      ]
+    },
+    {
+      "berkas": "field/audio/inat/Spilopelia_chinensis/inat-199743723.m4a",
+      "korpus": "field/inat",
+      "bagian": "pilih",
+      "durasi_s": 0.0,
+      "benar": [
+        "Spilopelia chinensis"
+      ],
+      "terdeteksi": [
+        "Cinnyris jugularis"
+      ],
+      "nontarget": []
+    },
+    {
+      "berkas": "field/audio/inat/Spilopelia_chinensis/inat-77194031.m4a",
+      "korpus": "field/inat",
+      "bagian": "pilih",
+      "durasi_s": 0.0,
+      "benar": [
+        "Spilopelia chinensis"
+      ],
+      "terdeteksi": [
+        "Spilopelia chinensis"
+      ],
+      "nontarget": [
+        "Streptopelia chinensis"
+      ]
+    },
+    {
+      "berkas": "field/audio/inat/Spilopelia_chinensis/inat-99149834.mp3",
+      "korpus": "field/inat",
+      "bagian": "pilih",
+      "durasi_s": 18.85,
+      "benar": [
+        "Spilopelia chinensis"
+      ],
+      "terdeteksi": [
+        "Spilopelia chinensis"
+      ],
+      "nontarget": [
+        "Streptopelia chinensis"
+      ]
+    },
+    {
+      "berkas": "field/audio/inat/Todiramphus_chloris/inat-183914384.m4a",
+      "korpus": "field/inat",
+      "bagian": "lapor",
+      "durasi_s": 0.0,
+      "benar": [
+        "Todiramphus chloris"
+      ],
+      "terdeteksi": [
+        "Todiramphus chloris"
+      ],
+      "nontarget": []
+    },
+    {
+      "berkas": "field/audio/inat/Todiramphus_chloris/inat-200501185.wav",
+      "korpus": "field/inat",
+      "bagian": "lapor",
+      "durasi_s": 5.65,
+      "benar": [
+        "Todiramphus chloris"
+      ],
+      "terdeteksi": [
+        "Todiramphus chloris"
+      ],
+      "nontarget": []
+    },
+    {
+      "berkas": "field/audio/inat/Todiramphus_chloris/inat-263694700.wav",
+      "korpus": "field/inat",
+      "bagian": "pilih",
+      "durasi_s": 2.3,
+      "benar": [
+        "Todiramphus chloris"
+      ],
+      "terdeteksi": [
+        "Todiramphus chloris"
+      ],
+      "nontarget": []
+    },
+    {
+      "berkas": "field/audio/inat/Todiramphus_chloris/inat-30399876.mp3",
+      "korpus": "field/inat",
+      "bagian": "lapor",
+      "durasi_s": 7.24,
+      "benar": [
+        "Todiramphus chloris"
+      ],
+      "terdeteksi": [],
+      "nontarget": []
+    },
+    {
+      "berkas": "field/audio/inat/Todiramphus_chloris/inat-371081346.m4a",
+      "korpus": "field/inat",
+      "bagian": "lapor",
+      "durasi_s": 0.0,
+      "benar": [
+        "Todiramphus chloris"
+      ],
+      "terdeteksi": [
+        "Todiramphus chloris"
+      ],
+      "nontarget": []
+    },
+    {
+      "berkas": "field/audio/inat/Todiramphus_chloris/inat-74924532.mp3",
+      "korpus": "field/inat",
+      "bagian": "pilih",
+      "durasi_s": 14.81,
+      "benar": [
+        "Todiramphus chloris"
+      ],
+      "terdeteksi": [
+        "Todiramphus chloris"
+      ],
+      "nontarget": []
+    },
+    {
+      "berkas": "field/audio/xc_noisy/Aegithina_tiphia/xc-1059451.mp3",
+      "korpus": "field/xc_noisy",
+      "bagian": "pilih",
+      "durasi_s": 7.12,
+      "benar": [
+        "Aegithina tiphia"
+      ],
+      "terdeteksi": [],
+      "nontarget": [
+        "Gerygone sulphurea"
+      ]
+    },
+    {
+      "berkas": "field/audio/xc_noisy/Aegithina_tiphia/xc-1082290.mp3",
+      "korpus": "field/xc_noisy",
+      "bagian": "lapor",
+      "durasi_s": 32.17,
+      "benar": [
+        "Aegithina tiphia"
+      ],
+      "terdeteksi": [
+        "Aplonis panayensis"
+      ],
+      "nontarget": []
+    },
+    {
+      "berkas": "field/audio/xc_noisy/Aegithina_tiphia/xc-661284.mp3",
+      "korpus": "field/xc_noisy",
+      "bagian": "pilih",
+      "durasi_s": 26.66,
+      "benar": [
+        "Aegithina tiphia"
+      ],
+      "terdeteksi": [
+        "Aegithina tiphia"
+      ],
+      "nontarget": [
+        "Chloris chloris"
+      ]
+    },
+    {
+      "berkas": "field/audio/xc_noisy/Amaurornis_phoenicurus/xc-1104002.mp3",
+      "korpus": "field/xc_noisy",
+      "bagian": "pilih",
+      "durasi_s": 16.32,
+      "benar": [
+        "Amaurornis phoenicurus"
+      ],
+      "terdeteksi": [
+        "Amaurornis phoenicurus"
+      ],
+      "nontarget": [
+        "Engine"
+      ]
+    },
+    {
+      "berkas": "field/audio/xc_noisy/Amaurornis_phoenicurus/xc-137916.mp3",
+      "korpus": "field/xc_noisy",
+      "bagian": "lapor",
+      "durasi_s": 26.22,
+      "benar": [
+        "Amaurornis phoenicurus"
+      ],
+      "terdeteksi": [
+        "Amaurornis phoenicurus"
+      ],
+      "nontarget": []
+    },
+    {
+      "berkas": "field/audio/xc_noisy/Amaurornis_phoenicurus/xc-138531.mp3",
+      "korpus": "field/xc_noisy",
+      "bagian": "lapor",
+      "durasi_s": 32.02,
+      "benar": [
+        "Amaurornis phoenicurus"
+      ],
+      "terdeteksi": [
+        "Amaurornis phoenicurus"
+      ],
+      "nontarget": []
+    },
+    {
+      "berkas": "field/audio/xc_noisy/Amaurornis_phoenicurus/xc-138532.mp3",
+      "korpus": "field/xc_noisy",
+      "bagian": "lapor",
+      "durasi_s": 15.05,
+      "benar": [
+        "Amaurornis phoenicurus"
+      ],
+      "terdeteksi": [
+        "Amaurornis phoenicurus"
+      ],
+      "nontarget": [
+        "Locustella davidi"
+      ]
+    },
+    {
+      "berkas": "field/audio/xc_noisy/Amaurornis_phoenicurus/xc-198538.mp3",
+      "korpus": "field/xc_noisy",
+      "bagian": "lapor",
+      "durasi_s": 18.41,
+      "benar": [
+        "Amaurornis phoenicurus"
+      ],
+      "terdeteksi": [
+        "Amaurornis phoenicurus"
+      ],
+      "nontarget": []
+    },
+    {
+      "berkas": "field/audio/xc_noisy/Amaurornis_phoenicurus/xc-445225.mp3",
+      "korpus": "field/xc_noisy",
+      "bagian": "pilih",
+      "durasi_s": 21.83,
+      "benar": [
+        "Amaurornis phoenicurus"
+      ],
+      "terdeteksi": [
+        "Amaurornis phoenicurus"
+      ],
+      "nontarget": []
+    },
+    {
+      "berkas": "field/audio/xc_noisy/Anthreptes_malacensis/xc-1004277.mp3",
+      "korpus": "field/xc_noisy",
+      "bagian": "pilih",
+      "durasi_s": 20.4,
+      "benar": [
+        "Anthreptes malacensis"
+      ],
+      "terdeteksi": [
+        "Anthreptes malacensis"
+      ],
+      "nontarget": []
+    },
+    {
+      "berkas": "field/audio/xc_noisy/Anthreptes_malacensis/xc-431798.mp3",
+      "korpus": "field/xc_noisy",
+      "bagian": "lapor",
+      "durasi_s": 132.41,
+      "benar": [
+        "Anthreptes malacensis"
+      ],
+      "terdeteksi": [
+        "Anthreptes malacensis"
+      ],
+      "nontarget": []
+    },
+    {
+      "berkas": "field/audio/xc_noisy/Aplonis_panayensis/xc-1003691.mp3",
+      "korpus": "field/xc_noisy",
+      "bagian": "pilih",
+      "durasi_s": 8.31,
+      "benar": [
+        "Aplonis panayensis"
+      ],
+      "terdeteksi": [
+        "Aplonis panayensis"
+      ],
+      "nontarget": []
+    },
+    {
+      "berkas": "field/audio/xc_noisy/Aplonis_panayensis/xc-1020328.mp3",
+      "korpus": "field/xc_noisy",
+      "bagian": "pilih",
+      "durasi_s": 23.0,
+      "benar": [
+        "Aplonis panayensis"
+      ],
+      "terdeteksi": [
+        "Aplonis panayensis"
+      ],
+      "nontarget": []
+    },
+    {
+      "berkas": "field/audio/xc_noisy/Aplonis_panayensis/xc-1052384.mp3",
+      "korpus": "field/xc_noisy",
+      "bagian": "pilih",
+      "durasi_s": 11.19,
+      "benar": [
+        "Aplonis panayensis"
+      ],
+      "terdeteksi": [
+        "Aplonis panayensis"
+      ],
+      "nontarget": []
+    },
+    {
+      "berkas": "field/audio/xc_noisy/Aplonis_panayensis/xc-1067643.mp3",
+      "korpus": "field/xc_noisy",
+      "bagian": "lapor",
+      "durasi_s": 13.21,
+      "benar": [
+        "Aplonis panayensis"
+      ],
+      "terdeteksi": [
+        "Aplonis panayensis",
+        "Hirundo tahitica"
+      ],
+      "nontarget": []
+    },
+    {
+      "berkas": "field/audio/xc_noisy/Aplonis_panayensis/xc-482232.mp3",
+      "korpus": "field/xc_noisy",
+      "bagian": "pilih",
+      "durasi_s": 23.41,
+      "benar": [
+        "Aplonis panayensis"
+      ],
+      "terdeteksi": [
+        "Anthreptes malacensis",
+        "Lonchura punctulata"
+      ],
+      "nontarget": []
+    },
+    {
+      "berkas": "field/audio/xc_noisy/Centropus_bengalensis/xc-1075145.mp3",
+      "korpus": "field/xc_noisy",
+      "bagian": "lapor",
+      "durasi_s": 8.77,
+      "benar": [
+        "Centropus bengalensis"
+      ],
+      "terdeteksi": [
+        "Centropus bengalensis"
+      ],
+      "nontarget": []
+    },
+    {
+      "berkas": "field/audio/xc_noisy/Centropus_bengalensis/xc-216326.mp3",
+      "korpus": "field/xc_noisy",
+      "bagian": "pilih",
+      "durasi_s": 40.75,
+      "benar": [
+        "Centropus bengalensis"
+      ],
+      "terdeteksi": [
+        "Centropus bengalensis"
+      ],
+      "nontarget": []
+    },
+    {
+      "berkas": "field/audio/xc_noisy/Centropus_bengalensis/xc-350934.mp3",
+      "korpus": "field/xc_noisy",
+      "bagian": "lapor",
+      "durasi_s": 29.23,
+      "benar": [
+        "Centropus bengalensis"
+      ],
+      "terdeteksi": [
+        "Centropus bengalensis",
+        "Merops philippinus"
+      ],
+      "nontarget": []
+    },
+    {
+      "berkas": "field/audio/xc_noisy/Centropus_bengalensis/xc-413909.mp3",
+      "korpus": "field/xc_noisy",
+      "bagian": "lapor",
+      "durasi_s": 23.77,
+      "benar": [
+        "Centropus bengalensis"
+      ],
+      "terdeteksi": [
+        "Centropus bengalensis"
+      ],
+      "nontarget": []
+    },
+    {
+      "berkas": "field/audio/xc_noisy/Chalcophaps_indica/xc-1074782.mp3",
+      "korpus": "field/xc_noisy",
+      "bagian": "pilih",
+      "durasi_s": 20.56,
+      "benar": [
+        "Chalcophaps indica"
+      ],
+      "terdeteksi": [
+        "Chalcophaps indica"
+      ],
+      "nontarget": []
+    },
+    {
+      "berkas": "field/audio/xc_noisy/Chalcophaps_indica/xc-1093675.mp3",
+      "korpus": "field/xc_noisy",
+      "bagian": "lapor",
+      "durasi_s": 7.38,
+      "benar": [
+        "Chalcophaps indica"
+      ],
+      "terdeteksi": [
+        "Chalcophaps indica"
+      ],
+      "nontarget": []
+    },
+    {
+      "berkas": "field/audio/xc_noisy/Chalcophaps_indica/xc-1096437.mp3",
+      "korpus": "field/xc_noisy",
+      "bagian": "pilih",
+      "durasi_s": 7.53,
+      "benar": [
+        "Chalcophaps indica"
+      ],
+      "terdeteksi": [
+        "Chalcophaps indica"
+      ],
+      "nontarget": [
+        "Centropus chlororhynchos"
+      ]
+    },
+    {
+      "berkas": "field/audio/xc_noisy/Chalcophaps_indica/xc-1164750.mp3",
+      "korpus": "field/xc_noisy",
+      "bagian": "lapor",
+      "durasi_s": 27.22,
+      "benar": [
+        "Chalcophaps indica"
+      ],
+      "terdeteksi": [
+        "Chalcophaps indica"
+      ],
+      "nontarget": []
+    },
+    {
+      "berkas": "field/audio/xc_noisy/Cinnyris_jugularis/xc-746313.mp3",
+      "korpus": "field/xc_noisy",
+      "bagian": "lapor",
+      "durasi_s": 35.72,
+      "benar": [
+        "Cinnyris jugularis"
+      ],
+      "terdeteksi": [
+        "Cinnyris jugularis"
+      ],
+      "nontarget": [
+        "Phylloscopus borealis"
+      ]
+    },
+    {
+      "berkas": "field/audio/xc_noisy/Cinnyris_jugularis/xc-746378.mp3",
+      "korpus": "field/xc_noisy",
+      "bagian": "lapor",
+      "durasi_s": 94.11,
+      "benar": [
+        "Cinnyris jugularis"
+      ],
+      "terdeteksi": [
+        "Cinnyris jugularis"
+      ],
+      "nontarget": [
+        "Oriolus chinensis",
+        "Oriolus kundoo",
+        "Oriolus oriolus"
+      ]
+    },
+    {
+      "berkas": "field/audio/xc_noisy/Cinnyris_jugularis/xc-746414.mp3",
+      "korpus": "field/xc_noisy",
+      "bagian": "lapor",
+      "durasi_s": 60.8,
+      "benar": [
+        "Cinnyris jugularis"
+      ],
+      "terdeteksi": [
+        "Cinnyris jugularis"
+      ],
+      "nontarget": []
+    },
+    {
+      "berkas": "field/audio/xc_noisy/Cinnyris_jugularis/xc-746415.mp3",
+      "korpus": "field/xc_noisy",
+      "bagian": "lapor",
+      "durasi_s": 62.82,
+      "benar": [
+        "Cinnyris jugularis"
+      ],
+      "terdeteksi": [
+        "Cinnyris jugularis"
+      ],
+      "nontarget": [
+        "Ficedula hyperythra"
+      ]
+    },
+    {
+      "berkas": "field/audio/xc_noisy/Cinnyris_jugularis/xc-746424.mp3",
+      "korpus": "field/xc_noisy",
+      "bagian": "lapor",
+      "durasi_s": 75.96,
+      "benar": [
+        "Cinnyris jugularis"
+      ],
+      "terdeteksi": [
+        "Cinnyris jugularis"
+      ],
+      "nontarget": [
+        "Phylloscopus borealis",
+        "Phylloscopus tenellipes",
+        "Prosthemadera novaeseelandiae"
+      ]
+    },
+    {
+      "berkas": "field/audio/xc_noisy/Cinnyris_jugularis/xc-823476.mp3",
+      "korpus": "field/xc_noisy",
+      "bagian": "lapor",
+      "durasi_s": 21.96,
+      "benar": [
+        "Cinnyris jugularis"
+      ],
+      "terdeteksi": [
+        "Cinnyris jugularis"
+      ],
+      "nontarget": []
+    },
+    {
+      "berkas": "field/audio/xc_noisy/Cisticola_juncidis/xc-1075125.mp3",
+      "korpus": "field/xc_noisy",
+      "bagian": "lapor",
+      "durasi_s": 7.3,
+      "benar": [
+        "Cisticola juncidis"
+      ],
+      "terdeteksi": [
+        "Cisticola juncidis"
+      ],
+      "nontarget": [
+        "Cisticola exilis"
+      ]
+    },
+    {
+      "berkas": "field/audio/xc_noisy/Cisticola_juncidis/xc-214421.mp3",
+      "korpus": "field/xc_noisy",
+      "bagian": "lapor",
+      "durasi_s": 16.44,
+      "benar": [
+        "Cisticola juncidis"
+      ],
+      "terdeteksi": [
+        "Cisticola juncidis"
+      ],
+      "nontarget": [
+        "Cisticola cherina"
+      ]
+    },
+    {
+      "berkas": "field/audio/xc_noisy/Cisticola_juncidis/xc-365732.mp3",
+      "korpus": "field/xc_noisy",
+      "bagian": "lapor",
+      "durasi_s": 24.22,
+      "benar": [
+        "Cisticola juncidis"
+      ],
+      "terdeteksi": [
+        "Cisticola juncidis"
+      ],
+      "nontarget": []
+    },
+    {
+      "berkas": "field/audio/xc_noisy/Cisticola_juncidis/xc-582500.mp3",
+      "korpus": "field/xc_noisy",
+      "bagian": "pilih",
+      "durasi_s": 12.14,
+      "benar": [
+        "Cisticola juncidis"
+      ],
+      "terdeteksi": [
+        "Cisticola juncidis"
+      ],
+      "nontarget": []
+    },
+    {
+      "berkas": "field/audio/xc_noisy/Corvus_macrorhynchos/xc-1163217.mp3",
+      "korpus": "field/xc_noisy",
+      "bagian": "lapor",
+      "durasi_s": 5.32,
+      "benar": [
+        "Corvus macrorhynchos"
+      ],
+      "terdeteksi": [],
+      "nontarget": []
+    },
+    {
+      "berkas": "field/audio/xc_noisy/Corvus_macrorhynchos/xc-204651.mp3",
+      "korpus": "field/xc_noisy",
+      "bagian": "lapor",
+      "durasi_s": 7.09,
+      "benar": [
+        "Corvus macrorhynchos"
+      ],
+      "terdeteksi": [
+        "Corvus macrorhynchos"
+      ],
+      "nontarget": []
+    },
+    {
+      "berkas": "field/audio/xc_noisy/Corvus_macrorhynchos/xc-31360.mp3",
+      "korpus": "field/xc_noisy",
+      "bagian": "lapor",
+      "durasi_s": 4.4,
+      "benar": [
+        "Corvus macrorhynchos"
+      ],
+      "terdeteksi": [
+        "Corvus macrorhynchos"
+      ],
+      "nontarget": []
+    },
+    {
+      "berkas": "field/audio/xc_noisy/Dicrurus_macrocercus/xc-152984.mp3",
+      "korpus": "field/xc_noisy",
+      "bagian": "lapor",
+      "durasi_s": 4.2,
+      "benar": [
+        "Dicrurus macrocercus"
+      ],
+      "terdeteksi": [
+        "Dicrurus macrocercus"
+      ],
+      "nontarget": []
+    },
+    {
+      "berkas": "field/audio/xc_noisy/Dicrurus_macrocercus/xc-842308.mp3",
+      "korpus": "field/xc_noisy",
+      "bagian": "pilih",
+      "durasi_s": 31.76,
+      "benar": [
+        "Dicrurus macrocercus"
+      ],
+      "terdeteksi": [
+        "Aplonis panayensis",
+        "Dicrurus macrocercus",
+        "Hirundo tahitica"
+      ],
+      "nontarget": [
+        "Cecropis daurica",
+        "Myadestes occidentalis"
+      ]
+    },
+    {
+      "berkas": "field/audio/xc_noisy/Dicrurus_macrocercus/xc-880639.mp3",
+      "korpus": "field/xc_noisy",
+      "bagian": "pilih",
+      "durasi_s": 3.84,
+      "benar": [
+        "Dicrurus macrocercus"
+      ],
+      "terdeteksi": [
+        "Dicrurus macrocercus"
+      ],
+      "nontarget": []
+    },
+    {
+      "berkas": "field/audio/xc_noisy/Dicrurus_macrocercus/xc-891671.mp3",
+      "korpus": "field/xc_noisy",
+      "bagian": "pilih",
+      "durasi_s": 5.52,
+      "benar": [
+        "Dicrurus macrocercus"
+      ],
+      "terdeteksi": [],
+      "nontarget": []
+    },
+    {
+      "berkas": "field/audio/xc_noisy/Dicrurus_macrocercus/xc-891672.mp3",
+      "korpus": "field/xc_noisy",
+      "bagian": "pilih",
+      "durasi_s": 22.66,
+      "benar": [
+        "Dicrurus macrocercus"
+      ],
+      "terdeteksi": [
+        "Dicrurus macrocercus"
+      ],
+      "nontarget": []
+    },
+    {
+      "berkas": "field/audio/xc_noisy/Dicrurus_macrocercus/xc-992809.mp3",
+      "korpus": "field/xc_noisy",
+      "bagian": "lapor",
+      "durasi_s": 59.87,
+      "benar": [
+        "Dicrurus macrocercus"
+      ],
+      "terdeteksi": [
+        "Dicrurus macrocercus",
+        "Haliastur indus"
+      ],
+      "nontarget": [
+        "Iole propinqua"
+      ]
+    },
+    {
+      "berkas": "field/audio/xc_noisy/Gallus_gallus/xc-1147937.mp3",
+      "korpus": "field/xc_noisy",
+      "bagian": "lapor",
+      "durasi_s": 34.89,
+      "benar": [
+        "Gallus gallus"
+      ],
+      "terdeteksi": [
+        "Centropus bengalensis"
+      ],
+      "nontarget": []
+    },
+    {
+      "berkas": "field/audio/xc_noisy/Gallus_gallus/xc-143272.mp3",
+      "korpus": "field/xc_noisy",
+      "bagian": "pilih",
+      "durasi_s": 4.85,
+      "benar": [
+        "Gallus gallus"
+      ],
+      "terdeteksi": [
+        "Gallus gallus"
+      ],
+      "nontarget": []
+    },
+    {
+      "berkas": "field/audio/xc_noisy/Gallus_gallus/xc-333605.mp3",
+      "korpus": "field/xc_noisy",
+      "bagian": "lapor",
+      "durasi_s": 77.45,
+      "benar": [
+        "Gallus gallus"
+      ],
+      "terdeteksi": [
+        "Gallus gallus"
+      ],
+      "nontarget": []
+    },
+    {
+      "berkas": "field/audio/xc_noisy/Gallus_gallus/xc-336103.mp3",
+      "korpus": "field/xc_noisy",
+      "bagian": "pilih",
+      "durasi_s": 65.14,
+      "benar": [
+        "Gallus gallus"
+      ],
+      "terdeteksi": [
+        "Gallus gallus"
+      ],
+      "nontarget": [
+        "Asio otus",
+        "Brachypteryx leucophris",
+        "Leptotila plumbeiceps",
+        "Rupicola peruvianus"
+      ]
+    },
+    {
+      "berkas": "field/audio/xc_noisy/Gallus_gallus/xc-971647.mp3",
+      "korpus": "field/xc_noisy",
+      "bagian": "lapor",
+      "durasi_s": 3.46,
+      "benar": [
+        "Gallus gallus"
+      ],
+      "terdeteksi": [],
+      "nontarget": []
+    },
+    {
+      "berkas": "field/audio/xc_noisy/Geopelia_striata/xc-1003700.mp3",
+      "korpus": "field/xc_noisy",
+      "bagian": "pilih",
+      "durasi_s": 17.83,
+      "benar": [
+        "Geopelia striata"
+      ],
+      "terdeteksi": [
+        "Geopelia striata"
+      ],
+      "nontarget": []
+    },
+    {
+      "berkas": "field/audio/xc_noisy/Geopelia_striata/xc-1010542.mp3",
+      "korpus": "field/xc_noisy",
+      "bagian": "pilih",
+      "durasi_s": 17.5,
+      "benar": [
+        "Geopelia striata"
+      ],
+      "terdeteksi": [
+        "Geopelia striata",
+        "Pycnonotus aurigaster"
+      ],
+      "nontarget": []
+    },
+    {
+      "berkas": "field/audio/xc_noisy/Geopelia_striata/xc-1051084.mp3",
+      "korpus": "field/xc_noisy",
+      "bagian": "pilih",
+      "durasi_s": 32.68,
+      "benar": [
+        "Geopelia striata"
+      ],
+      "terdeteksi": [
+        "Geopelia striata"
+      ],
+      "nontarget": []
+    },
+    {
+      "berkas": "field/audio/xc_noisy/Geopelia_striata/xc-1087832.mp3",
+      "korpus": "field/xc_noisy",
+      "bagian": "lapor",
+      "durasi_s": 11.86,
+      "benar": [
+        "Geopelia striata"
+      ],
+      "terdeteksi": [
+        "Geopelia striata"
+      ],
+      "nontarget": []
+    },
+    {
+      "berkas": "field/audio/xc_noisy/Geopelia_striata/xc-1169104.mp3",
+      "korpus": "field/xc_noisy",
+      "bagian": "pilih",
+      "durasi_s": 33.71,
+      "benar": [
+        "Geopelia striata"
+      ],
+      "terdeteksi": [
+        "Arachnothera longirostra",
+        "Geopelia striata"
+      ],
+      "nontarget": []
+    },
+    {
+      "berkas": "field/audio/xc_noisy/Haliastur_indus/xc-1003335.mp3",
+      "korpus": "field/xc_noisy",
+      "bagian": "lapor",
+      "durasi_s": 4.54,
+      "benar": [
+        "Haliastur indus"
+      ],
+      "terdeteksi": [
+        "Haliastur indus"
+      ],
+      "nontarget": []
+    },
+    {
+      "berkas": "field/audio/xc_noisy/Haliastur_indus/xc-1064543.mp3",
+      "korpus": "field/xc_noisy",
+      "bagian": "pilih",
+      "durasi_s": 6.63,
+      "benar": [
+        "Haliastur indus"
+      ],
+      "terdeteksi": [
+        "Haliastur indus"
+      ],
+      "nontarget": []
+    },
+    {
+      "berkas": "field/audio/xc_noisy/Haliastur_indus/xc-284777.mp3",
+      "korpus": "field/xc_noisy",
+      "bagian": "pilih",
+      "durasi_s": 30.3,
+      "benar": [
+        "Haliastur indus"
+      ],
+      "terdeteksi": [
+        "Haliastur indus"
+      ],
+      "nontarget": []
+    },
+    {
+      "berkas": "field/audio/xc_noisy/Haliastur_indus/xc-702713.mp3",
+      "korpus": "field/xc_noisy",
+      "bagian": "lapor",
+      "durasi_s": 4.78,
+      "benar": [
+        "Haliastur indus"
+      ],
+      "terdeteksi": [
+        "Haliastur indus"
+      ],
+      "nontarget": []
+    },
+    {
+      "berkas": "field/audio/xc_noisy/Haliastur_indus/xc-825161.mp3",
+      "korpus": "field/xc_noisy",
+      "bagian": "lapor",
+      "durasi_s": 3.89,
+      "benar": [
+        "Haliastur indus"
+      ],
+      "terdeteksi": [],
+      "nontarget": [
+        "Buteo lineatus"
+      ]
+    },
+    {
+      "berkas": "field/audio/xc_noisy/Hirundo_tahitica/xc-1076575.mp3",
+      "korpus": "field/xc_noisy",
+      "bagian": "lapor",
+      "durasi_s": 14.06,
+      "benar": [
+        "Hirundo tahitica"
+      ],
+      "terdeteksi": [
+        "Hirundo tahitica"
+      ],
+      "nontarget": []
+    },
+    {
+      "berkas": "field/audio/xc_noisy/Hirundo_tahitica/xc-122019.mp3",
+      "korpus": "field/xc_noisy",
+      "bagian": "lapor",
+      "durasi_s": 18.38,
+      "benar": [
+        "Hirundo tahitica"
+      ],
+      "terdeteksi": [
+        "Haliastur indus",
+        "Hirundo tahitica"
+      ],
+      "nontarget": []
+    },
+    {
+      "berkas": "field/audio/xc_noisy/Hirundo_tahitica/xc-406717.mp3",
+      "korpus": "field/xc_noisy",
+      "bagian": "pilih",
+      "durasi_s": 6.58,
+      "benar": [
+        "Hirundo tahitica"
+      ],
+      "terdeteksi": [
+        "Hirundo tahitica"
+      ],
+      "nontarget": []
+    },
+    {
+      "berkas": "field/audio/xc_noisy/Hirundo_tahitica/xc-625821.mp3",
+      "korpus": "field/xc_noisy",
+      "bagian": "pilih",
+      "durasi_s": 36.6,
+      "benar": [
+        "Hirundo tahitica"
+      ],
+      "terdeteksi": [
+        "Hirundo tahitica"
+      ],
+      "nontarget": [
+        "Progne subis"
+      ]
+    },
+    {
+      "berkas": "field/audio/xc_noisy/Hirundo_tahitica/xc-721651.mp3",
+      "korpus": "field/xc_noisy",
+      "bagian": "pilih",
+      "durasi_s": 19.11,
+      "benar": [
+        "Hirundo tahitica"
+      ],
+      "terdeteksi": [
+        "Todiramphus chloris"
+      ],
+      "nontarget": []
+    },
+    {
+      "berkas": "field/audio/xc_noisy/Hirundo_tahitica/xc-730896.mp3",
+      "korpus": "field/xc_noisy",
+      "bagian": "pilih",
+      "durasi_s": 17.32,
+      "benar": [
+        "Hirundo tahitica"
+      ],
+      "terdeteksi": [],
+      "nontarget": []
+    },
+    {
+      "berkas": "field/audio/xc_noisy/Lonchura_punctulata/xc-236335.mp3",
+      "korpus": "field/xc_noisy",
+      "bagian": "lapor",
+      "durasi_s": 5.95,
+      "benar": [
+        "Lonchura punctulata"
+      ],
+      "terdeteksi": [
+        "Lonchura punctulata"
+      ],
+      "nontarget": []
+    },
+    {
+      "berkas": "field/audio/xc_noisy/Lonchura_punctulata/xc-237114.mp3",
+      "korpus": "field/xc_noisy",
+      "bagian": "lapor",
+      "durasi_s": 28.9,
+      "benar": [
+        "Lonchura punctulata"
+      ],
+      "terdeteksi": [
+        "Lonchura punctulata"
+      ],
+      "nontarget": [
+        "Sayornis nigricans"
+      ]
+    },
+    {
+      "berkas": "field/audio/xc_noisy/Lonchura_punctulata/xc-377638.mp3",
+      "korpus": "field/xc_noisy",
+      "bagian": "pilih",
+      "durasi_s": 14.79,
+      "benar": [
+        "Lonchura punctulata"
+      ],
+      "terdeteksi": [
+        "Lonchura punctulata"
+      ],
+      "nontarget": []
+    },
+    {
+      "berkas": "field/audio/xc_noisy/Lonchura_punctulata/xc-377639.mp3",
+      "korpus": "field/xc_noisy",
+      "bagian": "pilih",
+      "durasi_s": 34.34,
+      "benar": [
+        "Lonchura punctulata"
+      ],
+      "terdeteksi": [
+        "Lonchura punctulata"
+      ],
+      "nontarget": [
+        "Lonchura maja"
+      ]
+    },
+    {
+      "berkas": "field/audio/xc_noisy/Merops_philippinus/xc-1157768.mp3",
+      "korpus": "field/xc_noisy",
+      "bagian": "pilih",
+      "durasi_s": 9.27,
+      "benar": [
+        "Merops philippinus"
+      ],
+      "terdeteksi": [
+        "Merops philippinus"
+      ],
+      "nontarget": []
+    },
+    {
+      "berkas": "field/audio/xc_noisy/Merops_philippinus/xc-152202.mp3",
+      "korpus": "field/xc_noisy",
+      "bagian": "lapor",
+      "durasi_s": 36.17,
+      "benar": [
+        "Merops philippinus"
+      ],
+      "terdeteksi": [
+        "Merops philippinus"
+      ],
+      "nontarget": [
+        "Merops leschenaulti",
+        "Scytalopus novacapitalis"
+      ]
+    },
+    {
+      "berkas": "field/audio/xc_noisy/Merops_philippinus/xc-214417.mp3",
+      "korpus": "field/xc_noisy",
+      "bagian": "lapor",
+      "durasi_s": 15.31,
+      "benar": [
+        "Merops philippinus"
+      ],
+      "terdeteksi": [
+        "Merops philippinus"
+      ],
+      "nontarget": [
+        "Ptiliogonys cinereus"
+      ]
+    },
+    {
+      "berkas": "field/audio/xc_noisy/Orthotomus_sutorius/xc-143961.mp3",
+      "korpus": "field/xc_noisy",
+      "bagian": "pilih",
+      "durasi_s": 5.43,
+      "benar": [
+        "Orthotomus sutorius"
+      ],
+      "terdeteksi": [
+        "Orthotomus sutorius"
+      ],
+      "nontarget": []
+    },
+    {
+      "berkas": "field/audio/xc_noisy/Orthotomus_sutorius/xc-143962.mp3",
+      "korpus": "field/xc_noisy",
+      "bagian": "pilih",
+      "durasi_s": 14.79,
+      "benar": [
+        "Orthotomus sutorius"
+      ],
+      "terdeteksi": [
+        "Orthotomus sutorius"
+      ],
+      "nontarget": []
+    },
+    {
+      "berkas": "field/audio/xc_noisy/Orthotomus_sutorius/xc-245904.mp3",
+      "korpus": "field/xc_noisy",
+      "bagian": "lapor",
+      "durasi_s": 3.39,
+      "benar": [
+        "Orthotomus sutorius"
+      ],
+      "terdeteksi": [
+        "Orthotomus sutorius"
+      ],
+      "nontarget": []
+    },
+    {
+      "berkas": "field/audio/xc_noisy/Orthotomus_sutorius/xc-245905.mp3",
+      "korpus": "field/xc_noisy",
+      "bagian": "lapor",
+      "durasi_s": 1.66,
+      "benar": [
+        "Orthotomus sutorius"
+      ],
+      "terdeteksi": [],
+      "nontarget": []
+    },
+    {
+      "berkas": "field/audio/xc_noisy/Orthotomus_sutorius/xc-681102.mp3",
+      "korpus": "field/xc_noisy",
+      "bagian": "lapor",
+      "durasi_s": 5.16,
+      "benar": [
+        "Orthotomus sutorius"
+      ],
+      "terdeteksi": [
+        "Orthotomus sutorius"
+      ],
+      "nontarget": []
+    },
+    {
+      "berkas": "field/audio/xc_noisy/Orthotomus_sutorius/xc-732592.mp3",
+      "korpus": "field/xc_noisy",
+      "bagian": "pilih",
+      "durasi_s": 10.09,
+      "benar": [
+        "Orthotomus sutorius"
+      ],
+      "terdeteksi": [
+        "Orthotomus sutorius"
+      ],
+      "nontarget": []
+    },
+    {
+      "berkas": "field/audio/xc_noisy/Passer_montanus/xc-1037459.mp3",
+      "korpus": "field/xc_noisy",
+      "bagian": "lapor",
+      "durasi_s": 25.37,
+      "benar": [
+        "Passer montanus"
+      ],
+      "terdeteksi": [
+        "Passer montanus"
+      ],
+      "nontarget": []
+    },
+    {
+      "berkas": "field/audio/xc_noisy/Passer_montanus/xc-445135.mp3",
+      "korpus": "field/xc_noisy",
+      "bagian": "pilih",
+      "durasi_s": 28.98,
+      "benar": [
+        "Passer montanus"
+      ],
+      "terdeteksi": [
+        "Hirundo tahitica",
+        "Passer montanus"
+      ],
+      "nontarget": []
+    },
+    {
+      "berkas": "field/audio/xc_noisy/Passer_montanus/xc-474005.mp3",
+      "korpus": "field/xc_noisy",
+      "bagian": "lapor",
+      "durasi_s": 37.66,
+      "benar": [
+        "Passer montanus"
+      ],
+      "terdeteksi": [
+        "Passer montanus"
+      ],
+      "nontarget": []
+    },
+    {
+      "berkas": "field/audio/xc_noisy/Passer_montanus/xc-474007.mp3",
+      "korpus": "field/xc_noisy",
+      "bagian": "lapor",
+      "durasi_s": 87.64,
+      "benar": [
+        "Passer montanus"
+      ],
+      "terdeteksi": [
+        "Hirundo tahitica",
+        "Passer montanus"
+      ],
+      "nontarget": [
+        "Passer domesticus"
+      ]
+    },
+    {
+      "berkas": "field/audio/xc_noisy/Passer_montanus/xc-571701.mp3",
+      "korpus": "field/xc_noisy",
+      "bagian": "pilih",
+      "durasi_s": 38.32,
+      "benar": [
+        "Passer montanus"
+      ],
+      "terdeteksi": [
+        "Passer montanus"
+      ],
+      "nontarget": []
+    },
+    {
+      "berkas": "field/audio/xc_noisy/Passer_montanus/xc-823479.mp3",
+      "korpus": "field/xc_noisy",
+      "bagian": "lapor",
+      "durasi_s": 85.89,
+      "benar": [
+        "Passer montanus"
+      ],
+      "terdeteksi": [
+        "Aplonis panayensis",
+        "Hirundo tahitica",
+        "Passer montanus"
+      ],
+      "nontarget": [
+        "Passer hispaniolensis",
+        "Passer italiae"
+      ]
+    },
+    {
+      "berkas": "field/audio/xc_noisy/Prinia_familiaris/xc-1076252.mp3",
+      "korpus": "field/xc_noisy",
+      "bagian": "lapor",
+      "durasi_s": 23.46,
+      "benar": [
+        "Prinia familiaris"
+      ],
+      "terdeteksi": [
+        "Prinia familiaris"
+      ],
+      "nontarget": []
+    },
+    {
+      "berkas": "field/audio/xc_noisy/Prinia_familiaris/xc-477300.mp3",
+      "korpus": "field/xc_noisy",
+      "bagian": "pilih",
+      "durasi_s": 30.0,
+      "benar": [
+        "Prinia familiaris"
+      ],
+      "terdeteksi": [
+        "Prinia familiaris"
+      ],
+      "nontarget": [
+        "Bombycilla garrulus"
+      ]
+    },
+    {
+      "berkas": "field/audio/xc_noisy/Prinia_familiaris/xc-477306.mp3",
+      "korpus": "field/xc_noisy",
+      "bagian": "pilih",
+      "durasi_s": 30.0,
+      "benar": [
+        "Prinia familiaris"
+      ],
+      "terdeteksi": [
+        "Prinia familiaris"
+      ],
+      "nontarget": []
+    },
+    {
+      "berkas": "field/audio/xc_noisy/Prinia_familiaris/xc-537743.mp3",
+      "korpus": "field/xc_noisy",
+      "bagian": "lapor",
+      "durasi_s": 2.68,
+      "benar": [
+        "Prinia familiaris"
+      ],
+      "terdeteksi": [
+        "Prinia familiaris"
+      ],
+      "nontarget": []
+    },
+    {
+      "berkas": "field/audio/xc_noisy/Pycnonotus_aurigaster/xc-1003835.mp3",
+      "korpus": "field/xc_noisy",
+      "bagian": "pilih",
+      "durasi_s": 6.93,
+      "benar": [
+        "Pycnonotus aurigaster"
+      ],
+      "terdeteksi": [
+        "Pycnonotus aurigaster"
+      ],
+      "nontarget": []
+    },
+    {
+      "berkas": "field/audio/xc_noisy/Pycnonotus_aurigaster/xc-482292.mp3",
+      "korpus": "field/xc_noisy",
+      "bagian": "lapor",
+      "durasi_s": 13.4,
+      "benar": [
+        "Pycnonotus aurigaster"
+      ],
+      "terdeteksi": [
+        "Pycnonotus aurigaster"
+      ],
+      "nontarget": []
+    },
+    {
+      "berkas": "field/audio/xc_noisy/Pycnonotus_aurigaster/xc-578381.mp3",
+      "korpus": "field/xc_noisy",
+      "bagian": "lapor",
+      "durasi_s": 46.48,
+      "benar": [
+        "Pycnonotus aurigaster"
+      ],
+      "terdeteksi": [
+        "Pycnonotus aurigaster"
+      ],
+      "nontarget": []
+    },
+    {
+      "berkas": "field/audio/xc_noisy/Pycnonotus_goiavier/xc-1059452.mp3",
+      "korpus": "field/xc_noisy",
+      "bagian": "pilih",
+      "durasi_s": 3.72,
+      "benar": [
+        "Pycnonotus goiavier"
+      ],
+      "terdeteksi": [
+        "Pycnonotus goiavier"
+      ],
+      "nontarget": []
+    },
+    {
+      "berkas": "field/audio/xc_noisy/Pycnonotus_goiavier/xc-477291.mp3",
+      "korpus": "field/xc_noisy",
+      "bagian": "pilih",
+      "durasi_s": 30.0,
+      "benar": [
+        "Pycnonotus goiavier"
+      ],
+      "terdeteksi": [
+        "Prinia familiaris",
+        "Pycnonotus goiavier"
+      ],
+      "nontarget": []
+    },
+    {
+      "berkas": "field/audio/xc_noisy/Pycnonotus_goiavier/xc-477311.mp3",
+      "korpus": "field/xc_noisy",
+      "bagian": "pilih",
+      "durasi_s": 30.0,
+      "benar": [
+        "Pycnonotus goiavier"
+      ],
+      "terdeteksi": [
+        "Prinia familiaris",
+        "Pycnonotus goiavier"
+      ],
+      "nontarget": []
+    },
+    {
+      "berkas": "field/audio/xc_noisy/Pycnonotus_goiavier/xc-581704.mp3",
+      "korpus": "field/xc_noisy",
+      "bagian": "lapor",
+      "durasi_s": 147.64,
+      "benar": [
+        "Pycnonotus goiavier"
+      ],
+      "terdeteksi": [
+        "Pycnonotus goiavier",
+        "Todiramphus chloris"
+      ],
+      "nontarget": [
+        "Lichmera indistincta",
+        "Lichmera limbata"
+      ]
+    },
+    {
+      "berkas": "field/audio/xc_noisy/Pycnonotus_goiavier/xc-610177.mp3",
+      "korpus": "field/xc_noisy",
+      "bagian": "pilih",
+      "durasi_s": 14.37,
+      "benar": [
+        "Pycnonotus goiavier"
+      ],
+      "terdeteksi": [
+        "Pycnonotus goiavier"
+      ],
+      "nontarget": []
+    },
+    {
+      "berkas": "field/audio/xc_noisy/Rhipidura_javanica/xc-31437.mp3",
+      "korpus": "field/xc_noisy",
+      "bagian": "lapor",
+      "durasi_s": 3.7,
+      "benar": [
+        "Rhipidura javanica"
+      ],
+      "terdeteksi": [],
+      "nontarget": []
+    },
+    {
+      "berkas": "field/audio/xc_noisy/Rhipidura_javanica/xc-630802.mp3",
+      "korpus": "field/xc_noisy",
+      "bagian": "pilih",
+      "durasi_s": 54.13,
+      "benar": [
+        "Rhipidura javanica"
+      ],
+      "terdeteksi": [
+        "Rhipidura javanica"
+      ],
+      "nontarget": []
+    },
+    {
+      "berkas": "field/audio/xc_noisy/Rhipidura_javanica/xc-942724.mp3",
+      "korpus": "field/xc_noisy",
+      "bagian": "lapor",
+      "durasi_s": 49.42,
+      "benar": [
+        "Rhipidura javanica"
+      ],
+      "terdeteksi": [
+        "Arachnothera longirostra"
+      ],
+      "nontarget": []
+    },
+    {
+      "berkas": "field/audio/xc_noisy/Rhipidura_javanica/xc-952349.mp3",
+      "korpus": "field/xc_noisy",
+      "bagian": "lapor",
+      "durasi_s": 27.82,
+      "benar": [
+        "Rhipidura javanica"
+      ],
+      "terdeteksi": [
+        "Hirundo tahitica"
+      ],
+      "nontarget": [
+        "Rhipidura nigritorquis"
+      ]
+    },
+    {
+      "berkas": "field/audio/xc_noisy/Rhipidura_javanica/xc-994137.mp3",
+      "korpus": "field/xc_noisy",
+      "bagian": "lapor",
+      "durasi_s": 2.9,
+      "benar": [
+        "Rhipidura javanica"
+      ],
+      "terdeteksi": [],
+      "nontarget": []
+    },
+    {
+      "berkas": "field/audio/xc_noisy/Spilopelia_chinensis/xc-1074344.mp3",
+      "korpus": "field/xc_noisy",
+      "bagian": "lapor",
+      "durasi_s": 9.15,
+      "benar": [
+        "Spilopelia chinensis"
+      ],
+      "terdeteksi": [
+        "Spilopelia chinensis"
+      ],
+      "nontarget": [
+        "Streptopelia chinensis"
+      ]
+    },
+    {
+      "berkas": "field/audio/xc_noisy/Spilopelia_chinensis/xc-116499.mp3",
+      "korpus": "field/xc_noisy",
+      "bagian": "lapor",
+      "durasi_s": 25.28,
+      "benar": [
+        "Spilopelia chinensis"
+      ],
+      "terdeteksi": [
+        "Spilopelia chinensis"
+      ],
+      "nontarget": [
+        "Streptopelia chinensis"
+      ]
+    },
+    {
+      "berkas": "field/audio/xc_noisy/Spilopelia_chinensis/xc-365451.mp3",
+      "korpus": "field/xc_noisy",
+      "bagian": "lapor",
+      "durasi_s": 20.87,
+      "benar": [
+        "Spilopelia chinensis"
+      ],
+      "terdeteksi": [
+        "Spilopelia chinensis"
+      ],
+      "nontarget": [
+        "Ninox boobook",
+        "Streptopelia chinensis"
+      ]
+    },
+    {
+      "berkas": "field/audio/xc_noisy/Spilopelia_chinensis/xc-477310.mp3",
+      "korpus": "field/xc_noisy",
+      "bagian": "pilih",
+      "durasi_s": 30.0,
+      "benar": [
+        "Spilopelia chinensis"
+      ],
+      "terdeteksi": [
+        "Spilopelia chinensis"
+      ],
+      "nontarget": [
+        "Streptopelia chinensis"
+      ]
+    },
+    {
+      "berkas": "field/audio/xc_noisy/Spilopelia_chinensis/xc-954997.mp3",
+      "korpus": "field/xc_noisy",
+      "bagian": "pilih",
+      "durasi_s": 23.26,
+      "benar": [
+        "Spilopelia chinensis"
+      ],
+      "terdeteksi": [
+        "Spilopelia chinensis"
+      ],
+      "nontarget": [
+        "Streptopelia chinensis"
+      ]
+    },
+    {
+      "berkas": "field/audio/xc_noisy/Todiramphus_chloris/xc-1003705.mp3",
+      "korpus": "field/xc_noisy",
+      "bagian": "pilih",
+      "durasi_s": 4.48,
+      "benar": [
+        "Todiramphus chloris"
+      ],
+      "terdeteksi": [
+        "Todiramphus chloris"
+      ],
+      "nontarget": [
+        "Jynx torquilla"
+      ]
+    },
+    {
+      "berkas": "field/audio/xc_noisy/Todiramphus_chloris/xc-1075900.mp3",
+      "korpus": "field/xc_noisy",
+      "bagian": "lapor",
+      "durasi_s": 10.15,
+      "benar": [
+        "Todiramphus chloris"
+      ],
+      "terdeteksi": [
+        "Todiramphus chloris"
+      ],
+      "nontarget": []
+    },
+    {
+      "berkas": "field/audio/xc_noisy/Todiramphus_chloris/xc-346529.mp3",
+      "korpus": "field/xc_noisy",
+      "bagian": "lapor",
+      "durasi_s": 12.59,
+      "benar": [
+        "Todiramphus chloris"
+      ],
+      "terdeteksi": [
+        "Todiramphus chloris"
+      ],
+      "nontarget": []
+    },
+    {
+      "berkas": "field/audio/other/Accipiter_badius/xc-1014154.mp3",
+      "korpus": "field/other",
+      "bagian": "pilih",
+      "durasi_s": 3.14,
+      "benar": [],
+      "terdeteksi": [
+        "Lonchura punctulata"
+      ],
+      "nontarget": []
+    },
+    {
+      "berkas": "field/audio/other/Accipiter_badius/xc-1014155.mp3",
+      "korpus": "field/other",
+      "bagian": "pilih",
+      "durasi_s": 6.0,
+      "benar": [],
+      "terdeteksi": [],
+      "nontarget": []
+    },
+    {
+      "berkas": "field/audio/other/Accipiter_badius/xc-1076938.mp3",
+      "korpus": "field/other",
+      "bagian": "pilih",
+      "durasi_s": 8.0,
+      "benar": [],
+      "terdeteksi": [
+        "Dicrurus macrocercus"
+      ],
+      "nontarget": [
+        "Accipiter badius"
+      ]
+    },
+    {
+      "berkas": "field/audio/other/Accipiter_badius/xc-1138161.mp3",
+      "korpus": "field/other",
+      "bagian": "pilih",
+      "durasi_s": 15.23,
+      "benar": [],
+      "terdeteksi": [],
+      "nontarget": []
+    },
+    {
+      "berkas": "field/audio/other/Accipiter_badius/xc-1149369.mp3",
+      "korpus": "field/other",
+      "bagian": "pilih",
+      "durasi_s": 55.21,
+      "benar": [],
+      "terdeteksi": [
+        "Lonchura punctulata",
+        "Todiramphus chloris"
+      ],
+      "nontarget": [
+        "Accipiter badius",
+        "Charadrius vociferus",
+        "Falco tinnunculus"
+      ]
+    },
+    {
+      "berkas": "field/audio/other/Accipiter_badius/xc-1149370.mp3",
+      "korpus": "field/other",
+      "bagian": "pilih",
+      "durasi_s": 43.65,
+      "benar": [],
+      "terdeteksi": [
+        "Anthreptes malacensis"
+      ],
+      "nontarget": [
+        "Accipiter badius",
+        "Cinnyris asiaticus"
+      ]
+    },
+    {
+      "berkas": "field/audio/other/Aethopyga_mystacalis/xc-204065.mp3",
+      "korpus": "field/other",
+      "bagian": "pilih",
+      "durasi_s": 16.85,
+      "benar": [],
+      "terdeteksi": [
+        "Cinnyris jugularis"
+      ],
+      "nontarget": []
+    },
+    {
+      "berkas": "field/audio/other/Aethopyga_mystacalis/xc-490232.mp3",
+      "korpus": "field/other",
+      "bagian": "pilih",
+      "durasi_s": 18.48,
+      "benar": [],
+      "terdeteksi": [
+        "Cinnyris jugularis"
+      ],
+      "nontarget": []
+    },
+    {
+      "berkas": "field/audio/other/Aethopyga_mystacalis/xc-544578.mp3",
+      "korpus": "field/other",
+      "bagian": "pilih",
+      "durasi_s": 18.28,
+      "benar": [],
+      "terdeteksi": [
+        "Anthreptes malacensis",
+        "Cinnyris jugularis"
+      ],
+      "nontarget": []
+    },
+    {
+      "berkas": "field/audio/other/Aethopyga_mystacalis/xc-578370.mp3",
+      "korpus": "field/other",
+      "bagian": "pilih",
+      "durasi_s": 12.22,
+      "benar": [],
+      "terdeteksi": [],
+      "nontarget": []
+    },
+    {
+      "berkas": "field/audio/other/Aethopyga_mystacalis/xc-661288.mp3",
+      "korpus": "field/other",
+      "bagian": "pilih",
+      "durasi_s": 25.29,
+      "benar": [],
+      "terdeteksi": [],
+      "nontarget": []
+    },
+    {
+      "berkas": "field/audio/other/Aethopyga_siparaja/xc-152038.mp3",
+      "korpus": "field/other",
+      "bagian": "lapor",
+      "durasi_s": 24.41,
+      "benar": [],
+      "terdeteksi": [
+        "Cinnyris jugularis"
+      ],
+      "nontarget": []
+    },
+    {
+      "berkas": "field/audio/other/Aethopyga_siparaja/xc-19655.mp3",
+      "korpus": "field/other",
+      "bagian": "lapor",
+      "durasi_s": 19.3,
+      "benar": [],
+      "terdeteksi": [
+        "Cinnyris jugularis"
+      ],
+      "nontarget": [
+        "Aethopyga siparaja"
+      ]
+    },
+    {
+      "berkas": "field/audio/other/Aethopyga_siparaja/xc-203106.mp3",
+      "korpus": "field/other",
+      "bagian": "lapor",
+      "durasi_s": 161.66,
+      "benar": [],
+      "terdeteksi": [
+        "Anthreptes malacensis",
+        "Aplonis panayensis"
+      ],
+      "nontarget": [
+        "Aethopyga siparaja",
+        "Chalcoparia singalensis"
+      ]
+    },
+    {
+      "berkas": "field/audio/other/Aethopyga_siparaja/xc-243357.mp3",
+      "korpus": "field/other",
+      "bagian": "lapor",
+      "durasi_s": 18.64,
+      "benar": [],
+      "terdeteksi": [],
+      "nontarget": [
+        "Aethopyga siparaja",
+        "Cyornis olivaceus"
+      ]
+    },
+    {
+      "berkas": "field/audio/other/Aethopyga_siparaja/xc-243360.mp3",
+      "korpus": "field/other",
+      "bagian": "lapor",
+      "durasi_s": 28.0,
+      "benar": [],
+      "terdeteksi": [],
+      "nontarget": [
+        "Aethopyga siparaja",
+        "Cyornis olivaceus",
+        "Dicaeum trigonostigma"
+      ]
+    },
+    {
+      "berkas": "field/audio/other/Aethopyga_siparaja/xc-431799.mp3",
+      "korpus": "field/other",
+      "bagian": "lapor",
+      "durasi_s": 137.83,
+      "benar": [],
+      "terdeteksi": [
+        "Anthreptes malacensis",
+        "Cinnyris jugularis"
+      ],
+      "nontarget": [
+        "Aethopyga siparaja",
+        "Oriolus xanthonotus",
+        "Orthotomus ruficeps"
+      ]
+    },
+    {
+      "berkas": "field/audio/other/Alcedo_meninting/xc-1175112.mp3",
+      "korpus": "field/other",
+      "bagian": "pilih",
+      "durasi_s": 6.39,
+      "benar": [],
+      "terdeteksi": [],
+      "nontarget": []
+    },
+    {
+      "berkas": "field/audio/other/Alcedo_meninting/xc-1175117.mp3",
+      "korpus": "field/other",
+      "bagian": "pilih",
+      "durasi_s": 2.73,
+      "benar": [],
+      "terdeteksi": [],
+      "nontarget": [
+        "Alcedo meninting"
+      ]
+    },
+    {
+      "berkas": "field/audio/other/Alcedo_meninting/xc-216426.mp3",
+      "korpus": "field/other",
+      "bagian": "pilih",
+      "durasi_s": 3.07,
+      "benar": [],
+      "terdeteksi": [],
+      "nontarget": []
+    },
+    {
+      "berkas": "field/audio/other/Alcedo_meninting/xc-216473.mp3",
+      "korpus": "field/other",
+      "bagian": "pilih",
+      "durasi_s": 9.1,
+      "benar": [],
+      "terdeteksi": [],
+      "nontarget": []
+    },
+    {
+      "berkas": "field/audio/other/Alcedo_meninting/xc-676786.mp3",
+      "korpus": "field/other",
+      "bagian": "pilih",
+      "durasi_s": 25.53,
+      "benar": [],
+      "terdeteksi": [],
+      "nontarget": [
+        "Alcedo meninting",
+        "Dicaeum trigonostigma"
+      ]
+    },
+    {
+      "berkas": "field/audio/other/Alcedo_meninting/xc-729726.mp3",
+      "korpus": "field/other",
+      "bagian": "pilih",
+      "durasi_s": 9.04,
+      "benar": [],
+      "terdeteksi": [],
+      "nontarget": []
+    },
+    {
+      "berkas": "field/audio/other/Centropus_sinensis/xc-1085634.mp3",
+      "korpus": "field/other",
+      "bagian": "pilih",
+      "durasi_s": 12.8,
+      "benar": [],
+      "terdeteksi": [
+        "Centropus bengalensis"
+      ],
+      "nontarget": []
+    },
+    {
+      "berkas": "field/audio/other/Centropus_sinensis/xc-1164724.mp3",
+      "korpus": "field/other",
+      "bagian": "pilih",
+      "durasi_s": 8.4,
+      "benar": [],
+      "terdeteksi": [],
+      "nontarget": [
+        "Columba janthina"
+      ]
+    },
+    {
+      "berkas": "field/audio/other/Centropus_sinensis/xc-152924.mp3",
+      "korpus": "field/other",
+      "bagian": "pilih",
+      "durasi_s": 75.79,
+      "benar": [],
+      "terdeteksi": [
+        "Centropus bengalensis",
+        "Chalcophaps indica",
+        "Gallus gallus"
+      ],
+      "nontarget": [
+        "Centropus sinensis",
+        "Momotus lessonii"
+      ]
+    },
+    {
+      "berkas": "field/audio/other/Centropus_sinensis/xc-154542.mp3",
+      "korpus": "field/other",
+      "bagian": "pilih",
+      "durasi_s": 13.57,
+      "benar": [],
+      "terdeteksi": [
+        "Centropus bengalensis"
+      ],
+      "nontarget": []
+    },
+    {
+      "berkas": "field/audio/other/Centropus_sinensis/xc-431490.mp3",
+      "korpus": "field/other",
+      "bagian": "pilih",
+      "durasi_s": 18.45,
+      "benar": [],
+      "terdeteksi": [],
+      "nontarget": []
+    },
+    {
+      "berkas": "field/audio/other/Centropus_sinensis/xc-431491.mp3",
+      "korpus": "field/other",
+      "bagian": "pilih",
+      "durasi_s": 50.11,
+      "benar": [],
+      "terdeteksi": [],
+      "nontarget": []
+    },
+    {
+      "berkas": "field/audio/other/Collocalia_linchi/xc-1053609.mp3",
+      "korpus": "field/other",
+      "bagian": "pilih",
+      "durasi_s": 12.33,
+      "benar": [],
+      "terdeteksi": [],
+      "nontarget": []
+    },
+    {
+      "berkas": "field/audio/other/Corvus_enca/xc-120917.mp3",
+      "korpus": "field/other",
+      "bagian": "lapor",
+      "durasi_s": 19.2,
+      "benar": [],
+      "terdeteksi": [],
+      "nontarget": [
+        "Corvus enca"
+      ]
+    },
+    {
+      "berkas": "field/audio/other/Corvus_enca/xc-393924.mp3",
+      "korpus": "field/other",
+      "bagian": "lapor",
+      "durasi_s": 17.35,
+      "benar": [],
+      "terdeteksi": [],
+      "nontarget": []
+    },
+    {
+      "berkas": "field/audio/other/Corvus_enca/xc-423255.mp3",
+      "korpus": "field/other",
+      "bagian": "lapor",
+      "durasi_s": 10.27,
+      "benar": [],
+      "terdeteksi": [
+        "Corvus macrorhynchos"
+      ],
+      "nontarget": [
+        "Corvus enca"
+      ]
+    },
+    {
+      "berkas": "field/audio/other/Corvus_enca/xc-513122.mp3",
+      "korpus": "field/other",
+      "bagian": "lapor",
+      "durasi_s": 40.39,
+      "benar": [],
+      "terdeteksi": [
+        "Corvus macrorhynchos"
+      ],
+      "nontarget": [
+        "Corvus enca"
+      ]
+    },
+    {
+      "berkas": "field/audio/other/Dendrocygna_arcuata/xc-1005889.mp3",
+      "korpus": "field/other",
+      "bagian": "pilih",
+      "durasi_s": 16.87,
+      "benar": [],
+      "terdeteksi": [
+        "Lonchura punctulata"
+      ],
+      "nontarget": []
+    },
+    {
+      "berkas": "field/audio/other/Dendrocygna_arcuata/xc-256273.mp3",
+      "korpus": "field/other",
+      "bagian": "pilih",
+      "durasi_s": 15.69,
+      "benar": [],
+      "terdeteksi": [],
+      "nontarget": []
+    },
+    {
+      "berkas": "field/audio/other/Dicaeum_trochileum/xc-152931.mp3",
+      "korpus": "field/other",
+      "bagian": "pilih",
+      "durasi_s": 5.61,
+      "benar": [],
+      "terdeteksi": [],
+      "nontarget": [
+        "Phylloscopus examinandus"
+      ]
+    },
+    {
+      "berkas": "field/audio/other/Dicaeum_trochileum/xc-152978.mp3",
+      "korpus": "field/other",
+      "bagian": "pilih",
+      "durasi_s": 3.14,
+      "benar": [],
+      "terdeteksi": [
+        "Geopelia striata"
+      ],
+      "nontarget": [
+        "Dicaeum cruentatum"
+      ]
+    },
+    {
+      "berkas": "field/audio/other/Dicaeum_trochileum/xc-288488.mp3",
+      "korpus": "field/other",
+      "bagian": "pilih",
+      "durasi_s": 19.46,
+      "benar": [],
+      "terdeteksi": [
+        "Cisticola juncidis"
+      ],
+      "nontarget": []
+    },
+    {
+      "berkas": "field/audio/other/Dicaeum_trochileum/xc-31368.mp3",
+      "korpus": "field/other",
+      "bagian": "pilih",
+      "durasi_s": 18.94,
+      "benar": [],
+      "terdeteksi": [
+        "Lonchura punctulata"
+      ],
+      "nontarget": []
+    },
+    {
+      "berkas": "field/audio/other/Dicaeum_trochileum/xc-388224.mp3",
+      "korpus": "field/other",
+      "bagian": "pilih",
+      "durasi_s": 28.46,
+      "benar": [],
+      "terdeteksi": [],
+      "nontarget": []
+    },
+    {
+      "berkas": "field/audio/other/Dicaeum_trochileum/xc-788766.mp3",
+      "korpus": "field/other",
+      "bagian": "pilih",
+      "durasi_s": 36.0,
+      "benar": [],
+      "terdeteksi": [],
+      "nontarget": [
+        "Dicaeum cruentatum"
+      ]
+    },
+    {
+      "berkas": "field/audio/other/Hemipus_hirundinaceus/xc-234793.mp3",
+      "korpus": "field/other",
+      "bagian": "pilih",
+      "durasi_s": 16.71,
+      "benar": [],
+      "terdeteksi": [],
+      "nontarget": []
+    },
+    {
+      "berkas": "field/audio/other/Hemipus_hirundinaceus/xc-717423.mp3",
+      "korpus": "field/other",
+      "bagian": "pilih",
+      "durasi_s": 1.32,
+      "benar": [],
+      "terdeteksi": [],
+      "nontarget": []
+    },
+    {
+      "berkas": "field/audio/other/Hemipus_hirundinaceus/xc-766434.mp3",
+      "korpus": "field/other",
+      "bagian": "pilih",
+      "durasi_s": 28.76,
+      "benar": [],
+      "terdeteksi": [
+        "Aplonis panayensis"
+      ],
+      "nontarget": [
+        "Kurochkinegramma hypogrammicum"
+      ]
+    },
+    {
+      "berkas": "field/audio/other/Hemipus_hirundinaceus/xc-863190.mp3",
+      "korpus": "field/other",
+      "bagian": "pilih",
+      "durasi_s": 4.77,
+      "benar": [],
+      "terdeteksi": [
+        "Hirundo tahitica"
+      ],
+      "nontarget": []
+    },
+    {
+      "berkas": "field/audio/other/Hemipus_hirundinaceus/xc-916007.mp3",
+      "korpus": "field/other",
+      "bagian": "pilih",
+      "durasi_s": 6.74,
+      "benar": [],
+      "terdeteksi": [],
+      "nontarget": [
+        "Hemipus hirundinaceus"
+      ]
+    },
+    {
+      "berkas": "field/audio/other/Hemipus_hirundinaceus/xc-916008.mp3",
+      "korpus": "field/other",
+      "bagian": "pilih",
+      "durasi_s": 8.14,
+      "benar": [],
+      "terdeteksi": [
+        "Orthotomus sutorius"
+      ],
+      "nontarget": [
+        "Hemipus hirundinaceus"
+      ]
+    },
+    {
+      "berkas": "field/audio/other/Ketupa_ketupu/xc-1102934.mp3",
+      "korpus": "field/other",
+      "bagian": "pilih",
+      "durasi_s": 5.61,
+      "benar": [],
+      "terdeteksi": [],
+      "nontarget": []
+    },
+    {
+      "berkas": "field/audio/other/Ketupa_ketupu/xc-434863.mp3",
+      "korpus": "field/other",
+      "bagian": "pilih",
+      "durasi_s": 46.18,
+      "benar": [],
+      "terdeteksi": [],
+      "nontarget": []
+    },
+    {
+      "berkas": "field/audio/other/Ketupa_ketupu/xc-839440.mp3",
+      "korpus": "field/other",
+      "bagian": "pilih",
+      "durasi_s": 75.6,
+      "benar": [],
+      "terdeteksi": [],
+      "nontarget": [
+        "Batrachostomus auritus",
+        "Batrachostomus stellatus",
+        "Ketupa ketupu",
+        "Otus lempiji",
+        "Phodilus badius"
+      ]
+    },
+    {
+      "berkas": "field/audio/other/Lonchura_leucogastroides/xc-204343.mp3",
+      "korpus": "field/other",
+      "bagian": "lapor",
+      "durasi_s": 28.7,
+      "benar": [],
+      "terdeteksi": [],
+      "nontarget": [
+        "Lonchura leucogastroides"
+      ]
+    },
+    {
+      "berkas": "field/audio/other/Lonchura_leucogastroides/xc-342421.mp3",
+      "korpus": "field/other",
+      "bagian": "lapor",
+      "durasi_s": 174.88,
+      "benar": [],
+      "terdeteksi": [
+        "Hirundo tahitica",
+        "Spilopelia chinensis"
+      ],
+      "nontarget": [
+        "Empidonax atriceps"
+      ]
+    },
+    {
+      "berkas": "field/audio/other/Lonchura_leucogastroides/xc-708004.mp3",
+      "korpus": "field/other",
+      "bagian": "lapor",
+      "durasi_s": 7.54,
+      "benar": [],
+      "terdeteksi": [
+        "Lonchura punctulata"
+      ],
+      "nontarget": []
+    },
+    {
+      "berkas": "field/audio/other/Lonchura_maja/xc-1106789.mp3",
+      "korpus": "field/other",
+      "bagian": "lapor",
+      "durasi_s": 9.69,
+      "benar": [],
+      "terdeteksi": [
+        "Lonchura punctulata"
+      ],
+      "nontarget": []
+    },
+    {
+      "berkas": "field/audio/other/Lonchura_maja/xc-1155038.mp3",
+      "korpus": "field/other",
+      "bagian": "lapor",
+      "durasi_s": 14.12,
+      "benar": [],
+      "terdeteksi": [],
+      "nontarget": []
+    },
+    {
+      "berkas": "field/audio/other/Lonchura_maja/xc-139491.mp3",
+      "korpus": "field/other",
+      "bagian": "lapor",
+      "durasi_s": 6.32,
+      "benar": [],
+      "terdeteksi": [
+        "Spilopelia chinensis"
+      ],
+      "nontarget": [
+        "Streptopelia chinensis"
+      ]
+    },
+    {
+      "berkas": "field/audio/other/Lonchura_maja/xc-377629.mp3",
+      "korpus": "field/other",
+      "bagian": "lapor",
+      "durasi_s": 120.51,
+      "benar": [],
+      "terdeteksi": [
+        "Lonchura punctulata"
+      ],
+      "nontarget": [
+        "Lonchura maja",
+        "Spinus spinus"
+      ]
+    },
+    {
+      "berkas": "field/audio/other/Lonchura_maja/xc-667222.mp3",
+      "korpus": "field/other",
+      "bagian": "lapor",
+      "durasi_s": 10.24,
+      "benar": [],
+      "terdeteksi": [],
+      "nontarget": [
+        "Lonchura maja"
+      ]
+    },
+    {
+      "berkas": "field/audio/other/Lonchura_maja/xc-667225.mp3",
+      "korpus": "field/other",
+      "bagian": "lapor",
+      "durasi_s": 15.24,
+      "benar": [],
+      "terdeteksi": [],
+      "nontarget": [
+        "Lonchura maja"
+      ]
+    },
+    {
+      "berkas": "field/audio/other/Merops_leschenaulti/xc-1051078.mp3",
+      "korpus": "field/other",
+      "bagian": "lapor",
+      "durasi_s": 3.19,
+      "benar": [],
+      "terdeteksi": [
+        "Merops philippinus"
+      ],
+      "nontarget": []
+    },
+    {
+      "berkas": "field/audio/other/Merops_leschenaulti/xc-782497.mp3",
+      "korpus": "field/other",
+      "bagian": "lapor",
+      "durasi_s": 8.62,
+      "benar": [],
+      "terdeteksi": [
+        "Pycnonotus aurigaster",
+        "Todiramphus chloris"
+      ],
+      "nontarget": []
+    },
+    {
+      "berkas": "field/audio/other/Merops_leschenaulti/xc-844581.mp3",
+      "korpus": "field/other",
+      "bagian": "lapor",
+      "durasi_s": 28.89,
+      "benar": [],
+      "terdeteksi": [
+        "Merops philippinus",
+        "Pycnonotus aurigaster"
+      ],
+      "nontarget": [
+        "Merops hirundineus",
+        "Merops leschenaulti"
+      ]
+    },
+    {
+      "berkas": "field/audio/other/Merops_leschenaulti/xc-884375.mp3",
+      "korpus": "field/other",
+      "bagian": "lapor",
+      "durasi_s": 8.91,
+      "benar": [],
+      "terdeteksi": [
+        "Merops philippinus"
+      ],
+      "nontarget": [
+        "Merops leschenaulti"
+      ]
+    },
+    {
+      "berkas": "field/audio/other/Merops_leschenaulti/xc-890600.mp3",
+      "korpus": "field/other",
+      "bagian": "lapor",
+      "durasi_s": 23.24,
+      "benar": [],
+      "terdeteksi": [
+        "Merops philippinus"
+      ],
+      "nontarget": [
+        "Acridotheres grandis",
+        "Artamus fuscus",
+        "Merops ornatus"
+      ]
+    },
+    {
+      "berkas": "field/audio/other/Merops_leschenaulti/xc-891374.mp3",
+      "korpus": "field/other",
+      "bagian": "lapor",
+      "durasi_s": 4.84,
+      "benar": [],
+      "terdeteksi": [
+        "Merops philippinus"
+      ],
+      "nontarget": []
+    },
+    {
+      "berkas": "field/audio/other/Merops_viridis/xc-1039877.mp3",
+      "korpus": "field/other",
+      "bagian": "pilih",
+      "durasi_s": 23.01,
+      "benar": [],
+      "terdeteksi": [],
+      "nontarget": []
+    },
+    {
+      "berkas": "field/audio/other/Merops_viridis/xc-1060055.mp3",
+      "korpus": "field/other",
+      "bagian": "pilih",
+      "durasi_s": 6.31,
+      "benar": [],
+      "terdeteksi": [],
+      "nontarget": [
+        "Merops viridis",
+        "Mimus polyglottos"
+      ]
+    },
+    {
+      "berkas": "field/audio/other/Merops_viridis/xc-1107756.mp3",
+      "korpus": "field/other",
+      "bagian": "pilih",
+      "durasi_s": 1.84,
+      "benar": [],
+      "terdeteksi": [],
+      "nontarget": []
+    },
+    {
+      "berkas": "field/audio/other/Merops_viridis/xc-656286.mp3",
+      "korpus": "field/other",
+      "bagian": "pilih",
+      "durasi_s": 13.85,
+      "benar": [],
+      "terdeteksi": [
+        "Merops philippinus"
+      ],
+      "nontarget": [
+        "Merops viridis"
+      ]
+    },
+    {
+      "berkas": "field/audio/other/Merops_viridis/xc-756598.mp3",
+      "korpus": "field/other",
+      "bagian": "pilih",
+      "durasi_s": 40.59,
+      "benar": [],
+      "terdeteksi": [
+        "Merops philippinus"
+      ],
+      "nontarget": [
+        "Culicicapa ceylonensis",
+        "Merops viridis"
+      ]
+    },
+    {
+      "berkas": "field/audio/other/Merops_viridis/xc-815839.mp3",
+      "korpus": "field/other",
+      "bagian": "pilih",
+      "durasi_s": 3.48,
+      "benar": [],
+      "terdeteksi": [
+        "Geopelia striata"
+      ],
+      "nontarget": []
+    },
+    {
+      "berkas": "field/audio/other/Nisaetus_bartelsi/xc-284699.mp3",
+      "korpus": "field/other",
+      "bagian": "lapor",
+      "durasi_s": 50.15,
+      "benar": [],
+      "terdeteksi": [],
+      "nontarget": [
+        "Psilopogon armillaris"
+      ]
+    },
+    {
+      "berkas": "field/audio/other/Orthotomus_ruficeps/xc-1089095.mp3",
+      "korpus": "field/other",
+      "bagian": "pilih",
+      "durasi_s": 7.98,
+      "benar": [],
+      "terdeteksi": [],
+      "nontarget": [
+        "Orthotomus ruficeps"
+      ]
+    },
+    {
+      "berkas": "field/audio/other/Orthotomus_ruficeps/xc-431741.mp3",
+      "korpus": "field/other",
+      "bagian": "pilih",
+      "durasi_s": 134.05,
+      "benar": [],
+      "terdeteksi": [
+        "Todiramphus chloris"
+      ],
+      "nontarget": [
+        "Orthotomus ruficeps"
+      ]
+    },
+    {
+      "berkas": "field/audio/other/Orthotomus_ruficeps/xc-503919.mp3",
+      "korpus": "field/other",
+      "bagian": "pilih",
+      "durasi_s": 23.0,
+      "benar": [],
+      "terdeteksi": [
+        "Orthotomus sutorius"
+      ],
+      "nontarget": []
+    },
+    {
+      "berkas": "field/audio/other/Orthotomus_ruficeps/xc-938749.mp3",
+      "korpus": "field/other",
+      "bagian": "pilih",
+      "durasi_s": 20.75,
+      "benar": [],
+      "terdeteksi": [],
+      "nontarget": [
+        "Orthotomus ruficeps"
+      ]
+    },
+    {
+      "berkas": "field/audio/other/Orthotomus_ruficeps/xc-938774.mp3",
+      "korpus": "field/other",
+      "bagian": "pilih",
+      "durasi_s": 24.18,
+      "benar": [],
+      "terdeteksi": [
+        "Centropus bengalensis",
+        "Cinnyris jugularis"
+      ],
+      "nontarget": [
+        "Orthotomus atrogularis"
+      ]
+    },
+    {
+      "berkas": "field/audio/other/Orthotomus_ruficeps/xc-971297.mp3",
+      "korpus": "field/other",
+      "bagian": "pilih",
+      "durasi_s": 25.39,
+      "benar": [],
+      "terdeteksi": [],
+      "nontarget": [
+        "Erythropitta ussheri"
+      ]
+    },
+    {
+      "berkas": "field/audio/other/Pellorneum_rostratum/xc-1016054.mp3",
+      "korpus": "field/other",
+      "bagian": "lapor",
+      "durasi_s": 18.45,
+      "benar": [],
+      "terdeteksi": [],
+      "nontarget": []
+    },
+    {
+      "berkas": "field/audio/other/Pellorneum_rostratum/xc-349727.mp3",
+      "korpus": "field/other",
+      "bagian": "lapor",
+      "durasi_s": 34.7,
+      "benar": [],
+      "terdeteksi": [],
+      "nontarget": [
+        "Pellorneum rostratum",
+        "Phylloscopus tenellipes"
+      ]
+    },
+    {
+      "berkas": "field/audio/other/Pellorneum_rostratum/xc-517783.mp3",
+      "korpus": "field/other",
+      "bagian": "lapor",
+      "durasi_s": 13.89,
+      "benar": [],
+      "terdeteksi": [],
+      "nontarget": []
+    },
+    {
+      "berkas": "field/audio/other/Pellorneum_rostratum/xc-576410.mp3",
+      "korpus": "field/other",
+      "bagian": "lapor",
+      "durasi_s": 36.15,
+      "benar": [],
+      "terdeteksi": [],
+      "nontarget": []
+    },
+    {
+      "berkas": "field/audio/other/Pellorneum_rostratum/xc-578691.mp3",
+      "korpus": "field/other",
+      "bagian": "lapor",
+      "durasi_s": 11.99,
+      "benar": [],
+      "terdeteksi": [
+        "Anthreptes malacensis"
+      ],
+      "nontarget": [
+        "Pellorneum rostratum"
+      ]
+    },
+    {
+      "berkas": "field/audio/other/Pericrocotus_cinnamomeus/xc-284786.mp3",
+      "korpus": "field/other",
+      "bagian": "lapor",
+      "durasi_s": 27.45,
+      "benar": [],
+      "terdeteksi": [],
+      "nontarget": []
+    },
+    {
+      "berkas": "field/audio/other/Pericrocotus_cinnamomeus/xc-514098.mp3",
+      "korpus": "field/other",
+      "bagian": "lapor",
+      "durasi_s": 8.99,
+      "benar": [],
+      "terdeteksi": [],
+      "nontarget": [
+        "Mirafra erythroptera"
+      ]
+    },
+    {
+      "berkas": "field/audio/other/Pericrocotus_cinnamomeus/xc-531810.mp3",
+      "korpus": "field/other",
+      "bagian": "lapor",
+      "durasi_s": 31.35,
+      "benar": [],
+      "terdeteksi": [
+        "Cinnyris jugularis"
+      ],
+      "nontarget": [
+        "Bombycilla garrulus",
+        "Mirafra affinis",
+        "Pericrocotus cinnamomeus"
+      ]
+    },
+    {
+      "berkas": "field/audio/other/Pericrocotus_cinnamomeus/xc-633052.mp3",
+      "korpus": "field/other",
+      "bagian": "lapor",
+      "durasi_s": 60.5,
+      "benar": [],
+      "terdeteksi": [
+        "Pycnonotus aurigaster"
+      ],
+      "nontarget": [
+        "Malacoptila mystacalis",
+        "Mirafra affinis",
+        "Pericrocotus cinnamomeus"
+      ]
+    },
+    {
+      "berkas": "field/audio/other/Pericrocotus_cinnamomeus/xc-914228.mp3",
+      "korpus": "field/other",
+      "bagian": "lapor",
+      "durasi_s": 38.75,
+      "benar": [],
+      "terdeteksi": [],
+      "nontarget": [
+        "Malacoptila mystacalis",
+        "Pericrocotus cinnamomeus",
+        "Salpornis salvadori"
+      ]
+    },
+    {
+      "berkas": "field/audio/other/Pericrocotus_cinnamomeus/xc-951550.mp3",
+      "korpus": "field/other",
+      "bagian": "lapor",
+      "durasi_s": 71.25,
+      "benar": [],
+      "terdeteksi": [],
+      "nontarget": [
+        "Conirostrum speciosum"
+      ]
+    },
+    {
+      "berkas": "field/audio/other/Treron_griseicauda/xc-283301.mp3",
+      "korpus": "field/other",
+      "bagian": "lapor",
+      "durasi_s": 14.25,
+      "benar": [],
+      "terdeteksi": [],
+      "nontarget": []
+    },
+    {
+      "berkas": "field/audio/other/Turnix_suscitator/xc-1075497.mp3",
+      "korpus": "field/other",
+      "bagian": "pilih",
+      "durasi_s": 4.35,
+      "benar": [],
+      "terdeteksi": [],
+      "nontarget": []
+    },
+    {
+      "berkas": "field/audio/other/Turnix_suscitator/xc-729838.mp3",
+      "korpus": "field/other",
+      "bagian": "pilih",
+      "durasi_s": 7.74,
+      "benar": [],
+      "terdeteksi": [],
+      "nontarget": [
+        "Bubo virginianus"
+      ]
+    },
+    {
+      "berkas": "field/audio/other/Turnix_suscitator/xc-736397.mp3",
+      "korpus": "field/other",
+      "bagian": "pilih",
+      "durasi_s": 29.0,
+      "benar": [],
+      "terdeteksi": [],
+      "nontarget": [
+        "Pycnonotus sinensis"
+      ]
+    },
+    {
+      "berkas": "field/audio/other/Turnix_suscitator/xc-805923.mp3",
+      "korpus": "field/other",
+      "bagian": "pilih",
+      "durasi_s": 23.32,
+      "benar": [],
+      "terdeteksi": [],
+      "nontarget": []
+    },
+    {
+      "berkas": "field/audio/other/Turnix_suscitator/xc-811520.mp3",
+      "korpus": "field/other",
+      "bagian": "pilih",
+      "durasi_s": 13.12,
+      "benar": [],
+      "terdeteksi": [],
+      "nontarget": []
+    },
+    {
+      "berkas": "field/audio/other/Turnix_suscitator/xc-877667.mp3",
+      "korpus": "field/other",
+      "bagian": "pilih",
+      "durasi_s": 12.17,
+      "benar": [],
+      "terdeteksi": [],
+      "nontarget": []
+    },
+    {
+      "berkas": "uji_independen/audio/inat/Aegithina_tiphia/inat-186826025.mp3",
+      "korpus": "uji_independen",
+      "bagian": "lapor",
+      "durasi_s": 2.14,
+      "benar": [
+        "Aegithina tiphia"
+      ],
+      "terdeteksi": [],
+      "nontarget": []
+    },
+    {
+      "berkas": "uji_independen/audio/inat/Aegithina_tiphia/inat-188975838.mp3",
+      "korpus": "uji_independen",
+      "bagian": "lapor",
+      "durasi_s": 5.8,
+      "benar": [
+        "Aegithina tiphia"
+      ],
+      "terdeteksi": [],
+      "nontarget": []
+    },
+    {
+      "berkas": "uji_independen/audio/inat/Aegithina_tiphia/inat-233056354.wav",
+      "korpus": "uji_independen",
+      "bagian": "lapor",
+      "durasi_s": 2.93,
+      "benar": [
+        "Aegithina tiphia"
+      ],
+      "terdeteksi": [],
+      "nontarget": []
+    },
+    {
+      "berkas": "uji_independen/audio/inat/Aegithina_tiphia/inat-263686062.wav",
+      "korpus": "uji_independen",
+      "bagian": "lapor",
+      "durasi_s": 12.42,
+      "benar": [
+        "Aegithina tiphia"
+      ],
+      "terdeteksi": [
+        "Aegithina tiphia"
+      ],
+      "nontarget": []
+    },
+    {
+      "berkas": "uji_independen/audio/inat/Aegithina_tiphia/inat-395365593.m4a",
+      "korpus": "uji_independen",
+      "bagian": "lapor",
+      "durasi_s": 0.0,
+      "benar": [
+        "Aegithina tiphia"
+      ],
+      "terdeteksi": [],
+      "nontarget": []
+    },
+    {
+      "berkas": "uji_independen/audio/inat/Aegithina_tiphia/inat-40342363.mp3",
+      "korpus": "uji_independen",
+      "bagian": "lapor",
+      "durasi_s": 17.1,
+      "benar": [
+        "Aegithina tiphia"
+      ],
+      "terdeteksi": [],
+      "nontarget": []
+    },
+    {
+      "berkas": "uji_independen/audio/inat/Amaurornis_phoenicurus/inat-105708291.m4a",
+      "korpus": "uji_independen",
+      "bagian": "lapor",
+      "durasi_s": 0.0,
+      "benar": [
+        "Amaurornis phoenicurus"
+      ],
+      "terdeteksi": [
+        "Amaurornis phoenicurus"
+      ],
+      "nontarget": []
+    },
+    {
+      "berkas": "uji_independen/audio/inat/Amaurornis_phoenicurus/inat-108370620.m4a",
+      "korpus": "uji_independen",
+      "bagian": "lapor",
+      "durasi_s": 0.0,
+      "benar": [
+        "Amaurornis phoenicurus"
+      ],
+      "terdeteksi": [],
+      "nontarget": []
+    },
+    {
+      "berkas": "uji_independen/audio/inat/Amaurornis_phoenicurus/inat-122438166.mp3",
+      "korpus": "uji_independen",
+      "bagian": "lapor",
+      "durasi_s": 9.98,
+      "benar": [
+        "Amaurornis phoenicurus"
+      ],
+      "terdeteksi": [
+        "Amaurornis phoenicurus"
+      ],
+      "nontarget": []
+    },
+    {
+      "berkas": "uji_independen/audio/inat/Amaurornis_phoenicurus/inat-122438285.mp3",
+      "korpus": "uji_independen",
+      "bagian": "lapor",
+      "durasi_s": 20.21,
+      "benar": [
+        "Amaurornis phoenicurus"
+      ],
+      "terdeteksi": [
+        "Amaurornis phoenicurus"
+      ],
+      "nontarget": []
+    },
+    {
+      "berkas": "uji_independen/audio/inat/Amaurornis_phoenicurus/inat-199730286.wav",
+      "korpus": "uji_independen",
+      "bagian": "lapor",
+      "durasi_s": 13.39,
+      "benar": [
+        "Amaurornis phoenicurus"
+      ],
+      "terdeteksi": [
+        "Amaurornis phoenicurus"
+      ],
+      "nontarget": []
+    },
+    {
+      "berkas": "uji_independen/audio/inat/Amaurornis_phoenicurus/inat-250547834.mp3",
+      "korpus": "uji_independen",
+      "bagian": "lapor",
+      "durasi_s": 12.44,
+      "benar": [
+        "Amaurornis phoenicurus"
+      ],
+      "terdeteksi": [
+        "Amaurornis phoenicurus"
+      ],
+      "nontarget": []
+    },
+    {
+      "berkas": "uji_independen/audio/inat/Anthreptes_malacensis/inat-199537555.m4a",
+      "korpus": "uji_independen",
+      "bagian": "lapor",
+      "durasi_s": 0.0,
+      "benar": [
+        "Anthreptes malacensis"
+      ],
+      "terdeteksi": [
+        "Anthreptes malacensis"
+      ],
+      "nontarget": []
+    },
+    {
+      "berkas": "uji_independen/audio/inat/Anthreptes_malacensis/inat-229170193.wav",
+      "korpus": "uji_independen",
+      "bagian": "lapor",
+      "durasi_s": 6.0,
+      "benar": [
+        "Anthreptes malacensis"
+      ],
+      "terdeteksi": [],
+      "nontarget": []
+    },
+    {
+      "berkas": "uji_independen/audio/inat/Anthreptes_malacensis/inat-308121139.m4a",
+      "korpus": "uji_independen",
+      "bagian": "lapor",
+      "durasi_s": 0.0,
+      "benar": [
+        "Anthreptes malacensis"
+      ],
+      "terdeteksi": [
+        "Anthreptes malacensis"
+      ],
+      "nontarget": []
+    },
+    {
+      "berkas": "uji_independen/audio/inat/Anthreptes_malacensis/inat-38148124.m4a",
+      "korpus": "uji_independen",
+      "bagian": "lapor",
+      "durasi_s": 0.0,
+      "benar": [
+        "Anthreptes malacensis"
+      ],
+      "terdeteksi": [],
+      "nontarget": []
+    },
+    {
+      "berkas": "uji_independen/audio/inat/Anthreptes_malacensis/inat-400370479.m4a",
+      "korpus": "uji_independen",
+      "bagian": "lapor",
+      "durasi_s": 0.0,
+      "benar": [
+        "Anthreptes malacensis"
+      ],
+      "terdeteksi": [
+        "Hirundo tahitica"
+      ],
+      "nontarget": []
+    },
+    {
+      "berkas": "uji_independen/audio/inat/Anthreptes_malacensis/inat-85967845.m4a",
+      "korpus": "uji_independen",
+      "bagian": "lapor",
+      "durasi_s": 0.0,
+      "benar": [
+        "Anthreptes malacensis"
+      ],
+      "terdeteksi": [
+        "Anthreptes malacensis"
+      ],
+      "nontarget": []
+    },
+    {
+      "berkas": "uji_independen/audio/inat/Aplonis_panayensis/inat-142511597.m4a",
+      "korpus": "uji_independen",
+      "bagian": "lapor",
+      "durasi_s": 0.0,
+      "benar": [
+        "Aplonis panayensis"
+      ],
+      "terdeteksi": [
+        "Aplonis panayensis"
+      ],
+      "nontarget": []
+    },
+    {
+      "berkas": "uji_independen/audio/inat/Aplonis_panayensis/inat-146458775.mp3",
+      "korpus": "uji_independen",
+      "bagian": "lapor",
+      "durasi_s": 12.94,
+      "benar": [
+        "Aplonis panayensis"
+      ],
+      "terdeteksi": [
+        "Hirundo tahitica"
+      ],
+      "nontarget": []
+    },
+    {
+      "berkas": "uji_independen/audio/inat/Aplonis_panayensis/inat-221213609.wav",
+      "korpus": "uji_independen",
+      "bagian": "lapor",
+      "durasi_s": 9.9,
+      "benar": [
+        "Aplonis panayensis"
+      ],
+      "terdeteksi": [],
+      "nontarget": []
+    },
+    {
+      "berkas": "uji_independen/audio/inat/Aplonis_panayensis/inat-304388554.mp3",
+      "korpus": "uji_independen",
+      "bagian": "lapor",
+      "durasi_s": 15.41,
+      "benar": [
+        "Aplonis panayensis"
+      ],
+      "terdeteksi": [
+        "Aplonis panayensis"
+      ],
+      "nontarget": []
+    },
+    {
+      "berkas": "uji_independen/audio/inat/Aplonis_panayensis/inat-40263821.mp3",
+      "korpus": "uji_independen",
+      "bagian": "lapor",
+      "durasi_s": 6.05,
+      "benar": [
+        "Aplonis panayensis"
+      ],
+      "terdeteksi": [
+        "Aplonis panayensis"
+      ],
+      "nontarget": []
+    },
+    {
+      "berkas": "uji_independen/audio/inat/Arachnothera_longirostra/inat-144534596.mp3",
+      "korpus": "uji_independen",
+      "bagian": "lapor",
+      "durasi_s": 19.27,
+      "benar": [
+        "Arachnothera longirostra"
+      ],
+      "terdeteksi": [
+        "Arachnothera longirostra"
+      ],
+      "nontarget": []
+    },
+    {
+      "berkas": "uji_independen/audio/inat/Arachnothera_longirostra/inat-144815584.mp3",
+      "korpus": "uji_independen",
+      "bagian": "lapor",
+      "durasi_s": 20.25,
+      "benar": [
+        "Arachnothera longirostra"
+      ],
+      "terdeteksi": [
+        "Arachnothera longirostra",
+        "Cinnyris jugularis"
+      ],
+      "nontarget": []
+    },
+    {
+      "berkas": "uji_independen/audio/inat/Arachnothera_longirostra/inat-257475323.mp3",
+      "korpus": "uji_independen",
+      "bagian": "lapor",
+      "durasi_s": 12.8,
+      "benar": [
+        "Arachnothera longirostra"
+      ],
+      "terdeteksi": [
+        "Arachnothera longirostra"
+      ],
+      "nontarget": []
+    },
+    {
+      "berkas": "uji_independen/audio/inat/Centropus_bengalensis/inat-197445059.m4a",
+      "korpus": "uji_independen",
+      "bagian": "lapor",
+      "durasi_s": 0.0,
+      "benar": [
+        "Centropus bengalensis"
+      ],
+      "terdeteksi": [
+        "Centropus bengalensis"
+      ],
+      "nontarget": []
+    },
+    {
+      "berkas": "uji_independen/audio/inat/Centropus_bengalensis/inat-199545738.wav",
+      "korpus": "uji_independen",
+      "bagian": "lapor",
+      "durasi_s": 6.43,
+      "benar": [
+        "Centropus bengalensis"
+      ],
+      "terdeteksi": [],
+      "nontarget": []
+    },
+    {
+      "berkas": "uji_independen/audio/inat/Centropus_bengalensis/inat-250386822.m4a",
+      "korpus": "uji_independen",
+      "bagian": "lapor",
+      "durasi_s": 0.0,
+      "benar": [
+        "Centropus bengalensis"
+      ],
+      "terdeteksi": [
+        "Centropus bengalensis"
+      ],
+      "nontarget": []
+    },
+    {
+      "berkas": "uji_independen/audio/inat/Centropus_bengalensis/inat-257886405.m4a",
+      "korpus": "uji_independen",
+      "bagian": "lapor",
+      "durasi_s": 0.0,
+      "benar": [
+        "Centropus bengalensis"
+      ],
+      "terdeteksi": [
+        "Centropus bengalensis"
+      ],
+      "nontarget": []
+    },
+    {
+      "berkas": "uji_independen/audio/inat/Gallus_gallus/inat-167342885.wav",
+      "korpus": "uji_independen",
+      "bagian": "lapor",
+      "durasi_s": 3.0,
+      "benar": [
+        "Gallus gallus"
+      ],
+      "terdeteksi": [
+        "Gallus gallus"
+      ],
+      "nontarget": []
+    },
+    {
+      "berkas": "uji_independen/audio/inat/Gallus_gallus/inat-167342890.wav",
+      "korpus": "uji_independen",
+      "bagian": "lapor",
+      "durasi_s": 3.0,
+      "benar": [
+        "Gallus gallus"
+      ],
+      "terdeteksi": [
+        "Gallus gallus"
+      ],
+      "nontarget": []
+    },
+    {
+      "berkas": "uji_independen/audio/inat/Gallus_gallus/inat-167342964.wav",
+      "korpus": "uji_independen",
+      "bagian": "lapor",
+      "durasi_s": 3.0,
+      "benar": [
+        "Gallus gallus"
+      ],
+      "terdeteksi": [
+        "Gallus gallus"
+      ],
+      "nontarget": []
+    },
+    {
+      "berkas": "uji_independen/audio/inat/Gallus_gallus/inat-167342979.wav",
+      "korpus": "uji_independen",
+      "bagian": "lapor",
+      "durasi_s": 3.0,
+      "benar": [
+        "Gallus gallus"
+      ],
+      "terdeteksi": [
+        "Gallus gallus"
+      ],
+      "nontarget": []
+    },
+    {
+      "berkas": "uji_independen/audio/inat/Gallus_gallus/inat-167342986.wav",
+      "korpus": "uji_independen",
+      "bagian": "lapor",
+      "durasi_s": 3.0,
+      "benar": [
+        "Gallus gallus"
+      ],
+      "terdeteksi": [
+        "Gallus gallus"
+      ],
+      "nontarget": []
+    },
+    {
+      "berkas": "uji_independen/audio/inat/Gallus_gallus/inat-169866464.m4a",
+      "korpus": "uji_independen",
+      "bagian": "lapor",
+      "durasi_s": 0.0,
+      "benar": [
+        "Gallus gallus"
+      ],
+      "terdeteksi": [
+        "Lonchura punctulata"
+      ],
+      "nontarget": []
+    },
+    {
+      "berkas": "uji_independen/audio/inat/Geopelia_striata/inat-100378539.m4a",
+      "korpus": "uji_independen",
+      "bagian": "lapor",
+      "durasi_s": 0.0,
+      "benar": [
+        "Geopelia striata"
+      ],
+      "terdeteksi": [
+        "Geopelia striata"
+      ],
+      "nontarget": []
+    },
+    {
+      "berkas": "uji_independen/audio/inat/Geopelia_striata/inat-100474664.m4a",
+      "korpus": "uji_independen",
+      "bagian": "lapor",
+      "durasi_s": 0.0,
+      "benar": [
+        "Geopelia striata"
+      ],
+      "terdeteksi": [
+        "Geopelia striata"
+      ],
+      "nontarget": []
+    },
+    {
+      "berkas": "uji_independen/audio/inat/Geopelia_striata/inat-123913183.mp3",
+      "korpus": "uji_independen",
+      "bagian": "lapor",
+      "durasi_s": 15.18,
+      "benar": [
+        "Geopelia striata"
+      ],
+      "terdeteksi": [
+        "Geopelia striata"
+      ],
+      "nontarget": [
+        "Prinia flaviventris"
+      ]
+    },
+    {
+      "berkas": "uji_independen/audio/inat/Geopelia_striata/inat-157877438.m4a",
+      "korpus": "uji_independen",
+      "bagian": "lapor",
+      "durasi_s": 0.0,
+      "benar": [
+        "Geopelia striata"
+      ],
+      "terdeteksi": [
+        "Geopelia striata"
+      ],
+      "nontarget": []
+    },
+    {
+      "berkas": "uji_independen/audio/inat/Geopelia_striata/inat-238381158.mp3",
+      "korpus": "uji_independen",
+      "bagian": "lapor",
+      "durasi_s": 11.48,
+      "benar": [
+        "Geopelia striata"
+      ],
+      "terdeteksi": [
+        "Geopelia striata"
+      ],
+      "nontarget": []
+    },
+    {
+      "berkas": "uji_independen/audio/inat/Geopelia_striata/inat-327873171.wav",
+      "korpus": "uji_independen",
+      "bagian": "lapor",
+      "durasi_s": 8.7,
+      "benar": [
+        "Geopelia striata"
+      ],
+      "terdeteksi": [],
+      "nontarget": []
+    },
+    {
+      "berkas": "uji_independen/audio/inat/Haliastur_indus/inat-402121680.wav",
+      "korpus": "uji_independen",
+      "bagian": "lapor",
+      "durasi_s": 5.96,
+      "benar": [
+        "Haliastur indus"
+      ],
+      "terdeteksi": [
+        "Haliastur indus"
+      ],
+      "nontarget": []
+    },
+    {
+      "berkas": "uji_independen/audio/inat/Orthotomus_sutorius/inat-117525566.mp3",
+      "korpus": "uji_independen",
+      "bagian": "lapor",
+      "durasi_s": 12.8,
+      "benar": [
+        "Orthotomus sutorius"
+      ],
+      "terdeteksi": [
+        "Orthotomus sutorius"
+      ],
+      "nontarget": []
+    },
+    {
+      "berkas": "uji_independen/audio/inat/Orthotomus_sutorius/inat-193667148.m4a",
+      "korpus": "uji_independen",
+      "bagian": "lapor",
+      "durasi_s": 0.0,
+      "benar": [
+        "Orthotomus sutorius"
+      ],
+      "terdeteksi": [
+        "Orthotomus sutorius"
+      ],
+      "nontarget": []
+    },
+    {
+      "berkas": "uji_independen/audio/inat/Orthotomus_sutorius/inat-228740342.m4a",
+      "korpus": "uji_independen",
+      "bagian": "lapor",
+      "durasi_s": 0.0,
+      "benar": [
+        "Orthotomus sutorius"
+      ],
+      "terdeteksi": [
+        "Orthotomus sutorius"
+      ],
+      "nontarget": []
+    },
+    {
+      "berkas": "uji_independen/audio/inat/Orthotomus_sutorius/inat-257428526.m4a",
+      "korpus": "uji_independen",
+      "bagian": "lapor",
+      "durasi_s": 0.0,
+      "benar": [
+        "Orthotomus sutorius"
+      ],
+      "terdeteksi": [
+        "Orthotomus sutorius"
+      ],
+      "nontarget": []
+    },
+    {
+      "berkas": "uji_independen/audio/inat/Orthotomus_sutorius/inat-367632857.mp3",
+      "korpus": "uji_independen",
+      "bagian": "lapor",
+      "durasi_s": 6.33,
+      "benar": [
+        "Orthotomus sutorius"
+      ],
+      "terdeteksi": [
+        "Orthotomus sutorius"
+      ],
+      "nontarget": []
+    },
+    {
+      "berkas": "uji_independen/audio/inat/Passer_montanus/inat-100351427.m4a",
+      "korpus": "uji_independen",
+      "bagian": "lapor",
+      "durasi_s": 0.0,
+      "benar": [
+        "Passer montanus"
+      ],
+      "terdeteksi": [],
+      "nontarget": [
+        "Acridotheres cristatellus"
+      ]
+    },
+    {
+      "berkas": "uji_independen/audio/inat/Passer_montanus/inat-229169264.wav",
+      "korpus": "uji_independen",
+      "bagian": "lapor",
+      "durasi_s": 4.75,
+      "benar": [
+        "Passer montanus"
+      ],
+      "terdeteksi": [
+        "Passer montanus"
+      ],
+      "nontarget": []
+    },
+    {
+      "berkas": "uji_independen/audio/inat/Passer_montanus/inat-70926878.m4a",
+      "korpus": "uji_independen",
+      "bagian": "lapor",
+      "durasi_s": 0.0,
+      "benar": [
+        "Passer montanus"
+      ],
+      "terdeteksi": [],
+      "nontarget": [
+        "Passer domesticus"
+      ]
+    },
+    {
+      "berkas": "uji_independen/audio/inat/Prinia_familiaris/inat-303669394.mp3",
+      "korpus": "uji_independen",
+      "bagian": "lapor",
+      "durasi_s": 7.32,
+      "benar": [
+        "Prinia familiaris"
+      ],
+      "terdeteksi": [
+        "Aplonis panayensis"
+      ],
+      "nontarget": []
+    },
+    {
+      "berkas": "uji_independen/audio/inat/Pycnonotus_aurigaster/inat-137245781.m4a",
+      "korpus": "uji_independen",
+      "bagian": "lapor",
+      "durasi_s": 0.0,
+      "benar": [
+        "Pycnonotus aurigaster"
+      ],
+      "terdeteksi": [],
+      "nontarget": []
+    },
+    {
+      "berkas": "uji_independen/audio/inat/Pycnonotus_aurigaster/inat-199049176.wav",
+      "korpus": "uji_independen",
+      "bagian": "lapor",
+      "durasi_s": 47.11,
+      "benar": [
+        "Pycnonotus aurigaster"
+      ],
+      "terdeteksi": [
+        "Pycnonotus aurigaster"
+      ],
+      "nontarget": [
+        "Chloropsis cochinchinensis",
+        "Piranga rubra",
+        "Pycnonotus jocosus"
+      ]
+    },
+    {
+      "berkas": "uji_independen/audio/inat/Pycnonotus_aurigaster/inat-254154676.m4a",
+      "korpus": "uji_independen",
+      "bagian": "lapor",
+      "durasi_s": 0.0,
+      "benar": [
+        "Pycnonotus aurigaster"
+      ],
+      "terdeteksi": [],
+      "nontarget": []
+    },
+    {
+      "berkas": "uji_independen/audio/inat/Pycnonotus_aurigaster/inat-29356737.mp3",
+      "korpus": "uji_independen",
+      "bagian": "lapor",
+      "durasi_s": 8.78,
+      "benar": [
+        "Pycnonotus aurigaster"
+      ],
+      "terdeteksi": [],
+      "nontarget": []
+    },
+    {
+      "berkas": "uji_independen/audio/inat/Pycnonotus_aurigaster/inat-50953474.wav",
+      "korpus": "uji_independen",
+      "bagian": "lapor",
+      "durasi_s": 56.32,
+      "benar": [
+        "Pycnonotus aurigaster"
+      ],
+      "terdeteksi": [
+        "Hirundo tahitica",
+        "Pycnonotus aurigaster"
+      ],
+      "nontarget": [
+        "Aegithina nigrolutea",
+        "Cercotrichas leucophrys"
+      ]
+    },
+    {
+      "berkas": "uji_independen/audio/inat/Pycnonotus_goiavier/inat-112096626.mp3",
+      "korpus": "uji_independen",
+      "bagian": "lapor",
+      "durasi_s": 19.04,
+      "benar": [
+        "Pycnonotus goiavier"
+      ],
+      "terdeteksi": [
+        "Orthotomus sutorius",
+        "Pycnonotus goiavier"
+      ],
+      "nontarget": []
+    },
+    {
+      "berkas": "uji_independen/audio/inat/Pycnonotus_goiavier/inat-167343356.wav",
+      "korpus": "uji_independen",
+      "bagian": "lapor",
+      "durasi_s": 3.0,
+      "benar": [
+        "Pycnonotus goiavier"
+      ],
+      "terdeteksi": [
+        "Pycnonotus goiavier"
+      ],
+      "nontarget": []
+    },
+    {
+      "berkas": "uji_independen/audio/inat/Pycnonotus_goiavier/inat-167343358.wav",
+      "korpus": "uji_independen",
+      "bagian": "lapor",
+      "durasi_s": 3.0,
+      "benar": [
+        "Pycnonotus goiavier"
+      ],
+      "terdeteksi": [
+        "Pycnonotus goiavier"
+      ],
+      "nontarget": []
+    },
+    {
+      "berkas": "uji_independen/audio/inat/Pycnonotus_goiavier/inat-182441603.m4a",
+      "korpus": "uji_independen",
+      "bagian": "lapor",
+      "durasi_s": 0.0,
+      "benar": [
+        "Pycnonotus goiavier"
+      ],
+      "terdeteksi": [
+        "Pycnonotus goiavier"
+      ],
+      "nontarget": []
+    },
+    {
+      "berkas": "uji_independen/audio/inat/Pycnonotus_goiavier/inat-225395629.m4a",
+      "korpus": "uji_independen",
+      "bagian": "lapor",
+      "durasi_s": 0.0,
+      "benar": [
+        "Pycnonotus goiavier"
+      ],
+      "terdeteksi": [
+        "Aplonis panayensis",
+        "Pycnonotus goiavier"
+      ],
+      "nontarget": []
+    },
+    {
+      "berkas": "uji_independen/audio/inat/Pycnonotus_goiavier/inat-75594435.mp3",
+      "korpus": "uji_independen",
+      "bagian": "lapor",
+      "durasi_s": 31.25,
+      "benar": [
+        "Pycnonotus goiavier"
+      ],
+      "terdeteksi": [
+        "Pycnonotus goiavier"
+      ],
+      "nontarget": [
+        "Eudynamys scolopaceus"
+      ]
+    },
+    {
+      "berkas": "uji_independen/audio/inat/Rhipidura_javanica/inat-112785759.mp3",
+      "korpus": "uji_independen",
+      "bagian": "lapor",
+      "durasi_s": 13.28,
+      "benar": [
+        "Rhipidura javanica"
+      ],
+      "terdeteksi": [],
+      "nontarget": []
+    },
+    {
+      "berkas": "uji_independen/audio/inat/Rhipidura_javanica/inat-219018834.m4a",
+      "korpus": "uji_independen",
+      "bagian": "lapor",
+      "durasi_s": 0.0,
+      "benar": [
+        "Rhipidura javanica"
+      ],
+      "terdeteksi": [
+        "Rhipidura javanica"
+      ],
+      "nontarget": []
+    },
+    {
+      "berkas": "uji_independen/audio/inat/Rhipidura_javanica/inat-231974982.wav",
+      "korpus": "uji_independen",
+      "bagian": "lapor",
+      "durasi_s": 9.76,
+      "benar": [
+        "Rhipidura javanica"
+      ],
+      "terdeteksi": [
+        "Rhipidura javanica"
+      ],
+      "nontarget": []
+    },
+    {
+      "berkas": "uji_independen/audio/inat/Rhipidura_javanica/inat-367910313.mp3",
+      "korpus": "uji_independen",
+      "bagian": "lapor",
+      "durasi_s": 3.24,
+      "benar": [
+        "Rhipidura javanica"
+      ],
+      "terdeteksi": [],
+      "nontarget": []
+    },
+    {
+      "berkas": "uji_independen/audio/inat/Rhipidura_javanica/inat-60701265.m4a",
+      "korpus": "uji_independen",
+      "bagian": "lapor",
+      "durasi_s": 0.0,
+      "benar": [
+        "Rhipidura javanica"
+      ],
+      "terdeteksi": [],
+      "nontarget": []
+    },
+    {
+      "berkas": "uji_independen/audio/inat/Rhipidura_javanica/inat-72154188.mp3",
+      "korpus": "uji_independen",
+      "bagian": "lapor",
+      "durasi_s": 26.3,
+      "benar": [
+        "Rhipidura javanica"
+      ],
+      "terdeteksi": [
+        "Rhipidura javanica"
+      ],
+      "nontarget": []
+    },
+    {
+      "berkas": "uji_independen/audio/inat/Spilopelia_chinensis/inat-100353391.m4a",
+      "korpus": "uji_independen",
+      "bagian": "lapor",
+      "durasi_s": 0.0,
+      "benar": [
+        "Spilopelia chinensis"
+      ],
+      "terdeteksi": [
+        "Aplonis panayensis"
+      ],
+      "nontarget": []
+    },
+    {
+      "berkas": "uji_independen/audio/inat/Spilopelia_chinensis/inat-108267879.wav",
+      "korpus": "uji_independen",
+      "bagian": "lapor",
+      "durasi_s": 34.62,
+      "benar": [
+        "Spilopelia chinensis"
+      ],
+      "terdeteksi": [
+        "Passer montanus"
+      ],
+      "nontarget": []
+    },
+    {
+      "berkas": "uji_independen/audio/inat/Spilopelia_chinensis/inat-145999574.m4a",
+      "korpus": "uji_independen",
+      "bagian": "lapor",
+      "durasi_s": 0.0,
+      "benar": [
+        "Spilopelia chinensis"
+      ],
+      "terdeteksi": [
+        "Spilopelia chinensis"
+      ],
+      "nontarget": [
+        "Streptopelia chinensis"
+      ]
+    },
+    {
+      "berkas": "uji_independen/audio/inat/Spilopelia_chinensis/inat-196642434.m4a",
+      "korpus": "uji_independen",
+      "bagian": "lapor",
+      "durasi_s": 0.0,
+      "benar": [
+        "Spilopelia chinensis"
+      ],
+      "terdeteksi": [
+        "Spilopelia chinensis"
+      ],
+      "nontarget": [
+        "Streptopelia chinensis"
+      ]
+    },
+    {
+      "berkas": "uji_independen/audio/inat/Spilopelia_chinensis/inat-198882094.wav",
+      "korpus": "uji_independen",
+      "bagian": "lapor",
+      "durasi_s": 9.94,
+      "benar": [
+        "Spilopelia chinensis"
+      ],
+      "terdeteksi": [
+        "Spilopelia chinensis"
+      ],
+      "nontarget": [
+        "Streptopelia chinensis"
+      ]
+    },
+    {
+      "berkas": "uji_independen/audio/inat/Spilopelia_chinensis/inat-345638631.m4a",
+      "korpus": "uji_independen",
+      "bagian": "lapor",
+      "durasi_s": 0.0,
+      "benar": [
+        "Spilopelia chinensis"
+      ],
+      "terdeteksi": [
+        "Spilopelia chinensis"
+      ],
+      "nontarget": [
+        "Streptopelia chinensis"
+      ]
+    },
+    {
+      "berkas": "uji_independen/audio/inat/Todiramphus_chloris/inat-100381541.m4a",
+      "korpus": "uji_independen",
+      "bagian": "lapor",
+      "durasi_s": 0.0,
+      "benar": [
+        "Todiramphus chloris"
+      ],
+      "terdeteksi": [
+        "Todiramphus chloris"
+      ],
+      "nontarget": []
+    },
+    {
+      "berkas": "uji_independen/audio/inat/Todiramphus_chloris/inat-367900622.mp3",
+      "korpus": "uji_independen",
+      "bagian": "lapor",
+      "durasi_s": 6.76,
+      "benar": [
+        "Todiramphus chloris"
+      ],
+      "terdeteksi": [
+        "Todiramphus chloris"
+      ],
+      "nontarget": []
+    },
+    {
+      "berkas": "uji_independen/audio/inat/Todiramphus_chloris/inat-38248662.m4a",
+      "korpus": "uji_independen",
+      "bagian": "lapor",
+      "durasi_s": 0.0,
+      "benar": [
+        "Todiramphus chloris"
+      ],
+      "terdeteksi": [
+        "Todiramphus chloris"
+      ],
+      "nontarget": []
+    },
+    {
+      "berkas": "uji_independen/audio/inat/Todiramphus_chloris/inat-399498828.wav",
+      "korpus": "uji_independen",
+      "bagian": "lapor",
+      "durasi_s": 80.72,
+      "benar": [
+        "Todiramphus chloris"
+      ],
+      "terdeteksi": [
+        "Pycnonotus aurigaster",
+        "Todiramphus chloris"
+      ],
+      "nontarget": []
+    },
+    {
+      "berkas": "uji_independen/audio/inat/Todiramphus_chloris/inat-40339592.mp3",
+      "korpus": "uji_independen",
+      "bagian": "lapor",
+      "durasi_s": 8.06,
+      "benar": [
+        "Todiramphus chloris"
+      ],
+      "terdeteksi": [
+        "Todiramphus chloris"
+      ],
+      "nontarget": []
+    },
+    {
+      "berkas": "uji_independen/audio/inat/Todiramphus_chloris/inat-70989721.m4a",
+      "korpus": "uji_independen",
+      "bagian": "lapor",
+      "durasi_s": 0.0,
+      "benar": [
+        "Todiramphus chloris"
+      ],
+      "terdeteksi": [
+        "Todiramphus chloris"
+      ],
+      "nontarget": []
+    },
+    {
+      "berkas": "uji_independen/audio/uji/Amaurornis_phoenicurus/xc-1001832.mp3",
+      "korpus": "uji_independen",
+      "bagian": "lapor",
+      "durasi_s": 54.86,
+      "benar": [
+        "Amaurornis phoenicurus"
+      ],
+      "terdeteksi": [
+        "Amaurornis phoenicurus"
+      ],
+      "nontarget": [
+        "Pogoniulus pusillus"
+      ]
+    },
+    {
+      "berkas": "uji_independen/audio/uji/Amaurornis_phoenicurus/xc-986619.mp3",
+      "korpus": "uji_independen",
+      "bagian": "lapor",
+      "durasi_s": 21.5,
+      "benar": [
+        "Amaurornis phoenicurus"
+      ],
+      "terdeteksi": [],
+      "nontarget": []
+    },
+    {
+      "berkas": "uji_independen/audio/uji/Anthreptes_malacensis/xc-1161132.mp3",
+      "korpus": "uji_independen",
+      "bagian": "lapor",
+      "durasi_s": 34.33,
+      "benar": [
+        "Anthreptes malacensis"
+      ],
+      "terdeteksi": [
+        "Anthreptes malacensis",
+        "Cinnyris jugularis"
+      ],
+      "nontarget": []
+    },
+    {
+      "berkas": "uji_independen/audio/uji/Aplonis_panayensis/xc-610767.mp3",
+      "korpus": "uji_independen",
+      "bagian": "lapor",
+      "durasi_s": 34.19,
+      "benar": [
+        "Aplonis panayensis"
+      ],
+      "terdeteksi": [
+        "Aplonis panayensis",
+        "Orthotomus sutorius"
+      ],
+      "nontarget": [
+        "Pandion haliaetus"
+      ]
+    },
+    {
+      "berkas": "uji_independen/audio/uji/Aplonis_panayensis/xc-635716.mp3",
+      "korpus": "uji_independen",
+      "bagian": "lapor",
+      "durasi_s": 12.0,
+      "benar": [
+        "Aplonis panayensis"
+      ],
+      "terdeteksi": [
+        "Spilopelia chinensis"
+      ],
+      "nontarget": []
+    },
+    {
+      "berkas": "uji_independen/audio/uji/Aplonis_panayensis/xc-756455.mp3",
+      "korpus": "uji_independen",
+      "bagian": "lapor",
+      "durasi_s": 46.27,
+      "benar": [
+        "Aplonis panayensis"
+      ],
+      "terdeteksi": [
+        "Aplonis panayensis",
+        "Cinnyris jugularis"
+      ],
+      "nontarget": [
+        "Cinclus mexicanus"
+      ]
+    },
+    {
+      "berkas": "uji_independen/audio/uji/Arachnothera_longirostra/xc-1010238.mp3",
+      "korpus": "uji_independen",
+      "bagian": "lapor",
+      "durasi_s": 47.77,
+      "benar": [
+        "Arachnothera longirostra"
+      ],
+      "terdeteksi": [
+        "Arachnothera longirostra"
+      ],
+      "nontarget": []
+    },
+    {
+      "berkas": "uji_independen/audio/uji/Arachnothera_longirostra/xc-1085961.mp3",
+      "korpus": "uji_independen",
+      "bagian": "lapor",
+      "durasi_s": 7.02,
+      "benar": [
+        "Arachnothera longirostra"
+      ],
+      "terdeteksi": [
+        "Arachnothera longirostra"
+      ],
+      "nontarget": []
+    },
+    {
+      "berkas": "uji_independen/audio/uji/Arachnothera_longirostra/xc-1091160.mp3",
+      "korpus": "uji_independen",
+      "bagian": "lapor",
+      "durasi_s": 23.27,
+      "benar": [
+        "Arachnothera longirostra"
+      ],
+      "terdeteksi": [
+        "Arachnothera longirostra"
+      ],
+      "nontarget": [
+        "Cormobates leucophaea",
+        "Dicrurus leucophaeus"
+      ]
+    },
+    {
+      "berkas": "uji_independen/audio/uji/Arachnothera_longirostra/xc-1100258.mp3",
+      "korpus": "uji_independen",
+      "bagian": "lapor",
+      "durasi_s": 159.44,
+      "benar": [
+        "Arachnothera longirostra"
+      ],
+      "terdeteksi": [
+        "Arachnothera longirostra",
+        "Chalcophaps indica",
+        "Orthotomus sutorius"
+      ],
+      "nontarget": [
+        "Leptocoma minima"
+      ]
+    },
+    {
+      "berkas": "uji_independen/audio/uji/Arachnothera_longirostra/xc-1141875.mp3",
+      "korpus": "uji_independen",
+      "bagian": "lapor",
+      "durasi_s": 78.12,
+      "benar": [
+        "Arachnothera longirostra"
+      ],
+      "terdeteksi": [
+        "Arachnothera longirostra"
+      ],
+      "nontarget": []
+    },
+    {
+      "berkas": "uji_independen/audio/uji/Arachnothera_longirostra/xc-890850.mp3",
+      "korpus": "uji_independen",
+      "bagian": "lapor",
+      "durasi_s": 5.14,
+      "benar": [
+        "Arachnothera longirostra"
+      ],
+      "terdeteksi": [],
+      "nontarget": []
+    },
+    {
+      "berkas": "uji_independen/audio/uji/Arachnothera_longirostra/xc-944433.mp3",
+      "korpus": "uji_independen",
+      "bagian": "lapor",
+      "durasi_s": 155.64,
+      "benar": [
+        "Arachnothera longirostra"
+      ],
+      "terdeteksi": [
+        "Arachnothera longirostra"
+      ],
+      "nontarget": [
+        "Arachnothera magna"
+      ]
+    },
+    {
+      "berkas": "uji_independen/audio/uji/Arachnothera_longirostra/xc-955746.mp3",
+      "korpus": "uji_independen",
+      "bagian": "lapor",
+      "durasi_s": 50.94,
+      "benar": [
+        "Arachnothera longirostra"
+      ],
+      "terdeteksi": [
+        "Arachnothera longirostra",
+        "Hirundo tahitica"
+      ],
+      "nontarget": []
+    },
+    {
+      "berkas": "uji_independen/audio/uji/Chalcophaps_indica/xc-1071192.mp3",
+      "korpus": "uji_independen",
+      "bagian": "lapor",
+      "durasi_s": 24.35,
+      "benar": [
+        "Chalcophaps indica"
+      ],
+      "terdeteksi": [
+        "Chalcophaps indica"
+      ],
+      "nontarget": [
+        "Chalcophaps longirostris"
+      ]
+    },
+    {
+      "berkas": "uji_independen/audio/uji/Chalcophaps_indica/xc-1072918.mp3",
+      "korpus": "uji_independen",
+      "bagian": "lapor",
+      "durasi_s": 8.06,
+      "benar": [
+        "Chalcophaps indica"
+      ],
+      "terdeteksi": [
+        "Chalcophaps indica"
+      ],
+      "nontarget": []
+    },
+    {
+      "berkas": "uji_independen/audio/uji/Chalcophaps_indica/xc-1074068.mp3",
+      "korpus": "uji_independen",
+      "bagian": "lapor",
+      "durasi_s": 39.89,
+      "benar": [
+        "Chalcophaps indica"
+      ],
+      "terdeteksi": [
+        "Chalcophaps indica"
+      ],
+      "nontarget": []
+    },
+    {
+      "berkas": "uji_independen/audio/uji/Chalcophaps_indica/xc-940764.mp3",
+      "korpus": "uji_independen",
+      "bagian": "lapor",
+      "durasi_s": 10.3,
+      "benar": [
+        "Chalcophaps indica"
+      ],
+      "terdeteksi": [
+        "Chalcophaps indica"
+      ],
+      "nontarget": [
+        "Psilopogon asiaticus"
+      ]
+    },
+    {
+      "berkas": "uji_independen/audio/uji/Cinnyris_jugularis/xc-746292.mp3",
+      "korpus": "uji_independen",
+      "bagian": "lapor",
+      "durasi_s": 84.24,
+      "benar": [
+        "Cinnyris jugularis"
+      ],
+      "terdeteksi": [
+        "Cinnyris jugularis",
+        "Spilopelia chinensis"
+      ],
+      "nontarget": [
+        "Streptopelia chinensis"
+      ]
+    },
+    {
+      "berkas": "uji_independen/audio/uji/Cinnyris_jugularis/xc-746305.mp3",
+      "korpus": "uji_independen",
+      "bagian": "lapor",
+      "durasi_s": 14.36,
+      "benar": [
+        "Cinnyris jugularis"
+      ],
+      "terdeteksi": [
+        "Cinnyris jugularis"
+      ],
+      "nontarget": []
+    },
+    {
+      "berkas": "uji_independen/audio/uji/Corvus_macrorhynchos/xc-1010067.mp3",
+      "korpus": "uji_independen",
+      "bagian": "lapor",
+      "durasi_s": 13.0,
+      "benar": [
+        "Corvus macrorhynchos"
+      ],
+      "terdeteksi": [],
+      "nontarget": []
+    },
+    {
+      "berkas": "uji_independen/audio/uji/Corvus_macrorhynchos/xc-1089497.mp3",
+      "korpus": "uji_independen",
+      "bagian": "lapor",
+      "durasi_s": 17.75,
+      "benar": [
+        "Corvus macrorhynchos"
+      ],
+      "terdeteksi": [
+        "Corvus macrorhynchos"
+      ],
+      "nontarget": []
+    },
+    {
+      "berkas": "uji_independen/audio/uji/Corvus_macrorhynchos/xc-1091153.mp3",
+      "korpus": "uji_independen",
+      "bagian": "lapor",
+      "durasi_s": 37.88,
+      "benar": [
+        "Corvus macrorhynchos"
+      ],
+      "terdeteksi": [
+        "Centropus bengalensis",
+        "Corvus macrorhynchos"
+      ],
+      "nontarget": [
+        "Psilopogon mystacophanos"
+      ]
+    },
+    {
+      "berkas": "uji_independen/audio/uji/Corvus_macrorhynchos/xc-1096580.mp3",
+      "korpus": "uji_independen",
+      "bagian": "lapor",
+      "durasi_s": 32.05,
+      "benar": [
+        "Corvus macrorhynchos"
+      ],
+      "terdeteksi": [
+        "Corvus macrorhynchos"
+      ],
+      "nontarget": []
+    },
+    {
+      "berkas": "uji_independen/audio/uji/Corvus_macrorhynchos/xc-1120035.mp3",
+      "korpus": "uji_independen",
+      "bagian": "lapor",
+      "durasi_s": 24.93,
+      "benar": [
+        "Corvus macrorhynchos"
+      ],
+      "terdeteksi": [
+        "Corvus macrorhynchos"
+      ],
+      "nontarget": []
+    },
+    {
+      "berkas": "uji_independen/audio/uji/Dicrurus_macrocercus/xc-737482.mp3",
+      "korpus": "uji_independen",
+      "bagian": "lapor",
+      "durasi_s": 42.12,
+      "benar": [
+        "Dicrurus macrocercus"
+      ],
+      "terdeteksi": [
+        "Hirundo tahitica"
+      ],
+      "nontarget": []
+    },
+    {
+      "berkas": "uji_independen/audio/uji/Dicrurus_macrocercus/xc-823504.mp3",
+      "korpus": "uji_independen",
+      "bagian": "lapor",
+      "durasi_s": 21.11,
+      "benar": [
+        "Dicrurus macrocercus"
+      ],
+      "terdeteksi": [],
+      "nontarget": []
+    },
+    {
+      "berkas": "uji_independen/audio/uji/Gallus_gallus/xc-856060.mp3",
+      "korpus": "uji_independen",
+      "bagian": "lapor",
+      "durasi_s": 6.55,
+      "benar": [
+        "Gallus gallus"
+      ],
+      "terdeteksi": [],
+      "nontarget": []
+    },
+    {
+      "berkas": "uji_independen/audio/uji/Gallus_gallus/xc-856061.mp3",
+      "korpus": "uji_independen",
+      "bagian": "lapor",
+      "durasi_s": 23.29,
+      "benar": [
+        "Gallus gallus"
+      ],
+      "terdeteksi": [],
+      "nontarget": [
+        "Mixornis gularis"
+      ]
+    },
+    {
+      "berkas": "uji_independen/audio/uji/Gallus_gallus/xc-938778.mp3",
+      "korpus": "uji_independen",
+      "bagian": "lapor",
+      "durasi_s": 9.9,
+      "benar": [
+        "Gallus gallus"
+      ],
+      "terdeteksi": [
+        "Gallus gallus"
+      ],
+      "nontarget": []
+    },
+    {
+      "berkas": "uji_independen/audio/uji/Geopelia_striata/xc-1003564.mp3",
+      "korpus": "uji_independen",
+      "bagian": "lapor",
+      "durasi_s": 18.0,
+      "benar": [
+        "Geopelia striata"
+      ],
+      "terdeteksi": [
+        "Geopelia striata"
+      ],
+      "nontarget": []
+    },
+    {
+      "berkas": "uji_independen/audio/uji/Geopelia_striata/xc-1009989.mp3",
+      "korpus": "uji_independen",
+      "bagian": "lapor",
+      "durasi_s": 17.04,
+      "benar": [
+        "Geopelia striata"
+      ],
+      "terdeteksi": [
+        "Geopelia striata",
+        "Pycnonotus aurigaster"
+      ],
+      "nontarget": []
+    },
+    {
+      "berkas": "uji_independen/audio/uji/Geopelia_striata/xc-883425.mp3",
+      "korpus": "uji_independen",
+      "bagian": "lapor",
+      "durasi_s": 29.64,
+      "benar": [
+        "Geopelia striata"
+      ],
+      "terdeteksi": [
+        "Geopelia striata"
+      ],
+      "nontarget": [
+        "Zosterops simplex"
+      ]
+    },
+    {
+      "berkas": "uji_independen/audio/uji/Haliastur_indus/xc-665743.mp3",
+      "korpus": "uji_independen",
+      "bagian": "lapor",
+      "durasi_s": 10.37,
+      "benar": [
+        "Haliastur indus"
+      ],
+      "terdeteksi": [
+        "Haliastur indus"
+      ],
+      "nontarget": []
+    },
+    {
+      "berkas": "uji_independen/audio/uji/Haliastur_indus/xc-684723.mp3",
+      "korpus": "uji_independen",
+      "bagian": "lapor",
+      "durasi_s": 20.67,
+      "benar": [
+        "Haliastur indus"
+      ],
+      "terdeteksi": [],
+      "nontarget": []
+    },
+    {
+      "berkas": "uji_independen/audio/uji/Haliastur_indus/xc-685003.mp3",
+      "korpus": "uji_independen",
+      "bagian": "lapor",
+      "durasi_s": 24.49,
+      "benar": [
+        "Haliastur indus"
+      ],
+      "terdeteksi": [
+        "Haliastur indus"
+      ],
+      "nontarget": []
+    },
+    {
+      "berkas": "uji_independen/audio/uji/Hirundo_tahitica/xc-202789.mp3",
+      "korpus": "uji_independen",
+      "bagian": "lapor",
+      "durasi_s": 8.96,
+      "benar": [
+        "Hirundo tahitica"
+      ],
+      "terdeteksi": [
+        "Hirundo tahitica"
+      ],
+      "nontarget": []
+    },
+    {
+      "berkas": "uji_independen/audio/uji/Hirundo_tahitica/xc-281912.mp3",
+      "korpus": "uji_independen",
+      "bagian": "lapor",
+      "durasi_s": 16.35,
+      "benar": [
+        "Hirundo tahitica"
+      ],
+      "terdeteksi": [],
+      "nontarget": [
+        "Hirundo rustica"
+      ]
+    },
+    {
+      "berkas": "uji_independen/audio/uji/Merops_philippinus/xc-1069335.mp3",
+      "korpus": "uji_independen",
+      "bagian": "lapor",
+      "durasi_s": 9.29,
+      "benar": [
+        "Merops philippinus"
+      ],
+      "terdeteksi": [
+        "Merops philippinus"
+      ],
+      "nontarget": []
+    },
+    {
+      "berkas": "uji_independen/audio/uji/Merops_philippinus/xc-1096543.mp3",
+      "korpus": "uji_independen",
+      "bagian": "lapor",
+      "durasi_s": 9.29,
+      "benar": [
+        "Merops philippinus"
+      ],
+      "terdeteksi": [
+        "Merops philippinus"
+      ],
+      "nontarget": [
+        "Tringa glareola"
+      ]
+    },
+    {
+      "berkas": "uji_independen/audio/uji/Merops_philippinus/xc-1164726.mp3",
+      "korpus": "uji_independen",
+      "bagian": "lapor",
+      "durasi_s": 36.0,
+      "benar": [
+        "Merops philippinus"
+      ],
+      "terdeteksi": [
+        "Merops philippinus"
+      ],
+      "nontarget": []
+    },
+    {
+      "berkas": "uji_independen/audio/uji/Merops_philippinus/xc-1164727.mp3",
+      "korpus": "uji_independen",
+      "bagian": "lapor",
+      "durasi_s": 11.84,
+      "benar": [
+        "Merops philippinus"
+      ],
+      "terdeteksi": [
+        "Merops philippinus"
+      ],
+      "nontarget": []
+    },
+    {
+      "berkas": "uji_independen/audio/uji/Orthotomus_sutorius/xc-1076994.mp3",
+      "korpus": "uji_independen",
+      "bagian": "lapor",
+      "durasi_s": 20.32,
+      "benar": [
+        "Orthotomus sutorius"
+      ],
+      "terdeteksi": [
+        "Gallus gallus",
+        "Orthotomus sutorius"
+      ],
+      "nontarget": []
+    },
+    {
+      "berkas": "uji_independen/audio/uji/Orthotomus_sutorius/xc-1096577.mp3",
+      "korpus": "uji_independen",
+      "bagian": "lapor",
+      "durasi_s": 12.93,
+      "benar": [
+        "Orthotomus sutorius"
+      ],
+      "terdeteksi": [
+        "Orthotomus sutorius"
+      ],
+      "nontarget": []
+    },
+    {
+      "berkas": "uji_independen/audio/uji/Rhipidura_javanica/xc-756430.mp3",
+      "korpus": "uji_independen",
+      "bagian": "lapor",
+      "durasi_s": 94.94,
+      "benar": [
+        "Rhipidura javanica"
+      ],
+      "terdeteksi": [
+        "Hirundo tahitica"
+      ],
+      "nontarget": [
+        "Basilinna leucotis",
+        "Zonotrichia albicollis"
+      ]
+    },
+    {
+      "berkas": "uji_independen/audio/uji/Rhipidura_javanica/xc-760675.mp3",
+      "korpus": "uji_independen",
+      "bagian": "lapor",
+      "durasi_s": 26.67,
+      "benar": [
+        "Rhipidura javanica"
+      ],
+      "terdeteksi": [],
+      "nontarget": [
+        "Corvus ossifragus"
+      ]
+    },
+    {
+      "berkas": "uji_independen/audio/uji/Rhipidura_javanica/xc-938746.mp3",
+      "korpus": "uji_independen",
+      "bagian": "lapor",
+      "durasi_s": 57.3,
+      "benar": [
+        "Rhipidura javanica"
+      ],
+      "terdeteksi": [
+        "Dicrurus macrocercus",
+        "Orthotomus sutorius",
+        "Rhipidura javanica"
+      ],
+      "nontarget": [
+        "Orthotomus ruficeps",
+        "Rhipidura leucophrys"
+      ]
+    },
+    {
+      "berkas": "uji_independen/audio/uji/Todiramphus_chloris/xc-1047925.mp3",
+      "korpus": "uji_independen",
+      "bagian": "lapor",
+      "durasi_s": 3.65,
+      "benar": [
+        "Todiramphus chloris"
+      ],
+      "terdeteksi": [
+        "Todiramphus chloris"
+      ],
+      "nontarget": []
+    },
+    {
+      "berkas": "uji_independen/audio/uji/Todiramphus_chloris/xc-1062270.mp3",
+      "korpus": "uji_independen",
+      "bagian": "lapor",
+      "durasi_s": 4.36,
+      "benar": [
+        "Todiramphus chloris"
+      ],
+      "terdeteksi": [
+        "Todiramphus chloris"
+      ],
+      "nontarget": []
+    },
+    {
+      "berkas": "uji_independen/audio/uji/Todiramphus_chloris/xc-1073051.mp3",
+      "korpus": "uji_independen",
+      "bagian": "lapor",
+      "durasi_s": 7.25,
+      "benar": [
+        "Todiramphus chloris"
+      ],
+      "terdeteksi": [
+        "Todiramphus chloris"
+      ],
+      "nontarget": []
+    },
+    {
+      "berkas": "uji_independen/audio/uji/Todiramphus_chloris/xc-880903.mp3",
+      "korpus": "uji_independen",
+      "bagian": "lapor",
+      "durasi_s": 28.4,
+      "benar": [
+        "Todiramphus chloris"
+      ],
+      "terdeteksi": [
+        "Todiramphus chloris"
+      ],
+      "nontarget": []
+    }
+  ],
+  "gagal": [
+    {
+      "berkas": "field/audio/inat/Anthreptes_malacensis/inat-113746706.mp3",
+      "alasan": "Generic audio read error occurred from librosa."
+    },
+    {
+      "berkas": "field/audio/inat/Pycnonotus_goiavier/inat-217581321.mp3",
+      "alasan": "Generic audio read error occurred from librosa."
+    },
+    {
+      "berkas": "uji_independen/audio/inat/Pycnonotus_aurigaster/inat-121981011.mp3",
+      "alasan": "Generic audio read error occurred from librosa."
+    }
+  ],
+  "waktu_total_s": 262.5
+}

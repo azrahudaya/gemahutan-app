@@ -1,0 +1,15 @@
+audit_model.py sha256 b606df8d22488b45
+[GAGAL] C01 ruff bersih                                          Found 4 errors. | [*] 1 fixable with the `--fix` option (1 hidden fix can be enabled with the `--unsafe-fixes` option).
+[LULUS] C02 pytest ml/tests                                      15 passed in 13.84s
+[LULUS] C03 test worker (container)                              31 passed, 3 warnings in 13.73s
+[GAGAL] C04 test API (container)                                 1 failed, 96 passed, 3 skipped, 1 warning in 15.02s
+[LULUS] C05 checkpoint cocok MANIFEST                            ff01eb96e002
+[LULUS] C06 thresholds.json datar dan terbaca muat_ambang        26 kunci
+[GAGAL] C07 fixture snapshot == mesin produksi                   selisih keyakinan maks 0.0505, label beda 0/10
+[GAGAL] C08 tidak ada pemilihan jendela/sampel memakai label     ml/uji_independen.py:119
+[GAGAL] C09 uji independen produksi (tanpa label)                acc produksi tanpa label 0.7557 (n=131); uji_independen.json tidak menyatakan metode_pemilihan_jendela='tanpa_label'
+[GAGAL] C10 CV bersarang: ambang di lipatan + CI bootstrap grup  lipatan tanpa ambang per spesies: [1, 2, 3, 4, 5]; recall_pada_ambang tidak ada per lipatan; ci95.metode bukan 'bootstrap_grup_perekam'; oof_bersarang.npz (probs, y, grup) tidak ada
+[BELUM] C11 e2e: agregat konsisten dengan baris per berkas       e2e.json tidak ada
+[LULUS] C12 worker yang jalan memakai checkpoint repo            worker ff01eb96e002 repo ff01eb96e002
+
+5 LULUS, 6 GAGAL, 1 BELUM

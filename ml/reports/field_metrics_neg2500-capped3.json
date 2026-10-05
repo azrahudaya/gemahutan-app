@@ -1,0 +1,45 @@
+{
+  "model": "/tmp/sweep_neg/neg2500-capped3/ckpt/best_model.npz",
+  "degradasi": {
+    "bersih": {
+      "jumlah_jendela": 127,
+      "akurasi_top1": 0.5512,
+      "macro_f1": 0.5262,
+      "kelas_dinilai": 25,
+      "tingkat_deteksi": 0.9606
+    },
+    "bersih_tanpa_nd": {
+      "jumlah_jendela": 127,
+      "akurasi_top1": 0.5276,
+      "macro_f1": 0.4892,
+      "kelas_dinilai": 25,
+      "tingkat_deteksi": 0.9764
+    }
+  },
+  "lapangan": {
+    "inat": {
+      "jumlah_jendela": 610,
+      "akurasi_top1": 0.4295,
+      "macro_f1": 0.3986,
+      "kelas_dinilai": 23,
+      "tingkat_deteksi": 0.9639,
+      "jumlah_berkas": 113,
+      "berkas_terbaca": 111
+    },
+    "other": {
+      "jumlah_berkas": 21,
+      "berkas_terbaca": 20,
+      "jumlah_jendela": 128,
+      "deteksi_palsu": 0.9766
+    },
+    "xc_noisy": {
+      "jumlah_jendela": 640,
+      "akurasi_top1": 0.5687,
+      "macro_f1": 0.5276,
+      "kelas_dinilai": 24,
+      "tingkat_deteksi": 0.9766,
+      "jumlah_berkas": 108,
+      "berkas_terbaca": 106
+    }
+  }
+}

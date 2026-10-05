@@ -1,0 +1,13 @@
+{
+  "jumlah_klip_manifest": 51,
+  "berkas_terbaca": 50,
+  "jumlah_jendela": 329,
+  "akurasi_top1": 0.48328267477203646,
+  "ic95": [
+    0.4292837332076995,
+    0.5372816163363734
+  ],
+  "f1_makro": 0.45183446368073144,
+  "kelas_dinilai": 16,
+  "catatan": "set independen, tidak pernah masuk data latih"
+}

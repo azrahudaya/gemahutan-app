@@ -1,0 +1,106 @@
+{
+  "Aegithina tiphia": {
+    "n": 29,
+    "acc": 0.6552
+  },
+  "Amaurornis phoenicurus": {
+    "n": 30,
+    "acc": 0.8333
+  },
+  "Anthreptes malacensis": {
+    "n": 34,
+    "acc": 0.5294
+  },
+  "Aplonis panayensis": {
+    "n": 28,
+    "acc": 0.5714
+  },
+  "Arachnothera longirostra": {
+    "n": 20,
+    "acc": 0.65
+  },
+  "Centropus bengalensis": {
+    "n": 32,
+    "acc": 0.8438
+  },
+  "Chalcophaps indica": {
+    "n": 18,
+    "acc": 0.7222
+  },
+  "Cinnyris jugularis": {
+    "n": 38,
+    "acc": 0.6316
+  },
+  "Cisticola juncidis": {
+    "n": 35,
+    "acc": 0.9143
+  },
+  "Corvus macrorhynchos": {
+    "n": 27,
+    "acc": 0.7778
+  },
+  "Dicrurus macrocercus": {
+    "n": 20,
+    "acc": 0.7
+  },
+  "Gallus gallus": {
+    "n": 9,
+    "acc": 0.5556
+  },
+  "Geopelia striata": {
+    "n": 31,
+    "acc": 0.9032
+  },
+  "Haliastur indus": {
+    "n": 27,
+    "acc": 0.7407
+  },
+  "Hirundo tahitica": {
+    "n": 21,
+    "acc": 0.4762
+  },
+  "Lonchura punctulata": {
+    "n": 26,
+    "acc": 0.7692
+  },
+  "Merops philippinus": {
+    "n": 26,
+    "acc": 0.8846
+  },
+  "Orthotomus sutorius": {
+    "n": 33,
+    "acc": 0.9394
+  },
+  "Passer montanus": {
+    "n": 37,
+    "acc": 0.8649
+  },
+  "Prinia familiaris": {
+    "n": 10,
+    "acc": 0.3
+  },
+  "Pycnonotus aurigaster": {
+    "n": 37,
+    "acc": 0.7568
+  },
+  "Pycnonotus goiavier": {
+    "n": 34,
+    "acc": 0.7941
+  },
+  "Rhipidura javanica": {
+    "n": 24,
+    "acc": 0.75
+  },
+  "Spilopelia chinensis": {
+    "n": 30,
+    "acc": 0.9667
+  },
+  "Todiramphus chloris": {
+    "n": 31,
+    "acc": 0.8387
+  },
+  "_negative": {
+    "n": 107,
+    "acc": 0.8037
+  }
+}

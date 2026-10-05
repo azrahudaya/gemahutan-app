@@ -1,0 +1,438 @@
+[
+  {
+    "route": "/",
+    "viewport": "1440x900",
+    "issues": [],
+    "checks": {
+      "scrollWidth": 1440,
+      "clientWidth": 1440,
+      "bodyScrollWidth": 1440,
+      "tapTargetsSmall": [],
+      "tapTargetsSmallTotal": 0,
+      "themeToggles": [],
+      "hasMenuBtn": false,
+      "linkCount": 3,
+      "bannedLinks": [],
+      "templateRoutes": [],
+      "badAlts": [],
+      "focusRing": {
+        "outline": "rgb(16, 16, 16) auto 1px",
+        "outlineWidth": "1px",
+        "outlineStyle": "auto",
+        "outlineColor": "rgb(16, 16, 16)",
+        "boxShadow": "none"
+      }
+    }
+  },
+  {
+    "route": "/dashboard",
+    "viewport": "1440x900",
+    "issues": [],
+    "checks": {
+      "scrollWidth": 1440,
+      "clientWidth": 1440,
+      "bodyScrollWidth": 1440,
+      "tapTargetsSmall": [],
+      "tapTargetsSmallTotal": 0,
+      "themeToggles": [],
+      "hasMenuBtn": true,
+      "linkCount": 11,
+      "bannedLinks": [],
+      "templateRoutes": [],
+      "badAlts": [],
+      "focusRing": {
+        "outline": "rgb(76, 125, 255) solid 2px",
+        "outlineWidth": "2px",
+        "outlineStyle": "solid",
+        "outlineColor": "rgb(76, 125, 255)",
+        "boxShadow": "none"
+      }
+    }
+  },
+  {
+    "route": "/recordings",
+    "viewport": "1440x900",
+    "issues": [],
+    "checks": {
+      "scrollWidth": 1440,
+      "clientWidth": 1440,
+      "bodyScrollWidth": 1440,
+      "tapTargetsSmall": [],
+      "tapTargetsSmallTotal": 0,
+      "themeToggles": [],
+      "hasMenuBtn": true,
+      "linkCount": 51,
+      "bannedLinks": [],
+      "templateRoutes": [],
+      "badAlts": [],
+      "focusRing": {
+        "outline": "rgb(76, 125, 255) solid 2px",
+        "outlineWidth": "2px",
+        "outlineStyle": "solid",
+        "outlineColor": "rgb(76, 125, 255)",
+        "boxShadow": "none"
+      }
+    }
+  },
+  {
+    "route": "/sites",
+    "viewport": "1440x900",
+    "issues": [],
+    "checks": {
+      "scrollWidth": 1440,
+      "clientWidth": 1440,
+      "bodyScrollWidth": 1440,
+      "tapTargetsSmall": [],
+      "tapTargetsSmallTotal": 0,
+      "themeToggles": [],
+      "hasMenuBtn": true,
+      "linkCount": 18,
+      "bannedLinks": [],
+      "templateRoutes": [],
+      "badAlts": [],
+      "focusRing": {
+        "outline": "rgb(76, 125, 255) solid 2px",
+        "outlineWidth": "2px",
+        "outlineStyle": "solid",
+        "outlineColor": "rgb(76, 125, 255)",
+        "boxShadow": "none"
+      }
+    }
+  },
+  {
+    "route": "/sites/6",
+    "viewport": "1440x900",
+    "issues": [],
+    "checks": {
+      "scrollWidth": 1440,
+      "clientWidth": 1440,
+      "bodyScrollWidth": 1440,
+      "tapTargetsSmall": [],
+      "tapTargetsSmallTotal": 0,
+      "themeToggles": [],
+      "hasMenuBtn": true,
+      "linkCount": 15,
+      "bannedLinks": [],
+      "templateRoutes": [],
+      "badAlts": [],
+      "focusRing": {
+        "outline": "rgb(76, 125, 255) solid 2px",
+        "outlineWidth": "2px",
+        "outlineStyle": "solid",
+        "outlineColor": "rgb(76, 125, 255)",
+        "boxShadow": "none"
+      }
+    }
+  },
+  {
+    "route": "/upload",
+    "viewport": "1440x900",
+    "issues": [],
+    "checks": {
+      "scrollWidth": 1440,
+      "clientWidth": 1440,
+      "bodyScrollWidth": 1440,
+      "tapTargetsSmall": [],
+      "tapTargetsSmallTotal": 0,
+      "themeToggles": [],
+      "hasMenuBtn": true,
+      "linkCount": 13,
+      "bannedLinks": [],
+      "templateRoutes": [],
+      "badAlts": [],
+      "focusRing": {
+        "outline": "rgb(76, 125, 255) solid 2px",
+        "outlineWidth": "2px",
+        "outlineStyle": "solid",
+        "outlineColor": "rgb(76, 125, 255)",
+        "boxShadow": "none"
+      }
+    }
+  },
+  {
+    "route": "/model",
+    "viewport": "1440x900",
+    "issues": [],
+    "checks": {
+      "scrollWidth": 1440,
+      "clientWidth": 1440,
+      "bodyScrollWidth": 1440,
+      "tapTargetsSmall": [],
+      "tapTargetsSmallTotal": 0,
+      "themeToggles": [],
+      "hasMenuBtn": true,
+      "linkCount": 11,
+      "bannedLinks": [],
+      "templateRoutes": [],
+      "badAlts": [],
+      "focusRing": {
+        "outline": "rgb(76, 125, 255) solid 2px",
+        "outlineWidth": "2px",
+        "outlineStyle": "solid",
+        "outlineColor": "rgb(76, 125, 255)",
+        "boxShadow": "none"
+      }
+    }
+  },
+  {
+    "route": "/laporan",
+    "viewport": "1440x900",
+    "issues": [],
+    "checks": {
+      "scrollWidth": 1440,
+      "clientWidth": 1440,
+      "bodyScrollWidth": 1440,
+      "tapTargetsSmall": [],
+      "tapTargetsSmallTotal": 0,
+      "themeToggles": [],
+      "hasMenuBtn": false,
+      "linkCount": 0,
+      "bannedLinks": [],
+      "templateRoutes": [],
+      "badAlts": []
+    }
+  },
+  {
+    "route": "/dokumentasi",
+    "viewport": "1440x900",
+    "issues": [],
+    "checks": {
+      "scrollWidth": 1440,
+      "clientWidth": 1440,
+      "bodyScrollWidth": 1440,
+      "tapTargetsSmall": [],
+      "tapTargetsSmallTotal": 0,
+      "themeToggles": [],
+      "hasMenuBtn": true,
+      "linkCount": 32,
+      "bannedLinks": [],
+      "templateRoutes": [],
+      "badAlts": [],
+      "focusRing": {
+        "outline": "rgb(76, 125, 255) solid 2px",
+        "outlineWidth": "2px",
+        "outlineStyle": "solid",
+        "outlineColor": "rgb(76, 125, 255)",
+        "boxShadow": "none"
+      }
+    }
+  },
+  {
+    "route": "/",
+    "viewport": "390x844",
+    "issues": [],
+    "checks": {
+      "scrollWidth": 390,
+      "clientWidth": 390,
+      "bodyScrollWidth": 390,
+      "tapTargetsSmall": [],
+      "tapTargetsSmallTotal": 0,
+      "themeToggles": [],
+      "hasMenuBtn": false,
+      "linkCount": 3,
+      "bannedLinks": [],
+      "templateRoutes": [],
+      "badAlts": [],
+      "focusRing": {
+        "outline": "rgb(16, 16, 16) auto 1px",
+        "outlineWidth": "1px",
+        "outlineStyle": "auto",
+        "outlineColor": "rgb(16, 16, 16)",
+        "boxShadow": "none"
+      }
+    }
+  },
+  {
+    "route": "/dashboard",
+    "viewport": "390x844",
+    "issues": [],
+    "checks": {
+      "scrollWidth": 390,
+      "clientWidth": 390,
+      "bodyScrollWidth": 390,
+      "tapTargetsSmall": [],
+      "tapTargetsSmallTotal": 0,
+      "themeToggles": [],
+      "hasMenuBtn": true,
+      "linkCount": 11,
+      "bannedLinks": [],
+      "templateRoutes": [],
+      "badAlts": [],
+      "focusRing": {
+        "outline": "rgb(138, 176, 255) none 3px",
+        "outlineWidth": "3px",
+        "outlineStyle": "none",
+        "outlineColor": "rgb(138, 176, 255)",
+        "boxShadow": "none"
+      }
+    }
+  },
+  {
+    "route": "/recordings",
+    "viewport": "390x844",
+    "issues": [],
+    "checks": {
+      "scrollWidth": 390,
+      "clientWidth": 390,
+      "bodyScrollWidth": 390,
+      "tapTargetsSmall": [],
+      "tapTargetsSmallTotal": 0,
+      "themeToggles": [],
+      "hasMenuBtn": true,
+      "linkCount": 51,
+      "bannedLinks": [],
+      "templateRoutes": [],
+      "badAlts": [],
+      "focusRing": {
+        "outline": "rgb(143, 143, 153) none 3px",
+        "outlineWidth": "3px",
+        "outlineStyle": "none",
+        "outlineColor": "rgb(143, 143, 153)",
+        "boxShadow": "none"
+      }
+    }
+  },
+  {
+    "route": "/sites",
+    "viewport": "390x844",
+    "issues": [],
+    "checks": {
+      "scrollWidth": 390,
+      "clientWidth": 390,
+      "bodyScrollWidth": 390,
+      "tapTargetsSmall": [],
+      "tapTargetsSmallTotal": 0,
+      "themeToggles": [],
+      "hasMenuBtn": true,
+      "linkCount": 18,
+      "bannedLinks": [],
+      "templateRoutes": [],
+      "badAlts": [],
+      "focusRing": {
+        "outline": "rgb(143, 143, 153) none 3px",
+        "outlineWidth": "3px",
+        "outlineStyle": "none",
+        "outlineColor": "rgb(143, 143, 153)",
+        "boxShadow": "none"
+      }
+    }
+  },
+  {
+    "route": "/sites/6",
+    "viewport": "390x844",
+    "issues": [],
+    "checks": {
+      "scrollWidth": 390,
+      "clientWidth": 390,
+      "bodyScrollWidth": 390,
+      "tapTargetsSmall": [],
+      "tapTargetsSmallTotal": 0,
+      "themeToggles": [],
+      "hasMenuBtn": true,
+      "linkCount": 15,
+      "bannedLinks": [],
+      "templateRoutes": [],
+      "badAlts": [],
+      "focusRing": {
+        "outline": "rgb(143, 143, 153) none 3px",
+        "outlineWidth": "3px",
+        "outlineStyle": "none",
+        "outlineColor": "rgb(143, 143, 153)",
+        "boxShadow": "none"
+      }
+    }
+  },
+  {
+    "route": "/upload",
+    "viewport": "390x844",
+    "issues": [],
+    "checks": {
+      "scrollWidth": 390,
+      "clientWidth": 390,
+      "bodyScrollWidth": 390,
+      "tapTargetsSmall": [],
+      "tapTargetsSmallTotal": 0,
+      "themeToggles": [],
+      "hasMenuBtn": true,
+      "linkCount": 13,
+      "bannedLinks": [],
+      "templateRoutes": [],
+      "badAlts": [],
+      "focusRing": {
+        "outline": "rgb(143, 143, 153) none 3px",
+        "outlineWidth": "3px",
+        "outlineStyle": "none",
+        "outlineColor": "rgb(143, 143, 153)",
+        "boxShadow": "none"
+      }
+    }
+  },
+  {
+    "route": "/model",
+    "viewport": "390x844",
+    "issues": [],
+    "checks": {
+      "scrollWidth": 390,
+      "clientWidth": 390,
+      "bodyScrollWidth": 390,
+      "tapTargetsSmall": [],
+      "tapTargetsSmallTotal": 0,
+      "themeToggles": [],
+      "hasMenuBtn": true,
+      "linkCount": 11,
+      "bannedLinks": [],
+      "templateRoutes": [],
+      "badAlts": [],
+      "focusRing": {
+        "outline": "rgb(143, 143, 153) none 3px",
+        "outlineWidth": "3px",
+        "outlineStyle": "none",
+        "outlineColor": "rgb(143, 143, 153)",
+        "boxShadow": "none"
+      }
+    }
+  },
+  {
+    "route": "/laporan",
+    "viewport": "390x844",
+    "issues": [],
+    "checks": {
+      "scrollWidth": 390,
+      "clientWidth": 390,
+      "bodyScrollWidth": 390,
+      "tapTargetsSmall": [],
+      "tapTargetsSmallTotal": 0,
+      "themeToggles": [],
+      "hasMenuBtn": false,
+      "linkCount": 0,
+      "bannedLinks": [],
+      "templateRoutes": [],
+      "badAlts": []
+    }
+  },
+  {
+    "route": "/dokumentasi",
+    "viewport": "390x844",
+    "issues": [],
+    "checks": {
+      "scrollWidth": 390,
+      "clientWidth": 390,
+      "bodyScrollWidth": 390,
+      "tapTargetsSmall": [],
+      "tapTargetsSmallTotal": 0,
+      "themeToggles": [],
+      "hasMenuBtn": true,
+      "linkCount": 32,
+      "bannedLinks": [],
+      "templateRoutes": [],
+      "badAlts": [],
+      "focusRing": {
+        "outline": "rgb(143, 143, 153) none 3px",
+        "outlineWidth": "3px",
+        "outlineStyle": "none",
+        "outlineColor": "rgb(143, 143, 153)",
+        "boxShadow": "none"
+      }
+    }
+  }
+]

@@ -1,0 +1,9 @@
+file,clip_id,species_scientific,species_common,duration_s,size_bytes,source_url,license,license_source,split
+xc-938488.mp3,xc-938488,Pycnonotus goiavier,Yellow-vented Bulbul,0:24,202861,https://xeno-canto.org/938488,https://creativecommons.org/licenses/by-nc-sa/4.0/,xeno-canto API v3,test
+xc-46911.mp3,xc-46911,Merops philippinus,Blue-tailed Bee-eater,0:15,246286,https://xeno-canto.org/46911,https://creativecommons.org/licenses/by-nc-nd/2.5/,xeno-canto API v3,test
+xc-151987.mp3,xc-151987,Centropus bengalensis,Lesser Coucal,0:19,310645,https://xeno-canto.org/151987,https://creativecommons.org/licenses/by-nc-sa/3.0/,xeno-canto API v3,test
+xc-105148.mp3,xc-105148,Amaurornis phoenicurus,White-breasted Waterhen,0:19,315632,https://xeno-canto.org/105148,https://creativecommons.org/licenses/by-nc-nd/2.5/,xeno-canto API v3,test
+xc-38341.mp3,xc-38341,Lonchura punctulata,Scaly-breasted Munia,0:19,319254,https://xeno-canto.org/38341,https://creativecommons.org/licenses/by-nc-nd/2.5/,xeno-canto API v3,test
+xc-1157493.mp3,xc-1157493,Anthreptes malacensis,Brown-throated Sunbird,0:15,361052,https://xeno-canto.org/1157493,https://creativecommons.org/licenses/by-nc-sa/4.0/,xeno-canto API v3,test
+xc-350538.mp3,xc-350538,Corvus macrorhynchos,Large-billed Crow,0:21,372979,https://xeno-canto.org/350538,https://creativecommons.org/licenses/by-nc-sa/4.0/,xeno-canto API v3,test
+xc-598171.mp3,xc-598171,Geopelia striata,Zebra Dove,0:33,374514,https://xeno-canto.org/598171,https://creativecommons.org/licenses/by-nc-sa/4.0/,xeno-canto API v3,test

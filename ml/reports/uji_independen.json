@@ -1,0 +1,19 @@
+{
+  "model": "produksi",
+  "sha256_checkpoint": "ff01eb96e002bb32d58120ea5c347cf6398c4b3435121f7b367e2a6dbbad808e",
+  "metode_pemilihan_jendela": "tanpa_label",
+  "jendela_terbaik": {
+    "acc": 0.7557,
+    "f1_macro": 0.6069,
+    "ci95_acc": [
+      0.687,
+      0.8321
+    ]
+  },
+  "semua_jendela": {
+    "acc": 0.5992,
+    "f1_macro": 0.4911
+  },
+  "n_klip": 131,
+  "kandidat": []
+}

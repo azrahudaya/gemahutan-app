@@ -1,0 +1,33 @@
+# K4 (ML_10): resep produksi LR v3, embedding jendela bersuara K3, PLUS 3 kelas
+# pemicu sebagai kelas sendiri.
+#
+# Satu perubahan terhadap K3: tambahan 3 kelas pemicu di data latih
+# (Accipiter badius, Centropus sinensis, Orthotomus ruficeps), yaitu spesies
+# yang memenuhi kriteria B4 (>= 20 klip non-ND dari >= 5 perekam, perekam pool
+# evaluasi dibuang). Lima spesies pemicu lain tidak memenuhi dan ditulis sebagai
+# batas ketersediaan data.
+#
+# Klip pemicu masuk LATIH saja (ml/data/splits_k4.json), tidak ikut val maupun
+# uji, supaya komposisi pool evaluasi tidak berubah dan G2 tetap sebanding.
+#
+# ckpt_in wajib direktori normalisasi K4 sendiri: korpusnya berubah (8353 ->
+# 8465 klip), jadi mean/std harus dihitung ulang dari klip latih versi ini.
+
+model:
+  type: logistic_regression
+  activation: linear
+
+training:
+  C: 1.0
+  class_weight: balanced
+  maks_negatif: 3000
+  seed: 2024
+
+data:
+  emb_dir: ml/embeddings_k4_klip
+  splits_file: ml/data/splits_k4.json
+  ckpt_in: ml/runs/k4_ckpt_in
+
+output:
+  ckpt_dir: ml/runs/k4_pemicu_model
+  report_dir: ml/runs/k4_pemicu_model

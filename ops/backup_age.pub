@@ -1,0 +1,6 @@
+# Kunci publik age untuk enkripsi backup produksi GemaHutan.
+#
+# Kunci privat TIDAK disimpan di repo. Kunci privat ada di server di
+# /etc/gemahutan/backup_age.key (mode 600) dan disimpan terpisah oleh pemilik.
+# Hanya kunci publik ini yang boleh di-commit.
+age14gntameltl48cq45vkdlgnvjgdlcynx7qqgzxmdmfc98jyhllphqss79qn

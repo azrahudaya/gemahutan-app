@@ -1,0 +1,27 @@
+{
+  "generated_utc": "2026-09-27T12:14:59.685331Z",
+  "git_sha": "d1ac3c97af689d6d74076919accf8d3555b7a40f",
+  "source_run": "ml/checkpoints_logreg_v3/",
+  "files": {
+    "best_model.npz": {
+      "sha256": "ff01eb96e002bb32d58120ea5c347cf6398c4b3435121f7b367e2a6dbbad808e",
+      "size_bytes": 112014
+    },
+    "label_map.json": {
+      "sha256": "eed76f65d5aebb0d1e6ffee19dfa85a5ae97bed7a72cec7f4edcc4488948500d",
+      "size_bytes": 722
+    },
+    "meta.json": {
+      "sha256": "5bda3c101a511fb31d600d960b7e3d31cff165bc0cea1879dfa8e4cb63a1e206",
+      "size_bytes": 413
+    },
+    "normalization.npz": {
+      "sha256": "9b38ad9491055a026298af190caf5cd8ac568237c54487b771ea49f5e4690351",
+      "size_bytes": 8692
+    }
+  },
+  "build_command": "make model-produksi",
+  "model_type": "logistic_regression_multikelas",
+  "numpy_version": "1.24",
+  "cascade_config_sha256": "5fc2d62743e5b35f4b68cae8fe7e623cd8e7d7bb2e9d05ad5838c2174ab6c5ba"
+}

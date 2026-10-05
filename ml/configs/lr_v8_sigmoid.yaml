@@ -1,0 +1,23 @@
+# Konfigurasi v8: kepala sigmoid (one-vs-rest) menggantikan softmax.
+# Satu perubahan terhadap v3: multi_class: ovr (bukan multinomial).
+# Data, fitur, split, dan pembagian identik v3.
+
+model:
+  type: logistic_regression
+  activation: linear
+  multi_class: ovr  # <-- perubahan tunggal
+
+training:
+  C: 1.0
+  class_weight: balanced
+  maks_negatif: 3000
+  seed: 2024
+
+data:
+  emb_dir: ml/embeddings_v3
+  splits_file: ml/data/splits_v3.json
+  ckpt_in: ml/checkpoints
+
+output:
+  ckpt_dir: ml/runs/l7/v8
+  report_dir: ml/runs/l7/v8

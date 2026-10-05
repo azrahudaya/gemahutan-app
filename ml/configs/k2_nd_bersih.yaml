@@ -1,0 +1,36 @@
+# K2 (ML_10): resep produksi LR v3, TANPA 29 klip iNat berlisensi ND.
+#
+# Satu perubahan terhadap produksi: pool latih kehilangan 29 klip yang lisensi
+# ND-nya dibuktikan dari anotasi resmi iNatSounds 2024
+# (ml/data/manifest_lisensi_inat.csv). Val dan uji TIDAK berubah.
+#
+# PENTING soal output: lr_v3.yaml menulis report_dir ke `ml/reports`, dan di
+# sana ada thresholds.json yang DIPAKAI PRODUKSI dan dilacak git. Kalau config
+# kandidat memakai report_dir yang sama, latihan kandidat akan menimpa ambang
+# produksi tanpa lewat gerbang. Karena itu ckpt_dir dan report_dir kandidat
+# ditaruh di ml/runs/k2_nd_bersih.
+#
+# normalization.npz tetap dibaca dari ml/checkpoints (mean/std produksi).
+# Itu memang yang diinginkan di sini: embeddingnya sama persis
+# (ml/embeddings_v3), yang berubah hanya 29 klip latih, jadi memakai
+# normalisasi yang sama membuat perbandingan G2 mengisolasi satu perubahan
+# saja. Normalisasi baru hanya wajib kalau versi KORPUS embedding berubah.
+
+model:
+  type: logistic_regression
+  activation: linear
+
+training:
+  C: 1.0
+  class_weight: balanced
+  maks_negatif: 3000
+  seed: 2024
+
+data:
+  emb_dir: ml/embeddings_v3
+  splits_file: ml/data/splits_v3_nd_bersih.json
+  ckpt_in: ml/checkpoints
+
+output:
+  ckpt_dir: ml/runs/k2_nd_bersih
+  report_dir: ml/runs/k2_nd_bersih

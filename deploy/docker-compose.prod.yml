@@ -1,0 +1,189 @@
+# Profil deploy GemaHutan.
+#
+# Dua mode:
+# 1. Mode hemat (bawaan). Tanpa worker, jadi VPS 2 vCPU 2 GB RAM masih cukup.
+#    Worker memuat TensorFlow dan BirdNET dan butuh sekitar 2 GB RAM sendiri,
+#    jadi di mode ini dashboard hanya menyajikan hasil inference yang sudah
+#    dihitung (lihat ops/export_demo_snapshot.sh) dan unggahan baru tidak
+#    diproses otomatis. Batas ini harus ditulis apa adanya di halaman demo.
+# 2. Mode penuh. Tambahkan `--profile pekerja` dan worker ikut jalan, sehingga
+#    unggahan baru benar-benar diproses. Butuh minimal 4 GB RAM dan 4 vCPU,
+#    sisakan ruang disk untuk berkas audio, MinIO, dan cache spektrogram.
+#
+# Pakai:
+#   docker compose -f deploy/docker-compose.prod.yml --env-file deploy/.env.prod up -d
+#   docker compose -f deploy/docker-compose.prod.yml --env-file deploy/.env.prod --profile pekerja up -d
+services:
+  db:
+    image: postgis/postgis:16-3.4
+    environment:
+      POSTGRES_DB: ${POSTGRES_DB:-gemahutan}
+      POSTGRES_USER: ${POSTGRES_USER:-gemahutan}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:?POSTGRES_PASSWORD wajib diisi}
+    volumes:
+      - db-data:/var/lib/postgresql/data
+      - ../backups:/backups
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U ${POSTGRES_USER:-gemahutan}"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+    restart: unless-stopped
+    # Batasi memori supaya tidak mengganggu aplikasi produksi lain di VPS.
+    deploy:
+      resources:
+        limits:
+          memory: 512m
+
+  redis:
+    image: redis:7-alpine
+    command: ["redis-server", "--maxmemory", "128mb", "--maxmemory-policy", "allkeys-lru", "--save", ""]
+    healthcheck:
+      test: ["CMD", "redis-cli", "ping"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+    restart: unless-stopped
+    deploy:
+      resources:
+        limits:
+          memory: 192m
+
+  minio:
+    image: ghcr.io/azrahudaya/minio:2025-gemahutan
+    command: server /data --console-address ":9001"
+    environment:
+      MINIO_ROOT_USER: ${S3_ACCESS_KEY:?S3_ACCESS_KEY wajib diisi}
+      MINIO_ROOT_PASSWORD: ${S3_SECRET_KEY:?S3_SECRET_KEY wajib diisi}
+    volumes:
+      - minio-data:/data
+    healthcheck:
+      test: ["CMD", "mc", "ready", "local"]
+      interval: 15s
+      timeout: 5s
+      retries: 5
+    restart: unless-stopped
+    deploy:
+      resources:
+        limits:
+          memory: 256m
+
+  api:
+    build:
+      context: ..
+      dockerfile: apps/api/Dockerfile
+    env_file:
+      - path: .env.prod
+        required: true
+      # Email aplikasi (undangan, reset, peringatan) dibaca dari berkas yang
+      # sama dengan notifikasi server. Opsional supaya stack tetap jalan kalau
+      # berkasnya belum diisi pemilik.
+      - path: /etc/gemahutan/notif.env
+        required: false
+    environment:
+      DATABASE_URL: postgresql+asyncpg://${POSTGRES_USER:-gemahutan}:${POSTGRES_PASSWORD}@db:5432/${POSTGRES_DB:-gemahutan}
+      DATABASE_URL_SYNC: postgresql://${POSTGRES_USER:-gemahutan}:${POSTGRES_PASSWORD}@db:5432/${POSTGRES_DB:-gemahutan}
+      REDIS_URL: redis://redis:6379/0
+      S3_ENDPOINT: http://minio:9000
+      CORS_ORIGINS: ${CORS_ORIGINS:?CORS_ORIGINS wajib diisi}
+      # Harus sama dengan engine worker (cascade) supaya /api/v1/model/info melaporkan
+      # mesin yang benar-benar dipakai. Di mode hemat tanpa worker, status tetap
+      # terbaca "degraded" karena heartbeat worker tidak ada.
+      INFERENCE_ENGINE: ${INFERENCE_ENGINE:-cascade}
+    depends_on:
+      db:
+        condition: service_healthy
+      redis:
+        condition: service_healthy
+      minio:
+        condition: service_started
+    healthcheck:
+      test: ["CMD", "python", "-c", "import urllib.request; urllib.request.urlopen('http://localhost:8000/healthz')"]
+      interval: 30s
+      timeout: 5s
+      retries: 3
+    restart: unless-stopped
+    deploy:
+      resources:
+        limits:
+          memory: 700m
+
+  # Mode penuh saja. Tanpa `--profile pekerja`, layanan ini tidak dijalankan.
+  worker:
+    profiles: ["pekerja"]
+    build:
+      context: ..
+      dockerfile: apps/worker/Dockerfile
+    env_file:
+      - path: .env.prod
+        required: true
+      - path: /etc/gemahutan/notif.env
+        required: false
+    environment:
+      DATABASE_URL_SYNC: postgresql://${POSTGRES_USER:-gemahutan}:${POSTGRES_PASSWORD}@db:5432/${POSTGRES_DB:-gemahutan}
+      REDIS_URL: redis://redis:6379/0
+      S3_ENDPOINT: http://minio:9000
+      INFERENCE_ENGINE: cascade
+    depends_on:
+      db:
+        condition: service_healthy
+      redis:
+        condition: service_healthy
+      minio:
+        condition: service_started
+    restart: unless-stopped
+    deploy:
+      resources:
+        limits:
+          memory: 2g
+
+  web:
+    build:
+      context: ../apps/web
+      dockerfile: Dockerfile
+      args:
+        # Produksi: jalur relatif (/api/v1/...), Caddy yang meneruskan ke API.
+        NEXT_PUBLIC_API_URL: ${NEXT_PUBLIC_API_URL:-}
+        # Basis URL publik dipakai metadataBase, og:image, sitemap, dan robots.
+        NEXT_PUBLIC_SITE_URL: https://${DOMAIN}
+    environment:
+      CORS_ORIGINS: ${CORS_ORIGINS:-http://localhost:3001}
+      # Halaman depan publik: rute /sesi-demo membuat akun tamu lewat API internal.
+      DEMO_AKTIF: ${DEMO_AKTIF:-}
+      TAMU_RAHASIA: ${TAMU_RAHASIA:-}
+      API_INTERNAL_URL: http://api:8000
+    depends_on:
+      api:
+        condition: service_healthy
+    healthcheck:
+      test: ["CMD", "wget", "-q", "--spider", "http://127.0.0.1:3000"]
+      interval: 30s
+      timeout: 5s
+      retries: 5
+    restart: unless-stopped
+    deploy:
+      resources:
+        limits:
+          memory: 384m
+
+  caddy:
+    image: caddy:2-alpine
+    ports:
+      - "80:80"
+      - "443:443"
+    environment:
+      DOMAIN: ${DOMAIN:?DOMAIN wajib diisi}
+      EMAIL: ${ACME_EMAIL:-}
+    volumes:
+      - ./Caddyfile:/etc/caddy/Caddyfile:ro
+      - caddy-data:/data
+      - caddy-config:/config
+    depends_on:
+      - api
+    restart: unless-stopped
+
+volumes:
+  db-data:
+  minio-data:
+  caddy-data:
+  caddy-config:

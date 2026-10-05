@@ -1,0 +1,19 @@
+{
+  "dicoba": [
+    {
+      "handle": "google/bird-vocalization-classifier/tensorFlow2/perch_v2",
+      "status": "ok",
+      "path": "/home/fuudaya/.cache/kagglehub/models/google/bird-vocalization-classifier/tensorFlow2/perch_v2/2"
+    }
+  ],
+  "terpakai": "google/bird-vocalization-classifier/tensorFlow2/perch_v2",
+  "saved_model_dir": "/home/fuudaya/.cache/kagglehub/models/google/bird-vocalization-classifier/tensorFlow2/perch_v2/2",
+  "ada_saved_model_pb": true,
+  "isi": [
+    "assets",
+    "fingerprint.pb",
+    "saved_model.pb",
+    "variables"
+  ],
+  "ukuran_mb": 410.3
+}

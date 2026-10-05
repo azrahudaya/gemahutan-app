@@ -1,0 +1,22 @@
+[
+ [
+  "Coba contoh: tombol Pilih rekaman aktif",
+  "True"
+ ],
+ [
+  "Permintaan API menuju domain sendiri",
+  "True"
+ ],
+ [
+  "Galat CSP / localhost di konsol",
+  "[]"
+ ],
+ [
+  "Coba contoh: unggah sampai hasil",
+  "tidak jelas dalam 240 detik; Merbah Cerukcuk muncul di hasil: True"
+ ],
+ [
+  "Login memanggil API produksi",
+  "(['https://gemahutan.site/api/v1/auth/login'], False)"
+ ]
+]

@@ -1,0 +1,21 @@
+{
+  "gpu_terlihat": false,
+  "jalur": [
+    {
+      "nama": "serving_default di CPU",
+      "status": "GAGAL",
+      "error": "Graph execution error:  Detected at node XlaCallModule defined at (most recent call last): <stack traces unavailable> The current platform CPU is not among the platforms required by the module: [CUDA] \t [[{{node XlaCallModule}}]] \ttf2xla conversion failed while converting __inference_predict_fn_5016"
+    },
+    {
+      "nama": "jit dimatikan",
+      "status": "GAGAL",
+      "error": "Graph execution error:  Detected at node XlaCallModule defined at (most recent call last): <stack traces unavailable> The current platform CPU is not among the platforms required by the module: [CUDA] \t [[{{node XlaCallModule}}]] \ttf2xla conversion failed while converting __inference_predict_fn_5016"
+    },
+    {
+      "nama": "soft device placement",
+      "status": "GAGAL",
+      "error": "Graph execution error:  Detected at node XlaCallModule defined at (most recent call last): <stack traces unavailable> The current platform CPU is not among the platforms required by the module: [CUDA] \t [[{{node XlaCallModule}}]] \ttf2xla conversion failed while converting __inference_predict_fn_5016"
+    }
+  ],
+  "bisa_di_cpu": false
+}

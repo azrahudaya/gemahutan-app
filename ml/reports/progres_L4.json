@@ -1,0 +1,38 @@
+{
+  "updated_utc": "2026-09-29T05:30:00Z",
+  "fase": "Lampiran 4",
+  "audit_model": "16 LULUS, 2 GAGAL, 3 MELESET, 1 MANUSIA",
+  "butir_lulus_penuh": [1, 2, 3, 4, 7, 9],
+  "butir_lulus_penuh_jumlah": "6/10",
+  "gagal_tersisa": {
+    "C17": "lisensi iNat: korpus v5 lisensi-bersih tapi mutunya belum menang; butuh keputusan manusia",
+    "C18": "label 3 detik pertama: skrip ml/extract_jendela_bersuara.py siap, belum jalan penuh"
+  },
+  "meleset": {
+    "C13": "FP pengecoh lapor 0.526 (target <=0.15), recall target 0.704",
+    "C14": "F1 CV 0.729 (target >=0.78), independen F1 0.686 (target >=0.75)",
+    "C15": "ponsel P 0.659 R 0.527 (target P>=0.75 R>=0.62)"
+  },
+  "manusia": {
+    "C21": "data lapangan asli baru 2.1 menit (butuh >=30)"
+  },
+  "selesai_putaran_ini": [
+    "butir 7 LULUS: streaming RAM 3.9 GB -> 1.1 GB, latensi.json skema ML_00",
+    "butir 8: audit lisensi iNat berbukti (skema dataset, bukan asumsi)",
+    "butir 6: sapuan cascade 3 putaran; hanya trackb_wajib_birdnet berpengaruh besar",
+    "korpus v5 dibangun (negatif iNat -> 1.482 negatif XC, 237 spesies); TIDAK lulus gerbang",
+    "hasil_negatif.md ditulis (syarat MELESET)"
+  ],
+  "v5_hasil": {
+    "korpus": "v3 8356 -> v5 6633 klip (train 6379, val 127, uji 127)",
+    "uji_acc_v3": 0.7795,
+    "uji_acc_v5": 0.7638,
+    "selisih": -0.0157,
+    "cv_f1_v5": 0.6939,
+    "spesies_turun_gt_015": 3,
+    "kesimpulan": "produksi tetap LR v3"
+  },
+  "a3_status": "ruff 0 (repo), ml/tests 16 pass, worker 33 pass, api 99 pass",
+  "container": "worker healthy, api healthy, web healthy",
+  "langkah_berikutnya": "keputusan manusia C17; jalankan ekstraksi jendela bersuara; eksperimen C13 skor energi"
+}

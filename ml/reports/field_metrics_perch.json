@@ -1,0 +1,32 @@
+{
+  "bersih": {
+    "jumlah_jendela": 127,
+    "akurasi_top1": 0.8346,
+    "macro_f1": 0.7916,
+    "kelas_dinilai": 25,
+    "tingkat_deteksi": 0.7874
+  },
+  "inat": {
+    "jumlah_berkas": 113,
+    "jumlah_jendela": 465,
+    "akurasi_top1": 0.628,
+    "macro_f1": 0.636,
+    "kelas_dinilai": 23,
+    "tingkat_deteksi": 0.8473,
+    "berkas_terbaca": 113
+  },
+  "xc_noisy": {
+    "jumlah_berkas": 108,
+    "jumlah_jendela": 560,
+    "akurasi_top1": 0.7661,
+    "macro_f1": 0.7858,
+    "kelas_dinilai": 24,
+    "tingkat_deteksi": 0.8946,
+    "berkas_terbaca": 108
+  },
+  "other": {
+    "jumlah_berkas": 21,
+    "jumlah_jendela": 106,
+    "deteksi_palsu": 0.5094
+  }
+}

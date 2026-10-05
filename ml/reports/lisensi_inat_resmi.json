@@ -1,0 +1,25 @@
+{
+  "sumber": "anotasi resmi iNatSounds 2024 (AWS Open Data)",
+  "berkas_anotasi": {
+    "train.json": 137012,
+    "val.json": 45698
+  },
+  "klip_iNat_diperiksa": 3205,
+  "cocok": 3205,
+  "tidak_ketemu": 0,
+  "per_status": {
+    "aman": 3176,
+    "dilarang_nd": 29
+  },
+  "per_lisensi": {
+    "Attribution-NonCommercial License": 2682,
+    "Attribution License": 365,
+    "Public Domain Dedication": 103,
+    "Attribution-NonCommercial-ShareAlike License": 11,
+    "Attribution-ShareAlike License": 15,
+    "Attribution-NonCommercial-NoDerivatives License": 29
+  },
+  "nd_total": 29,
+  "nd_di_split_latih_produksi": 29,
+  "lisensi_tak_dikenal": 0
+}

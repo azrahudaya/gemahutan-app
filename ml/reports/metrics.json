@@ -1,0 +1,221 @@
+{
+  "test_acc": 0.7795275590551181,
+  "val_acc": 0.8110236220472441,
+  "macro_precision": 0.7429230769230769,
+  "macro_recall": 0.6992576923076924,
+  "macro_f1": 0.7039846153846153,
+  "checkpoint_dir": "ml/checkpoints_logreg_v3",
+  "emb_dir": "ml/embeddings_v3",
+  "per_species": {
+    "Aegithina tiphia": {
+      "precision": 0.75,
+      "recall": 0.6,
+      "f1": 0.6667,
+      "auc_pr": 0.5333,
+      "support": 5
+    },
+    "Amaurornis phoenicurus": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "auc_pr": 0.8,
+      "support": 5
+    },
+    "Anthreptes malacensis": {
+      "precision": 0.8333,
+      "recall": 1.0,
+      "f1": 0.9091,
+      "auc_pr": 0.8,
+      "support": 5
+    },
+    "Aplonis panayensis": {
+      "precision": 0.3333,
+      "recall": 0.5,
+      "f1": 0.4,
+      "auc_pr": 0.3513,
+      "support": 4
+    },
+    "Arachnothera longirostra": {
+      "precision": 0.75,
+      "recall": 1.0,
+      "f1": 0.8571,
+      "auc_pr": 0.6667,
+      "support": 3
+    },
+    "Centropus bengalensis": {
+      "precision": 1.0,
+      "recall": 0.8,
+      "f1": 0.8889,
+      "auc_pr": 0.7667,
+      "support": 5
+    },
+    "Chalcophaps indica": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "auc_pr": 0.6667,
+      "support": 3
+    },
+    "Cinnyris jugularis": {
+      "precision": 0.6667,
+      "recall": 1.0,
+      "f1": 0.8,
+      "auc_pr": 0.8095,
+      "support": 6
+    },
+    "Cisticola juncidis": {
+      "precision": 1.0,
+      "recall": 0.6667,
+      "f1": 0.8,
+      "auc_pr": 0.7917,
+      "support": 6
+    },
+    "Corvus macrorhynchos": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "auc_pr": 0.75,
+      "support": 4
+    },
+    "Dicrurus macrocercus": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0,
+      "auc_pr": 0.3889,
+      "support": 3
+    },
+    "Gallus gallus": {
+      "precision": 0,
+      "recall": 0.0,
+      "f1": 0,
+      "auc_pr": 0.0417,
+      "support": 1
+    },
+    "Geopelia striata": {
+      "precision": 1.0,
+      "recall": 0.6,
+      "f1": 0.75,
+      "auc_pr": 0.6156,
+      "support": 5
+    },
+    "Haliastur indus": {
+      "precision": 1.0,
+      "recall": 0.75,
+      "f1": 0.8571,
+      "auc_pr": 0.6,
+      "support": 4
+    },
+    "Hirundo tahitica": {
+      "precision": 0.2,
+      "recall": 0.3333,
+      "f1": 0.25,
+      "auc_pr": 0.2242,
+      "support": 3
+    },
+    "Lonchura punctulata": {
+      "precision": 1.0,
+      "recall": 0.5,
+      "f1": 0.6667,
+      "auc_pr": 0.625,
+      "support": 4
+    },
+    "Merops philippinus": {
+      "precision": 0.8,
+      "recall": 1.0,
+      "f1": 0.8889,
+      "auc_pr": 0.75,
+      "support": 4
+    },
+    "Orthotomus sutorius": {
+      "precision": 0.6,
+      "recall": 0.6,
+      "f1": 0.6,
+      "auc_pr": 0.5922,
+      "support": 5
+    },
+    "Passer montanus": {
+      "precision": 0.8333,
+      "recall": 0.8333,
+      "f1": 0.8333,
+      "auc_pr": 0.7917,
+      "support": 6
+    },
+    "Prinia familiaris": {
+      "precision": 0,
+      "recall": 0.0,
+      "f1": 0,
+      "auc_pr": 0.3333,
+      "support": 1
+    },
+    "Pycnonotus aurigaster": {
+      "precision": 1.0,
+      "recall": 0.5,
+      "f1": 0.6667,
+      "auc_pr": 0.5866,
+      "support": 6
+    },
+    "Pycnonotus goiavier": {
+      "precision": 0.8571,
+      "recall": 1.0,
+      "f1": 0.9231,
+      "auc_pr": 0.8333,
+      "support": 6
+    },
+    "Rhipidura javanica": {
+      "precision": 1.0,
+      "recall": 0.75,
+      "f1": 0.8571,
+      "auc_pr": 0.7,
+      "support": 4
+    },
+    "Spilopelia chinensis": {
+      "precision": 1.0,
+      "recall": 0.8,
+      "f1": 0.8889,
+      "auc_pr": 0.6526,
+      "support": 5
+    },
+    "Todiramphus chloris": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "auc_pr": 0.8,
+      "support": 5
+    },
+    "_negative": {
+      "precision": 0.6923,
+      "recall": 0.9474,
+      "f1": 0.8,
+      "auc_pr": 0.8145,
+      "support": 19
+    }
+  },
+  "thresholds": {
+    "Aegithina tiphia": 0.5,
+    "Amaurornis phoenicurus": 0.15,
+    "Anthreptes malacensis": 0.25,
+    "Aplonis panayensis": 0.15,
+    "Arachnothera longirostra": 0.15,
+    "Centropus bengalensis": 0.15,
+    "Chalcophaps indica": 0.1,
+    "Cinnyris jugularis": 0.45,
+    "Cisticola juncidis": 0.15,
+    "Corvus macrorhynchos": 0.3,
+    "Dicrurus macrocercus": 0.15,
+    "Gallus gallus": 0.1,
+    "Geopelia striata": 0.15,
+    "Haliastur indus": 0.15,
+    "Hirundo tahitica": 0.1,
+    "Lonchura punctulata": 0.25,
+    "Merops philippinus": 0.15,
+    "Orthotomus sutorius": 0.15,
+    "Passer montanus": 0.15,
+    "Prinia familiaris": 0.1,
+    "Pycnonotus aurigaster": 0.25,
+    "Pycnonotus goiavier": 0.35,
+    "Rhipidura javanica": 0.6,
+    "Spilopelia chinensis": 0.35,
+    "Todiramphus chloris": 0.1,
+    "_negative": 0.3
+  }
+}

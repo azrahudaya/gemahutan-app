@@ -1,0 +1,252 @@
+{
+  "n_bootstrap": 10000,
+  "seed": 2026,
+  "per_konfigurasi": [
+    {
+      "berkas": "/tmp/baseline_2559.json",
+      "n_pilih": 163,
+      "fp_rate": {
+        "n": 59,
+        "titik": 0.4237,
+        "ci95": [
+          0.3051,
+          0.5593
+        ]
+      },
+      "recall_target": {
+        "n": 104,
+        "titik": 0.7981,
+        "ci95": [
+          0.7212,
+          0.875
+        ]
+      },
+      "phone_recall": {
+        "n": 56,
+        "titik": 0.6964,
+        "ci95": [
+          0.5714,
+          0.8036
+        ]
+      },
+      "phone_presisi": {
+        "n": 56,
+        "titik": 0.8298,
+        "ci95": [
+          0.7234,
+          0.9268
+        ]
+      },
+      "nama": "baseline_25of59"
+    },
+    {
+      "berkas": "ml/reports/snapshots_s1/e2e_lunak07.json",
+      "n_pilih": 163,
+      "fp_rate": {
+        "n": 59,
+        "titik": 0.2712,
+        "ci95": [
+          0.1695,
+          0.3898
+        ]
+      },
+      "recall_target": {
+        "n": 104,
+        "titik": 0.7788,
+        "ci95": [
+          0.6923,
+          0.8558
+        ]
+      },
+      "phone_recall": {
+        "n": 56,
+        "titik": 0.6786,
+        "ci95": [
+          0.5536,
+          0.8036
+        ]
+      },
+      "phone_presisi": {
+        "n": 56,
+        "titik": 0.8636,
+        "ci95": [
+          0.7609,
+          0.9535
+        ]
+      },
+      "nama": "lunak_0.7"
+    },
+    {
+      "berkas": "ml/reports/snapshots_s1/e2e_lunak09.json",
+      "n_pilih": 163,
+      "fp_rate": {
+        "n": 59,
+        "titik": 0.2203,
+        "ci95": [
+          0.1186,
+          0.339
+        ]
+      },
+      "recall_target": {
+        "n": 104,
+        "titik": 0.75,
+        "ci95": [
+          0.6635,
+          0.8269
+        ]
+      },
+      "phone_recall": {
+        "n": 56,
+        "titik": 0.6607,
+        "ci95": [
+          0.5357,
+          0.7857
+        ]
+      },
+      "phone_presisi": {
+        "n": 56,
+        "titik": 0.9024,
+        "ci95": [
+          0.8056,
+          0.9762
+        ]
+      },
+      "nama": "lunak_0.9"
+    },
+    {
+      "berkas": "ml/reports/snapshots_s1/e2e_lunak095.json",
+      "n_pilih": 163,
+      "fp_rate": {
+        "n": 59,
+        "titik": 0.2203,
+        "ci95": [
+          0.1186,
+          0.339
+        ]
+      },
+      "recall_target": {
+        "n": 104,
+        "titik": 0.7404,
+        "ci95": [
+          0.6538,
+          0.8269
+        ]
+      },
+      "phone_recall": {
+        "n": 56,
+        "titik": 0.6607,
+        "ci95": [
+          0.5357,
+          0.7857
+        ]
+      },
+      "phone_presisi": {
+        "n": 56,
+        "titik": 0.9024,
+        "ci95": [
+          0.8056,
+          0.9762
+        ]
+      },
+      "nama": "lunak_0.95"
+    }
+  ],
+  "selisih": [
+    {
+      "a": "baseline_25of59",
+      "b": "lunak_0.7",
+      "metode": "bootstrap berpasangan per berkas",
+      "fp_rate": {
+        "n_berkas_sama": 59,
+        "selisih": -0.1525,
+        "ci95": [
+          -0.2542,
+          -0.0678
+        ],
+        "beda_nyata": true
+      },
+      "recall_target": {
+        "n_berkas_sama": 104,
+        "selisih": -0.0192,
+        "ci95": [
+          -0.0481,
+          0.0
+        ],
+        "beda_nyata": false
+      },
+      "phone_recall": {
+        "n_berkas_sama": 56,
+        "selisih": -0.0179,
+        "ci95": [
+          -0.0536,
+          0.0
+        ],
+        "beda_nyata": false
+      }
+    },
+    {
+      "a": "baseline_25of59",
+      "b": "lunak_0.9",
+      "metode": "bootstrap berpasangan per berkas",
+      "fp_rate": {
+        "n_berkas_sama": 59,
+        "selisih": -0.2034,
+        "ci95": [
+          -0.3051,
+          -0.1017
+        ],
+        "beda_nyata": true
+      },
+      "recall_target": {
+        "n_berkas_sama": 104,
+        "selisih": -0.0481,
+        "ci95": [
+          -0.0962,
+          -0.0096
+        ],
+        "beda_nyata": true
+      },
+      "phone_recall": {
+        "n_berkas_sama": 56,
+        "selisih": -0.0357,
+        "ci95": [
+          -0.0893,
+          0.0
+        ],
+        "beda_nyata": false
+      }
+    },
+    {
+      "a": "baseline_25of59",
+      "b": "lunak_0.95",
+      "metode": "bootstrap berpasangan per berkas",
+      "fp_rate": {
+        "n_berkas_sama": 59,
+        "selisih": -0.2034,
+        "ci95": [
+          -0.3051,
+          -0.1017
+        ],
+        "beda_nyata": true
+      },
+      "recall_target": {
+        "n_berkas_sama": 104,
+        "selisih": -0.0577,
+        "ci95": [
+          -0.1058,
+          -0.0192
+        ],
+        "beda_nyata": true
+      },
+      "phone_recall": {
+        "n_berkas_sama": 56,
+        "selisih": -0.0357,
+        "ci95": [
+          -0.0893,
+          0.0
+        ],
+        "beda_nyata": false
+      }
+    }
+  ]
+}

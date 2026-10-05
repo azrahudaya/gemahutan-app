@@ -1,0 +1,206 @@
+[
+  {
+    "n_other_pilih": 59,
+    "fp_berkas": 25,
+    "fp_rate": 0.4237,
+    "n_target_pilih": 104,
+    "recall_target": 0.7981,
+    "n_phone_pilih": 56,
+    "phone_presisi": 0.8298,
+    "phone_recall": 0.6964,
+    "nama": "tanpa_konfirmasi",
+    "config": {
+      "trackb_wajib_birdnet": false,
+      "trackb_konfirmasi_topk": 0,
+      "trackb_konfirmasi_skor_min": 0.0
+    },
+    "waktu_s": 273.1
+  },
+  {
+    "n_other_pilih": 59,
+    "fp_berkas": 12,
+    "fp_rate": 0.2034,
+    "n_target_pilih": 104,
+    "recall_target": 0.6442,
+    "n_phone_pilih": 56,
+    "phone_presisi": 0.9189,
+    "phone_recall": 0.6071,
+    "nama": "wajib_bn_saja",
+    "config": {
+      "trackb_wajib_birdnet": true,
+      "trackb_konfirmasi_topk": 0,
+      "trackb_konfirmasi_skor_min": 0.0
+    },
+    "waktu_s": 276.0
+  },
+  {
+    "n_other_pilih": 59,
+    "fp_berkas": 10,
+    "fp_rate": 0.1695,
+    "n_target_pilih": 104,
+    "recall_target": 0.625,
+    "n_phone_pilih": 56,
+    "phone_presisi": 0.9167,
+    "phone_recall": 0.5893,
+    "nama": "topk_1",
+    "config": {
+      "trackb_wajib_birdnet": false,
+      "trackb_konfirmasi_topk": 1,
+      "trackb_konfirmasi_skor_min": 0.0
+    },
+    "waktu_s": 274.4
+  },
+  {
+    "n_other_pilih": 59,
+    "fp_berkas": 10,
+    "fp_rate": 0.1695,
+    "n_target_pilih": 104,
+    "recall_target": 0.625,
+    "n_phone_pilih": 56,
+    "phone_presisi": 0.9167,
+    "phone_recall": 0.5893,
+    "nama": "topk_3",
+    "config": {
+      "trackb_wajib_birdnet": false,
+      "trackb_konfirmasi_topk": 3,
+      "trackb_konfirmasi_skor_min": 0.0
+    },
+    "waktu_s": 318.6
+  },
+  {
+    "n_other_pilih": 59,
+    "fp_berkas": 10,
+    "fp_rate": 0.1695,
+    "n_target_pilih": 104,
+    "recall_target": 0.625,
+    "n_phone_pilih": 56,
+    "phone_presisi": 0.9167,
+    "phone_recall": 0.5893,
+    "nama": "topk_5",
+    "config": {
+      "trackb_wajib_birdnet": false,
+      "trackb_konfirmasi_topk": 5,
+      "trackb_konfirmasi_skor_min": 0.0
+    },
+    "waktu_s": 324.1
+  },
+  {
+    "n_other_pilih": 59,
+    "fp_berkas": 10,
+    "fp_rate": 0.1695,
+    "n_target_pilih": 104,
+    "recall_target": 0.625,
+    "n_phone_pilih": 56,
+    "phone_presisi": 0.9167,
+    "phone_recall": 0.5893,
+    "nama": "topk_10",
+    "config": {
+      "trackb_wajib_birdnet": false,
+      "trackb_konfirmasi_topk": 10,
+      "trackb_konfirmasi_skor_min": 0.0
+    },
+    "waktu_s": 326.0
+  },
+  {
+    "n_other_pilih": 59,
+    "fp_berkas": 10,
+    "fp_rate": 0.1695,
+    "n_target_pilih": 104,
+    "recall_target": 0.625,
+    "n_phone_pilih": 56,
+    "phone_presisi": 0.9167,
+    "phone_recall": 0.5893,
+    "nama": "skor_0.01",
+    "config": {
+      "trackb_wajib_birdnet": false,
+      "trackb_konfirmasi_topk": 0,
+      "trackb_konfirmasi_skor_min": 0.01
+    },
+    "waktu_s": 322.6
+  },
+  {
+    "n_other_pilih": 59,
+    "fp_berkas": 10,
+    "fp_rate": 0.1695,
+    "n_target_pilih": 104,
+    "recall_target": 0.625,
+    "n_phone_pilih": 56,
+    "phone_presisi": 0.9167,
+    "phone_recall": 0.5893,
+    "nama": "skor_0.02",
+    "config": {
+      "trackb_wajib_birdnet": false,
+      "trackb_konfirmasi_topk": 0,
+      "trackb_konfirmasi_skor_min": 0.02
+    },
+    "waktu_s": 323.5
+  },
+  {
+    "n_other_pilih": 59,
+    "fp_berkas": 10,
+    "fp_rate": 0.1695,
+    "n_target_pilih": 104,
+    "recall_target": 0.625,
+    "n_phone_pilih": 56,
+    "phone_presisi": 0.9167,
+    "phone_recall": 0.5893,
+    "nama": "skor_0.05",
+    "config": {
+      "trackb_wajib_birdnet": false,
+      "trackb_konfirmasi_topk": 0,
+      "trackb_konfirmasi_skor_min": 0.05
+    },
+    "waktu_s": 324.7
+  },
+  {
+    "n_other_pilih": 59,
+    "fp_berkas": 10,
+    "fp_rate": 0.1695,
+    "n_target_pilih": 104,
+    "recall_target": 0.625,
+    "n_phone_pilih": 56,
+    "phone_presisi": 0.9167,
+    "phone_recall": 0.5893,
+    "nama": "skor_0.1",
+    "config": {
+      "trackb_wajib_birdnet": false,
+      "trackb_konfirmasi_topk": 0,
+      "trackb_konfirmasi_skor_min": 0.1
+    },
+    "waktu_s": 325.1
+  },
+  {
+    "n_other_pilih": 59,
+    "fp_berkas": 10,
+    "fp_rate": 0.1695,
+    "n_target_pilih": 104,
+    "recall_target": 0.625,
+    "n_phone_pilih": 56,
+    "phone_presisi": 0.9167,
+    "phone_recall": 0.5893,
+    "nama": "wajib_bn_topk_3",
+    "config": {
+      "trackb_wajib_birdnet": true,
+      "trackb_konfirmasi_topk": 3,
+      "trackb_konfirmasi_skor_min": 0.0
+    },
+    "waktu_s": 325.4
+  },
+  {
+    "n_other_pilih": 59,
+    "fp_berkas": 10,
+    "fp_rate": 0.1695,
+    "n_target_pilih": 104,
+    "recall_target": 0.625,
+    "n_phone_pilih": 56,
+    "phone_presisi": 0.9167,
+    "phone_recall": 0.5893,
+    "nama": "wajib_bn_topk_5",
+    "config": {
+      "trackb_wajib_birdnet": true,
+      "trackb_konfirmasi_topk": 5,
+      "trackb_konfirmasi_skor_min": 0.0
+    },
+    "waktu_s": 314.6
+  }
+]

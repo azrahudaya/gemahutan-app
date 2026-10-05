@@ -1,0 +1,13 @@
+{
+  "lulus": true,
+  "waktu_unix": 1790577865,
+  "git_sha": "03aed9cffd950ee0ef6f339f202aa133a8c21f43",
+  "langkah": {
+    "daftar_masuk": true,
+    "unggah_proses_hasil": true,
+    "peta_ubin": true,
+    "rekam_halaman": true,
+    "verifikasi": true,
+    "ekspor": true
+  }
+}

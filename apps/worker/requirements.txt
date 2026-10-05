@@ -1,0 +1,23 @@
+arq>=0.26,<1
+redis>=5.0,<6
+boto3>=1.34,<2
+numpy>=1.26,<3
+scipy>=1.12,<2
+librosa>=0.10,<1
+resampy>=0.4,<1
+soundfile>=0.12,<1
+scikit-maad>=1.4,<2
+httpx>=0.27,<1
+birdnetlib==0.18.1
+tensorflow-cpu>=2.16
+audioread>=3.0
+# SQLAlchemy ditahan di bawah 2.1: sejak 2.1 driver bawaan untuk URL
+# `postgresql://` berubah dari psycopg2 ke psycopg (v3), yang TIDAK dipasang di
+# image ini. Rentang terbuka `>=2.0,<3` membuat rebuild menarik 2.1.1 dan
+# seluruh job worker mati dengan ModuleNotFoundError: No module named 'psycopg'.
+# Kalau mau naik ke 2.1, ganti juga psycopg2-binary ke psycopg[binary].
+sqlalchemy>=2.0,<2.1
+psycopg2-binary>=2.9,<3
+# matplotlib cuma dipakai merender spektrogram ke cache MinIO sebelum UI meminta
+matplotlib>=3.8,<4
+pyyaml>=6.0,<7

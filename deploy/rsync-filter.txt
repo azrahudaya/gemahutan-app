@@ -1,0 +1,20 @@
+# Saringan rsync untuk deploy produksi (dipakai ops/deploy_vps.sh).
+#
+# Baris `+` dan `-` adalah aturan include/exclude yang URUTANNYA PENTING.
+# Pola `+ .../**` yang lebih lebar ditulis setelah `- ...` supaya subfolder
+# tertentu tetap ikut sementara sisanya dikecualikan.
+#
+# Default rsync adalah "ikut semua", jadi baris `-` di sini membatasi apa yang
+# TIDAK ikut. Aturan `+` mengecualikan pembatasan itu untuk jalur yang wajib ada.
+
+# Koreksi kecil untuk model di server: daftar spesies dan satu JSON embeddings
+# wajib ikut, sementara embeddings lain yang besar tidak.
++ ml/embeddings/
++ ml/embeddings/*.json
+- ml/embeddings/**
+
+# Data model: daftar spesies wajib, sisanya (audio mentah, cache) tidak.
++ ml/data/
++ ml/data/species_list.json
++ ml/data/status_konservasi.csv
+- ml/data/**

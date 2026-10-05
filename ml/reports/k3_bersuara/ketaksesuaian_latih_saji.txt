@@ -1,0 +1,11 @@
+klip latih 8198, klip uji 126, kelas 26
+melatih LogReg pada embedding RATA-RATA klip...
+
+Model SAMA, klip uji sama, dua cara memberi masukan:
+  A. rata-rata jendela (seperti CV K3)      : 0.8968
+  B. jendela terkuat   (seperti produksi)   : 0.8889
+  B'. suara terbanyak antar jendela         : 0.8968
+  akurasi tiap jendela sendiri              : 0.8165  (n=2998 jendela)
+
+selisih A dikurangi B = +0.0079
+KESIMPULAN: ketaksesuaian kecil pada pool ini.

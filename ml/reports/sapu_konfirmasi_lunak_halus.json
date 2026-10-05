@@ -1,0 +1,116 @@
+[
+  {
+    "n_other_pilih": 59,
+    "fp_berkas": 25,
+    "fp_rate": 0.4237,
+    "n_target_pilih": 104,
+    "recall_target": 0.7981,
+    "n_phone_pilih": 56,
+    "phone_presisi": 0.8298,
+    "phone_recall": 0.6964,
+    "nama": "tanpa_konfirmasi",
+    "config": {
+      "trackb_wajib_birdnet": false,
+      "trackb_konfirmasi_topk": 0,
+      "trackb_konfirmasi_skor_min": 0.0,
+      "trackb_konfirmasi_skor_min_lunak": 0.0
+    },
+    "waktu_s": 304.8,
+    "snapshot": "ml/reports/snapshots_s1_halus/e2e_tanpa_konfirmasi.json"
+  },
+  {
+    "n_other_pilih": 59,
+    "fp_berkas": 12,
+    "fp_rate": 0.2034,
+    "n_target_pilih": 104,
+    "recall_target": 0.6442,
+    "n_phone_pilih": 56,
+    "phone_presisi": 0.9189,
+    "phone_recall": 0.6071,
+    "nama": "wajib_bn_keras",
+    "config": {
+      "trackb_wajib_birdnet": true,
+      "trackb_konfirmasi_topk": 0,
+      "trackb_konfirmasi_skor_min": 0.0,
+      "trackb_konfirmasi_skor_min_lunak": 0.0
+    },
+    "waktu_s": 299.1,
+    "snapshot": "ml/reports/snapshots_s1_halus/e2e_wajib_bn_keras.json"
+  },
+  {
+    "n_other_pilih": 59,
+    "fp_berkas": 13,
+    "fp_rate": 0.2203,
+    "n_target_pilih": 104,
+    "recall_target": 0.75,
+    "n_phone_pilih": 56,
+    "phone_presisi": 0.9024,
+    "phone_recall": 0.6607,
+    "nama": "lunak_0.91",
+    "config": {
+      "trackb_wajib_birdnet": true,
+      "trackb_konfirmasi_topk": 0,
+      "trackb_konfirmasi_skor_min": 0.0,
+      "trackb_konfirmasi_skor_min_lunak": 0.91
+    },
+    "waktu_s": 294.6,
+    "snapshot": "ml/reports/snapshots_s1_halus/e2e_lunak_091.json"
+  },
+  {
+    "n_other_pilih": 59,
+    "fp_berkas": 13,
+    "fp_rate": 0.2203,
+    "n_target_pilih": 104,
+    "recall_target": 0.75,
+    "n_phone_pilih": 56,
+    "phone_presisi": 0.9024,
+    "phone_recall": 0.6607,
+    "nama": "lunak_0.92",
+    "config": {
+      "trackb_wajib_birdnet": true,
+      "trackb_konfirmasi_topk": 0,
+      "trackb_konfirmasi_skor_min": 0.0,
+      "trackb_konfirmasi_skor_min_lunak": 0.92
+    },
+    "waktu_s": 304.2,
+    "snapshot": "ml/reports/snapshots_s1_halus/e2e_lunak_092.json"
+  },
+  {
+    "n_other_pilih": 59,
+    "fp_berkas": 13,
+    "fp_rate": 0.2203,
+    "n_target_pilih": 104,
+    "recall_target": 0.75,
+    "n_phone_pilih": 56,
+    "phone_presisi": 0.9024,
+    "phone_recall": 0.6607,
+    "nama": "lunak_0.93",
+    "config": {
+      "trackb_wajib_birdnet": true,
+      "trackb_konfirmasi_topk": 0,
+      "trackb_konfirmasi_skor_min": 0.0,
+      "trackb_konfirmasi_skor_min_lunak": 0.93
+    },
+    "waktu_s": 296.1,
+    "snapshot": "ml/reports/snapshots_s1_halus/e2e_lunak_093.json"
+  },
+  {
+    "n_other_pilih": 59,
+    "fp_berkas": 13,
+    "fp_rate": 0.2203,
+    "n_target_pilih": 104,
+    "recall_target": 0.7404,
+    "n_phone_pilih": 56,
+    "phone_presisi": 0.9024,
+    "phone_recall": 0.6607,
+    "nama": "lunak_0.94",
+    "config": {
+      "trackb_wajib_birdnet": true,
+      "trackb_konfirmasi_topk": 0,
+      "trackb_konfirmasi_skor_min": 0.0,
+      "trackb_konfirmasi_skor_min_lunak": 0.94
+    },
+    "waktu_s": 304.6,
+    "snapshot": "ml/reports/snapshots_s1_halus/e2e_lunak_094.json"
+  }
+]

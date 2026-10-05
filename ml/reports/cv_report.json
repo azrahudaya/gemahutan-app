@@ -1,0 +1,400 @@
+{
+  "n_splits": 5,
+  "n_total_samples": 924,
+  "n_classes": 26,
+  "config": {
+    "epochs": 200,
+    "hidden": 256,
+    "lr": 0.001,
+    "batch_size": 64,
+    "seed": 42,
+    "dropout": 0.3,
+    "weight_decay": 0.0001,
+    "early_stop_patience": 30,
+    "lr_schedule": "ReduceLROnPlateau(factor=0.5,patience=15,min=1e-5)",
+    "class_weight": "balanced via sklearn"
+  },
+  "best_val_acc_mean": 0.7405405405405406,
+  "best_val_acc_std": 0.039859138388520614,
+  "test_acc_mean": 0.6969858989424207,
+  "test_acc_std": 0.011573790434896262,
+  "f1_macro_mean": 0.6819452939957823,
+  "f1_macro_std": 0.0130078055220375,
+  "per_fold": [
+    {
+      "fold": 1,
+      "train_size": 665,
+      "val_size": 74,
+      "test_size": 185,
+      "best_val_acc": 0.6891891891891891,
+      "test_acc": 0.6972972972972973,
+      "f1_macro": 0.6906011105403819,
+      "epochs_trained": 32,
+      "temperature": 0.952112299551088,
+      "elapsed_s": 2.2
+    },
+    {
+      "fold": 2,
+      "train_size": 665,
+      "val_size": 74,
+      "test_size": 185,
+      "best_val_acc": 0.7567567567567568,
+      "test_acc": 0.6810810810810811,
+      "f1_macro": 0.6646195896136358,
+      "epochs_trained": 33,
+      "temperature": 1.1979165298132768,
+      "elapsed_s": 1.8
+    },
+    {
+      "fold": 3,
+      "train_size": 665,
+      "val_size": 74,
+      "test_size": 185,
+      "best_val_acc": 0.7297297297297297,
+      "test_acc": 0.6918918918918919,
+      "f1_macro": 0.6808820918966192,
+      "epochs_trained": 33,
+      "temperature": 1.1483128617732365,
+      "elapsed_s": 2.3
+    },
+    {
+      "fold": 4,
+      "train_size": 665,
+      "val_size": 74,
+      "test_size": 185,
+      "best_val_acc": 0.7297297297297297,
+      "test_acc": 0.7027027027027027,
+      "f1_macro": 0.675559907862242,
+      "epochs_trained": 32,
+      "temperature": 0.9303321367180253,
+      "elapsed_s": 2.4
+    },
+    {
+      "fold": 5,
+      "train_size": 666,
+      "val_size": 74,
+      "test_size": 184,
+      "best_val_acc": 0.7972972972972973,
+      "test_acc": 0.7119565217391305,
+      "f1_macro": 0.6980637700660325,
+      "epochs_trained": 32,
+      "temperature": 0.5942952812597759,
+      "elapsed_s": 1.5
+    }
+  ],
+  "per_class_accuracy": {
+    "Aegithina tiphia": {
+      "mean": 0.6428571428571428,
+      "std": 0.14285714285714285,
+      "n_folds_with_class_in_test": 5,
+      "per_fold": [
+        0.7142857142857143,
+        0.5714285714285714,
+        0.5714285714285714,
+        0.8571428571428571,
+        0.5
+      ]
+    },
+    "Amaurornis phoenicurus": {
+      "mean": 0.6964285714285714,
+      "std": 0.2059386177619785,
+      "n_folds_with_class_in_test": 5,
+      "per_fold": [
+        0.7142857142857143,
+        1.0,
+        0.7142857142857143,
+        0.42857142857142855,
+        0.625
+      ]
+    },
+    "Anthreptes malacensis": {
+      "mean": 0.6428571428571429,
+      "std": 0.15821468880954775,
+      "n_folds_with_class_in_test": 5,
+      "per_fold": [
+        0.75,
+        0.375,
+        0.625,
+        0.75,
+        0.7142857142857143
+      ]
+    },
+    "Aplonis panayensis": {
+      "mean": 0.5666666666666667,
+      "std": 0.19662688401964362,
+      "n_folds_with_class_in_test": 5,
+      "per_fold": [
+        0.5714285714285714,
+        0.3333333333333333,
+        0.8333333333333334,
+        0.6666666666666666,
+        0.42857142857142855
+      ]
+    },
+    "Arachnothera longirostra": {
+      "mean": 0.86,
+      "std": 0.21908902300206645,
+      "n_folds_with_class_in_test": 5,
+      "per_fold": [
+        1.0,
+        0.8,
+        1.0,
+        1.0,
+        0.5
+      ]
+    },
+    "Centropus bengalensis": {
+      "mean": 0.7857142857142858,
+      "std": 0.1807897922438981,
+      "n_folds_with_class_in_test": 5,
+      "per_fold": [
+        0.625,
+        1.0,
+        0.8571428571428571,
+        0.5714285714285714,
+        0.875
+      ]
+    },
+    "Chalcophaps indica": {
+      "mean": 0.8099999999999999,
+      "std": 0.10839741694339398,
+      "n_folds_with_class_in_test": 5,
+      "per_fold": [
+        1.0,
+        0.75,
+        0.8,
+        0.75,
+        0.75
+      ]
+    },
+    "Cinnyris jugularis": {
+      "mean": 0.6305555555555555,
+      "std": 0.16999001423104712,
+      "n_folds_with_class_in_test": 5,
+      "per_fold": [
+        0.5555555555555556,
+        0.6666666666666666,
+        0.375,
+        0.7777777777777778,
+        0.7777777777777778
+      ]
+    },
+    "Cisticola juncidis": {
+      "mean": 0.7777777777777778,
+      "std": 0.062112999374994135,
+      "n_folds_with_class_in_test": 5,
+      "per_fold": [
+        0.75,
+        0.75,
+        0.8888888888888888,
+        0.75,
+        0.75
+      ]
+    },
+    "Corvus macrorhynchos": {
+      "mean": 0.9,
+      "std": 0.09128709291752767,
+      "n_folds_with_class_in_test": 5,
+      "per_fold": [
+        1.0,
+        0.8333333333333334,
+        0.8333333333333334,
+        1.0,
+        0.8333333333333334
+      ]
+    },
+    "Dicrurus macrocercus": {
+      "mean": 0.6900000000000001,
+      "std": 0.1341640786499874,
+      "n_folds_with_class_in_test": 5,
+      "per_fold": [
+        0.6,
+        0.8,
+        0.5,
+        0.75,
+        0.8
+      ]
+    },
+    "Gallus gallus": {
+      "mean": 0.6,
+      "std": 0.4183300132670378,
+      "n_folds_with_class_in_test": 5,
+      "per_fold": [
+        0.5,
+        1.0,
+        0.5,
+        0.0,
+        1.0
+      ]
+    },
+    "Geopelia striata": {
+      "mean": 0.7714285714285714,
+      "std": 0.2166535841157586,
+      "n_folds_with_class_in_test": 5,
+      "per_fold": [
+        0.5714285714285714,
+        1.0,
+        1.0,
+        0.7142857142857143,
+        0.5714285714285714
+      ]
+    },
+    "Haliastur indus": {
+      "mean": 0.8333333333333334,
+      "std": 0.2041241452319315,
+      "n_folds_with_class_in_test": 5,
+      "per_fold": [
+        0.8333333333333334,
+        0.8333333333333334,
+        1.0,
+        1.0,
+        0.5
+      ]
+    },
+    "Hirundo tahitica": {
+      "mean": 0.48999999999999994,
+      "std": 0.32480763537823426,
+      "n_folds_with_class_in_test": 5,
+      "per_fold": [
+        0.6,
+        0.2,
+        1.0,
+        0.25,
+        0.4
+      ]
+    },
+    "Lonchura punctulata": {
+      "mean": 0.8666666666666668,
+      "std": 0.07453559924999298,
+      "n_folds_with_class_in_test": 5,
+      "per_fold": [
+        1.0,
+        0.8333333333333334,
+        0.8333333333333334,
+        0.8333333333333334,
+        0.8333333333333334
+      ]
+    },
+    "Merops philippinus": {
+      "mean": 0.9333333333333333,
+      "std": 0.09128709291752765,
+      "n_folds_with_class_in_test": 5,
+      "per_fold": [
+        0.8333333333333334,
+        1.0,
+        1.0,
+        1.0,
+        0.8333333333333334
+      ]
+    },
+    "Orthotomus sutorius": {
+      "mean": 0.6,
+      "std": 0.2733368072618132,
+      "n_folds_with_class_in_test": 5,
+      "per_fold": [
+        0.625,
+        0.8571428571428571,
+        0.14285714285714285,
+        0.625,
+        0.75
+      ]
+    },
+    "Passer montanus": {
+      "mean": 0.8138888888888889,
+      "std": 0.17883798447577637,
+      "n_folds_with_class_in_test": 5,
+      "per_fold": [
+        0.625,
+        0.7777777777777778,
+        0.6666666666666666,
+        1.0,
+        1.0
+      ]
+    },
+    "Prinia familiaris": {
+      "mean": 0.4666666666666667,
+      "std": 0.07453559924999299,
+      "n_folds_with_class_in_test": 5,
+      "per_fold": [
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.3333333333333333
+      ]
+    },
+    "Pycnonotus aurigaster": {
+      "mean": 0.6277777777777779,
+      "std": 0.09075727362613635,
+      "n_folds_with_class_in_test": 5,
+      "per_fold": [
+        0.7777777777777778,
+        0.5555555555555556,
+        0.5555555555555556,
+        0.625,
+        0.625
+      ]
+    },
+    "Pycnonotus goiavier": {
+      "mean": 0.675,
+      "std": 0.3601215072721983,
+      "n_folds_with_class_in_test": 5,
+      "per_fold": [
+        0.875,
+        0.125,
+        0.5,
+        0.875,
+        1.0
+      ]
+    },
+    "Rhipidura javanica": {
+      "mean": 0.8533333333333335,
+      "std": 0.16431676725154987,
+      "n_folds_with_class_in_test": 5,
+      "per_fold": [
+        0.8333333333333334,
+        0.6,
+        1.0,
+        0.8333333333333334,
+        1.0
+      ]
+    },
+    "Spilopelia chinensis": {
+      "mean": 0.9428571428571428,
+      "std": 0.12777531299998798,
+      "n_folds_with_class_in_test": 5,
+      "per_fold": [
+        1.0,
+        1.0,
+        0.7142857142857143,
+        1.0,
+        1.0
+      ]
+    },
+    "Todiramphus chloris": {
+      "mean": 0.8,
+      "std": 0.16288220358559113,
+      "n_folds_with_class_in_test": 5,
+      "per_fold": [
+        0.7142857142857143,
+        1.0,
+        0.8571428571428571,
+        0.5714285714285714,
+        0.8571428571428571
+      ]
+    },
+    "_negative": {
+      "mean": 0.42553846153846153,
+      "std": 0.06675575900959217,
+      "n_folds_with_class_in_test": 5,
+      "per_fold": [
+        0.4,
+        0.4,
+        0.46153846153846156,
+        0.34615384615384615,
+        0.52
+      ]
+    }
+  },
+  "created_at": "2026-09-23T15:38:41"
+}

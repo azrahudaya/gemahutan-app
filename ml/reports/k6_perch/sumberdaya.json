@@ -1,0 +1,42 @@
+{
+  "audio": "bench_60min.mp3",
+  "durasi_audio_s": 3600.0,
+  "perangkat": "GPU",
+  "n_jendela": 720,
+  "batch": 8,
+  "waktu_muat_model_s": 1.4,
+  "waktu_baca_audio_s": 5.8,
+  "waktu_embedding_s": 18.3,
+  "waktu_total_s": 25.6,
+  "faktor_realtime": 0.007,
+  "rss_awal_mb": 740.0,
+  "rss_setelah_muat_mb": 1471.0,
+  "rss_setelah_pemanasan_mb": 3498.0,
+  "rss_puncak_mb": 3498.0,
+  "batas_rss_mb": 4096,
+  "batas_waktu_s": 900,
+  "lulus_rss": true,
+  "lulus_waktu": true,
+  "lulus_sumberdaya": true,
+  "baseline_produksi": {
+    "waktu_s": 94.6,
+    "rss_maks_mb": 1134,
+    "sumber": "ml/reports/latensi.json"
+  },
+  "catatan_cpu": {
+    "bisa_jalan_di_cpu": false,
+    "bukti": "ml/reports/k6_perch/cek_cpu.json",
+    "error": "The current platform CPU is not among the platforms required by the module: [CUDA]",
+    "jalur_dicoba": [
+      "serving_default di CPU",
+      "jit dimatikan",
+      "soft device placement"
+    ],
+    "semua_gagal": true
+  },
+  "mesin_server_produksi": "Intel N100 4-core, 8 GB RAM, TensorFlow CPU (dari ml/reports/latensi.json), TANPA GPU",
+  "angka_gpu_berlaku_untuk_server": false,
+  "verdict_sumberdaya_untuk_produksi": "GAGAL",
+  "alasan_verdict": "Angka GPU di berkas ini LULUS batas (25,6 s < 900 s, 3498 MB < 4096 MB), tapi tidak berlaku untuk server: Perch 2.0 SavedModel menolak jalan di CPU sama sekali, dan server produksi CPU-saja. Jadi K6 GAGAL sumber daya, bukan karena lambat atau boros, tapi karena tidak bisa dieksekusi di perangkat target.",
+  "rss_gpu_catatan": "RSS puncak 3498 MB itu RSS host, dan 85 persen dari batas 4096 MB. Lonjakan terjadi saat pemanasan (1471 -> 3498 MB), yaitu alokasi arena XLA, bukan saat memproses audio."
+}

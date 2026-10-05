@@ -1,0 +1,278 @@
+@import "tailwindcss";
+@config "../../tailwind.config.js";
+
+/* daisyUI 5 dengan satu tema terang "gemahutan": putih dan hijau ala Tokopedia.
+   #00AA5B untuk grafik dan ilustrasi (3:1 di atas putih), #00873F untuk tombol bertulisan
+   putih (4,6:1), #007A3D untuk teks hijau (5,5:1). */
+@plugin "daisyui" {
+  themes: false;
+}
+@plugin "daisyui/theme" {
+  name: "gemahutan";
+  default: true;
+  prefersdark: false;
+  color-scheme: light;
+  --color-base-100: #FFFFFF;
+  --color-base-200: #F4F7F5;
+  --color-base-300: #E3E8E4;
+  --color-base-content: #111111;
+  --color-primary: #00873F;
+  --color-primary-content: #FFFFFF;
+  --color-secondary: #E5F6EC;
+  --color-secondary-content: #00602D;
+  --color-accent: #00AA5B;
+  --color-accent-content: #062A15;
+  --color-neutral: #14261C;
+  --color-neutral-content: #EEF3EF;
+  --color-info: #0067B8;
+  --color-info-content: #FFFFFF;
+  --color-success: #00873F;
+  --color-success-content: #FFFFFF;
+  --color-warning: #9A5B00;
+  --color-warning-content: #FFFFFF;
+  --color-error: #B42318;
+  --color-error-content: #FFFFFF;
+  --radius-selector: 2rem;
+  --radius-field: 0.5rem;
+  --radius-box: 1rem;
+  --size-selector: 0.25rem;
+  --size-field: 0.25rem;
+  --border: 1px;
+  --depth: 1;
+  --noise: 0;
+}
+
+@theme {
+  --font-sans: var(--font-jakarta), ui-sans-serif, system-ui, sans-serif;
+
+  /* Gerak halaman depan: lingkar foto, kata judul yang naik, sapuan pita rekaman. */
+  --animate-orbit: orbit 110s linear infinite;
+  --animate-orbit-balik: orbit 110s linear infinite reverse;
+  --animate-orbit-dalam: orbit 85s linear infinite reverse;
+  --animate-orbit-dalam-balik: orbit 85s linear infinite;
+  --animate-kata: kata 0.9s cubic-bezier(0.2, 0.7, 0.2, 1) both;
+  --animate-pantul: pantul 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  --animate-centang: centang 0.4s ease-out 0.2s both;
+  --animate-muncul: muncul 0.7s cubic-bezier(0.2, 0.7, 0.2, 1) both;
+  --animate-isi: isi 3s ease-out both;
+  --animate-sapu: sapu 3s linear both;
+
+  @keyframes orbit {
+    to { transform: rotate(360deg); }
+  }
+  @keyframes kata {
+    from { transform: translateY(105%); }
+    to { transform: translateY(0); }
+  }
+  @keyframes pantul {
+    0% { transform: scale(0.97); }
+    60% { transform: scale(1.015); }
+    100% { transform: scale(1); }
+  }
+  @keyframes isi {
+    from { width: 0%; }
+    to { width: 100%; }
+  }
+  @keyframes sapu {
+    from { left: 0%; }
+    to { left: 100%; }
+  }
+  @keyframes muncul {
+    from { opacity: 0; transform: translateY(12px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  @keyframes centang {
+    from { stroke-dashoffset: 24; }
+    to { stroke-dashoffset: 0; }
+  }
+}
+
+/* Kompatibilitas Tailwind 3: kelas `border` tanpa warna dulu abu-abu, bukan currentColor,
+   dan tombol dulu memakai kursor tangan. */
+@layer base {
+  *, ::after, ::before, ::backdrop, ::file-selector-button {
+    border-color: var(--color-gray-200, currentColor);
+  }
+  button:not(:disabled), [role="button"]:not(:disabled) {
+    cursor: pointer;
+  }
+}
+
+:root {
+  /* Palet terang. Arah dari pemilik produk (2 Okt 2026): putih, teks hitam, satu aksen
+     hijau ala Tokopedia dengan bentuk tombol "button-7". Semua kontras teks dicek dengan contrast-check.py. */
+  --background: #FFFFFF;
+  --card: #FFFFFF;
+  --card-hover: #F5F6F7;
+  --card-selected: #EEF8F2;
+
+  /* Teks: 18,9:1 dan 6,1:1 di atas putih */
+  --foreground: #111111;
+  --muted-foreground: #5F6368;
+
+  /* Struktur. --border untuk garis pemisah; kolom isian memakai --garis-kontrol (3,3:1). */
+  --border: #E4E6E8;
+  --garis-kontrol: #8A8F94;
+  --muted: #F4F5F6;
+  --ring: #007A3D;
+
+  /* Aksi: isi tombol hijau, bentuk mengikuti contoh button-7 */
+  --primary: #00873F;
+  --primary-hover: #00733A;
+  --primary-active: #005F30;
+  --primary-foreground: #FFFFFF;
+  /* Hijau sebagai teks dan ikon di atas putih */
+  --primary-text: #007A3D;
+  --primary-text-hover: #00602D;
+  --destructive: #B42318;
+  --destructive-surface: #FDECEA;
+  --primary-surface: #E5F6EC;
+
+  /* Penanda status: selesai (hijau) dan sedang (jingga), keduanya lolos AA */
+  --accent: #007A3D;
+  --accent-foreground: #FFFFFF;
+  --highlight: #9A5B00;
+}
+
+@layer base {
+body {
+  font-family: var(--font-sans);
+  background-color: var(--background);
+  color: var(--foreground);
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+}
+
+/* Utilities */
+.border-border { border-color: var(--border); }
+.border-t-border { border-top-color: var(--border); }
+.border-b-border { border-bottom-color: var(--border); }
+.border-l-border { border-left-color: var(--border); }
+.border-r-border { border-right-color: var(--border); }
+
+.bg-background { background-color: var(--background); }
+.bg-card { background-color: var(--card); }
+.bg-card-hover:hover { background-color: var(--card-hover); }
+.bg-card-selected { background-color: var(--card-selected); }
+
+.text-foreground { color: var(--foreground); }
+.text-muted-foreground { color: var(--muted-foreground); }
+
+.text-primary { color: var(--primary-text); }
+.text-primary-hover:hover { color: var(--primary-text-hover); }
+.text-accent { color: var(--accent); }
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--background);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--border);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--garis-kontrol);
+}
+
+/* Selection */
+::selection {
+  background: var(--primary);
+  color: var(--primary-foreground);
+}
+
+/* Links */
+@layer base {
+  a {
+    color: var(--primary-text);
+    text-decoration: none;
+  }
+  a:hover {
+    color: var(--primary-text-hover);
+    text-decoration: underline;
+  }
+}
+
+/* Fokus keyboard. Tautan navigasi sebelumnya hanya mengandalkan outline bawaan
+   peramban yang warnanya sama dengan latar bilah, jadi tidak terlihat sama
+   sekali (terukur 0 piksel berubah saat difokus). */
+.focus-ring {
+  outline: none;
+}
+.focus-ring:focus-visible {
+  outline: 2px solid var(--ring);
+  outline-offset: 2px;
+  border-radius: 4px;
+}
+
+/* Target sentuh minimum 44px di layar kecil. Terukur sebelumnya: 83 kontrol di
+   bawah 44px pada lima halaman mobile, termasuk pemilih dan tombol utama. */
+@layer base {
+@media (max-width: 640px) {
+  input:not([type="checkbox"]):not([type="radio"]),
+  select,
+  textarea,
+  button {
+    min-height: 44px;
+  }
+}
+}
+@media (max-width: 640px) {
+  .maplibregl-ctrl button {
+    width: 44px;
+    height: 44px;
+  }
+}
+.maplibregl-ctrl-group > button {
+  min-width: 36px !important;
+  min-height: 36px !important;
+  width: 36px !important;
+  height: 36px !important;
+  box-sizing: border-box;
+}
+@media (max-width: 640px) {
+  .maplibregl-ctrl-group > button {
+    min-width: 44px !important;
+    min-height: 44px !important;
+    width: 44px !important;
+    height: 44px !important;
+  }
+}
+
+/* Hormati permintaan pengguna yang tidak ingin gerakan. */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* Kolom isian butuh batas 3:1 terhadap latar (WCAG 1.4.11). Garis kartu tetap tipis. */
+@layer base {
+  input:not([type="checkbox"]):not([type="radio"]):not([type="range"]),
+  select[class],
+  textarea[class] {
+    border-color: var(--garis-kontrol);
+  }
+}
+
+/* Tombol berisi warna primer mengikuti contoh button-7: bayangan dalam tipis dan
+   warna tekan yang lebih gelap. */
+.bg-\[var\(--primary\)\] {
+  box-shadow: rgba(255, 255, 255, .4) 0 1px 0 0 inset;
+}
+.bg-\[var\(--primary\)\]:active {
+  background-color: var(--primary-active);
+  box-shadow: none;
+}

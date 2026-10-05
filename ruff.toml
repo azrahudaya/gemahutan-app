@@ -1,0 +1,16 @@
+# Konfigurasi ruff untuk seluruh repo (API, worker, ML).
+# Dipakai sama persis oleh CI supaya hasil lokal dan GitHub Actions tidak beda.
+line-length = 100
+target-version = "py311"
+
+[lint]
+select = ["E", "F", "I", "B", "UP"]
+ignore = [
+    "E501",  # panjang baris diatur formatter, bukan alasan gagal build
+    "B008",   # Depends(...) di default argumen adalah pola FastAPI
+    "UP042",  # (str, Enum) dipertahankan: serialisasi JSON dan tipe kolom SQLAlchemy sudah cocok
+]
+
+[lint.per-file-ignores]
+"alembic/versions/*" = ["E"]      # file migrasi hasil autogenerate
+"ml/data/*" = ["E"]               # script akuisisi data

@@ -1,0 +1,34 @@
+# Daftar kecuali (exclude) untuk rsync deploy produksi.
+# Dipakai ops/deploy_vps.sh sebagai --exclude-from.
+# Satu pola per baris. Pola relatif terhadap akar repo.
+
+.git/
+.venv/
+.venv*/
+**/node_modules/
+**/.next/
+**/__pycache__/
+.ruff_cache/
+.pytest_cache/
+.hermes/
+anti-slop/
+dump/
+ops/backups/
+ops/logs/
+ops/reports/
+backups/
+.env
+deploy/.env.prod
+*.pdf
+*.docx
+*.npy
+*.tar
+*.zip
+ml/runs/
+ml/backups/
+ml/embeddings*/
+ml/checkpoints-preaug/
+ml/checkpoints_perch/
+ml/checkpoints_v2/
+ml/models_perch/
+ml/data/lapangan_yt/

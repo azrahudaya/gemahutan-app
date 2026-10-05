@@ -1,0 +1,35 @@
+{
+  "catatan": "spesies target: acc CV terendah dan klip latih < 25",
+  "kandidat": [
+    {
+      "spesies": "Gallus gallus",
+      "acc_cv": 0.1905,
+      "klip_latih": 9
+    },
+    {
+      "spesies": "Prinia familiaris",
+      "acc_cv": 0.3,
+      "klip_latih": 10
+    },
+    {
+      "spesies": "Hirundo tahitica",
+      "acc_cv": 0.5,
+      "klip_latih": 21
+    },
+    {
+      "spesies": "Dicrurus macrocercus",
+      "acc_cv": 0.5938,
+      "klip_latih": 20
+    },
+    {
+      "spesies": "Arachnothera longirostra",
+      "acc_cv": 0.625,
+      "klip_latih": 20
+    },
+    {
+      "spesies": "Chalcophaps indica",
+      "acc_cv": 0.7333,
+      "klip_latih": 18
+    }
+  ]
+}

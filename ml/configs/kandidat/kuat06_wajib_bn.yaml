@@ -1,0 +1,11 @@
+# Kandidat cascade: filter deteksi lemah dengan ambang_kuat=0.6
+# Hasil sapuan v3 (subset pilih): DetPalsu lebih rendah tanpa menurunkan PhoneR.
+# Belum lulus gerbang. Jangan dipasang ke cascade.yaml produksi.
+ambang_birdnet_nontarget: 0.1
+trackb_wajib_birdnet: true
+margin_top1_top2: 0.0
+pakai_energi: false
+ambang_energi: 0.0
+min_kemunculan_ulang: 2
+ambang_kuat: 0.6
+min_durasi_s: 1.0

@@ -1,0 +1,50 @@
+[
+ {
+  "kode": "KF-01",
+  "skenario": "Admin mengundang akun; petugas membuat sandi dari surel lalu masuk",
+  "lulus": true,
+  "bukti": "undangan dibuat lewat UI admin, tautan aktivasi tercatat (SMTP lokal belum diisi, surel ditulis ke log), akun diaktifkan lewat halaman /atur-sandi, login HTTP 200"
+ },
+ {
+  "kode": "KF-03",
+  "skenario": "Ranger merekam 30 detik dari ponsel dan mengunggah 5 berkas sekaligus",
+  "lulus": false,
+  "bukti": "rekaman ranger: 1 -> 1 setelah rekam 30 detik (mikrofon tiruan Chromium) -> 6 setelah unggah 5 berkas"
+ },
+ {
+  "kode": "KF-04, 05",
+  "skenario": "Status berubah otomatis sampai selesai; deteksi dan skor tampil",
+  "lulus": true,
+  "bukti": "6 rekaman terbaru selesai dalam 4 detik, status ['done', 'done', 'done', 'done', 'done', 'done'], deteksi [1, 1, 3, 2, 11, 11]; halaman hasil menampilkan skor persen: True"
+ },
+ {
+  "kode": "KF-06",
+  "skenario": "Ranger membuka rekaman milik akun lain lewat alamat langsung: ditolak",
+  "lulus": true,
+  "bukti": "API GET /recordings/29 sebagai ranger: HTTP 404; halaman tidak menampilkan isi rekaman"
+ },
+ {
+  "kode": "KF-08, 09",
+  "skenario": "Peneliti memverifikasi deteksi lalu mengekspor CSV; ranger tidak melihat ekspor",
+  "lulus": false,
+  "bukti": "deteksi bertanda Benar: 1; CSV diunduh 203 baris; API ekspor untuk ranger HTTP 403; tombol Unduh CSV tampil untuk ranger: True"
+ },
+ {
+  "kode": "KF-10",
+  "skenario": "Deteksi spesies prioritas: surel terkirim; koordinat disamarkan untuk ranger",
+  "lulus": false,
+  "bukti": "klip Elang Bondol (Haliastur indus) terdeteksi: 1; isi surel peringatan tercatat di log worker (SMTP lokal belum diisi): False; koordinat lokasi untuk ranger None,None (disamarkan=False) vs admin -6.7394,106.5497"
+ },
+ {
+  "kode": "KF-11",
+  "skenario": "Tiga alat virtual di peta menghasilkan area perkiraan yang memuat sumber",
+  "lulus": true,
+  "bukti": "UI: 3 alat + 1 sumber, tombol Hitung menampilkan arah dan area; API HTTP 200: galat 1.0 m, radius area 6.0 m"
+ },
+ {
+  "kode": "KF-07",
+  "skenario": "Laporan bulanan dicetak ke PDF dari peramban",
+  "lulus": false,
+  "bukti": "halaman /laporan bisa dicetak ke PDF: True; berupa laporan bulanan per kawasan: False (judul saat ini: Laporan Ringkas)"
+ }
+]

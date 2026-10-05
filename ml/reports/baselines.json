@@ -1,0 +1,23 @@
+{
+  "a_mayoritas_selalu_negative": {
+    "test_acc": 0.04,
+    "macro_f1": 0.002958579881656805,
+    "n": 50,
+    "note": "predict selalu _negative"
+  },
+  "b_logreg_birdnet": {
+    "test_acc": 0.88,
+    "macro_f1": 0.765934065934066,
+    "n": 50
+  },
+  "c_sklearn_mlp_birdnet": {
+    "test_acc": 0.8,
+    "macro_f1": 0.6858058608058608,
+    "n": 50
+  },
+  "d_model_threshold": {
+    "test_acc": 0.78,
+    "macro_f1": 0.6775641025641026,
+    "n": 50
+  }
+}

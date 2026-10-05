@@ -1,0 +1,26 @@
+[
+ [
+  "tanpa token /api/v1/recordings",
+  401
+ ],
+ [
+  "tanpa token /api/v1/exports/verified",
+  401
+ ],
+ [
+  "tanpa token /api/v1/stats/overview",
+  401
+ ],
+ [
+  "tanpa token /api/v1/users",
+  401
+ ],
+ [
+  "/register",
+  200
+ ],
+ [
+  "Coba contoh di produksi",
+  "3 detik; hasil memuat Merbah Cerukcuk: True"
+ ]
+]

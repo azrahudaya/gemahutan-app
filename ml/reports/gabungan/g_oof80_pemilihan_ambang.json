@@ -1,0 +1,274 @@
+{
+  "sumber_ambang": "OOF CV bersarang (bukan bagian pilih, bukan bagian lapor)",
+  "oof": "ml/runs/k3_bersuara/oof_bersarang.npz",
+  "n_klip_oof": 892,
+  "target_presisi": 0.8,
+  "aturan": "ambang TERENDAH yang presisi OOF >= target",
+  "min_dukungan": 5,
+  "n_spesies_naik": 3,
+  "n_spesies_turun": 22,
+  "n_spesies_tidak_berubah": 0,
+  "n_spesies_target_tidak_tercapai": 0,
+  "n_spesies_dukungan_kurang": 0,
+  "batas_yang_harus_dibaca": [
+    "OOF 892 klip Xeno-canto target, bukan pengecoh lapangan: presisi OOF bukan ramalan langsung FP lapangan.",
+    "OOF tingkat klip (rata-rata jendela), e2e menerapkan ambang per jendela.",
+    "Ambang boleh TURUN di sini, berbeda dari pilih_ambang_gabungan.py."
+  ],
+  "thresholds_baru": "ml/runs/g_oof80/thresholds.json",
+  "rincian": {
+    "Aegithina tiphia": {
+      "n_positif_oof": 29,
+      "ambang_produksi": 0.99,
+      "ambang_baru": 0.3171,
+      "presisi_oof": 0.8214,
+      "recall_oof": 0.7931,
+      "n_deteksi_oof": 28,
+      "n_benar_oof": 23,
+      "keputusan": "turun"
+    },
+    "Amaurornis phoenicurus": {
+      "n_positif_oof": 30,
+      "ambang_produksi": 0.3,
+      "ambang_baru": 0.1058,
+      "presisi_oof": 0.8,
+      "recall_oof": 0.9333,
+      "n_deteksi_oof": 35,
+      "n_benar_oof": 28,
+      "keputusan": "turun"
+    },
+    "Anthreptes malacensis": {
+      "n_positif_oof": 34,
+      "ambang_produksi": 0.5,
+      "ambang_baru": 0.374,
+      "presisi_oof": 0.8065,
+      "recall_oof": 0.7353,
+      "n_deteksi_oof": 31,
+      "n_benar_oof": 25,
+      "keputusan": "turun"
+    },
+    "Aplonis panayensis": {
+      "n_positif_oof": 28,
+      "ambang_produksi": 0.3,
+      "ambang_baru": 0.337,
+      "presisi_oof": 0.8077,
+      "recall_oof": 0.75,
+      "n_deteksi_oof": 26,
+      "n_benar_oof": 21,
+      "keputusan": "naik"
+    },
+    "Arachnothera longirostra": {
+      "n_positif_oof": 32,
+      "ambang_produksi": 0.3,
+      "ambang_baru": 0.139,
+      "presisi_oof": 0.8,
+      "recall_oof": 0.875,
+      "n_deteksi_oof": 35,
+      "n_benar_oof": 28,
+      "keputusan": "turun"
+    },
+    "Centropus bengalensis": {
+      "n_positif_oof": 32,
+      "ambang_produksi": 0.3,
+      "ambang_baru": 0.1845,
+      "presisi_oof": 0.8108,
+      "recall_oof": 0.9375,
+      "n_deteksi_oof": 37,
+      "n_benar_oof": 30,
+      "keputusan": "turun"
+    },
+    "Chalcophaps indica": {
+      "n_positif_oof": 30,
+      "ambang_produksi": 0.2,
+      "ambang_baru": 0.0822,
+      "presisi_oof": 0.8056,
+      "recall_oof": 0.9667,
+      "n_deteksi_oof": 36,
+      "n_benar_oof": 29,
+      "keputusan": "turun"
+    },
+    "Cinnyris jugularis": {
+      "n_positif_oof": 38,
+      "ambang_produksi": 0.9,
+      "ambang_baru": 0.6485,
+      "presisi_oof": 0.8095,
+      "recall_oof": 0.4474,
+      "n_deteksi_oof": 21,
+      "n_benar_oof": 17,
+      "keputusan": "turun"
+    },
+    "Cisticola juncidis": {
+      "n_positif_oof": 35,
+      "ambang_produksi": 0.3,
+      "ambang_baru": 0.0789,
+      "presisi_oof": 0.814,
+      "recall_oof": 1.0,
+      "n_deteksi_oof": 43,
+      "n_benar_oof": 35,
+      "keputusan": "turun"
+    },
+    "Corvus macrorhynchos": {
+      "n_positif_oof": 27,
+      "ambang_produksi": 0.6,
+      "ambang_baru": 0.0544,
+      "presisi_oof": 0.8125,
+      "recall_oof": 0.963,
+      "n_deteksi_oof": 32,
+      "n_benar_oof": 26,
+      "keputusan": "turun"
+    },
+    "Dicrurus macrocercus": {
+      "n_positif_oof": 32,
+      "ambang_produksi": 0.3,
+      "ambang_baru": 0.2711,
+      "presisi_oof": 0.8125,
+      "recall_oof": 0.8125,
+      "n_deteksi_oof": 32,
+      "n_benar_oof": 26,
+      "keputusan": "turun"
+    },
+    "Gallus gallus": {
+      "n_positif_oof": 21,
+      "ambang_produksi": 0.2,
+      "ambang_baru": 0.7536,
+      "presisi_oof": 1.0,
+      "recall_oof": 0.0476,
+      "n_deteksi_oof": 1,
+      "n_benar_oof": 1,
+      "keputusan": "naik"
+    },
+    "Geopelia striata": {
+      "n_positif_oof": 31,
+      "ambang_produksi": 0.3,
+      "ambang_baru": 0.0831,
+      "presisi_oof": 0.8158,
+      "recall_oof": 1.0,
+      "n_deteksi_oof": 38,
+      "n_benar_oof": 31,
+      "keputusan": "turun"
+    },
+    "Haliastur indus": {
+      "n_positif_oof": 39,
+      "ambang_produksi": 0.3,
+      "ambang_baru": 0.126,
+      "presisi_oof": 0.8049,
+      "recall_oof": 0.8462,
+      "n_deteksi_oof": 41,
+      "n_benar_oof": 33,
+      "keputusan": "turun"
+    },
+    "Hirundo tahitica": {
+      "n_positif_oof": 26,
+      "ambang_produksi": 0.2,
+      "ambang_baru": 0.6184,
+      "presisi_oof": 0.8462,
+      "recall_oof": 0.4231,
+      "n_deteksi_oof": 13,
+      "n_benar_oof": 11,
+      "keputusan": "naik"
+    },
+    "Lonchura punctulata": {
+      "n_positif_oof": 38,
+      "ambang_produksi": 0.5,
+      "ambang_baru": 0.0763,
+      "presisi_oof": 0.8043,
+      "recall_oof": 0.9737,
+      "n_deteksi_oof": 46,
+      "n_benar_oof": 37,
+      "keputusan": "turun"
+    },
+    "Merops philippinus": {
+      "n_positif_oof": 38,
+      "ambang_produksi": 0.3,
+      "ambang_baru": 0.0707,
+      "presisi_oof": 0.8043,
+      "recall_oof": 0.9737,
+      "n_deteksi_oof": 46,
+      "n_benar_oof": 37,
+      "keputusan": "turun"
+    },
+    "Orthotomus sutorius": {
+      "n_positif_oof": 33,
+      "ambang_produksi": 0.3,
+      "ambang_baru": 0.1957,
+      "presisi_oof": 0.8158,
+      "recall_oof": 0.9394,
+      "n_deteksi_oof": 38,
+      "n_benar_oof": 31,
+      "keputusan": "turun"
+    },
+    "Passer montanus": {
+      "n_positif_oof": 37,
+      "ambang_produksi": 0.3,
+      "ambang_baru": 0.0958,
+      "presisi_oof": 0.8,
+      "recall_oof": 0.973,
+      "n_deteksi_oof": 45,
+      "n_benar_oof": 36,
+      "keputusan": "turun"
+    },
+    "Prinia familiaris": {
+      "n_positif_oof": 10,
+      "ambang_produksi": 0.2,
+      "ambang_baru": 0.1945,
+      "presisi_oof": 0.8571,
+      "recall_oof": 0.6,
+      "n_deteksi_oof": 7,
+      "n_benar_oof": 6,
+      "keputusan": "turun"
+    },
+    "Pycnonotus aurigaster": {
+      "n_positif_oof": 37,
+      "ambang_produksi": 0.5,
+      "ambang_baru": 0.1578,
+      "presisi_oof": 0.8049,
+      "recall_oof": 0.8919,
+      "n_deteksi_oof": 41,
+      "n_benar_oof": 33,
+      "keputusan": "turun"
+    },
+    "Pycnonotus goiavier": {
+      "n_positif_oof": 34,
+      "ambang_produksi": 0.7,
+      "ambang_baru": 0.1821,
+      "presisi_oof": 0.8,
+      "recall_oof": 0.8235,
+      "n_deteksi_oof": 35,
+      "n_benar_oof": 28,
+      "keputusan": "turun"
+    },
+    "Rhipidura javanica": {
+      "n_positif_oof": 33,
+      "ambang_produksi": 0.99,
+      "ambang_baru": 0.1719,
+      "presisi_oof": 0.8056,
+      "recall_oof": 0.8788,
+      "n_deteksi_oof": 36,
+      "n_benar_oof": 29,
+      "keputusan": "turun"
+    },
+    "Spilopelia chinensis": {
+      "n_positif_oof": 30,
+      "ambang_produksi": 0.7,
+      "ambang_baru": 0.1144,
+      "presisi_oof": 0.8056,
+      "recall_oof": 0.9667,
+      "n_deteksi_oof": 36,
+      "n_benar_oof": 29,
+      "keputusan": "turun"
+    },
+    "Todiramphus chloris": {
+      "n_positif_oof": 31,
+      "ambang_produksi": 0.2,
+      "ambang_baru": 0.1179,
+      "presisi_oof": 0.8,
+      "recall_oof": 0.9032,
+      "n_deteksi_oof": 35,
+      "n_benar_oof": 28,
+      "keputusan": "turun"
+    },
+    "_negative": {
+      "keputusan": "tidak disentuh (bukan kelas target)"
+    }
+  }
+}

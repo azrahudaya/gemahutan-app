@@ -1,0 +1,56 @@
+[
+  {
+    "nama": "baseline produksi (ambang produksi)",
+    "sha256_checkpoint": "ff01eb96e002bb32d58120ea5c347cf6398c4b3435121f7b367e2a6dbbad808e",
+    "pilih": {
+      "fp_berkas": 25,
+      "n_other": 59,
+      "fp_rate": 0.4237,
+      "n_target": 104,
+      "recall_target": 0.7981
+    },
+    "lapor": {
+      "fp_berkas": 21,
+      "n_other": 38,
+      "fp_rate": 0.5526,
+      "n_target": 115,
+      "recall_target": 0.687
+    }
+  },
+  {
+    "nama": "K2 + ambang K2 (dilatih ulang)",
+    "sha256_checkpoint": "90f7f9b309d06b9c171afca3b961f7e2b501a86e4a9d9092ddf9997d9ab643cb",
+    "pilih": {
+      "fp_berkas": 30,
+      "n_other": 59,
+      "fp_rate": 0.5085,
+      "n_target": 104,
+      "recall_target": 0.7308
+    },
+    "lapor": {
+      "fp_berkas": 28,
+      "n_other": 38,
+      "fp_rate": 0.7368,
+      "n_target": 115,
+      "recall_target": 0.687
+    }
+  },
+  {
+    "nama": "K2 + ambang produksi",
+    "sha256_checkpoint": "90f7f9b309d06b9c171afca3b961f7e2b501a86e4a9d9092ddf9997d9ab643cb",
+    "pilih": {
+      "fp_berkas": 24,
+      "n_other": 59,
+      "fp_rate": 0.4068,
+      "n_target": 104,
+      "recall_target": 0.7885
+    },
+    "lapor": {
+      "fp_berkas": 21,
+      "n_other": 38,
+      "fp_rate": 0.5526,
+      "n_target": 115,
+      "recall_target": 0.687
+    }
+  }
+]

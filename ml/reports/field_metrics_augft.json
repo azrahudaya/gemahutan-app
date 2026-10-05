@@ -1,0 +1,109 @@
+{
+  "model": "/home/fuudaya/Projects/gemahutan/ml/checkpoints_augft/best_model.npz",
+  "degradasi": {
+    "bersih": {
+      "jumlah_jendela": 218,
+      "akurasi_top1": 0.7202,
+      "macro_f1": 0.7289,
+      "kelas_dinilai": 25,
+      "tingkat_deteksi": 0.7936
+    },
+    "bersih_tanpa_nd": {
+      "jumlah_jendela": 145,
+      "akurasi_top1": 0.7103,
+      "macro_f1": 0.7269,
+      "kelas_dinilai": 25,
+      "tingkat_deteksi": 0.7655
+    },
+    "angin": {
+      "jumlah_jendela": 216,
+      "akurasi_top1": 0.6528,
+      "macro_f1": 0.6551,
+      "kelas_dinilai": 25,
+      "tingkat_deteksi": 0.8009,
+      "jumlah_berkas": 218
+    },
+    "gabungan_berat": {
+      "jumlah_jendela": 213,
+      "akurasi_top1": 0.2958,
+      "macro_f1": 0.262,
+      "kelas_dinilai": 25,
+      "tingkat_deteksi": 0.446,
+      "jumlah_berkas": 218
+    },
+    "hujan_deras": {
+      "jumlah_jendela": 216,
+      "akurasi_top1": 0.5463,
+      "macro_f1": 0.5568,
+      "kelas_dinilai": 25,
+      "tingkat_deteksi": 0.6528,
+      "jumlah_berkas": 218
+    },
+    "hujan_ringan": {
+      "jumlah_jendela": 216,
+      "akurasi_top1": 0.6157,
+      "macro_f1": 0.6307,
+      "kelas_dinilai": 25,
+      "tingkat_deteksi": 0.7361,
+      "jumlah_berkas": 218
+    },
+    "jarak_100m": {
+      "jumlah_jendela": 206,
+      "akurasi_top1": 0.5146,
+      "macro_f1": 0.5083,
+      "kelas_dinilai": 25,
+      "tingkat_deteksi": 0.7621,
+      "jumlah_berkas": 218
+    },
+    "jarak_30m": {
+      "jumlah_jendela": 217,
+      "akurasi_top1": 0.5714,
+      "macro_f1": 0.6004,
+      "kelas_dinilai": 25,
+      "tingkat_deteksi": 0.7327,
+      "jumlah_berkas": 218
+    },
+    "kontrol_reencode": {
+      "jumlah_jendela": 216,
+      "akurasi_top1": 0.6759,
+      "macro_f1": 0.6809,
+      "kelas_dinilai": 25,
+      "tingkat_deteksi": 0.7963,
+      "jumlah_berkas": 218
+    },
+    "kota": {
+      "jumlah_jendela": 216,
+      "akurasi_top1": 0.6019,
+      "macro_f1": 0.5943,
+      "kelas_dinilai": 25,
+      "tingkat_deteksi": 0.7361,
+      "jumlah_berkas": 218
+    }
+  },
+  "lapangan": {
+    "inat": {
+      "jumlah_jendela": 610,
+      "akurasi_top1": 0.5,
+      "macro_f1": 0.4706,
+      "kelas_dinilai": 23,
+      "tingkat_deteksi": 0.723,
+      "jumlah_berkas": 113,
+      "berkas_terbaca": 111
+    },
+    "other": {
+      "jumlah_berkas": 21,
+      "berkas_terbaca": 20,
+      "jumlah_jendela": 128,
+      "deteksi_palsu": 0.6328
+    },
+    "xc_noisy": {
+      "jumlah_jendela": 640,
+      "akurasi_top1": 0.6719,
+      "macro_f1": 0.6656,
+      "kelas_dinilai": 24,
+      "tingkat_deteksi": 0.7594,
+      "jumlah_berkas": 108,
+      "berkas_terbaca": 106
+    }
+  }
+}

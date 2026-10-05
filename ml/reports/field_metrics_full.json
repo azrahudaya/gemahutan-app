@@ -1,0 +1,84 @@
+{
+  "model": "/home/fuudaya/Projects/gemahutan/ml/checkpoints/best_model.npz",
+  "degradasi": {
+    "bersih": {
+      "jumlah_jendela": 127,
+      "akurasi_top1": 0.685,
+      "macro_f1": 0.663,
+      "kelas_dinilai": 25,
+      "tingkat_deteksi": 0.8189
+    },
+    "bersih_tanpa_nd": {
+      "jumlah_jendela": 127,
+      "akurasi_top1": 0.6535,
+      "macro_f1": 0.62,
+      "kelas_dinilai": 25,
+      "tingkat_deteksi": 0.8504
+    },
+    "angin": {
+      "jumlah_jendela": 126,
+      "akurasi_top1": 0.5238,
+      "macro_f1": 0.5207,
+      "kelas_dinilai": 25,
+      "tingkat_deteksi": 0.881,
+      "jumlah_berkas": 127
+    },
+    "gabungan_berat": {
+      "jumlah_jendela": 123,
+      "akurasi_top1": 0.1626,
+      "macro_f1": 0.1881,
+      "kelas_dinilai": 25,
+      "tingkat_deteksi": 0.6667,
+      "jumlah_berkas": 126
+    },
+    "hujan_deras": {
+      "jumlah_jendela": 125,
+      "akurasi_top1": 0.456,
+      "macro_f1": 0.4736,
+      "kelas_dinilai": 25,
+      "tingkat_deteksi": 0.68,
+      "jumlah_berkas": 126
+    },
+    "hujan_ringan": {
+      "jumlah_jendela": 126,
+      "akurasi_top1": 0.5635,
+      "macro_f1": 0.5564,
+      "kelas_dinilai": 25,
+      "tingkat_deteksi": 0.7857,
+      "jumlah_berkas": 127
+    },
+    "jarak_100m": {
+      "jumlah_jendela": 115,
+      "akurasi_top1": 0.5304,
+      "macro_f1": 0.5009,
+      "kelas_dinilai": 25,
+      "tingkat_deteksi": 0.8348,
+      "jumlah_berkas": 127
+    },
+    "jarak_30m": {
+      "jumlah_jendela": 124,
+      "akurasi_top1": 0.4758,
+      "macro_f1": 0.5057,
+      "kelas_dinilai": 25,
+      "tingkat_deteksi": 0.8145,
+      "jumlah_berkas": 127
+    },
+    "kontrol_reencode": {
+      "jumlah_jendela": 126,
+      "akurasi_top1": 0.6032,
+      "macro_f1": 0.581,
+      "kelas_dinilai": 25,
+      "tingkat_deteksi": 0.8095,
+      "jumlah_berkas": 127
+    },
+    "kota": {
+      "jumlah_jendela": 125,
+      "akurasi_top1": 0.512,
+      "macro_f1": 0.5005,
+      "kelas_dinilai": 25,
+      "tingkat_deteksi": 0.736,
+      "jumlah_berkas": 126
+    }
+  },
+  "lapangan": {}
+}

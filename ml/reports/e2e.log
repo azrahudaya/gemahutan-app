@@ -1,0 +1,1436 @@
+Memuat CascadeEngine (jalur produksi)...
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+I0000 00:00:1790528807.527877  486391 port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+I0000 00:00:1790528808.411939  486391 port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+Labels loaded.
+load model True
+INFO: Created TensorFlow Lite XNNPACK delegate for CPU.
+Model loaded.
+Labels loaded.
+load_species_list_model
+Meta model loaded.
+Total berkas berlabel: 451
+Labels loaded.
+load model True
+Model loaded.
+Labels loaded.
+load_species_list_model
+Meta model loaded.
+read_audio_data
+read_audio_data: complete, read  10 chunks.
+analyze_recording inat-248315927.wav
+read_audio_data
+read_audio_data: complete, read  5 chunks.
+analyze_recording inat-260649800.wav
+read_audio_data
+read_audio_data: complete, read  10 chunks.
+analyze_recording inat-365735568.mp3
+read_audio_data
+read_audio_data: complete, read  4 chunks.
+analyze_recording inat-45492987.wav
+read_audio_data
+read_audio_data: complete, read  6 chunks.
+analyze_recording inat-76490623.wav
+read_audio_data
+read_audio_data: complete, read  9 chunks.
+analyze_recording inat-85864507.mp3
+read_audio_data
+read_audio_data: complete, read  9 chunks.
+analyze_recording inat-106530375.wav
+read_audio_data
+read_audio_data: complete, read  5 chunks.
+analyze_recording inat-163907990.wav
+read_audio_data
+read_audio_data: complete, read  5 chunks.
+analyze_recording inat-307471223.wav
+read_audio_data
+read_audio_data: complete, read  10 chunks.
+analyze_recording inat-328165050.wav
+read_audio_data
+read_audio_data: complete, read  2 chunks.
+analyze_recording inat-367918191.wav
+read_audio_data
+read_audio_data: complete, read  3 chunks.
+analyze_recording inat-40277801.mp3
+read_audio_data
+[src/libmpg123/layer3.c:INT123_do_layer3():1844] error: dequantization failed!
+Note: Illegal Audio-MPEG-Header 0x2c363333 at offset 1223040.
+Note: Trying to resync...
+Note: Skipped 1024 bytes in input.
+[src/libmpg123/parse.c:wetwork():1349] error: Giving up resync after 1024 bytes - your stream is not nice... (maybe increasing resync limit could help).
+Unspecified internal error.
+read_audio_data
+read_audio_data: complete, read  4 chunks.
+analyze_recording inat-165165769.wav
+read_audio_data
+read_audio_data: complete, read  7 chunks.
+analyze_recording inat-207889833.wav
+read_audio_data
+read_audio_data: complete, read  2 chunks.
+analyze_recording inat-230684361.wav
+read_audio_data
+read_audio_data: complete, read  2 chunks.
+analyze_recording inat-298085126.wav
+read_audio_data
+read_audio_data: complete, read  13 chunks.
+analyze_recording inat-395121974.wav
+read_audio_data
+read_audio_data: complete, read  3 chunks.
+analyze_recording inat-219032565.wav
+read_audio_data
+read_audio_data: complete, read  3 chunks.
+analyze_recording inat-223287911.wav
+read_audio_data
+read_audio_data: complete, read  7 chunks.
+analyze_recording inat-35271756.wav
+read_audio_data
+read_audio_data: complete, read  2 chunks.
+analyze_recording inat-367927434.wav
+read_audio_data
+read_audio_data: complete, read  4 chunks.
+analyze_recording inat-367927855.wav
+read_audio_data
+read_audio_data: complete, read  2 chunks.
+analyze_recording inat-40265107.mp3
+read_audio_data
+read_audio_data: complete, read  3 chunks.
+analyze_recording inat-135370733.wav
+read_audio_data
+read_audio_data: complete, read  2 chunks.
+analyze_recording inat-142463256.mp3
+read_audio_data
+read_audio_data: complete, read  4 chunks.
+analyze_recording inat-166985793.wav
+read_audio_data
+read_audio_data: complete, read  10 chunks.
+analyze_recording inat-199258047.wav
+read_audio_data
+read_audio_data: complete, read  7 chunks.
+analyze_recording inat-323398615.mp3
+read_audio_data
+read_audio_data: complete, read  8 chunks.
+analyze_recording inat-338781717.wav
+read_audio_data
+[src/libmpg123/layer3.c:INT123_do_layer3():1844] error: dequantization failed!
+Note: Illegal Audio-MPEG-Header 0x30362c33 at offset 293760.
+Note: Trying to resync...
+Note: Hit end of (available) data during resync.
+read_audio_data: complete, read  2 chunks.
+analyze_recording inat-118353811.mp3
+[src/libmpg123/layer3.c:INT123_do_layer3():1844] error: dequantization failed!
+Note: Illegal Audio-MPEG-Header 0x30362c33 at offset 293760.
+Note: Trying to resync...
+Note: Hit end of (available) data during resync.
+read_audio_data
+read_audio_data: complete, read  4 chunks.
+analyze_recording inat-249262326.wav
+read_audio_data
+read_audio_data: complete, read  4 chunks.
+analyze_recording inat-311599525.wav
+read_audio_data
+read_audio_data: complete, read  8 chunks.
+analyze_recording inat-338650760.wav
+read_audio_data
+read_audio_data: complete, read  2 chunks.
+analyze_recording inat-341479245.mp3
+read_audio_data
+read_audio_data: complete, read  5 chunks.
+analyze_recording inat-378740263.wav
+read_audio_data
+read_audio_data: complete, read  4 chunks.
+analyze_recording inat-295560775.wav
+read_audio_data
+read_audio_data: complete, read  5 chunks.
+analyze_recording inat-339080699.wav
+read_audio_data
+Note: Illegal Audio-MPEG-Header 0x3838392c at offset 696960.
+Note: Trying to resync...
+Note: Hit end of (available) data during resync.
+read_audio_data: complete, read  6 chunks.
+analyze_recording inat-339951242.mp3
+Note: Illegal Audio-MPEG-Header 0x3838392c at offset 696960.
+Note: Trying to resync...
+Note: Hit end of (available) data during resync.
+read_audio_data
+read_audio_data: complete, read  4 chunks.
+analyze_recording inat-342401912.wav
+read_audio_data
+read_audio_data: complete, read  2 chunks.
+analyze_recording inat-290890239.wav
+read_audio_data
+read_audio_data: complete, read  9 chunks.
+analyze_recording inat-338469153.wav
+read_audio_data
+read_audio_data: complete, read  9 chunks.
+analyze_recording inat-340391416.wav
+read_audio_data
+read_audio_data: complete, read  2 chunks.
+analyze_recording inat-120967793.wav
+read_audio_data
+read_audio_data: complete, read  2 chunks.
+analyze_recording inat-194437837.wav
+read_audio_data
+read_audio_data: complete, read  6 chunks.
+analyze_recording inat-248104026.wav
+read_audio_data
+read_audio_data: complete, read  3 chunks.
+analyze_recording inat-40524088.wav
+read_audio_data
+read_audio_data: complete, read  5 chunks.
+analyze_recording inat-53821777.wav
+read_audio_data
+read_audio_data: complete, read  1 chunks.
+analyze_recording inat-167342910.wav
+read_audio_data
+read_audio_data: complete, read  1 chunks.
+analyze_recording inat-167342912.wav
+  50/451... (20s)
+read_audio_data
+read_audio_data: complete, read  1 chunks.
+analyze_recording inat-167343483.wav
+read_audio_data
+read_audio_data: complete, read  1 chunks.
+analyze_recording inat-167343486.wav
+read_audio_data
+read_audio_data: complete, read  1 chunks.
+analyze_recording inat-167343496.wav
+read_audio_data
+read_audio_data: complete, read  8 chunks.
+analyze_recording inat-327944024.wav
+read_audio_data
+read_audio_data: complete, read  3 chunks.
+analyze_recording inat-222179148.wav
+read_audio_data
+read_audio_data: complete, read  2 chunks.
+analyze_recording inat-222798920.wav
+read_audio_data
+read_audio_data: complete, read  4 chunks.
+analyze_recording inat-305131732.wav
+read_audio_data
+read_audio_data: complete, read  19 chunks.
+analyze_recording inat-307644219.wav
+read_audio_data
+read_audio_data: complete, read  4 chunks.
+analyze_recording inat-367913553.mp3
+read_audio_data
+read_audio_data: complete, read  3 chunks.
+analyze_recording inat-38136962.wav
+read_audio_data
+read_audio_data: complete, read  9 chunks.
+analyze_recording inat-323616737.wav
+read_audio_data
+read_audio_data: complete, read  5 chunks.
+analyze_recording inat-254888730.wav
+read_audio_data
+read_audio_data: complete, read  7 chunks.
+analyze_recording inat-370572252.mp3
+read_audio_data
+read_audio_data: complete, read  1 chunks.
+analyze_recording inat-268342336.wav
+read_audio_data
+read_audio_data: complete, read  5 chunks.
+analyze_recording inat-326631922.wav
+read_audio_data
+read_audio_data: complete, read  2 chunks.
+analyze_recording inat-125737790.mp3
+read_audio_data
+read_audio_data: complete, read  3 chunks.
+analyze_recording inat-151274166.wav
+read_audio_data
+read_audio_data: complete, read  3 chunks.
+analyze_recording inat-164748812.wav
+read_audio_data
+read_audio_data: complete, read  1 chunks.
+analyze_recording inat-222800375.wav
+read_audio_data
+read_audio_data: complete, read  2 chunks.
+analyze_recording inat-237980742.wav
+read_audio_data
+read_audio_data: complete, read  3 chunks.
+analyze_recording inat-365232969.wav
+read_audio_data
+read_audio_data: complete, read  12 chunks.
+analyze_recording inat-198011859.wav
+read_audio_data
+read_audio_data: complete, read  2 chunks.
+analyze_recording inat-215893271.mp3
+read_audio_data
+read_audio_data: complete, read  7 chunks.
+analyze_recording inat-235639026.wav
+read_audio_data
+read_audio_data: complete, read  3 chunks.
+analyze_recording inat-281693716.mp3
+read_audio_data
+read_audio_data: complete, read  4 chunks.
+analyze_recording inat-392047975.wav
+read_audio_data
+read_audio_data: complete, read  13 chunks.
+analyze_recording inat-50953479.wav
+read_audio_data
+read_audio_data: complete, read  8 chunks.
+analyze_recording inat-248280762.wav
+read_audio_data
+read_audio_data: complete, read  6 chunks.
+analyze_recording inat-259636579.wav
+read_audio_data
+read_audio_data: complete, read  5 chunks.
+analyze_recording inat-303669368.mp3
+read_audio_data
+read_audio_data: complete, read  3 chunks.
+analyze_recording inat-329558947.wav
+read_audio_data
+read_audio_data: complete, read  1 chunks.
+analyze_recording inat-330313223.wav
+read_audio_data
+read_audio_data: complete, read  2 chunks.
+analyze_recording inat-342404059.wav
+read_audio_data
+read_audio_data: complete, read  5 chunks.
+analyze_recording inat-146752304.wav
+read_audio_data
+read_audio_data: complete, read  3 chunks.
+analyze_recording inat-146752336.wav
+read_audio_data
+read_audio_data: complete, read  6 chunks.
+analyze_recording inat-146752677.wav
+read_audio_data
+read_audio_data: complete, read  10 chunks.
+analyze_recording inat-367416446.mp3
+read_audio_data
+read_audio_data: complete, read  17 chunks.
+analyze_recording inat-378688850.wav
+read_audio_data
+read_audio_data: complete, read  4 chunks.
+analyze_recording inat-52148746.wav
+read_audio_data
+read_audio_data: complete, read  5 chunks.
+analyze_recording inat-126284625.wav
+read_audio_data
+read_audio_data: complete, read  1 chunks.
+analyze_recording inat-126289349.mp3
+read_audio_data
+read_audio_data: complete, read  1 chunks.
+analyze_recording inat-167343344.wav
+read_audio_data
+[src/libmpg123/parse.c:skip_junk():1260] error: Giving up searching valid MPEG header after 65536 bytes of junk.
+Error opening '/home/fuudaya/Projects/gemahutan/ml/data/field/audio/inat/Pycnonotus_goiavier/inat-217581321.mp3': File does not exist or is not a regular file (possibly a pipe?).
+read_audio_data
+read_audio_data: complete, read  5 chunks.
+analyze_recording inat-326778825.wav
+read_audio_data
+read_audio_data: complete, read  3 chunks.
+analyze_recording inat-47943898.wav
+read_audio_data
+read_audio_data: complete, read  11 chunks.
+analyze_recording inat-178907520.wav
+read_audio_data
+read_audio_data: complete, read  5 chunks.
+analyze_recording inat-225467563.wav
+read_audio_data
+read_audio_data: complete, read  2 chunks.
+analyze_recording inat-228903563.wav
+read_audio_data
+read_audio_data: complete, read  4 chunks.
+analyze_recording inat-329562262.wav
+read_audio_data
+read_audio_data: complete, read  7 chunks.
+analyze_recording inat-363340150.mp3
+  100/451... (38s)
+read_audio_data
+read_audio_data: complete, read  4 chunks.
+analyze_recording inat-96441943.wav
+read_audio_data
+[src/libmpg123/layer3.c:INT123_do_layer3():1844] error: dequantization failed!
+read_audio_data: complete, read  14 chunks.
+analyze_recording inat-121981278.mp3
+[src/libmpg123/layer3.c:INT123_do_layer3():1844] error: dequantization failed!
+read_audio_data
+read_audio_data: complete, read  21 chunks.
+analyze_recording inat-123912826.mp3
+read_audio_data
+read_audio_data: complete, read  8 chunks.
+analyze_recording inat-198011718.wav
+read_audio_data
+read_audio_data: complete, read  9 chunks.
+analyze_recording inat-199743723.wav
+read_audio_data
+read_audio_data: complete, read  15 chunks.
+analyze_recording inat-77194031.wav
+read_audio_data
+read_audio_data: complete, read  6 chunks.
+analyze_recording inat-99149834.mp3
+read_audio_data
+read_audio_data: complete, read  8 chunks.
+analyze_recording inat-183914384.wav
+read_audio_data
+read_audio_data: complete, read  2 chunks.
+analyze_recording inat-200501185.wav
+read_audio_data
+read_audio_data: complete, read  1 chunks.
+analyze_recording inat-263694700.wav
+read_audio_data
+read_audio_data: complete, read  2 chunks.
+analyze_recording inat-30399876.mp3
+read_audio_data
+read_audio_data: complete, read  5 chunks.
+analyze_recording inat-371081346.wav
+read_audio_data
+read_audio_data: complete, read  5 chunks.
+analyze_recording inat-74924532.mp3
+read_audio_data
+read_audio_data: complete, read  2 chunks.
+analyze_recording xc-1059451.mp3
+read_audio_data
+read_audio_data: complete, read  11 chunks.
+analyze_recording xc-1082290.mp3
+read_audio_data
+read_audio_data: complete, read  9 chunks.
+analyze_recording xc-661284.mp3
+read_audio_data
+read_audio_data: complete, read  5 chunks.
+analyze_recording xc-1104002.mp3
+read_audio_data
+read_audio_data: complete, read  9 chunks.
+analyze_recording xc-137916.mp3
+read_audio_data
+read_audio_data: complete, read  11 chunks.
+analyze_recording xc-138531.mp3
+read_audio_data
+read_audio_data: complete, read  5 chunks.
+analyze_recording xc-138532.mp3
+read_audio_data
+read_audio_data: complete, read  6 chunks.
+analyze_recording xc-198538.mp3
+read_audio_data
+read_audio_data: complete, read  7 chunks.
+analyze_recording xc-445225.mp3
+read_audio_data
+read_audio_data: complete, read  7 chunks.
+analyze_recording xc-1004277.mp3
+read_audio_data
+read_audio_data: complete, read  44 chunks.
+analyze_recording xc-431798.mp3
+read_audio_data
+read_audio_data: complete, read  3 chunks.
+analyze_recording xc-1003691.mp3
+read_audio_data
+read_audio_data: complete, read  8 chunks.
+analyze_recording xc-1020328.mp3
+read_audio_data
+read_audio_data: complete, read  4 chunks.
+analyze_recording xc-1052384.mp3
+read_audio_data
+read_audio_data: complete, read  4 chunks.
+analyze_recording xc-1067643.mp3
+read_audio_data
+read_audio_data: complete, read  8 chunks.
+analyze_recording xc-482232.mp3
+read_audio_data
+read_audio_data: complete, read  3 chunks.
+analyze_recording xc-1075145.mp3
+read_audio_data
+read_audio_data: complete, read  14 chunks.
+analyze_recording xc-216326.mp3
+read_audio_data
+read_audio_data: complete, read  10 chunks.
+analyze_recording xc-350934.mp3
+read_audio_data
+read_audio_data: complete, read  8 chunks.
+analyze_recording xc-413909.mp3
+read_audio_data
+read_audio_data: complete, read  7 chunks.
+analyze_recording xc-1074782.mp3
+read_audio_data
+read_audio_data: complete, read  2 chunks.
+analyze_recording xc-1093675.mp3
+read_audio_data
+read_audio_data: complete, read  3 chunks.
+analyze_recording xc-1096437.mp3
+read_audio_data
+read_audio_data: complete, read  9 chunks.
+analyze_recording xc-1164750.mp3
+read_audio_data
+read_audio_data: complete, read  12 chunks.
+analyze_recording xc-746313.mp3
+read_audio_data
+read_audio_data: complete, read  31 chunks.
+analyze_recording xc-746378.mp3
+read_audio_data
+read_audio_data: complete, read  20 chunks.
+analyze_recording xc-746414.mp3
+read_audio_data
+read_audio_data: complete, read  21 chunks.
+analyze_recording xc-746415.mp3
+read_audio_data
+read_audio_data: complete, read  25 chunks.
+analyze_recording xc-746424.mp3
+read_audio_data
+read_audio_data: complete, read  7 chunks.
+analyze_recording xc-823476.mp3
+read_audio_data
+read_audio_data: complete, read  2 chunks.
+analyze_recording xc-1075125.mp3
+read_audio_data
+read_audio_data: complete, read  5 chunks.
+analyze_recording xc-214421.mp3
+read_audio_data
+read_audio_data: complete, read  8 chunks.
+analyze_recording xc-365732.mp3
+read_audio_data
+read_audio_data: complete, read  4 chunks.
+analyze_recording xc-582500.mp3
+read_audio_data
+read_audio_data: complete, read  2 chunks.
+analyze_recording xc-1163217.mp3
+read_audio_data
+read_audio_data: complete, read  2 chunks.
+analyze_recording xc-204651.mp3
+read_audio_data
+read_audio_data: complete, read  1 chunks.
+analyze_recording xc-31360.mp3
+  150/451... (73s)
+read_audio_data
+read_audio_data: complete, read  1 chunks.
+analyze_recording xc-152984.mp3
+read_audio_data
+read_audio_data: complete, read  11 chunks.
+analyze_recording xc-842308.mp3
+read_audio_data
+read_audio_data: complete, read  1 chunks.
+analyze_recording xc-880639.mp3
+read_audio_data
+read_audio_data: complete, read  2 chunks.
+analyze_recording xc-891671.mp3
+read_audio_data
+read_audio_data: complete, read  8 chunks.
+analyze_recording xc-891672.mp3
+read_audio_data
+read_audio_data: complete, read  20 chunks.
+analyze_recording xc-992809.mp3
+read_audio_data
+read_audio_data: complete, read  12 chunks.
+analyze_recording xc-1147937.mp3
+read_audio_data
+read_audio_data: complete, read  1 chunks.
+analyze_recording xc-143272.mp3
+read_audio_data
+read_audio_data: complete, read  26 chunks.
+analyze_recording xc-333605.mp3
+read_audio_data
+read_audio_data: complete, read  22 chunks.
+analyze_recording xc-336103.mp3
+read_audio_data
+read_audio_data: complete, read  1 chunks.
+analyze_recording xc-971647.mp3
+read_audio_data
+read_audio_data: complete, read  6 chunks.
+analyze_recording xc-1003700.mp3
+read_audio_data
+read_audio_data: complete, read  6 chunks.
+analyze_recording xc-1010542.mp3
+read_audio_data
+read_audio_data: complete, read  11 chunks.
+analyze_recording xc-1051084.mp3
+read_audio_data
+read_audio_data: complete, read  4 chunks.
+analyze_recording xc-1087832.mp3
+read_audio_data
+read_audio_data: complete, read  11 chunks.
+analyze_recording xc-1169104.mp3
+read_audio_data
+read_audio_data: complete, read  2 chunks.
+analyze_recording xc-1003335.mp3
+read_audio_data
+read_audio_data: complete, read  2 chunks.
+analyze_recording xc-1064543.mp3
+read_audio_data
+read_audio_data: complete, read  10 chunks.
+analyze_recording xc-284777.mp3
+read_audio_data
+read_audio_data: complete, read  2 chunks.
+analyze_recording xc-702713.mp3
+read_audio_data
+read_audio_data: complete, read  1 chunks.
+analyze_recording xc-825161.mp3
+read_audio_data
+read_audio_data: complete, read  5 chunks.
+analyze_recording xc-1076575.mp3
+read_audio_data
+read_audio_data: complete, read  6 chunks.
+analyze_recording xc-122019.mp3
+read_audio_data
+read_audio_data: complete, read  2 chunks.
+analyze_recording xc-406717.mp3
+read_audio_data
+read_audio_data: complete, read  12 chunks.
+analyze_recording xc-625821.mp3
+read_audio_data
+read_audio_data: complete, read  6 chunks.
+analyze_recording xc-721651.mp3
+read_audio_data
+read_audio_data: complete, read  6 chunks.
+analyze_recording xc-730896.mp3
+read_audio_data
+read_audio_data: complete, read  2 chunks.
+analyze_recording xc-236335.mp3
+read_audio_data
+read_audio_data: complete, read  10 chunks.
+analyze_recording xc-237114.mp3
+read_audio_data
+read_audio_data: complete, read  5 chunks.
+analyze_recording xc-377638.mp3
+read_audio_data
+read_audio_data: complete, read  11 chunks.
+analyze_recording xc-377639.mp3
+read_audio_data
+read_audio_data: complete, read  3 chunks.
+analyze_recording xc-1157768.mp3
+read_audio_data
+read_audio_data: complete, read  12 chunks.
+analyze_recording xc-152202.mp3
+read_audio_data
+read_audio_data: complete, read  5 chunks.
+analyze_recording xc-214417.mp3
+read_audio_data
+read_audio_data: complete, read  2 chunks.
+analyze_recording xc-143961.mp3
+read_audio_data
+read_audio_data: complete, read  5 chunks.
+analyze_recording xc-143962.mp3
+read_audio_data
+read_audio_data: complete, read  1 chunks.
+analyze_recording xc-245904.mp3
+read_audio_data
+Warning: Xing stream size off by more than 1%, fuzzy seeking may be even more fuzzy than by design!
+read_audio_data: complete, read  1 chunks.
+analyze_recording xc-245905.mp3
+Warning: Xing stream size off by more than 1%, fuzzy seeking may be even more fuzzy than by design!
+Warning: Xing stream size off by more than 1%, fuzzy seeking may be even more fuzzy than by design!
+read_audio_data
+read_audio_data: complete, read  2 chunks.
+analyze_recording xc-681102.mp3
+read_audio_data
+read_audio_data: complete, read  3 chunks.
+analyze_recording xc-732592.mp3
+read_audio_data
+read_audio_data: complete, read  8 chunks.
+analyze_recording xc-1037459.mp3
+read_audio_data
+read_audio_data: complete, read  10 chunks.
+analyze_recording xc-445135.mp3
+read_audio_data
+read_audio_data: complete, read  13 chunks.
+analyze_recording xc-474005.mp3
+read_audio_data
+read_audio_data: complete, read  29 chunks.
+analyze_recording xc-474007.mp3
+read_audio_data
+read_audio_data: complete, read  13 chunks.
+analyze_recording xc-571701.mp3
+read_audio_data
+read_audio_data: complete, read  29 chunks.
+analyze_recording xc-823479.mp3
+read_audio_data
+read_audio_data: complete, read  8 chunks.
+analyze_recording xc-1076252.mp3
+read_audio_data
+read_audio_data: complete, read  10 chunks.
+analyze_recording xc-477300.mp3
+read_audio_data
+read_audio_data: complete, read  10 chunks.
+analyze_recording xc-477306.mp3
+read_audio_data
+read_audio_data: complete, read  1 chunks.
+analyze_recording xc-537743.mp3
+  200/451... (105s)
+read_audio_data
+read_audio_data: complete, read  2 chunks.
+analyze_recording xc-1003835.mp3
+read_audio_data
+read_audio_data: complete, read  4 chunks.
+analyze_recording xc-482292.mp3
+read_audio_data
+read_audio_data: complete, read  15 chunks.
+analyze_recording xc-578381.mp3
+read_audio_data
+read_audio_data: complete, read  1 chunks.
+analyze_recording xc-1059452.mp3
+read_audio_data
+read_audio_data: complete, read  10 chunks.
+analyze_recording xc-477291.mp3
+read_audio_data
+read_audio_data: complete, read  10 chunks.
+analyze_recording xc-477311.mp3
+read_audio_data
+read_audio_data: complete, read  49 chunks.
+analyze_recording xc-581704.mp3
+read_audio_data
+read_audio_data: complete, read  4 chunks.
+analyze_recording xc-610177.mp3
+read_audio_data
+Warning: Xing stream size off by more than 1%, fuzzy seeking may be even more fuzzy than by design!
+read_audio_data: complete, read  1 chunks.
+analyze_recording xc-31437.mp3
+Warning: Xing stream size off by more than 1%, fuzzy seeking may be even more fuzzy than by design!
+Warning: Xing stream size off by more than 1%, fuzzy seeking may be even more fuzzy than by design!
+read_audio_data
+read_audio_data: complete, read  18 chunks.
+analyze_recording xc-630802.mp3
+read_audio_data
+read_audio_data: complete, read  16 chunks.
+analyze_recording xc-942724.mp3
+read_audio_data
+read_audio_data: complete, read  9 chunks.
+analyze_recording xc-952349.mp3
+read_audio_data
+read_audio_data: complete, read  1 chunks.
+analyze_recording xc-994137.mp3
+read_audio_data
+read_audio_data: complete, read  3 chunks.
+analyze_recording xc-1074344.mp3
+read_audio_data
+read_audio_data: complete, read  8 chunks.
+analyze_recording xc-116499.mp3
+read_audio_data
+read_audio_data: complete, read  7 chunks.
+analyze_recording xc-365451.mp3
+read_audio_data
+read_audio_data: complete, read  10 chunks.
+analyze_recording xc-477310.mp3
+read_audio_data
+read_audio_data: complete, read  8 chunks.
+analyze_recording xc-954997.mp3
+read_audio_data
+read_audio_data: complete, read  1 chunks.
+analyze_recording xc-1003705.mp3
+read_audio_data
+read_audio_data: complete, read  3 chunks.
+analyze_recording xc-1075900.mp3
+read_audio_data
+read_audio_data: complete, read  4 chunks.
+analyze_recording xc-346529.mp3
+read_audio_data
+read_audio_data: complete, read  1 chunks.
+analyze_recording xc-1014154.mp3
+read_audio_data
+read_audio_data: complete, read  2 chunks.
+analyze_recording xc-1014155.mp3
+read_audio_data
+read_audio_data: complete, read  3 chunks.
+analyze_recording xc-1076938.mp3
+read_audio_data
+read_audio_data: complete, read  5 chunks.
+analyze_recording xc-1138161.mp3
+read_audio_data
+read_audio_data: complete, read  18 chunks.
+analyze_recording xc-1149369.mp3
+read_audio_data
+read_audio_data: complete, read  15 chunks.
+analyze_recording xc-1149370.mp3
+read_audio_data
+read_audio_data: complete, read  6 chunks.
+analyze_recording xc-204065.mp3
+read_audio_data
+read_audio_data: complete, read  6 chunks.
+analyze_recording xc-490232.mp3
+read_audio_data
+read_audio_data: complete, read  6 chunks.
+analyze_recording xc-544578.mp3
+read_audio_data
+read_audio_data: complete, read  4 chunks.
+analyze_recording xc-578370.mp3
+read_audio_data
+read_audio_data: complete, read  8 chunks.
+analyze_recording xc-661288.mp3
+read_audio_data
+read_audio_data: complete, read  8 chunks.
+analyze_recording xc-152038.mp3
+read_audio_data
+read_audio_data: complete, read  6 chunks.
+analyze_recording xc-19655.mp3
+read_audio_data
+read_audio_data: complete, read  54 chunks.
+analyze_recording xc-203106.mp3
+read_audio_data
+read_audio_data: complete, read  6 chunks.
+analyze_recording xc-243357.mp3
+read_audio_data
+read_audio_data: complete, read  9 chunks.
+analyze_recording xc-243360.mp3
+read_audio_data
+read_audio_data: complete, read  46 chunks.
+analyze_recording xc-431799.mp3
+read_audio_data
+read_audio_data: complete, read  2 chunks.
+analyze_recording xc-1175112.mp3
+read_audio_data
+read_audio_data: complete, read  1 chunks.
+analyze_recording xc-1175117.mp3
+read_audio_data
+Warning: Xing stream size off by more than 1%, fuzzy seeking may be even more fuzzy than by design!
+read_audio_data: complete, read  1 chunks.
+analyze_recording xc-216426.mp3
+Warning: Xing stream size off by more than 1%, fuzzy seeking may be even more fuzzy than by design!
+Warning: Xing stream size off by more than 1%, fuzzy seeking may be even more fuzzy than by design!
+read_audio_data
+read_audio_data: complete, read  3 chunks.
+analyze_recording xc-216473.mp3
+read_audio_data
+read_audio_data: complete, read  9 chunks.
+analyze_recording xc-676786.mp3
+read_audio_data
+read_audio_data: complete, read  3 chunks.
+analyze_recording xc-729726.mp3
+read_audio_data
+read_audio_data: complete, read  4 chunks.
+analyze_recording xc-1085634.mp3
+read_audio_data
+read_audio_data: complete, read  3 chunks.
+analyze_recording xc-1164724.mp3
+read_audio_data
+read_audio_data: complete, read  25 chunks.
+analyze_recording xc-152924.mp3
+read_audio_data
+read_audio_data: complete, read  4 chunks.
+analyze_recording xc-154542.mp3
+read_audio_data
+read_audio_data: complete, read  6 chunks.
+analyze_recording xc-431490.mp3
+read_audio_data
+read_audio_data: complete, read  17 chunks.
+analyze_recording xc-431491.mp3
+  250/451... (142s)
+read_audio_data
+read_audio_data: complete, read  4 chunks.
+analyze_recording xc-1053609.mp3
+read_audio_data
+read_audio_data: complete, read  6 chunks.
+analyze_recording xc-120917.mp3
+read_audio_data
+read_audio_data: complete, read  6 chunks.
+analyze_recording xc-393924.mp3
+read_audio_data
+read_audio_data: complete, read  3 chunks.
+analyze_recording xc-423255.mp3
+read_audio_data
+read_audio_data: complete, read  13 chunks.
+analyze_recording xc-513122.mp3
+read_audio_data
+read_audio_data: complete, read  6 chunks.
+analyze_recording xc-1005889.mp3
+read_audio_data
+read_audio_data: complete, read  5 chunks.
+analyze_recording xc-256273.mp3
+read_audio_data
+read_audio_data: complete, read  2 chunks.
+analyze_recording xc-152931.mp3
+read_audio_data
+read_audio_data: complete, read  1 chunks.
+analyze_recording xc-152978.mp3
+read_audio_data
+read_audio_data: complete, read  6 chunks.
+analyze_recording xc-288488.mp3
+read_audio_data
+read_audio_data: complete, read  6 chunks.
+analyze_recording xc-31368.mp3
+read_audio_data
+read_audio_data: complete, read  9 chunks.
+analyze_recording xc-388224.mp3
+read_audio_data
+read_audio_data: complete, read  12 chunks.
+analyze_recording xc-788766.mp3
+read_audio_data
+read_audio_data: complete, read  6 chunks.
+analyze_recording xc-234793.mp3
+read_audio_data
+Warning: Xing stream size off by more than 1%, fuzzy seeking may be even more fuzzy than by design!
+read_audio_data: complete, read  0 chunks.
+analyze_recording xc-717423.mp3
+Warning: Xing stream size off by more than 1%, fuzzy seeking may be even more fuzzy than by design!
+Warning: Xing stream size off by more than 1%, fuzzy seeking may be even more fuzzy than by design!
+read_audio_data
+read_audio_data: complete, read  10 chunks.
+analyze_recording xc-766434.mp3
+read_audio_data
+read_audio_data: complete, read  2 chunks.
+analyze_recording xc-863190.mp3
+read_audio_data
+read_audio_data: complete, read  2 chunks.
+analyze_recording xc-916007.mp3
+read_audio_data
+read_audio_data: complete, read  3 chunks.
+analyze_recording xc-916008.mp3
+read_audio_data
+read_audio_data: complete, read  2 chunks.
+analyze_recording xc-1102934.mp3
+read_audio_data
+read_audio_data: complete, read  15 chunks.
+analyze_recording xc-434863.mp3
+read_audio_data
+read_audio_data: complete, read  25 chunks.
+analyze_recording xc-839440.mp3
+read_audio_data
+read_audio_data: complete, read  10 chunks.
+analyze_recording xc-204343.mp3
+read_audio_data
+read_audio_data: complete, read  58 chunks.
+analyze_recording xc-342421.mp3
+read_audio_data
+read_audio_data: complete, read  3 chunks.
+analyze_recording xc-708004.mp3
+read_audio_data
+read_audio_data: complete, read  3 chunks.
+analyze_recording xc-1106789.mp3
+read_audio_data
+read_audio_data: complete, read  5 chunks.
+analyze_recording xc-1155038.mp3
+read_audio_data
+read_audio_data: complete, read  2 chunks.
+analyze_recording xc-139491.mp3
+read_audio_data
+read_audio_data: complete, read  40 chunks.
+analyze_recording xc-377629.mp3
+read_audio_data
+read_audio_data: complete, read  3 chunks.
+analyze_recording xc-667222.mp3
+read_audio_data
+read_audio_data: complete, read  5 chunks.
+analyze_recording xc-667225.mp3
+read_audio_data
+read_audio_data: complete, read  1 chunks.
+analyze_recording xc-1051078.mp3
+read_audio_data
+read_audio_data: complete, read  3 chunks.
+analyze_recording xc-782497.mp3
+read_audio_data
+read_audio_data: complete, read  10 chunks.
+analyze_recording xc-844581.mp3
+read_audio_data
+read_audio_data: complete, read  3 chunks.
+analyze_recording xc-884375.mp3
+read_audio_data
+read_audio_data: complete, read  8 chunks.
+analyze_recording xc-890600.mp3
+read_audio_data
+read_audio_data: complete, read  2 chunks.
+analyze_recording xc-891374.mp3
+read_audio_data
+read_audio_data: complete, read  8 chunks.
+analyze_recording xc-1039877.mp3
+read_audio_data
+read_audio_data: complete, read  2 chunks.
+analyze_recording xc-1060055.mp3
+read_audio_data
+read_audio_data: complete, read  1 chunks.
+analyze_recording xc-1107756.mp3
+read_audio_data
+read_audio_data: complete, read  5 chunks.
+analyze_recording xc-656286.mp3
+read_audio_data
+read_audio_data: complete, read  14 chunks.
+analyze_recording xc-756598.mp3
+read_audio_data
+read_audio_data: complete, read  1 chunks.
+analyze_recording xc-815839.mp3
+read_audio_data
+read_audio_data: complete, read  17 chunks.
+analyze_recording xc-284699.mp3
+read_audio_data
+read_audio_data: complete, read  3 chunks.
+analyze_recording xc-1089095.mp3
+read_audio_data
+read_audio_data: complete, read  45 chunks.
+analyze_recording xc-431741.mp3
+read_audio_data
+read_audio_data: complete, read  8 chunks.
+analyze_recording xc-503919.mp3
+read_audio_data
+read_audio_data: complete, read  7 chunks.
+analyze_recording xc-938749.mp3
+read_audio_data
+read_audio_data: complete, read  8 chunks.
+analyze_recording xc-938774.mp3
+read_audio_data
+read_audio_data: complete, read  8 chunks.
+analyze_recording xc-971297.mp3
+  300/451... (177s)
+read_audio_data
+read_audio_data: complete, read  6 chunks.
+analyze_recording xc-1016054.mp3
+read_audio_data
+read_audio_data: complete, read  11 chunks.
+analyze_recording xc-349727.mp3
+read_audio_data
+read_audio_data: complete, read  5 chunks.
+analyze_recording xc-517783.mp3
+read_audio_data
+read_audio_data: complete, read  12 chunks.
+analyze_recording xc-576410.mp3
+read_audio_data
+read_audio_data: complete, read  4 chunks.
+analyze_recording xc-578691.mp3
+read_audio_data
+read_audio_data: complete, read  9 chunks.
+analyze_recording xc-284786.mp3
+read_audio_data
+read_audio_data: complete, read  3 chunks.
+analyze_recording xc-514098.mp3
+read_audio_data
+read_audio_data: complete, read  10 chunks.
+analyze_recording xc-531810.mp3
+read_audio_data
+read_audio_data: complete, read  20 chunks.
+analyze_recording xc-633052.mp3
+read_audio_data
+read_audio_data: complete, read  13 chunks.
+analyze_recording xc-914228.mp3
+read_audio_data
+read_audio_data: complete, read  24 chunks.
+analyze_recording xc-951550.mp3
+read_audio_data
+read_audio_data: complete, read  5 chunks.
+analyze_recording xc-283301.mp3
+read_audio_data
+read_audio_data: complete, read  1 chunks.
+analyze_recording xc-1075497.mp3
+read_audio_data
+read_audio_data: complete, read  3 chunks.
+analyze_recording xc-729838.mp3
+read_audio_data
+read_audio_data: complete, read  10 chunks.
+analyze_recording xc-736397.mp3
+read_audio_data
+read_audio_data: complete, read  8 chunks.
+analyze_recording xc-805923.mp3
+read_audio_data
+read_audio_data: complete, read  4 chunks.
+analyze_recording xc-811520.mp3
+read_audio_data
+read_audio_data: complete, read  4 chunks.
+analyze_recording xc-877667.mp3
+read_audio_data
+read_audio_data: complete, read  1 chunks.
+analyze_recording inat-186826025.mp3
+read_audio_data
+read_audio_data: complete, read  2 chunks.
+analyze_recording inat-188975838.mp3
+read_audio_data
+read_audio_data: complete, read  1 chunks.
+analyze_recording inat-233056354.wav
+read_audio_data
+read_audio_data: complete, read  4 chunks.
+analyze_recording inat-263686062.wav
+read_audio_data
+read_audio_data: complete, read  4 chunks.
+analyze_recording inat-395365593.wav
+read_audio_data
+read_audio_data: complete, read  6 chunks.
+analyze_recording inat-40342363.mp3
+read_audio_data
+read_audio_data: complete, read  5 chunks.
+analyze_recording inat-105708291.wav
+read_audio_data
+read_audio_data: complete, read  11 chunks.
+analyze_recording inat-108370620.wav
+read_audio_data
+read_audio_data: complete, read  3 chunks.
+analyze_recording inat-122438166.mp3
+read_audio_data
+read_audio_data: complete, read  7 chunks.
+analyze_recording inat-122438285.mp3
+read_audio_data
+read_audio_data: complete, read  4 chunks.
+analyze_recording inat-199730286.wav
+read_audio_data
+read_audio_data: complete, read  4 chunks.
+analyze_recording inat-250547834.mp3
+read_audio_data
+read_audio_data: complete, read  5 chunks.
+analyze_recording inat-199537555.wav
+read_audio_data
+read_audio_data: complete, read  2 chunks.
+analyze_recording inat-229170193.wav
+read_audio_data
+read_audio_data: complete, read  12 chunks.
+analyze_recording inat-308121139.wav
+read_audio_data
+read_audio_data: complete, read  4 chunks.
+analyze_recording inat-38148124.wav
+read_audio_data
+read_audio_data: complete, read  6 chunks.
+analyze_recording inat-400370479.wav
+read_audio_data
+read_audio_data: complete, read  5 chunks.
+analyze_recording inat-85967845.wav
+read_audio_data
+read_audio_data: complete, read  6 chunks.
+analyze_recording inat-142511597.wav
+read_audio_data
+[src/libmpg123/layer3.c:INT123_do_layer3():1844] error: dequantization failed!
+Note: Illegal Audio-MPEG-Header 0x382c3736 at offset 516480.
+Note: Trying to resync...
+Note: Hit end of (available) data during resync.
+read_audio_data: complete, read  4 chunks.
+analyze_recording inat-146458775.mp3
+[src/libmpg123/layer3.c:INT123_do_layer3():1844] error: dequantization failed!
+Note: Illegal Audio-MPEG-Header 0x382c3736 at offset 516480.
+Note: Trying to resync...
+Note: Hit end of (available) data during resync.
+read_audio_data
+read_audio_data: complete, read  3 chunks.
+analyze_recording inat-221213609.wav
+read_audio_data
+read_audio_data: complete, read  5 chunks.
+analyze_recording inat-304388554.mp3
+read_audio_data
+read_audio_data: complete, read  2 chunks.
+analyze_recording inat-40263821.mp3
+read_audio_data
+read_audio_data: complete, read  6 chunks.
+analyze_recording inat-144534596.mp3
+read_audio_data
+read_audio_data: complete, read  7 chunks.
+analyze_recording inat-144815584.mp3
+read_audio_data
+read_audio_data: complete, read  4 chunks.
+analyze_recording inat-257475323.mp3
+read_audio_data
+read_audio_data: complete, read  5 chunks.
+analyze_recording inat-197445059.wav
+read_audio_data
+read_audio_data: complete, read  2 chunks.
+analyze_recording inat-199545738.wav
+read_audio_data
+read_audio_data: complete, read  3 chunks.
+analyze_recording inat-250386822.wav
+read_audio_data
+read_audio_data: complete, read  4 chunks.
+analyze_recording inat-257886405.wav
+read_audio_data
+read_audio_data: complete, read  1 chunks.
+analyze_recording inat-167342885.wav
+read_audio_data
+read_audio_data: complete, read  1 chunks.
+analyze_recording inat-167342890.wav
+  350/451... (199s)
+read_audio_data
+read_audio_data: complete, read  1 chunks.
+analyze_recording inat-167342964.wav
+read_audio_data
+read_audio_data: complete, read  1 chunks.
+analyze_recording inat-167342979.wav
+read_audio_data
+read_audio_data: complete, read  1 chunks.
+analyze_recording inat-167342986.wav
+read_audio_data
+read_audio_data: complete, read  5 chunks.
+analyze_recording inat-169866464.wav
+read_audio_data
+read_audio_data: complete, read  3 chunks.
+analyze_recording inat-100378539.wav
+read_audio_data
+read_audio_data: complete, read  4 chunks.
+analyze_recording inat-100474664.wav
+read_audio_data
+read_audio_data: complete, read  5 chunks.
+analyze_recording inat-123913183.mp3
+read_audio_data
+read_audio_data: complete, read  2 chunks.
+analyze_recording inat-157877438.wav
+read_audio_data
+read_audio_data: complete, read  4 chunks.
+analyze_recording inat-238381158.mp3
+read_audio_data
+read_audio_data: complete, read  3 chunks.
+analyze_recording inat-327873171.wav
+read_audio_data
+read_audio_data: complete, read  2 chunks.
+analyze_recording inat-402121680.wav
+read_audio_data
+read_audio_data: complete, read  4 chunks.
+analyze_recording inat-117525566.mp3
+read_audio_data
+read_audio_data: complete, read  2 chunks.
+analyze_recording inat-193667148.wav
+read_audio_data
+read_audio_data: complete, read  1 chunks.
+analyze_recording inat-228740342.wav
+read_audio_data
+read_audio_data: complete, read  8 chunks.
+analyze_recording inat-257428526.wav
+read_audio_data
+read_audio_data: complete, read  2 chunks.
+analyze_recording inat-367632857.mp3
+read_audio_data
+read_audio_data: complete, read  2 chunks.
+analyze_recording inat-100351427.wav
+read_audio_data
+read_audio_data: complete, read  2 chunks.
+analyze_recording inat-229169264.wav
+read_audio_data
+read_audio_data: complete, read  18 chunks.
+analyze_recording inat-70926878.wav
+read_audio_data
+read_audio_data: complete, read  2 chunks.
+analyze_recording inat-303669394.mp3
+read_audio_data
+[src/libmpg123/layer3.c:INT123_do_layer3():1844] error: dequantization failed!
+Note: Illegal Audio-MPEG-Header 0x39302c32 at offset 2528640.
+Note: Trying to resync...
+Note: Skipped 1024 bytes in input.
+[src/libmpg123/parse.c:wetwork():1349] error: Giving up resync after 1024 bytes - your stream is not nice... (maybe increasing resync limit could help).
+Unspecified internal error.
+read_audio_data
+read_audio_data: complete, read  2 chunks.
+analyze_recording inat-137245781.wav
+read_audio_data
+read_audio_data: complete, read  16 chunks.
+analyze_recording inat-199049176.wav
+read_audio_data
+read_audio_data: complete, read  3 chunks.
+analyze_recording inat-254154676.wav
+read_audio_data
+read_audio_data: complete, read  3 chunks.
+analyze_recording inat-29356737.mp3
+read_audio_data
+read_audio_data: complete, read  19 chunks.
+analyze_recording inat-50953474.wav
+read_audio_data
+read_audio_data: complete, read  6 chunks.
+analyze_recording inat-112096626.mp3
+read_audio_data
+read_audio_data: complete, read  1 chunks.
+analyze_recording inat-167343356.wav
+read_audio_data
+read_audio_data: complete, read  1 chunks.
+analyze_recording inat-167343358.wav
+read_audio_data
+read_audio_data: complete, read  8 chunks.
+analyze_recording inat-182441603.wav
+read_audio_data
+read_audio_data: complete, read  11 chunks.
+analyze_recording inat-225395629.wav
+read_audio_data
+read_audio_data: complete, read  10 chunks.
+analyze_recording inat-75594435.mp3
+read_audio_data
+read_audio_data: complete, read  4 chunks.
+analyze_recording inat-112785759.mp3
+read_audio_data
+read_audio_data: complete, read  1 chunks.
+analyze_recording inat-219018834.wav
+read_audio_data
+read_audio_data: complete, read  3 chunks.
+analyze_recording inat-231974982.wav
+read_audio_data
+read_audio_data: complete, read  1 chunks.
+analyze_recording inat-367910313.mp3
+read_audio_data
+read_audio_data: complete, read  7 chunks.
+analyze_recording inat-60701265.wav
+read_audio_data
+read_audio_data: complete, read  9 chunks.
+analyze_recording inat-72154188.mp3
+read_audio_data
+read_audio_data: complete, read  7 chunks.
+analyze_recording inat-100353391.wav
+read_audio_data
+read_audio_data: complete, read  12 chunks.
+analyze_recording inat-108267879.wav
+read_audio_data
+read_audio_data: complete, read  3 chunks.
+analyze_recording inat-145999574.wav
+read_audio_data
+read_audio_data: complete, read  2 chunks.
+analyze_recording inat-196642434.wav
+read_audio_data
+read_audio_data: complete, read  3 chunks.
+analyze_recording inat-198882094.wav
+read_audio_data
+read_audio_data: complete, read  7 chunks.
+analyze_recording inat-345638631.wav
+read_audio_data
+read_audio_data: complete, read  6 chunks.
+analyze_recording inat-100381541.wav
+read_audio_data
+Note: Illegal Audio-MPEG-Header 0x32382c31 at offset 269760.
+Note: Trying to resync...
+Note: Hit end of (available) data during resync.
+read_audio_data: complete, read  2 chunks.
+analyze_recording inat-367900622.mp3
+Note: Illegal Audio-MPEG-Header 0x32382c31 at offset 269760.
+Note: Trying to resync...
+Note: Hit end of (available) data during resync.
+read_audio_data
+read_audio_data: complete, read  4 chunks.
+analyze_recording inat-38248662.wav
+read_audio_data
+read_audio_data: complete, read  27 chunks.
+analyze_recording inat-399498828.wav
+read_audio_data
+read_audio_data: complete, read  3 chunks.
+analyze_recording inat-40339592.mp3
+read_audio_data
+read_audio_data: complete, read  6 chunks.
+analyze_recording inat-70989721.wav
+  400/451... (219s)
+read_audio_data
+read_audio_data: complete, read  18 chunks.
+analyze_recording xc-1001832.mp3
+read_audio_data
+read_audio_data: complete, read  7 chunks.
+analyze_recording xc-986619.mp3
+read_audio_data
+read_audio_data: complete, read  11 chunks.
+analyze_recording xc-1161132.mp3
+read_audio_data
+read_audio_data: complete, read  11 chunks.
+analyze_recording xc-610767.mp3
+read_audio_data
+read_audio_data: complete, read  4 chunks.
+analyze_recording xc-635716.mp3
+read_audio_data
+read_audio_data: complete, read  15 chunks.
+analyze_recording xc-756455.mp3
+read_audio_data
+read_audio_data: complete, read  16 chunks.
+analyze_recording xc-1010238.mp3
+read_audio_data
+read_audio_data: complete, read  2 chunks.
+analyze_recording xc-1085961.mp3
+read_audio_data
+read_audio_data: complete, read  8 chunks.
+analyze_recording xc-1091160.mp3
+read_audio_data
+read_audio_data: complete, read  53 chunks.
+analyze_recording xc-1100258.mp3
+read_audio_data
+read_audio_data: complete, read  26 chunks.
+analyze_recording xc-1141875.mp3
+read_audio_data
+read_audio_data: complete, read  2 chunks.
+analyze_recording xc-890850.mp3
+read_audio_data
+read_audio_data: complete, read  52 chunks.
+analyze_recording xc-944433.mp3
+read_audio_data
+read_audio_data: complete, read  17 chunks.
+analyze_recording xc-955746.mp3
+read_audio_data
+read_audio_data: complete, read  8 chunks.
+analyze_recording xc-1071192.mp3
+read_audio_data
+read_audio_data: complete, read  3 chunks.
+analyze_recording xc-1072918.mp3
+read_audio_data
+read_audio_data: complete, read  13 chunks.
+analyze_recording xc-1074068.mp3
+read_audio_data
+read_audio_data: complete, read  3 chunks.
+analyze_recording xc-940764.mp3
+read_audio_data
+read_audio_data: complete, read  28 chunks.
+analyze_recording xc-746292.mp3
+read_audio_data
+read_audio_data: complete, read  5 chunks.
+analyze_recording xc-746305.mp3
+read_audio_data
+read_audio_data: complete, read  4 chunks.
+analyze_recording xc-1010067.mp3
+read_audio_data
+read_audio_data: complete, read  6 chunks.
+analyze_recording xc-1089497.mp3
+read_audio_data
+read_audio_data: complete, read  13 chunks.
+analyze_recording xc-1091153.mp3
+read_audio_data
+read_audio_data: complete, read  11 chunks.
+analyze_recording xc-1096580.mp3
+read_audio_data
+read_audio_data: complete, read  8 chunks.
+analyze_recording xc-1120035.mp3
+read_audio_data
+read_audio_data: complete, read  14 chunks.
+analyze_recording xc-737482.mp3
+read_audio_data
+read_audio_data: complete, read  7 chunks.
+analyze_recording xc-823504.mp3
+read_audio_data
+read_audio_data: complete, read  2 chunks.
+analyze_recording xc-856060.mp3
+read_audio_data
+read_audio_data: complete, read  8 chunks.
+analyze_recording xc-856061.mp3
+read_audio_data
+read_audio_data: complete, read  3 chunks.
+analyze_recording xc-938778.mp3
+read_audio_data
+read_audio_data: complete, read  6 chunks.
+analyze_recording xc-1003564.mp3
+read_audio_data
+read_audio_data: complete, read  6 chunks.
+analyze_recording xc-1009989.mp3
+read_audio_data
+read_audio_data: complete, read  10 chunks.
+analyze_recording xc-883425.mp3
+read_audio_data
+read_audio_data: complete, read  3 chunks.
+analyze_recording xc-665743.mp3
+read_audio_data
+read_audio_data: complete, read  7 chunks.
+analyze_recording xc-684723.mp3
+read_audio_data
+read_audio_data: complete, read  8 chunks.
+analyze_recording xc-685003.mp3
+read_audio_data
+read_audio_data: complete, read  3 chunks.
+analyze_recording xc-202789.mp3
+read_audio_data
+read_audio_data: complete, read  5 chunks.
+analyze_recording xc-281912.mp3
+read_audio_data
+read_audio_data: complete, read  3 chunks.
+analyze_recording xc-1069335.mp3
+read_audio_data
+read_audio_data: complete, read  3 chunks.
+analyze_recording xc-1096543.mp3
+read_audio_data
+read_audio_data: complete, read  12 chunks.
+analyze_recording xc-1164726.mp3
+read_audio_data
+read_audio_data: complete, read  4 chunks.
+analyze_recording xc-1164727.mp3
+read_audio_data
+read_audio_data: complete, read  7 chunks.
+analyze_recording xc-1076994.mp3
+read_audio_data
+read_audio_data: complete, read  4 chunks.
+analyze_recording xc-1096577.mp3
+read_audio_data
+read_audio_data: complete, read  32 chunks.
+analyze_recording xc-756430.mp3
+read_audio_data
+read_audio_data: complete, read  9 chunks.
+analyze_recording xc-760675.mp3
+read_audio_data
+read_audio_data: complete, read  19 chunks.
+analyze_recording xc-938746.mp3
+read_audio_data
+read_audio_data: complete, read  1 chunks.
+analyze_recording xc-1047925.mp3
+read_audio_data
+read_audio_data: complete, read  1 chunks.
+analyze_recording xc-1062270.mp3
+read_audio_data
+read_audio_data: complete, read  2 chunks.
+analyze_recording xc-1073051.mp3
+  450/451... (262s)
+read_audio_data
+read_audio_data: complete, read  9 chunks.
+analyze_recording xc-880903.mp3
+
+Agregat: presisi 0.6772, recall 0.7293
+Berkas dievaluasi: 448, gagal: 3
+Waktu total: 262s
+Output: /home/fuudaya/Projects/gemahutan/ml/reports/e2e.json

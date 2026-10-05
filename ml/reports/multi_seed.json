@@ -1,0 +1,40 @@
+{
+  "seeds": [
+    42,
+    123,
+    2024
+  ],
+  "n_seeds": 3,
+  "best_val_acc_mean": 0.6824146981627296,
+  "best_val_acc_std": 0.043366697222725244,
+  "test_acc_mean": 0.6797900262467191,
+  "test_acc_std": 0.016391070861938025,
+  "f1_macro_mean": 0.648340708212503,
+  "f1_macro_std": 0.012096342800832502,
+  "per_seed": [
+    {
+      "seed": 42,
+      "best_val_acc": 0.6850393700787402,
+      "test_acc": 0.6614173228346457,
+      "f1_macro": 0.6367048336279105,
+      "epochs_trained": 32,
+      "run_dir": "/home/fuudaya/Projects/gemahutan/ml/runs/20260923-153902-s42"
+    },
+    {
+      "seed": 123,
+      "best_val_acc": 0.6377952755905512,
+      "test_acc": 0.6850393700787402,
+      "f1_macro": 0.6474671340055954,
+      "epochs_trained": 32,
+      "run_dir": "/home/fuudaya/Projects/gemahutan/ml/runs/20260923-153905-s123"
+    },
+    {
+      "seed": 2024,
+      "best_val_acc": 0.7244094488188977,
+      "test_acc": 0.6929133858267716,
+      "f1_macro": 0.6608501570040032,
+      "epochs_trained": 32,
+      "run_dir": "/home/fuudaya/Projects/gemahutan/ml/runs/20260923-153906-s2024"
+    }
+  ]
+}

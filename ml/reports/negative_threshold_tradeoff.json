@@ -1,0 +1,203 @@
+{
+  "thresholds": [
+    0.05,
+    0.1,
+    0.15,
+    0.2,
+    0.25,
+    0.3,
+    0.35,
+    0.4,
+    0.5
+  ],
+  "calibration": {
+    "temperature": 0.6972443800845098,
+    "bias_norm": 2.10188889503479
+  },
+  "label_map_neg_index": 25,
+  "per_threshold": {
+    "0.05": {
+      "val": {
+        "n_samples": 127,
+        "n_top_negative": 30,
+        "n_top_negative_above_threshold": 30,
+        "n_clean_pred": 97,
+        "clean_accuracy_on_kept": 0.6288659793814433,
+        "actual_neg_rate": 0.14960629921259844,
+        "pred_neg_rate_at_threshold": 0.23622047244094488
+      },
+      "test": {
+        "n_samples": 127,
+        "n_top_negative": 22,
+        "n_top_negative_above_threshold": 22,
+        "n_clean_pred": 105,
+        "clean_accuracy_on_kept": 0.5904761904761905,
+        "actual_neg_rate": 0.14960629921259844,
+        "pred_neg_rate_at_threshold": 0.1732283464566929
+      }
+    },
+    "0.10": {
+      "val": {
+        "n_samples": 127,
+        "n_top_negative": 30,
+        "n_top_negative_above_threshold": 30,
+        "n_clean_pred": 97,
+        "clean_accuracy_on_kept": 0.6288659793814433,
+        "actual_neg_rate": 0.14960629921259844,
+        "pred_neg_rate_at_threshold": 0.23622047244094488
+      },
+      "test": {
+        "n_samples": 127,
+        "n_top_negative": 22,
+        "n_top_negative_above_threshold": 22,
+        "n_clean_pred": 105,
+        "clean_accuracy_on_kept": 0.5904761904761905,
+        "actual_neg_rate": 0.14960629921259844,
+        "pred_neg_rate_at_threshold": 0.1732283464566929
+      }
+    },
+    "0.15": {
+      "val": {
+        "n_samples": 127,
+        "n_top_negative": 30,
+        "n_top_negative_above_threshold": 30,
+        "n_clean_pred": 96,
+        "clean_accuracy_on_kept": 0.6354166666666666,
+        "actual_neg_rate": 0.14960629921259844,
+        "pred_neg_rate_at_threshold": 0.23622047244094488
+      },
+      "test": {
+        "n_samples": 127,
+        "n_top_negative": 22,
+        "n_top_negative_above_threshold": 22,
+        "n_clean_pred": 104,
+        "clean_accuracy_on_kept": 0.5961538461538461,
+        "actual_neg_rate": 0.14960629921259844,
+        "pred_neg_rate_at_threshold": 0.1732283464566929
+      }
+    },
+    "0.20": {
+      "val": {
+        "n_samples": 127,
+        "n_top_negative": 30,
+        "n_top_negative_above_threshold": 28,
+        "n_clean_pred": 94,
+        "clean_accuracy_on_kept": 0.6382978723404256,
+        "actual_neg_rate": 0.14960629921259844,
+        "pred_neg_rate_at_threshold": 0.2204724409448819
+      },
+      "test": {
+        "n_samples": 127,
+        "n_top_negative": 22,
+        "n_top_negative_above_threshold": 22,
+        "n_clean_pred": 100,
+        "clean_accuracy_on_kept": 0.62,
+        "actual_neg_rate": 0.14960629921259844,
+        "pred_neg_rate_at_threshold": 0.1732283464566929
+      }
+    },
+    "0.25": {
+      "val": {
+        "n_samples": 127,
+        "n_top_negative": 30,
+        "n_top_negative_above_threshold": 26,
+        "n_clean_pred": 86,
+        "clean_accuracy_on_kept": 0.6976744186046512,
+        "actual_neg_rate": 0.14960629921259844,
+        "pred_neg_rate_at_threshold": 0.2047244094488189
+      },
+      "test": {
+        "n_samples": 127,
+        "n_top_negative": 22,
+        "n_top_negative_above_threshold": 20,
+        "n_clean_pred": 92,
+        "clean_accuracy_on_kept": 0.6630434782608695,
+        "actual_neg_rate": 0.14960629921259844,
+        "pred_neg_rate_at_threshold": 0.15748031496062992
+      }
+    },
+    "0.30": {
+      "val": {
+        "n_samples": 127,
+        "n_top_negative": 30,
+        "n_top_negative_above_threshold": 20,
+        "n_clean_pred": 77,
+        "clean_accuracy_on_kept": 0.7142857142857143,
+        "actual_neg_rate": 0.14960629921259844,
+        "pred_neg_rate_at_threshold": 0.15748031496062992
+      },
+      "test": {
+        "n_samples": 127,
+        "n_top_negative": 22,
+        "n_top_negative_above_threshold": 18,
+        "n_clean_pred": 85,
+        "clean_accuracy_on_kept": 0.7058823529411765,
+        "actual_neg_rate": 0.14960629921259844,
+        "pred_neg_rate_at_threshold": 0.14173228346456693
+      }
+    },
+    "0.35": {
+      "val": {
+        "n_samples": 127,
+        "n_top_negative": 30,
+        "n_top_negative_above_threshold": 18,
+        "n_clean_pred": 73,
+        "clean_accuracy_on_kept": 0.726027397260274,
+        "actual_neg_rate": 0.14960629921259844,
+        "pred_neg_rate_at_threshold": 0.14173228346456693
+      },
+      "test": {
+        "n_samples": 127,
+        "n_top_negative": 22,
+        "n_top_negative_above_threshold": 16,
+        "n_clean_pred": 76,
+        "clean_accuracy_on_kept": 0.7368421052631579,
+        "actual_neg_rate": 0.14960629921259844,
+        "pred_neg_rate_at_threshold": 0.12598425196850394
+      }
+    },
+    "0.40": {
+      "val": {
+        "n_samples": 127,
+        "n_top_negative": 30,
+        "n_top_negative_above_threshold": 16,
+        "n_clean_pred": 62,
+        "clean_accuracy_on_kept": 0.8064516129032258,
+        "actual_neg_rate": 0.14960629921259844,
+        "pred_neg_rate_at_threshold": 0.12598425196850394
+      },
+      "test": {
+        "n_samples": 127,
+        "n_top_negative": 22,
+        "n_top_negative_above_threshold": 12,
+        "n_clean_pred": 72,
+        "clean_accuracy_on_kept": 0.7777777777777778,
+        "actual_neg_rate": 0.14960629921259844,
+        "pred_neg_rate_at_threshold": 0.09448818897637795
+      }
+    },
+    "0.50": {
+      "val": {
+        "n_samples": 127,
+        "n_top_negative": 30,
+        "n_top_negative_above_threshold": 9,
+        "n_clean_pred": 54,
+        "clean_accuracy_on_kept": 0.9074074074074074,
+        "actual_neg_rate": 0.14960629921259844,
+        "pred_neg_rate_at_threshold": 0.07086614173228346
+      },
+      "test": {
+        "n_samples": 127,
+        "n_top_negative": 22,
+        "n_top_negative_above_threshold": 9,
+        "n_clean_pred": 56,
+        "clean_accuracy_on_kept": 0.8392857142857143,
+        "actual_neg_rate": 0.14960629921259844,
+        "pred_neg_rate_at_threshold": 0.07086614173228346
+      }
+    }
+  },
+  "chosen_threshold": 0.3,
+  "previous_threshold": 0.15,
+  "justification": "Naik dari 0.15 ke 0.30 karena label _negative sebelumnya terlalu lolos: 14 dari 127 klip val diprediksi _negative sebagai top-1 (11.0%). Threshold 0.30 menurunkan jumlah deteksi _negative yang lolos sampai setengah, menurunkan false positive deteksi _negative, dengan risiko false negative kelas lain yang terukur di trade-off curve. Threshold 0.30 mengikuti pola kurva: di atas 0.30 akurasi clean prediksi turun tajam karena kelas positif ikut terbuang."
+}

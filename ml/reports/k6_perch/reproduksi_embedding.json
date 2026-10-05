@@ -1,0 +1,11 @@
+{
+  "n_dicek": 40,
+  "n_gagal": 0,
+  "gagal": [],
+  "cosine_min": 1.0,
+  "cosine_median": 1.0,
+  "maxdiff_maks": 0.0,
+  "model_dir": "/home/fuudaya/.cache/kagglehub/models/google/bird-vocalization-classifier/tensorFlow2/perch_v2/2",
+  "n_cocok_cos_ge_0.999": 40,
+  "reproduksi": "COCOK"
+}

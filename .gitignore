@@ -1,0 +1,150 @@
+# Environment
+.env
+deploy/.env.prod
+.env.local
+.env.production
+
+# Audio files (never commit)
+*.wav
+*.mp3
+*.flac
+*.ogg
+*.m4a
+# kecuali klip demo kecil yang ikut repo supaya `make demo` jalan tanpa internet,
+# dan klip hasil verifikasi ahli sebagai bukti loop verifikasi ke data latih
+!ml/demo_audio/*.mp3
+!ml/data/verified/**/*.wav
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+# Semua virtualenv turunan, termasuk .venv-perch yang isinya CUDA dan TensorFlow
+# sebesar 6,6 GB. Pola .venv/ saja tidak menutupnya, dan tanpa baris ini
+# `git add -A` ikut membawa 27.033 berkas biner ke dalam repo.
+.venv-*/
+venv/
+*.egg-info/
+dist/
+build/
+
+# Node
+node_modules/
+.next/
+out/
+
+# ML artifacts (large binaries)
+# checkpoints/*.npz ikut dilacak: classifier Track B 2 MB, hasil latihan sendiri,
+# tanpa itu clone bersih jalan tanpa spesialis spesies lokal.
+ml/checkpoints/latest_checkpoint.npz
+ml/embeddings/*.npy
+ml/models/**/*.tflite
+ml/models/**/*.onnx
+ml/models/**/*.pt
+ml/models/**/*.h5
+ml/models/**/*.pb
+*.npy
+
+# Audio data (downloaded)
+ml/data/audio/
+ml/data/audio_*/
+ml/data/kelas_langka/
+ml/data/uji_independen/audio/
+
+# Embedding cache untuk berbagai versi korpus
+ml/embeddings_*/
+
+# Checkpoint eksperimen varian (bisa dilatih ulang)
+ml/checkpoints_*/
+
+# Docker volumes
+minio-data/
+postgres-data/
+redis-data/
+
+# Ops logs
+ops/logs/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Runtime asisten/agent (tidak ikut repo)
+.hermes/
+.claude/
+*.pdf
+
+# Data turunan simulasi (bisa dibangun ulang, besar)
+# params.json tetap dilacak karena itu catatan desain simulasi
+ml/data/degraded/*/
+ml/data/augmented/
+ml/data/field/cache.json
+ml/embeddings_aug/
+ml/checkpoints_aug/
+ml/data/splits_aug.json
+
+# Checkpoint eksperimen (bisa dilatih ulang, 2 MB tiap berkas)
+ml/checkpoints_aug*/
+# Gambar varian eksperimen; yang dipakai proposal hanya fig08_degradasi_audio.png
+docs/proposal/figures/fig08_degradasi_audio_aug*.png
+
+# Backup lokal
+ops/backups/
+
+# Referensi/template lokal yang tidak ikut commit
+/dump/
+
+# Berkas build TypeScript, dihasilkan ulang tiap kompilasi
+*.tsbuildinfo
+
+# Hasil eksperimen lokal yang tidak ikut commit
+/artifacts/
+/anti-slop/
+ml/data/degraded_subset/
+ml/backups/
+ml/runs/
+ml/embeddings/embeddings-prefilter.tar.gz
+ml/checkpoints_aug*/
+ml/data/degraded/
+ml/checkpoints-preaug/
+
+# Cache evaluasi end-to-end (dibangun ulang, tidak ikut commit)
+ml/data/cache_e2e/
+
+# Cache respons API (dibangun ulang)
+ml/data/cache_api/
+
+# Audio negatif XC (unduh ulang, manifest ikut commit)
+ml/data/negatif_xc/
+
+# Anotasi resmi iNatSounds 2024 (91 MB, bisa diunduh ulang).
+# Sumber + md5 tercatat di docstring ml/lisensi_inat_resmi.py.
+# Bukti per klip hasil pencocokan TETAP dilacak (manifest_lisensi_inat.csv).
+ml/data/inat_annotations/
+
+# Kandidat mentah panen proksi XC (reproducible via ml/panen_proksi_xc.py).
+# Yang terpilih + sha256 daftar id TETAP dilacak di terpilih.json.
+ml/data/proksi_xc/kandidat.json
+
+# Sandi akun dev hasil rotasi. JANGAN di-commit, jangan dicetak ke log.
+.secrets-local/
+
+# Audio K5 (spesies lemah) hasil unduh, bisa dibangun ulang via
+# ml/unduh_pemicu_xc.py --spesies ... ; manifestnya TETAP dilacak.
+ml/data/k5_lemah_xc/
+
+# Audio K4 bersih (bisa dibangun ulang via ml/unduh_pemicu_xc.py);
+# manifestnya TETAP dilacak.
+ml/data/pemicu_xc_bersih/
+
+# Symlink bobot Perch ke ~/.cache/kagglehub (410 MB, di luar repo).
+# Dibuat ml/unduh_bobot_perch.py, jangan dilacak.
+ml/models_perch
+lapangan_yt/

@@ -1,0 +1,51 @@
+[
+  {
+    "nama": "baseline (0.1, no birdnet confirm)",
+    "fp": 0.4407,
+    "recall": 0.7981,
+    "n_pengecoh": 59,
+    "n_target": 104
+  },
+  {
+    "nama": "nontarget 0.3",
+    "fp": 0.4407,
+    "recall": 0.7981,
+    "n_pengecoh": 59,
+    "n_target": 104
+  },
+  {
+    "nama": "nontarget 0.5",
+    "fp": 0.4407,
+    "recall": 0.7981,
+    "n_pengecoh": 59,
+    "n_target": 104
+  },
+  {
+    "nama": "nontarget 0.5 + birdnet confirm",
+    "fp": 0.2034,
+    "recall": 0.6442,
+    "n_pengecoh": 59,
+    "n_target": 104
+  },
+  {
+    "nama": "nontarget 0.5 + margin 0.2",
+    "fp": 0.3898,
+    "recall": 0.7981,
+    "n_pengecoh": 59,
+    "n_target": 104
+  },
+  {
+    "nama": "nontarget 0.5 + margin 0.3",
+    "fp": 0.3898,
+    "recall": 0.7885,
+    "n_pengecoh": 59,
+    "n_target": 104
+  },
+  {
+    "nama": "nontarget 0.5 + margin 0.3 + confirm",
+    "fp": 0.2034,
+    "recall": 0.6442,
+    "n_pengecoh": 59,
+    "n_target": 104
+  }
+]

@@ -1,0 +1,35 @@
+# K6 (ML_10): resep produksi LR v3, embedding PERCH 2.0 (1536 dim) alih-alih
+# BirdNET v3 (1024 dim).
+#
+# Satu perubahan terhadap produksi: sumber embedding. Kepala, C, class_weight,
+# maks_negatif, dan seed identik resep produksi.
+#
+# splits_file memakai ml/data/splits_irisan_perch.json, yaitu klip yang punya
+# embedding di KEDUA sisi (Perch dan BirdNET v3). Alasannya sudah dibuktikan di
+# ml/reports/k6_perch/README.md: 98 klip yang tidak punya embedding Perch
+# SEMUANYA klip kelas langka, jadi memakai pool penuh akan membandingkan Perch
+# pada soal yang lebih mudah daripada BirdNET.
+#
+# ckpt_in WAJIB ml/runs/k6_ckpt_in, bukan ml/checkpoints: latih_produksi.py
+# MEMBACA normalization.npz dari ckpt_in dan tidak menghitungnya. Dimensi
+# produksi 1024 sedangkan Perch 1536, jadi memakai ckpt_in produksi bukan cuma
+# salah statistik tapi langsung tidak cocok bentuknya.
+
+model:
+  type: logistic_regression
+  activation: linear
+
+training:
+  C: 1.0
+  class_weight: balanced
+  maks_negatif: 3000
+  seed: 2024
+
+data:
+  emb_dir: ml/embeddings_perch
+  splits_file: ml/data/splits_irisan_perch.json
+  ckpt_in: ml/runs/k6_ckpt_in
+
+output:
+  ckpt_dir: ml/runs/k6_perch_model
+  report_dir: ml/runs/k6_perch_model

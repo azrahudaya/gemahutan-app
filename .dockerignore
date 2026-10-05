@@ -1,0 +1,59 @@
+# Build context is the repository root. Sisanya yang berat tidak perlu masuk image.
+
+# Dataset audio 7 GB tidak dipakai saat runtime (demo pakai ml/demo_audio)
+ml/data/audio/
+ml/demo_audio/*.wav
+
+# Embedding hasil ekstraksi, bisa dibuat ulang
+ml/embeddings/*.npy
+
+# Korpus yang dibangun ulang oleh skrip: simulasi degradasi, korpus lapangan,
+# data augmentasi latih, dan klip verifikasi. Semuanya besar dan tidak dipakai
+# saat runtime, jadi jangan masuk konteks build.
+ml/data/degraded/
+ml/data/degraded_subset/
+ml/data/field/
+ml/data/augmented/
+ml/data/verified/
+ml/data/manifest.csv.bak-prefilter
+ml/data/splits.json.bak-prefilter
+ml/embeddings_aug/
+ml/checkpoints_aug/
+ml/data/splits_aug.json
+
+# Artefak latihan sementara
+ml/checkpoints/latest_checkpoint.npz
+ml/runs/
+ml/__pycache__/
+
+# Korpus v2 dan jalur Perch. Semuanya besar (models_perch 392 MB, embeddings
+# per model 33 sampai 49 MB) dan TIDAK dipakai runtime, karena runtime masih
+# memuat ml/checkpoints/. Tanpa baris ini, build gagal dengan
+# "no space left on device" saat mengekstrak lapisan image.
+ml/models_perch/
+ml/embeddings_v2/
+ml/embeddings_perch/
+ml/checkpoints_v2/
+ml/checkpoints_perch/
+ml/reports_v2/
+ml/reports_perch/
+ml/data/audio_inat/
+ml/data/audio_seabird/
+ml/data/audio_ulm/
+
+# Runtime dan cache
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+node_modules/
+.next/
+.git/
+.hermes/
+ops/logs/
+ops/backups/
+*.tsbuildinfo
+
+# Artefak lokal
+*.pdf
+*.log

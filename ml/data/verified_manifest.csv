@@ -1,0 +1,2 @@
+clip_id,source,source_url,species_scientific,species_common,split,duration_s,sample_rate,quality,license,sha256,local_path
+ver-116,human-verified,internal://recording/18,Accipiter badius,Shikra,,4.00,48000,verified-0.22,internal,2782563c9b09aea5d5c6276cb4bf94604f98165c3f9f0d6085660f1c9a040f5e,verified/Accipiter_badius/ver-116.wav

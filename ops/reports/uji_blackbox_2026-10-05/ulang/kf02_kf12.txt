@@ -1,0 +1,13 @@
+admin buat lokasi: 201 75
+admin buat perangkat (4 kanal, 0,5 m): 422 {"detail":[{"type":"missing","loc":["body","type"],"msg":"Field required","input":{"name":"Alat uji 4 kanal","site_id":75,"channels":4,"mic_spacing_m"
+admin ubah prioritas Gallus gallus: 200 True
+ranger buat lokasi: 403
+ranger buat perangkat: 403
+ranger ubah prioritas: 403
+jejak audit 3 menit terakhir:
+auth.login|user|2026-10-05 09:41:51.432959+00
+auth.login|user|2026-10-05 09:41:51.535787+00
+admin buat perangkat (ulang, dengan type): 201 {'id': 87, 'channels': None, 'mic_spacing_m': 0.5}
+hapus perangkat: 204
+hapus lokasi uji: 200
+admin buat perangkat: channel_count 4 mic_spacing_m 0.5

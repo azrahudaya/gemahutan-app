@@ -1,0 +1,45 @@
+{
+  "model": "/home/fuudaya/gemahutan-cadangan/lama/best_model.npz",
+  "degradasi": {
+    "bersih": {
+      "jumlah_jendela": 127,
+      "akurasi_top1": 0.6929,
+      "macro_f1": 0.6613,
+      "kelas_dinilai": 25,
+      "tingkat_deteksi": 0.7874
+    },
+    "bersih_tanpa_nd": {
+      "jumlah_jendela": 127,
+      "akurasi_top1": 0.6929,
+      "macro_f1": 0.6613,
+      "kelas_dinilai": 25,
+      "tingkat_deteksi": 0.7874
+    }
+  },
+  "lapangan": {
+    "inat": {
+      "jumlah_jendela": 610,
+      "akurasi_top1": 0.5525,
+      "macro_f1": 0.5293,
+      "kelas_dinilai": 23,
+      "tingkat_deteksi": 0.7148,
+      "jumlah_berkas": 113,
+      "berkas_terbaca": 111
+    },
+    "other": {
+      "jumlah_berkas": 118,
+      "berkas_terbaca": 114,
+      "jumlah_jendela": 708,
+      "deteksi_palsu": 0.6031
+    },
+    "xc_noisy": {
+      "jumlah_jendela": 640,
+      "akurasi_top1": 0.7125,
+      "macro_f1": 0.7187,
+      "kelas_dinilai": 24,
+      "tingkat_deteksi": 0.8187,
+      "jumlah_berkas": 108,
+      "berkas_terbaca": 106
+    }
+  }
+}

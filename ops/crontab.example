@@ -1,0 +1,2 @@
+*/5 * * * * /bin/bash $HOME/Projects/gemahutan/ops/hermes-watchdog.sh >/dev/null 2>&1
+*/2 * * * * /bin/bash $HOME/Projects/gemahutan/ops/healthcheck.sh   >/dev/null 2>&1

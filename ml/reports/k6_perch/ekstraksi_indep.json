@@ -1,0 +1,12 @@
+{
+  "n_manifest": 135,
+  "n_ok": 135,
+  "n_gagal": 0,
+  "gagal": [],
+  "n_lewat_ffmpeg": 35,
+  "total_jendela": 932,
+  "stride_s": 2.5,
+  "durasi_jendela_s": 5.0,
+  "maks_jendela": 40,
+  "out_dir": "/home/fuudaya/Projects/gemahutan/ml/data/uji_independen/cache_perch"
+}

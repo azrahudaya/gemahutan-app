@@ -1,0 +1,184 @@
+[
+  {
+    "kelas": "Aegithina tiphia",
+    "precision": 0.6,
+    "recall": 0.6,
+    "f1": 0.6,
+    "support": 5
+  },
+  {
+    "kelas": "Amaurornis phoenicurus",
+    "precision": 0.75,
+    "recall": 0.6,
+    "f1": 0.6667,
+    "support": 5
+  },
+  {
+    "kelas": "Anthreptes malacensis",
+    "precision": 1.0,
+    "recall": 0.8,
+    "f1": 0.8889,
+    "support": 5
+  },
+  {
+    "kelas": "Aplonis panayensis",
+    "precision": 0.5,
+    "recall": 0.25,
+    "f1": 0.3333,
+    "support": 4
+  },
+  {
+    "kelas": "Arachnothera longirostra",
+    "precision": 0.75,
+    "recall": 1.0,
+    "f1": 0.8571,
+    "support": 3
+  },
+  {
+    "kelas": "Centropus bengalensis",
+    "precision": 1.0,
+    "recall": 0.8,
+    "f1": 0.8889,
+    "support": 5
+  },
+  {
+    "kelas": "Chalcophaps indica",
+    "precision": 1.0,
+    "recall": 0.6667,
+    "f1": 0.8,
+    "support": 3
+  },
+  {
+    "kelas": "Cinnyris jugularis",
+    "precision": 0.6667,
+    "recall": 1.0,
+    "f1": 0.8,
+    "support": 6
+  },
+  {
+    "kelas": "Cisticola juncidis",
+    "precision": 1.0,
+    "recall": 0.8333,
+    "f1": 0.9091,
+    "support": 6
+  },
+  {
+    "kelas": "Corvus macrorhynchos",
+    "precision": 1.0,
+    "recall": 0.75,
+    "f1": 0.8571,
+    "support": 4
+  },
+  {
+    "kelas": "Dicrurus macrocercus",
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1": 0.0,
+    "support": 3
+  },
+  {
+    "kelas": "Gallus gallus",
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1": 0.0,
+    "support": 1
+  },
+  {
+    "kelas": "Geopelia striata",
+    "precision": 1.0,
+    "recall": 0.6,
+    "f1": 0.75,
+    "support": 5
+  },
+  {
+    "kelas": "Haliastur indus",
+    "precision": 0.5,
+    "recall": 0.5,
+    "f1": 0.5,
+    "support": 4
+  },
+  {
+    "kelas": "Hirundo tahitica",
+    "precision": 1.0,
+    "recall": 0.3333,
+    "f1": 0.5,
+    "support": 3
+  },
+  {
+    "kelas": "Lonchura punctulata",
+    "precision": 1.0,
+    "recall": 0.5,
+    "f1": 0.6667,
+    "support": 4
+  },
+  {
+    "kelas": "Merops philippinus",
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1": 1.0,
+    "support": 4
+  },
+  {
+    "kelas": "Orthotomus sutorius",
+    "precision": 0.6,
+    "recall": 0.6,
+    "f1": 0.6,
+    "support": 5
+  },
+  {
+    "kelas": "Passer montanus",
+    "precision": 0.7143,
+    "recall": 0.8333,
+    "f1": 0.7692,
+    "support": 6
+  },
+  {
+    "kelas": "Prinia familiaris",
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1": 0.0,
+    "support": 1
+  },
+  {
+    "kelas": "Pycnonotus aurigaster",
+    "precision": 0.6667,
+    "recall": 0.3333,
+    "f1": 0.4444,
+    "support": 6
+  },
+  {
+    "kelas": "Pycnonotus goiavier",
+    "precision": 1.0,
+    "recall": 0.8333,
+    "f1": 0.9091,
+    "support": 6
+  },
+  {
+    "kelas": "Rhipidura javanica",
+    "precision": 1.0,
+    "recall": 0.75,
+    "f1": 0.8571,
+    "support": 4
+  },
+  {
+    "kelas": "Spilopelia chinensis",
+    "precision": 0.8,
+    "recall": 0.8,
+    "f1": 0.8,
+    "support": 5
+  },
+  {
+    "kelas": "Todiramphus chloris",
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1": 1.0,
+    "support": 5
+  },
+  {
+    "kelas": "_negative",
+    "precision": 0.4737,
+    "recall": 0.9474,
+    "f1": 0.6316,
+    "support": 19
+  }
+]

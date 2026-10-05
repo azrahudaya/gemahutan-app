@@ -1,0 +1,30 @@
+{
+  "fase": "L3",
+  "mulai": "2026-09-27T22:50:00+07:00",
+  "audit_sha256": "2b9f0e7727889cb25f81082f45fcd65a42ed2aef680f09ffbc0148e27084bd2d",
+  "tugas_selesai": ["T0", "T1", "T2", "T3", "T4", "T9", "T10"],
+  "tugas_sebagian": ["T5", "T8"],
+  "tugas_belum": ["T6", "T7"],
+  "audit_terakhir": {
+    "lulus": 15,
+    "gagal": 3,
+    "meleset": 3,
+    "manusia": 1,
+    "butir_rubrik_lulus": [1, 2, 3, 4, 9],
+    "butir_rubrik_total": 5
+  },
+  "gagal_tersisa": {
+    "C16": "latensi 60 menit: waktu 99 dtk OK, RSS 3890 MB > 1800. Butuh P02 (soundfile.blocks)",
+    "C17": "3205 klip iNat lisensi terlarang masih di latih. Butuh T7 retrain tanpa klip terlarang",
+    "C18": "pemilihan_jendela.json belum ada. Ekstraksi embeddings_v4 berjalan (background)"
+  },
+  "meleset_terdokumentasi": {
+    "C13": "FP pengecoh 0.526, recall 0.704. Target FP <= 0.15 tak tercapai (model, bukan filter)",
+    "C14": "F1 CV 0.729 [0.680], independen F1 0.686. Target 0.78/0.75 tak tercapai",
+    "C15": "ponsel iNat P 0.659 R 0.527. Target P >= 0.75 R >= 0.62 tak tercapai"
+  },
+  "proses_background": {
+    "ekstraksi_embeddings_v4": "sedang jalan, ~123k jendela, 3-4 jam"
+  },
+  "komit_terakhir": "5f74afd"
+}

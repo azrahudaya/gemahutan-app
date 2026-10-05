@@ -1,0 +1,183 @@
+{
+  "n_bootstrap": 10000,
+  "seed": 2026,
+  "per_konfigurasi": [
+    {
+      "berkas": "/tmp/baseline_2559.json",
+      "n_pilih": 163,
+      "fp_rate": {
+        "n": 59,
+        "titik": 0.4237,
+        "ci95": [
+          0.3051,
+          0.5593
+        ]
+      },
+      "recall_target": {
+        "n": 104,
+        "titik": 0.7981,
+        "ci95": [
+          0.7212,
+          0.875
+        ]
+      },
+      "phone_recall": {
+        "n": 56,
+        "titik": 0.6964,
+        "ci95": [
+          0.5714,
+          0.8036
+        ]
+      },
+      "phone_presisi": {
+        "n": 56,
+        "titik": 0.8298,
+        "ci95": [
+          0.7234,
+          0.9268
+        ]
+      },
+      "nama": "baseline"
+    },
+    {
+      "berkas": "ml/runs/k2_nd_bersih/e2e_ambang_produksi.json",
+      "n_pilih": 163,
+      "fp_rate": {
+        "n": 59,
+        "titik": 0.4068,
+        "ci95": [
+          0.2881,
+          0.5424
+        ]
+      },
+      "recall_target": {
+        "n": 104,
+        "titik": 0.7885,
+        "ci95": [
+          0.7019,
+          0.8654
+        ]
+      },
+      "phone_recall": {
+        "n": 56,
+        "titik": 0.6964,
+        "ci95": [
+          0.5714,
+          0.8036
+        ]
+      },
+      "phone_presisi": {
+        "n": 56,
+        "titik": 0.8298,
+        "ci95": [
+          0.7273,
+          0.9286
+        ]
+      },
+      "nama": "K2_ambang_produksi"
+    },
+    {
+      "berkas": "ml/runs/k2_nd_bersih/e2e.json",
+      "n_pilih": 163,
+      "fp_rate": {
+        "n": 59,
+        "titik": 0.5085,
+        "ci95": [
+          0.3729,
+          0.6441
+        ]
+      },
+      "recall_target": {
+        "n": 104,
+        "titik": 0.7308,
+        "ci95": [
+          0.6442,
+          0.8173
+        ]
+      },
+      "phone_recall": {
+        "n": 56,
+        "titik": 0.6786,
+        "ci95": [
+          0.5536,
+          0.8036
+        ]
+      },
+      "phone_presisi": {
+        "n": 56,
+        "titik": 0.8261,
+        "ci95": [
+          0.7174,
+          0.9286
+        ]
+      },
+      "nama": "K2_ambang_dilatih_ulang"
+    }
+  ],
+  "selisih": [
+    {
+      "a": "baseline",
+      "b": "K2_ambang_produksi",
+      "metode": "bootstrap berpasangan per berkas",
+      "fp_rate": {
+        "n_berkas_sama": 59,
+        "selisih": -0.0169,
+        "ci95": [
+          -0.0847,
+          0.0339
+        ],
+        "beda_nyata": false
+      },
+      "recall_target": {
+        "n_berkas_sama": 104,
+        "selisih": -0.0096,
+        "ci95": [
+          -0.0481,
+          0.0192
+        ],
+        "beda_nyata": false
+      },
+      "phone_recall": {
+        "n_berkas_sama": 56,
+        "selisih": 0.0,
+        "ci95": [
+          -0.0536,
+          0.0536
+        ],
+        "beda_nyata": false
+      }
+    },
+    {
+      "a": "baseline",
+      "b": "K2_ambang_dilatih_ulang",
+      "metode": "bootstrap berpasangan per berkas",
+      "fp_rate": {
+        "n_berkas_sama": 59,
+        "selisih": 0.0847,
+        "ci95": [
+          -0.0339,
+          0.2203
+        ],
+        "beda_nyata": false
+      },
+      "recall_target": {
+        "n_berkas_sama": 104,
+        "selisih": -0.0673,
+        "ci95": [
+          -0.1442,
+          0.0
+        ],
+        "beda_nyata": false
+      },
+      "phone_recall": {
+        "n_berkas_sama": 56,
+        "selisih": -0.0179,
+        "ci95": [
+          -0.1071,
+          0.0714
+        ],
+        "beda_nyata": false
+      }
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+# Konfigurasi pelatihan model produksi GemaHutan.
+# Dipakai oleh ml/latih_produksi.py untuk membangun checkpoint secara reproduksibel.
+
+model:
+  type: logistic_regression
+  activation: linear
+
+training:
+  C: 1.0
+  class_weight: balanced
+  maks_negatif: 3000
+  seed: 2024
+
+data:
+  emb_dir: ml/embeddings_v3
+  splits_file: ml/data/splits_v3.json
+  ckpt_in: ml/checkpoints  # sumber normalization.npz
+
+output:
+  ckpt_dir: ml/runs/lr_v3
+  report_dir: ml/reports

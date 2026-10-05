@@ -1,0 +1,210 @@
+{
+  "v5": {
+    "gerbang": "G2",
+    "lulus": false,
+    "checks": {
+      "G2-1": {
+        "nama": "F1 CV tidak turun > 0,02",
+        "batas": -0.02,
+        "delta": -0.0008000000000000229,
+        "lulus": true,
+        "baseline": 0.7288,
+        "kandidat": 0.728
+      },
+      "G2-2": {
+        "nama": "Deteksi palsu lapor tidak naik",
+        "delta": 0.05263157894736836,
+        "lulus": false,
+        "baseline": {
+          "n_lapor": 285,
+          "n_lapor_target": 115,
+          "n_lapor_other": 38,
+          "fp_lapor_berkas": 26,
+          "fp_lapor_rate": 0.6842105263157895,
+          "recall_target_lapor": 0.6956521739130435
+        },
+        "kandidat": {
+          "n_lapor": 285,
+          "n_lapor_target": 115,
+          "n_lapor_other": 38,
+          "fp_lapor_berkas": 28,
+          "fp_lapor_rate": 0.7368421052631579,
+          "recall_target_lapor": 0.6608695652173913
+        }
+      },
+      "G2-3": {
+        "nama": "Recall target lapor tidak turun > 0,03",
+        "batas": -0.03,
+        "delta": -0.034782608695652195,
+        "lulus": false,
+        "baseline": 0.6956521739130435,
+        "kandidat": 0.6608695652173913
+      },
+      "G2-4": {
+        "nama": "Akurasi independen tidak turun > 0,03",
+        "batas": -0.03,
+        "delta": -0.015199999999999991,
+        "lulus": true,
+        "baseline": 0.7557,
+        "kandidat": 0.7405
+      },
+      "G2-5": {
+        "nama": "F1 per spesies CV tidak ada turun > 0,10",
+        "n_spesies": 25,
+        "min_delta": -0.02898550724637683,
+        "gagal_spesies": {},
+        "lulus": true
+      },
+      "G2-6": {
+        "nama": "Audit C01-C12 lulus",
+        "lulus": false
+      }
+    },
+    "pool": {
+      "cv_baseline": {
+        "n_xc": 894,
+        "n_non_xc": 7335,
+        "n_train_val": 8229,
+        "sha256_xc_ids": "2c3a5bfae796a2323096a6c46b52e874464236ce03de0dc0dd4cd17084cbc8bc",
+        "sha256_non_xc_ids": "25164a24eb5b3c7f6085d6cdb3436fbd57df8598da84eb8bf7356e2623b0939b",
+        "pool_override": false
+      },
+      "cv_kandidat": {
+        "n_xc": 894,
+        "n_non_xc": 4130,
+        "n_train_val": 6506,
+        "sha256_xc_ids": "2c3a5bfae796a2323096a6c46b52e874464236ce03de0dc0dd4cd17084cbc8bc",
+        "sha256_non_xc_ids": "5acb7ec07cb2d9f9bf4a1ca91d268d0d05dae5be3d10d53ebf86733a1da5d6d3",
+        "pool_override": true
+      },
+      "e2e_baseline": {
+        "n_total": 451,
+        "n_field": 318,
+        "n_uji_independen": 133,
+        "n_pilih": 164,
+        "n_lapor": 287,
+        "sha256_daftar_berkas": "663d9ce53990808753ebc6b835b1319cbb567ffb97eaca36b092c0dcd29cdb16"
+      },
+      "e2e_kandidat": {
+        "n_total": 451,
+        "n_field": 318,
+        "n_uji_independen": 133,
+        "n_pilih": 164,
+        "n_lapor": 287,
+        "sha256_daftar_berkas": "663d9ce53990808753ebc6b835b1319cbb567ffb97eaca36b092c0dcd29cdb16"
+      },
+      "indep_baseline": {
+        "n_klip": 131,
+        "sha256_clip_ids": "4d3eae31d86601b536a2693ce6794773c06b49b0c8d0a8b0ff90f92de5bb2d5f"
+      },
+      "indep_kandidat": {
+        "n_klip": 131,
+        "sha256_clip_ids": "4d3eae31d86601b536a2693ce6794773c06b49b0c8d0a8b0ff90f92de5bb2d5f"
+      }
+    }
+  },
+  "v6": {
+    "gerbang": "G2",
+    "lulus": false,
+    "checks": {
+      "G2-1": {
+        "nama": "F1 CV tidak turun > 0,02",
+        "batas": -0.02,
+        "delta": 0.0050000000000000044,
+        "lulus": true,
+        "baseline": 0.7288,
+        "kandidat": 0.7338
+      },
+      "G2-2": {
+        "nama": "Deteksi palsu lapor tidak naik",
+        "delta": 0.07894736842105265,
+        "lulus": false,
+        "baseline": {
+          "n_lapor": 285,
+          "n_lapor_target": 115,
+          "n_lapor_other": 38,
+          "fp_lapor_berkas": 26,
+          "fp_lapor_rate": 0.6842105263157895,
+          "recall_target_lapor": 0.6956521739130435
+        },
+        "kandidat": {
+          "n_lapor": 285,
+          "n_lapor_target": 115,
+          "n_lapor_other": 38,
+          "fp_lapor_berkas": 29,
+          "fp_lapor_rate": 0.7631578947368421,
+          "recall_target_lapor": 0.7043478260869566
+        }
+      },
+      "G2-3": {
+        "nama": "Recall target lapor tidak turun > 0,03",
+        "batas": -0.03,
+        "delta": 0.008695652173913104,
+        "lulus": true,
+        "baseline": 0.6956521739130435,
+        "kandidat": 0.7043478260869566
+      },
+      "G2-4": {
+        "nama": "Akurasi independen tidak turun > 0,03",
+        "batas": -0.03,
+        "delta": 0.0,
+        "lulus": true,
+        "baseline": 0.7557,
+        "kandidat": 0.7557
+      },
+      "G2-5": {
+        "nama": "F1 per spesies CV tidak ada turun > 0,10",
+        "n_spesies": 25,
+        "min_delta": -0.024137931034482807,
+        "gagal_spesies": {},
+        "lulus": true
+      },
+      "G2-6": {
+        "nama": "Audit C01-C12 lulus",
+        "lulus": false
+      }
+    },
+    "pool": {
+      "cv_baseline": {
+        "n_xc": 894,
+        "n_non_xc": 7335,
+        "n_train_val": 8229,
+        "sha256_xc_ids": "2c3a5bfae796a2323096a6c46b52e874464236ce03de0dc0dd4cd17084cbc8bc",
+        "sha256_non_xc_ids": "25164a24eb5b3c7f6085d6cdb3436fbd57df8598da84eb8bf7356e2623b0939b",
+        "pool_override": false
+      },
+      "cv_kandidat": {
+        "n_xc": 894,
+        "n_non_xc": 7335,
+        "n_train_val": 9711,
+        "sha256_xc_ids": "2c3a5bfae796a2323096a6c46b52e874464236ce03de0dc0dd4cd17084cbc8bc",
+        "sha256_non_xc_ids": "25164a24eb5b3c7f6085d6cdb3436fbd57df8598da84eb8bf7356e2623b0939b",
+        "pool_override": true
+      },
+      "e2e_baseline": {
+        "n_total": 451,
+        "n_field": 318,
+        "n_uji_independen": 133,
+        "n_pilih": 164,
+        "n_lapor": 287,
+        "sha256_daftar_berkas": "663d9ce53990808753ebc6b835b1319cbb567ffb97eaca36b092c0dcd29cdb16"
+      },
+      "e2e_kandidat": {
+        "n_total": 451,
+        "n_field": 318,
+        "n_uji_independen": 133,
+        "n_pilih": 164,
+        "n_lapor": 287,
+        "sha256_daftar_berkas": "663d9ce53990808753ebc6b835b1319cbb567ffb97eaca36b092c0dcd29cdb16"
+      },
+      "indep_baseline": {
+        "n_klip": 131,
+        "sha256_clip_ids": "4d3eae31d86601b536a2693ce6794773c06b49b0c8d0a8b0ff90f92de5bb2d5f"
+      },
+      "indep_kandidat": {
+        "n_klip": 131,
+        "sha256_clip_ids": "4d3eae31d86601b536a2693ce6794773c06b49b0c8d0a8b0ff90f92de5bb2d5f"
+      }
+    }
+  }
+}

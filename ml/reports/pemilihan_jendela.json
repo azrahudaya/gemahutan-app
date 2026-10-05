@@ -1,0 +1,12 @@
+{
+  "metode": "energi",
+  "k": 1,
+  "x": 0.5,
+  "emb_dir": "ml/embeddings_v4_terpilih",
+  "n_klip": 8255,
+  "n_jendela_total": 104068,
+  "n_jendela_terpilih": 8255,
+  "stride": 1.5,
+  "segmen": 3.0,
+  "catatan": "Jendela energi tertinggi per klip (k=1) dipilih dari embeddings_v4 multi-window. Evaluasi tetap tingkat klip."
+}

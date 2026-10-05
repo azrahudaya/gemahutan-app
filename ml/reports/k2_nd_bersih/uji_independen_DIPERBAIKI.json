@@ -1,0 +1,23 @@
+{
+  "model": "produksi",
+  "sha256_checkpoint": "90f7f9b309d06b9c171afca3b961f7e2b501a86e4a9d9092ddf9997d9ab643cb",
+  "pool": {
+    "n_klip": 131,
+    "sha256_clip_ids": "4d3eae31d86601b536a2693ce6794773c06b49b0c8d0a8b0ff90f92de5bb2d5f"
+  },
+  "metode_pemilihan_jendela": "tanpa_label",
+  "jendela_terbaik": {
+    "acc": 0.7405,
+    "f1_macro": 0.5951,
+    "ci95_acc": [
+      0.6641,
+      0.8168
+    ]
+  },
+  "semua_jendela": {
+    "acc": 0.5952,
+    "f1_macro": 0.492
+  },
+  "n_klip": 131,
+  "kandidat": []
+}

@@ -1,0 +1,130 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  lint-and-test:
+    runs-on: ubuntu-latest
+    services:
+      postgres:
+        image: postgis/postgis:16-3.4
+        env:
+          POSTGRES_DB: gemahutan
+          POSTGRES_USER: gemahutan
+          POSTGRES_PASSWORD: gemahutan
+        ports:
+          - 5432:5432
+        options: >-
+          --health-cmd="pg_isready -U gemahutan"
+          --health-interval=10s
+          --health-timeout=5s
+          --health-retries=5
+      redis:
+        image: redis:7-alpine
+        ports:
+          - 6379:6379
+        options: >-
+          --health-cmd="redis-cli ping"
+          --health-interval=10s
+          --health-timeout=5s
+          --health-retries=5
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install API dependencies
+        working-directory: apps/api
+        run: pip install -r requirements.txt
+
+      # MinIO dipakai endpoint storage dan healthz, jadi harus hidup di CI juga.
+      - name: Start MinIO
+        run: |
+          docker run -d --name minio -p 9000:9000             -e MINIO_ROOT_USER=minioadmin -e MINIO_ROOT_PASSWORD=minioadmin             ghcr.io/azrahudaya/minio:2025-gemahutan server /data
+          for i in $(seq 1 30); do
+            if curl -sf http://localhost:9000/minio/health/live > /dev/null; then
+              echo "minio siap"; exit 0
+            fi
+            sleep 2
+          done
+          echo "minio tidak siap"; docker logs minio; exit 1
+
+      - name: Lint (ruff, konfigurasi repo)
+        run: python -m ruff check .
+
+      - name: Periksa konsistensi data demo
+        run: |
+          python - <<'PY'
+          import csv, pathlib, sys
+          root = pathlib.Path("ml/demo_audio")
+          rows = list(csv.DictReader(open(root / "ATTRIBUTION.csv")))
+          files = sorted(p.name for p in root.glob("*.mp3"))
+          expected = sorted(r["file"] for r in rows)
+          if files != expected:
+              sys.exit(f"data demo tidak sinkron: file {files} vs manifest {expected}")
+          print(f"{len(files)} klip demo dengan atribusi lengkap")
+          PY
+
+      - name: Run API tests
+        working-directory: apps/api
+        env:
+          DATABASE_URL: postgresql+asyncpg://gemahutan:gemahutan@localhost:5432/gemahutan
+          DATABASE_URL_SYNC: postgresql://gemahutan:gemahutan@localhost:5432/gemahutan
+          REDIS_URL: redis://localhost:6379/0
+          S3_ENDPOINT: http://localhost:9000
+          S3_ACCESS_KEY: minioadmin
+          S3_SECRET_KEY: minioadmin
+          S3_BUCKET: gemahutan-audio
+          JWT_SECRET: test-secret
+          SECRET_KEY: test-secret
+        run: |
+          alembic upgrade head
+          # Tests berharap data dasar ada: spesies, lokasi, user.
+          python -m app.seed
+          python -m pytest tests/ -v
+
+  build-images:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Build API image
+        run: docker build -f apps/api/Dockerfile -t gemahutan-api .
+
+      - name: Build Worker image
+        run: docker build -f apps/worker/Dockerfile -t gemahutan-worker .
+
+      # Test logika worker dijalankan di image hasil build, jadi yang diuji
+      # benar-benar berkas yang akan dipakai produksi.
+      - name: Run worker tests
+        run: docker run --rm gemahutan-worker python -m pytest tests/ -q
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: Test Web
+        working-directory: apps/web
+        run: |
+          npm install
+          npx vitest run
+
+      - name: Build Web
+        working-directory: apps/web
+        run: |
+          npm install
+          npm run build

@@ -1,0 +1,190 @@
+{
+  "test_acc": 0.8346456692913385,
+  "test_acc_raw": 0.8346456692913385,
+  "val_acc": 0.8661417322834646,
+  "macro_f1": 0.7916149021918254,
+  "per_species": [
+    {
+      "kelas": "Aegithina tiphia",
+      "precision": 1.0,
+      "recall": 0.6,
+      "f1": 0.75,
+      "support": 5
+    },
+    {
+      "kelas": "Amaurornis phoenicurus",
+      "precision": 1.0,
+      "recall": 0.8,
+      "f1": 0.8889,
+      "support": 5
+    },
+    {
+      "kelas": "Anthreptes malacensis",
+      "precision": 0.8333,
+      "recall": 1.0,
+      "f1": 0.9091,
+      "support": 5
+    },
+    {
+      "kelas": "Aplonis panayensis",
+      "precision": 0.25,
+      "recall": 0.25,
+      "f1": 0.25,
+      "support": 4
+    },
+    {
+      "kelas": "Arachnothera longirostra",
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "support": 3
+    },
+    {
+      "kelas": "Centropus bengalensis",
+      "precision": 0.6667,
+      "recall": 0.8,
+      "f1": 0.7273,
+      "support": 5
+    },
+    {
+      "kelas": "Chalcophaps indica",
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "support": 3
+    },
+    {
+      "kelas": "Cinnyris jugularis",
+      "precision": 0.75,
+      "recall": 1.0,
+      "f1": 0.8571,
+      "support": 6
+    },
+    {
+      "kelas": "Cisticola juncidis",
+      "precision": 1.0,
+      "recall": 0.5,
+      "f1": 0.6667,
+      "support": 6
+    },
+    {
+      "kelas": "Corvus macrorhynchos",
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "support": 4
+    },
+    {
+      "kelas": "Dicrurus macrocercus",
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "support": 3
+    },
+    {
+      "kelas": "Gallus gallus",
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "support": 1
+    },
+    {
+      "kelas": "Geopelia striata",
+      "precision": 1.0,
+      "recall": 0.8,
+      "f1": 0.8889,
+      "support": 5
+    },
+    {
+      "kelas": "Haliastur indus",
+      "precision": 1.0,
+      "recall": 0.5,
+      "f1": 0.6667,
+      "support": 4
+    },
+    {
+      "kelas": "Hirundo tahitica",
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "support": 3
+    },
+    {
+      "kelas": "Lonchura punctulata",
+      "precision": 1.0,
+      "recall": 0.5,
+      "f1": 0.6667,
+      "support": 4
+    },
+    {
+      "kelas": "Merops philippinus",
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "support": 4
+    },
+    {
+      "kelas": "Orthotomus sutorius",
+      "precision": 1.0,
+      "recall": 0.8,
+      "f1": 0.8889,
+      "support": 5
+    },
+    {
+      "kelas": "Passer montanus",
+      "precision": 0.8571,
+      "recall": 1.0,
+      "f1": 0.9231,
+      "support": 6
+    },
+    {
+      "kelas": "Prinia familiaris",
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "support": 1
+    },
+    {
+      "kelas": "Pycnonotus aurigaster",
+      "precision": 1.0,
+      "recall": 0.8333,
+      "f1": 0.9091,
+      "support": 6
+    },
+    {
+      "kelas": "Pycnonotus goiavier",
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "support": 6
+    },
+    {
+      "kelas": "Rhipidura javanica",
+      "precision": 0.8,
+      "recall": 1.0,
+      "f1": 0.8889,
+      "support": 4
+    },
+    {
+      "kelas": "Spilopelia chinensis",
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "support": 5
+    },
+    {
+      "kelas": "Todiramphus chloris",
+      "precision": 0.8333,
+      "recall": 1.0,
+      "f1": 0.9091,
+      "support": 5
+    },
+    {
+      "kelas": "_negative",
+      "precision": 0.6552,
+      "recall": 1.0,
+      "f1": 0.7917,
+      "support": 19
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "jenis": "logistic_regression_multikelas",
+  "C": 1.0,
+  "class_weight": "balanced",
+  "maks_negatif": 3000,
+  "seed": 2024,
+  "jumlah_latih": 5490,
+  "temperature": 1.5349999999999993,
+  "nll_sebelum_kalibrasi": 0.9738980531692505,
+  "nll_sesudah_kalibrasi": 0.7688096761703491,
+  "epoch": 1,
+  "best_val_acc": 0.8110236220472441,
+  "emb_dir": "ml/embeddings_v3",
+  "splits_file": "ml/data/splits_v3.json"
+}

@@ -1,0 +1,45 @@
+{
+  "model": "/home/fuudaya/Projects/gemahutan/ml/checkpoints/best_model.npz",
+  "degradasi": {
+    "bersih": {
+      "jumlah_jendela": 127,
+      "akurasi_top1": 0.7559,
+      "macro_f1": 0.6944,
+      "kelas_dinilai": 25,
+      "tingkat_deteksi": 0.6772
+    },
+    "bersih_tanpa_nd": {
+      "jumlah_jendela": 127,
+      "akurasi_top1": 0.7559,
+      "macro_f1": 0.6944,
+      "kelas_dinilai": 25,
+      "tingkat_deteksi": 0.6772
+    }
+  },
+  "lapangan": {
+    "inat": {
+      "jumlah_jendela": 610,
+      "akurasi_top1": 0.5213,
+      "macro_f1": 0.5715,
+      "kelas_dinilai": 23,
+      "tingkat_deteksi": 0.5951,
+      "jumlah_berkas": 113,
+      "berkas_terbaca": 111
+    },
+    "other": {
+      "jumlah_berkas": 118,
+      "berkas_terbaca": 114,
+      "jumlah_jendela": 708,
+      "deteksi_palsu": 0.3065
+    },
+    "xc_noisy": {
+      "jumlah_jendela": 640,
+      "akurasi_top1": 0.7359,
+      "macro_f1": 0.7898,
+      "kelas_dinilai": 24,
+      "tingkat_deteksi": 0.7781,
+      "jumlah_berkas": 108,
+      "berkas_terbaca": 106
+    }
+  }
+}

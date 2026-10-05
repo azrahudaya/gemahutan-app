@@ -1,0 +1,117 @@
+services:
+  db:
+    image: postgis/postgis:16-3.4
+    environment:
+      POSTGRES_DB: gemahutan
+      POSTGRES_USER: gemahutan
+      POSTGRES_PASSWORD: gemahutan
+    ports:
+      - "127.0.0.1:5432:5432"
+    volumes:
+      - postgres-data:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U gemahutan"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+    restart: unless-stopped
+
+  redis:
+    image: redis:7-alpine
+    ports:
+      - "127.0.0.1:6379:6379"
+    healthcheck:
+      test: ["CMD", "redis-cli", "ping"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+    restart: unless-stopped
+
+  minio:
+    image: ghcr.io/azrahudaya/minio:2025-gemahutan
+    command: server /data --console-address ":9001"
+    environment:
+      MINIO_ROOT_USER: minioadmin
+      MINIO_ROOT_PASSWORD: minioadmin
+    ports:
+      - "127.0.0.1:9000:9000"
+      - "127.0.0.1:9001:9001"
+    volumes:
+      - minio-data:/data
+    healthcheck:
+      test: ["CMD", "mc", "ready", "local"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+    restart: unless-stopped
+
+  api:
+    build:
+      context: .
+      dockerfile: apps/api/Dockerfile
+      args:
+        # Pindahkan dengan PIP_INDEX_URL di .env kalau PyPI resmi lambat.
+        # Nilai bawaannya PyPI resmi.
+        PIP_INDEX_URL: ${PIP_INDEX_URL:-https://pypi.org/simple}
+    ports:
+      - "127.0.0.1:8000:8000"
+    env_file: .env
+    depends_on:
+      db:
+        condition: service_healthy
+      redis:
+        condition: service_healthy
+      minio:
+        condition: service_started
+    healthcheck:
+      test: ["CMD", "python", "-c", "import urllib.request; urllib.request.urlopen('http://localhost:8000/healthz')"]
+      interval: 30s
+      timeout: 5s
+      retries: 3
+    restart: unless-stopped
+
+  worker:
+    build:
+      context: .
+      dockerfile: apps/worker/Dockerfile
+      args:
+        # Sama seperti api: arahkan ke mirror kalau PyPI resmi lambat.
+        PIP_INDEX_URL: ${PIP_INDEX_URL:-https://pypi.org/simple}
+    env_file: .env
+    depends_on:
+      db:
+        condition: service_healthy
+      redis:
+        condition: service_healthy
+      minio:
+        condition: service_started
+    restart: unless-stopped
+
+  web:
+    build:
+      context: ./apps/web
+      dockerfile: Dockerfile
+      args:
+        NEXT_PUBLIC_API_URL: ${NEXT_PUBLIC_API_URL:-http://localhost:8000}
+    ports:
+      - "127.0.0.1:3001:3000"
+    environment:
+      CORS_ORIGINS: ${CORS_ORIGINS:-http://localhost:3001}
+      # Mode demo: halaman depan membuka sesi akun demo di sisi server, tanpa layar login.
+      # Kosongkan DEMO_AKTIF untuk mematikannya.
+      DEMO_AKTIF: ${DEMO_AKTIF:-}
+      TAMU_RAHASIA: ${TAMU_RAHASIA:-}
+      API_INTERNAL_URL: http://api:8000
+    depends_on:
+      api:
+        condition: service_healthy
+    healthcheck:
+      test: ["CMD", "wget", "-q", "--spider", "http://127.0.0.1:3000"]
+      interval: 30s
+      timeout: 5s
+      retries: 5
+    restart: unless-stopped
+
+volumes:
+  postgres-data:
+  minio-data:

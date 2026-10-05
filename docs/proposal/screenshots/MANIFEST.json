@@ -1,0 +1,326 @@
+[
+  {
+    "route": "/",
+    "viewport": "1440x900",
+    "png": "/home/fuudaya/Projects/gemahutan/docs/proposal/screenshots/root-1440x900.png",
+    "webp": "/home/fuudaya/Projects/gemahutan/docs/proposal/screenshots/root-1440x900.webp",
+    "webp_size_kb": 25.9,
+    "webp_quality": 85,
+    "thumb": "/home/fuudaya/Projects/gemahutan/docs/proposal/screenshots/thumbs/root-1440x900.webp"
+  },
+  {
+    "route": "/login",
+    "viewport": "1440x900",
+    "png": "/home/fuudaya/Projects/gemahutan/docs/proposal/screenshots/login-1440x900.png",
+    "webp": "/home/fuudaya/Projects/gemahutan/docs/proposal/screenshots/login-1440x900.webp",
+    "webp_size_kb": 10.5,
+    "webp_quality": 85,
+    "thumb": "/home/fuudaya/Projects/gemahutan/docs/proposal/screenshots/thumbs/login-1440x900.webp"
+  },
+  {
+    "route": "/register",
+    "viewport": "1440x900",
+    "png": "/home/fuudaya/Projects/gemahutan/docs/proposal/screenshots/register-1440x900.png",
+    "webp": "/home/fuudaya/Projects/gemahutan/docs/proposal/screenshots/register-1440x900.webp",
+    "webp_size_kb": 10.8,
+    "webp_quality": 85,
+    "thumb": "/home/fuudaya/Projects/gemahutan/docs/proposal/screenshots/thumbs/register-1440x900.webp"
+  },
+  {
+    "route": "/dokumentasi",
+    "viewport": "1440x900",
+    "png": "/home/fuudaya/Projects/gemahutan/docs/proposal/screenshots/dokumentasi-1440x900.png",
+    "webp": "/home/fuudaya/Projects/gemahutan/docs/proposal/screenshots/dokumentasi-1440x900.webp",
+    "webp_size_kb": 63.2,
+    "webp_quality": 85,
+    "thumb": "/home/fuudaya/Projects/gemahutan/docs/proposal/screenshots/thumbs/dokumentasi-1440x900.webp"
+  },
+  {
+    "route": "/dashboard",
+    "viewport": "1440x900",
+    "png": "/home/fuudaya/Projects/gemahutan/docs/proposal/screenshots/dashboard-1440x900.png",
+    "webp": "/home/fuudaya/Projects/gemahutan/docs/proposal/screenshots/dashboard-1440x900.webp",
+    "webp_size_kb": 52.0,
+    "webp_quality": 85,
+    "thumb": "/home/fuudaya/Projects/gemahutan/docs/proposal/screenshots/thumbs/dashboard-1440x900.webp"
+  },
+  {
+    "route": "/recordings",
+    "viewport": "1440x900",
+    "png": "/home/fuudaya/Projects/gemahutan/docs/proposal/screenshots/recordings-1440x900.png",
+    "webp": "/home/fuudaya/Projects/gemahutan/docs/proposal/screenshots/recordings-1440x900.webp",
+    "webp_size_kb": 60.4,
+    "webp_quality": 85,
+    "thumb": "/home/fuudaya/Projects/gemahutan/docs/proposal/screenshots/thumbs/recordings-1440x900.webp"
+  },
+  {
+    "route": "/species",
+    "viewport": "1440x900",
+    "png": "/home/fuudaya/Projects/gemahutan/docs/proposal/screenshots/species-1440x900.png",
+    "webp": "/home/fuudaya/Projects/gemahutan/docs/proposal/screenshots/species-1440x900.webp",
+    "webp_size_kb": 39.4,
+    "webp_quality": 85,
+    "thumb": "/home/fuudaya/Projects/gemahutan/docs/proposal/screenshots/thumbs/species-1440x900.webp"
+  },
+  {
+    "route": "/sites",
+    "viewport": "1440x900",
+    "png": "/home/fuudaya/Projects/gemahutan/docs/proposal/screenshots/sites-1440x900.png",
+    "webp": "/home/fuudaya/Projects/gemahutan/docs/proposal/screenshots/sites-1440x900.webp",
+    "webp_size_kb": 86.1,
+    "webp_quality": 85,
+    "thumb": "/home/fuudaya/Projects/gemahutan/docs/proposal/screenshots/thumbs/sites-1440x900.webp"
+  },
+  {
+    "route": "/devices",
+    "viewport": "1440x900",
+    "png": "/home/fuudaya/Projects/gemahutan/docs/proposal/screenshots/devices-1440x900.png",
+    "webp": "/home/fuudaya/Projects/gemahutan/docs/proposal/screenshots/devices-1440x900.webp",
+    "webp_size_kb": 35.0,
+    "webp_quality": 85,
+    "thumb": "/home/fuudaya/Projects/gemahutan/docs/proposal/screenshots/thumbs/devices-1440x900.webp"
+  },
+  {
+    "route": "/rekam",
+    "viewport": "1440x900",
+    "png": "/home/fuudaya/Projects/gemahutan/docs/proposal/screenshots/rekam-1440x900.png",
+    "webp": "/home/fuudaya/Projects/gemahutan/docs/proposal/screenshots/rekam-1440x900.webp",
+    "webp_size_kb": 29.5,
+    "webp_quality": 85,
+    "thumb": "/home/fuudaya/Projects/gemahutan/docs/proposal/screenshots/thumbs/rekam-1440x900.webp"
+  },
+  {
+    "route": "/upload",
+    "viewport": "1440x900",
+    "png": "/home/fuudaya/Projects/gemahutan/docs/proposal/screenshots/upload-1440x900.png",
+    "webp": "/home/fuudaya/Projects/gemahutan/docs/proposal/screenshots/upload-1440x900.webp",
+    "webp_size_kb": 45.1,
+    "webp_quality": 85,
+    "thumb": "/home/fuudaya/Projects/gemahutan/docs/proposal/screenshots/thumbs/upload-1440x900.webp"
+  },
+  {
+    "route": "/model",
+    "viewport": "1440x900",
+    "png": "/home/fuudaya/Projects/gemahutan/docs/proposal/screenshots/model-1440x900.png",
+    "webp": "/home/fuudaya/Projects/gemahutan/docs/proposal/screenshots/model-1440x900.webp",
+    "webp_size_kb": 50.2,
+    "webp_quality": 85,
+    "thumb": "/home/fuudaya/Projects/gemahutan/docs/proposal/screenshots/thumbs/model-1440x900.webp"
+  },
+  {
+    "route": "/admin/users",
+    "viewport": "1440x900",
+    "png": "/home/fuudaya/Projects/gemahutan/docs/proposal/screenshots/admin_users-1440x900.png",
+    "webp": "/home/fuudaya/Projects/gemahutan/docs/proposal/screenshots/admin_users-1440x900.webp",
+    "webp_size_kb": 58.6,
+    "webp_quality": 85,
+    "thumb": "/home/fuudaya/Projects/gemahutan/docs/proposal/screenshots/thumbs/admin_users-1440x900.webp"
+  },
+  {
+    "route": "/laporan",
+    "viewport": "1440x900",
+    "png": "/home/fuudaya/Projects/gemahutan/docs/proposal/screenshots/laporan-1440x900.png",
+    "webp": "/home/fuudaya/Projects/gemahutan/docs/proposal/screenshots/laporan-1440x900.webp",
+    "webp_size_kb": 6.6,
+    "webp_quality": 85,
+    "thumb": "/home/fuudaya/Projects/gemahutan/docs/proposal/screenshots/thumbs/laporan-1440x900.webp"
+  },
+  {
+    "route": "/recordings/368",
+    "viewport": "1440x900",
+    "png": "/home/fuudaya/Projects/gemahutan/docs/proposal/screenshots/recordings_368-1440x900.png",
+    "webp": "/home/fuudaya/Projects/gemahutan/docs/proposal/screenshots/recordings_368-1440x900.webp",
+    "webp_size_kb": 39.5,
+    "webp_quality": 85,
+    "thumb": "/home/fuudaya/Projects/gemahutan/docs/proposal/screenshots/thumbs/recordings_368-1440x900.webp"
+  },
+  {
+    "route": "/species/47",
+    "viewport": "1440x900",
+    "png": "/home/fuudaya/Projects/gemahutan/docs/proposal/screenshots/species_47-1440x900.png",
+    "webp": "/home/fuudaya/Projects/gemahutan/docs/proposal/screenshots/species_47-1440x900.webp",
+    "webp_size_kb": 37.0,
+    "webp_quality": 85,
+    "thumb": "/home/fuudaya/Projects/gemahutan/docs/proposal/screenshots/thumbs/species_47-1440x900.webp"
+  },
+  {
+    "route": "/sites/6",
+    "viewport": "1440x900",
+    "png": "/home/fuudaya/Projects/gemahutan/docs/proposal/screenshots/sites_6-1440x900.png",
+    "webp": "/home/fuudaya/Projects/gemahutan/docs/proposal/screenshots/sites_6-1440x900.webp",
+    "webp_size_kb": 38.9,
+    "webp_quality": 85,
+    "thumb": "/home/fuudaya/Projects/gemahutan/docs/proposal/screenshots/thumbs/sites_6-1440x900.webp"
+  },
+  {
+    "route": "/sites/new",
+    "viewport": "1440x900",
+    "png": "/home/fuudaya/Projects/gemahutan/docs/proposal/screenshots/sites_new-1440x900.png",
+    "webp": "/home/fuudaya/Projects/gemahutan/docs/proposal/screenshots/sites_new-1440x900.webp",
+    "webp_size_kb": 27.6,
+    "webp_quality": 85,
+    "thumb": "/home/fuudaya/Projects/gemahutan/docs/proposal/screenshots/thumbs/sites_new-1440x900.webp"
+  },
+  {
+    "route": "/",
+    "viewport": "390x844",
+    "png": "/home/fuudaya/Projects/gemahutan/docs/proposal/screenshots/root-390x844.png",
+    "webp": "/home/fuudaya/Projects/gemahutan/docs/proposal/screenshots/root-390x844.webp",
+    "webp_size_kb": 22.4,
+    "webp_quality": 85,
+    "thumb": "/home/fuudaya/Projects/gemahutan/docs/proposal/screenshots/thumbs/root-390x844.webp"
+  },
+  {
+    "route": "/login",
+    "viewport": "390x844",
+    "png": "/home/fuudaya/Projects/gemahutan/docs/proposal/screenshots/login-390x844.png",
+    "webp": "/home/fuudaya/Projects/gemahutan/docs/proposal/screenshots/login-390x844.webp",
+    "webp_size_kb": 8.1,
+    "webp_quality": 85,
+    "thumb": "/home/fuudaya/Projects/gemahutan/docs/proposal/screenshots/thumbs/login-390x844.webp"
+  },
+  {
+    "route": "/register",
+    "viewport": "390x844",
+    "png": "/home/fuudaya/Projects/gemahutan/docs/proposal/screenshots/register-390x844.png",
+    "webp": "/home/fuudaya/Projects/gemahutan/docs/proposal/screenshots/register-390x844.webp",
+    "webp_size_kb": 9.1,
+    "webp_quality": 85,
+    "thumb": "/home/fuudaya/Projects/gemahutan/docs/proposal/screenshots/thumbs/register-390x844.webp"
+  },
+  {
+    "route": "/dokumentasi",
+    "viewport": "390x844",
+    "png": "/home/fuudaya/Projects/gemahutan/docs/proposal/screenshots/dokumentasi-390x844.png",
+    "webp": "/home/fuudaya/Projects/gemahutan/docs/proposal/screenshots/dokumentasi-390x844.webp",
+    "webp_size_kb": 24.5,
+    "webp_quality": 85,
+    "thumb": "/home/fuudaya/Projects/gemahutan/docs/proposal/screenshots/thumbs/dokumentasi-390x844.webp"
+  },
+  {
+    "route": "/dashboard",
+    "viewport": "390x844",
+    "png": "/home/fuudaya/Projects/gemahutan/docs/proposal/screenshots/dashboard-390x844.png",
+    "webp": "/home/fuudaya/Projects/gemahutan/docs/proposal/screenshots/dashboard-390x844.webp",
+    "webp_size_kb": 19.5,
+    "webp_quality": 85,
+    "thumb": "/home/fuudaya/Projects/gemahutan/docs/proposal/screenshots/thumbs/dashboard-390x844.webp"
+  },
+  {
+    "route": "/recordings",
+    "viewport": "390x844",
+    "png": "/home/fuudaya/Projects/gemahutan/docs/proposal/screenshots/recordings-390x844.png",
+    "webp": "/home/fuudaya/Projects/gemahutan/docs/proposal/screenshots/recordings-390x844.webp",
+    "webp_size_kb": 20.3,
+    "webp_quality": 85,
+    "thumb": "/home/fuudaya/Projects/gemahutan/docs/proposal/screenshots/thumbs/recordings-390x844.webp"
+  },
+  {
+    "route": "/species",
+    "viewport": "390x844",
+    "png": "/home/fuudaya/Projects/gemahutan/docs/proposal/screenshots/species-390x844.png",
+    "webp": "/home/fuudaya/Projects/gemahutan/docs/proposal/screenshots/species-390x844.webp",
+    "webp_size_kb": 24.1,
+    "webp_quality": 85,
+    "thumb": "/home/fuudaya/Projects/gemahutan/docs/proposal/screenshots/thumbs/species-390x844.webp"
+  },
+  {
+    "route": "/sites",
+    "viewport": "390x844",
+    "png": "/home/fuudaya/Projects/gemahutan/docs/proposal/screenshots/sites-390x844.png",
+    "webp": "/home/fuudaya/Projects/gemahutan/docs/proposal/screenshots/sites-390x844.webp",
+    "webp_size_kb": 34.8,
+    "webp_quality": 85,
+    "thumb": "/home/fuudaya/Projects/gemahutan/docs/proposal/screenshots/thumbs/sites-390x844.webp"
+  },
+  {
+    "route": "/devices",
+    "viewport": "390x844",
+    "png": "/home/fuudaya/Projects/gemahutan/docs/proposal/screenshots/devices-390x844.png",
+    "webp": "/home/fuudaya/Projects/gemahutan/docs/proposal/screenshots/devices-390x844.webp",
+    "webp_size_kb": 14.9,
+    "webp_quality": 85,
+    "thumb": "/home/fuudaya/Projects/gemahutan/docs/proposal/screenshots/thumbs/devices-390x844.webp"
+  },
+  {
+    "route": "/rekam",
+    "viewport": "390x844",
+    "png": "/home/fuudaya/Projects/gemahutan/docs/proposal/screenshots/rekam-390x844.png",
+    "webp": "/home/fuudaya/Projects/gemahutan/docs/proposal/screenshots/rekam-390x844.webp",
+    "webp_size_kb": 19.3,
+    "webp_quality": 85,
+    "thumb": "/home/fuudaya/Projects/gemahutan/docs/proposal/screenshots/thumbs/rekam-390x844.webp"
+  },
+  {
+    "route": "/upload",
+    "viewport": "390x844",
+    "png": "/home/fuudaya/Projects/gemahutan/docs/proposal/screenshots/upload-390x844.png",
+    "webp": "/home/fuudaya/Projects/gemahutan/docs/proposal/screenshots/upload-390x844.webp",
+    "webp_size_kb": 23.8,
+    "webp_quality": 85,
+    "thumb": "/home/fuudaya/Projects/gemahutan/docs/proposal/screenshots/thumbs/upload-390x844.webp"
+  },
+  {
+    "route": "/model",
+    "viewport": "390x844",
+    "png": "/home/fuudaya/Projects/gemahutan/docs/proposal/screenshots/model-390x844.png",
+    "webp": "/home/fuudaya/Projects/gemahutan/docs/proposal/screenshots/model-390x844.webp",
+    "webp_size_kb": 27.3,
+    "webp_quality": 85,
+    "thumb": "/home/fuudaya/Projects/gemahutan/docs/proposal/screenshots/thumbs/model-390x844.webp"
+  },
+  {
+    "route": "/admin/users",
+    "viewport": "390x844",
+    "png": "/home/fuudaya/Projects/gemahutan/docs/proposal/screenshots/admin_users-390x844.png",
+    "webp": "/home/fuudaya/Projects/gemahutan/docs/proposal/screenshots/admin_users-390x844.webp",
+    "webp_size_kb": 17.3,
+    "webp_quality": 85,
+    "thumb": "/home/fuudaya/Projects/gemahutan/docs/proposal/screenshots/thumbs/admin_users-390x844.webp"
+  },
+  {
+    "route": "/laporan",
+    "viewport": "390x844",
+    "png": "/home/fuudaya/Projects/gemahutan/docs/proposal/screenshots/laporan-390x844.png",
+    "webp": "/home/fuudaya/Projects/gemahutan/docs/proposal/screenshots/laporan-390x844.webp",
+    "webp_size_kb": 6.3,
+    "webp_quality": 85,
+    "thumb": "/home/fuudaya/Projects/gemahutan/docs/proposal/screenshots/thumbs/laporan-390x844.webp"
+  },
+  {
+    "route": "/recordings/368",
+    "viewport": "390x844",
+    "png": "/home/fuudaya/Projects/gemahutan/docs/proposal/screenshots/recordings_368-390x844.png",
+    "webp": "/home/fuudaya/Projects/gemahutan/docs/proposal/screenshots/recordings_368-390x844.webp",
+    "webp_size_kb": 20.1,
+    "webp_quality": 85,
+    "thumb": "/home/fuudaya/Projects/gemahutan/docs/proposal/screenshots/thumbs/recordings_368-390x844.webp"
+  },
+  {
+    "route": "/species/47",
+    "viewport": "390x844",
+    "png": "/home/fuudaya/Projects/gemahutan/docs/proposal/screenshots/species_47-390x844.png",
+    "webp": "/home/fuudaya/Projects/gemahutan/docs/proposal/screenshots/species_47-390x844.webp",
+    "webp_size_kb": 22.6,
+    "webp_quality": 85,
+    "thumb": "/home/fuudaya/Projects/gemahutan/docs/proposal/screenshots/thumbs/species_47-390x844.webp"
+  },
+  {
+    "route": "/sites/6",
+    "viewport": "390x844",
+    "png": "/home/fuudaya/Projects/gemahutan/docs/proposal/screenshots/sites_6-390x844.png",
+    "webp": "/home/fuudaya/Projects/gemahutan/docs/proposal/screenshots/sites_6-390x844.webp",
+    "webp_size_kb": 15.6,
+    "webp_quality": 85,
+    "thumb": "/home/fuudaya/Projects/gemahutan/docs/proposal/screenshots/thumbs/sites_6-390x844.webp"
+  },
+  {
+    "route": "/sites/new",
+    "viewport": "390x844",
+    "png": "/home/fuudaya/Projects/gemahutan/docs/proposal/screenshots/sites_new-390x844.png",
+    "webp": "/home/fuudaya/Projects/gemahutan/docs/proposal/screenshots/sites_new-390x844.webp",
+    "webp_size_kb": 18.8,
+    "webp_quality": 85,
+    "thumb": "/home/fuudaya/Projects/gemahutan/docs/proposal/screenshots/thumbs/sites_new-390x844.webp"
+  }
+]

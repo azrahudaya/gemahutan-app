@@ -1,0 +1,30 @@
+{
+  "f1_makro_semua_kelas": 0.7288,
+  "per_spesies": {
+    "Gallus gallus": 0.2353,
+    "Prinia familiaris": 0.4615,
+    "Cinnyris jugularis": 0.5,
+    "Dicrurus macrocercus": 0.5672,
+    "Hirundo tahitica": 0.5909,
+    "Anthreptes malacensis": 0.6377,
+    "Aplonis panayensis": 0.6545,
+    "Pycnonotus aurigaster": 0.7222,
+    "Aegithina tiphia": 0.7241,
+    "Arachnothera longirostra": 0.7273,
+    "Amaurornis phoenicurus": 0.7368,
+    "Haliastur indus": 0.7536,
+    "Centropus bengalensis": 0.7541,
+    "Todiramphus chloris": 0.7619,
+    "Pycnonotus goiavier": 0.7838,
+    "Geopelia striata": 0.8065,
+    "Chalcophaps indica": 0.8302,
+    "Rhipidura javanica": 0.8308,
+    "Passer montanus": 0.8642,
+    "Orthotomus sutorius": 0.8696,
+    "Lonchura punctulata": 0.875,
+    "Corvus macrorhynchos": 0.8846,
+    "Cisticola juncidis": 0.8889,
+    "Spilopelia chinensis": 0.9206,
+    "Merops philippinus": 0.9211
+  }
+}

@@ -1,0 +1,164 @@
+[
+  {
+    "n_other_pilih": 59,
+    "fp_berkas": 25,
+    "fp_rate": 0.4237,
+    "n_target_pilih": 104,
+    "recall_target": 0.7981,
+    "n_phone_pilih": 56,
+    "phone_presisi": 0.8298,
+    "phone_recall": 0.6964,
+    "nama": "tanpa_konfirmasi",
+    "config": {
+      "trackb_wajib_birdnet": false,
+      "trackb_konfirmasi_topk": 0,
+      "trackb_konfirmasi_skor_min": 0.0,
+      "trackb_konfirmasi_skor_min_lunak": 0.0
+    },
+    "waktu_s": 266.0
+  },
+  {
+    "n_other_pilih": 59,
+    "fp_berkas": 12,
+    "fp_rate": 0.2034,
+    "n_target_pilih": 104,
+    "recall_target": 0.6442,
+    "n_phone_pilih": 56,
+    "phone_presisi": 0.9189,
+    "phone_recall": 0.6071,
+    "nama": "wajib_bn_keras",
+    "config": {
+      "trackb_wajib_birdnet": true,
+      "trackb_konfirmasi_topk": 0,
+      "trackb_konfirmasi_skor_min": 0.0,
+      "trackb_konfirmasi_skor_min_lunak": 0.0
+    },
+    "waktu_s": 260.6
+  },
+  {
+    "n_other_pilih": 59,
+    "fp_berkas": 22,
+    "fp_rate": 0.3729,
+    "n_target_pilih": 104,
+    "recall_target": 0.7885,
+    "n_phone_pilih": 56,
+    "phone_presisi": 0.8667,
+    "phone_recall": 0.6964,
+    "nama": "lunak_0.5",
+    "config": {
+      "trackb_wajib_birdnet": true,
+      "trackb_konfirmasi_topk": 0,
+      "trackb_konfirmasi_skor_min": 0.0,
+      "trackb_konfirmasi_skor_min_lunak": 0.5
+    },
+    "waktu_s": 286.7
+  },
+  {
+    "n_other_pilih": 59,
+    "fp_berkas": 19,
+    "fp_rate": 0.322,
+    "n_target_pilih": 104,
+    "recall_target": 0.7788,
+    "n_phone_pilih": 56,
+    "phone_presisi": 0.8636,
+    "phone_recall": 0.6786,
+    "nama": "lunak_0.6",
+    "config": {
+      "trackb_wajib_birdnet": true,
+      "trackb_konfirmasi_topk": 0,
+      "trackb_konfirmasi_skor_min": 0.0,
+      "trackb_konfirmasi_skor_min_lunak": 0.6
+    },
+    "waktu_s": 272.6
+  },
+  {
+    "n_other_pilih": 59,
+    "fp_berkas": 16,
+    "fp_rate": 0.2712,
+    "n_target_pilih": 104,
+    "recall_target": 0.7788,
+    "n_phone_pilih": 56,
+    "phone_presisi": 0.8636,
+    "phone_recall": 0.6786,
+    "nama": "lunak_0.7",
+    "config": {
+      "trackb_wajib_birdnet": true,
+      "trackb_konfirmasi_topk": 0,
+      "trackb_konfirmasi_skor_min": 0.0,
+      "trackb_konfirmasi_skor_min_lunak": 0.7
+    },
+    "waktu_s": 282.4
+  },
+  {
+    "n_other_pilih": 59,
+    "fp_berkas": 16,
+    "fp_rate": 0.2712,
+    "n_target_pilih": 104,
+    "recall_target": 0.7692,
+    "n_phone_pilih": 56,
+    "phone_presisi": 0.9048,
+    "phone_recall": 0.6786,
+    "nama": "lunak_0.8",
+    "config": {
+      "trackb_wajib_birdnet": true,
+      "trackb_konfirmasi_topk": 0,
+      "trackb_konfirmasi_skor_min": 0.0,
+      "trackb_konfirmasi_skor_min_lunak": 0.8
+    },
+    "waktu_s": 265.4
+  },
+  {
+    "n_other_pilih": 59,
+    "fp_berkas": 13,
+    "fp_rate": 0.2203,
+    "n_target_pilih": 104,
+    "recall_target": 0.75,
+    "n_phone_pilih": 56,
+    "phone_presisi": 0.9024,
+    "phone_recall": 0.6607,
+    "nama": "lunak_0.9",
+    "config": {
+      "trackb_wajib_birdnet": true,
+      "trackb_konfirmasi_topk": 0,
+      "trackb_konfirmasi_skor_min": 0.0,
+      "trackb_konfirmasi_skor_min_lunak": 0.9
+    },
+    "waktu_s": 277.9
+  },
+  {
+    "n_other_pilih": 59,
+    "fp_berkas": 13,
+    "fp_rate": 0.2203,
+    "n_target_pilih": 104,
+    "recall_target": 0.7404,
+    "n_phone_pilih": 56,
+    "phone_presisi": 0.9024,
+    "phone_recall": 0.6607,
+    "nama": "lunak_0.95",
+    "config": {
+      "trackb_wajib_birdnet": true,
+      "trackb_konfirmasi_topk": 0,
+      "trackb_konfirmasi_skor_min": 0.0,
+      "trackb_konfirmasi_skor_min_lunak": 0.95
+    },
+    "waktu_s": 272.5
+  },
+  {
+    "n_other_pilih": 59,
+    "fp_berkas": 12,
+    "fp_rate": 0.2034,
+    "n_target_pilih": 104,
+    "recall_target": 0.6731,
+    "n_phone_pilih": 56,
+    "phone_presisi": 0.9231,
+    "phone_recall": 0.6429,
+    "nama": "lunak_0.99",
+    "config": {
+      "trackb_wajib_birdnet": true,
+      "trackb_konfirmasi_topk": 0,
+      "trackb_konfirmasi_skor_min": 0.0,
+      "trackb_konfirmasi_skor_min_lunak": 0.99
+    },
+    "waktu_s": 269.9
+  }
+]
