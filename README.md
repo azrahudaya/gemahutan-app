@@ -1,89 +1,121 @@
 # GemaHutan
 
-[![CI](https://github.com/azrahudaya/gemahutan/actions/workflows/ci.yml/badge.svg)](https://github.com/azrahudaya/gemahutan/actions)
-[![Python](https://img.shields.io/badge/python-3.11-3776AB?logo=python&logoColor=white)](https://python.org)
-[![FastAPI](https://img.shields.io/badge/fastapi-0.115-009688?logo=fastapi&logoColor=white)](https://fastapi.tiangolo.com)
-[![Next.js](https://img.shields.io/badge/next.js-15-000000?logo=nextdotjs&logoColor=white)](https://nextjs.org)
-[![PostgreSQL](https://img.shields.io/badge/postgresql-16-4169E1?logo=postgresql&logoColor=white)](https://postgresql.org)
-[![PostGIS](https://img.shields.io/badge/postgis-3.4-4169E1)](https://postgis.net)
-[![Redis](https://img.shields.io/badge/redis-7-DC382D?logo=redis&logoColor=white)](https://redis.io)
-[![Docker](https://img.shields.io/badge/docker-compose-2496ED?logo=docker&logoColor=white)](https://docs.docker.com/compose)
-[![BirdNET](https://img.shields.io/badge/birdnet-2.4-228B22)](https://github.com/kahst/BirdNET-Analyzer)
-[![scikit-maad](https://img.shields.io/badge/scikit--maad-1.5-2E8B57)](https://scikit-maad.github.io)
-[![TypeScript](https://img.shields.io/badge/typescript-5-3178C6?logo=typescript&logoColor=white)](https://typescriptlang.org)
-[![Tailwind](https://img.shields.io/badge/tailwind-4-06B6D4?logo=tailwindcss&logoColor=white)](https://tailwindcss.com)
-[![daisyUI](https://img.shields.io/badge/daisyui-5-1AD1A5)](https://daisyui.com)
-[![License](https://img.shields.io/badge/license-MIT-green)](LICENSE)
+![Python](https://img.shields.io/badge/Python-3.11-3776AB?style=flat&logo=python&logoColor=white)
+![FastAPI](https://img.shields.io/badge/FastAPI-0.115-009688?style=flat&logo=fastapi&logoColor=white)
+![Next.js](https://img.shields.io/badge/Next.js-15-000000?style=flat&logo=nextdotjs&logoColor=white)
+![TypeScript](https://img.shields.io/badge/TypeScript-5.0-3178C6?style=flat&logo=typescript&logoColor=white)
+![PostgreSQL](https://img.shields.io/badge/PostgreSQL-16-4169E1?style=flat&logo=postgresql&logoColor=white)
+![PostGIS](https://img.shields.io/badge/PostGIS-3.4-4169E1?style=flat)
+![Redis](https://img.shields.io/badge/Redis-7-DC382D?style=flat&logo=redis&logoColor=white)
+![Docker](https://img.shields.io/badge/Docker-Compose-2496ED?style=flat&logo=docker&logoColor=white)
+![BirdNET](https://img.shields.io/badge/BirdNET-2.4-228B22?style=flat)
+![scikit-maad](https://img.shields.io/badge/scikit--maad-1.5-2E8B57?style=flat)
+![License](https://img.shields.io/badge/License-MIT-green?style=flat)
 
 ![GemaHutan](docs/assets/banner.png)
 
-Platform passive acoustic monitoring untuk biodiversitas hutan tropis Indonesia. Rekam suara hutan, sistem mengenali 25 spesies burung Indonesia lewat BirdNET + classifier lokal, menghitung indeks soundscape, lalu menampilkan hasilnya di dashboard, peta, dan spektrogram untuk verifikasi ahli.
+Passive Acoustic Monitoring (PAM) platform for tropical forest biodiversity in Indonesia. GemaHutan records forest soundscapes, identifies 25 priority Indonesian bird species using BirdNET embeddings and local classifiers, calculates ecoacoustic soundscape indices, and maps verified detections for conservation rangers and researchers.
 
-**Coba langsung: [gemahutan.site](https://gemahutan.site)**. Halaman depan memungkinkan satu unggahan tanpa akun (pengunjung mendapat akun tamu terpisah, dibersihkan otomatis 24 jam). Aplikasi petugas (dashboard, peta, laporan, verifikasi) dibuka dengan login per peran: admin, peneliti, dan ranger.
+Live Platform: [gemahutan.site](https://gemahutan.site)
 
-## Jalankan lokal
+## Architecture
 
-```bash
-git clone https://github.com/azrahudaya/gemahutan.git
-cd gemahutan
-cp .env.example .env
-docker compose up -d   # buka http://localhost:3001
+```text
++-------------------------------------------------------------------------+
+| Field Acoustic Recorders / Ranger Upload                                |
+|   - Audio files (WAV, MP3, FLAC, OGG) from forest monitoring stations   |
++------------------------------------|------------------------------------+
+                                     |
+                                     v
++-------------------------------------------------------------------------+
+| GemaHutan Processing Engine (FastAPI + Redis + ARQ Worker)              |
+|                                                                         |
+|  [Audio Preprocessing]   : 48 kHz mono resampling, 3-second segments    |
+|         |                                                               |
+|         +-----------------------+-----------------------+               |
+|         v                                               v               |
+|  [Species Classification]                      [Soundscape Indices]     |
+|   - Track A: BirdNET-Analyzer v2.4 (zero-shot)  - ACI, NDSI, ADI, BI    |
+|   - Track B: Custom classifier (25 Indo birds)    via scikit-maad       |
+|         |                                               |               |
+|         +-----------------------+-----------------------+               |
+|                                 v                                       |
+|  [Storage & Spatial Index]: PostgreSQL 16 + PostGIS 3.4 & MinIO S3      |
++---------------------------------|---------------------------------------+
+                                  |
+                                  v
++-------------------------------------------------------------------------+
+| Conservation Web Portal (Next.js 15 + Tailwind CSS 4 + daisyUI 5)       |
+|   - Interactive detection map with geospatial clustering                |
+|   - Audio player with synchronized bioacoustic spectrograms             |
+|   - Expert verification workflow and model fine-tuning feedback loop    |
+|   - Role-based access: Admin, Researcher, Field Ranger                  |
++-------------------------------------------------------------------------+
 ```
 
-Semua service (API, worker, web, database, redis, object storage) langsung hidup.
+## Key Capabilities
 
-## Alur kerja
+- Dual-track bioacoustic inference: global BirdNET zero-shot combined with a calibrated local classifier trained on 25 priority Indonesian forest bird species.
+- Soundscape ecology analytics: automated calculation of Acoustic Complexity Index (ACI), Normalized Difference Soundscape Index (NDSI), Acoustic Diversity Index (ADI), and Bioacoustic Index (BI) using `scikit-maad`.
+- Spatial intelligence: PostGIS-powered geospatial query engine mapping acoustic observations, detection confidence, and recorder coordinates.
+- Expert verification loop: field biologists can inspect spectrograms, confirm or reject model detections, and feed validated data back into retraining.
+- Instant public demo: guest upload mode with automatic 24-hour sandbox lifecycle cleanup, plus dedicated role portals for staff.
 
-Rekam atau unggah audio -> antrean Redis -> preprocess (resample 48 kHz mono, segmentasi 3 detik) -> inference (BirdNET zero-shot + classifier 25 spesies Indonesia) -> ambang per spesies -> indeks soundscape (ACI, NDSI, ADI, BI) -> dashboard (player, spektrogram, peta, chart) -> verifikasi ahli -> data balik jadi bahan latih.
+## Technology Stack
 
-## Stack
+| Layer | Technologies |
+| --- | --- |
+| Frontend | Next.js 15 (App Router), TypeScript 5, Tailwind CSS 4, daisyUI 5 |
+| Backend API | FastAPI, Python 3.11, Pydantic v2 |
+| Task Queue & Workers | Redis 7, ARQ asynchronous worker daemon |
+| Database & GIS | PostgreSQL 16, PostGIS 3.4 spatial extensions |
+| Object Storage | MinIO (S3-compatible object storage) |
+| Machine Learning | BirdNET-Analyzer v2.4, custom embedding classifier |
+| Bioacoustics | scikit-maad 1.5, librosa, soundfile |
+| Containerization | Docker, Docker Compose |
 
-| Layer | Teknologi |
-|-------|-----------|
-| Frontend | Next.js 15, TypeScript, Tailwind CSS 4, daisyUI 5 |
-| API | FastAPI, Python 3.11, Pydantic v2 |
-| Queue + worker | Redis + ARQ (inference BirdNET, classifier lokal, indeks) |
-| Database | PostgreSQL 16 + PostGIS |
-| Storage | MinIO (S3-compatible) |
-| ML baseline | BirdNET-Analyzer v2.4 (zero-shot, 6500+ spesies) |
-| ML lokal | Classifier di atas embedding BirdNET, 25 spesies Indonesia |
-| Indeks akustik | scikit-maad (ACI, NDSI, ADI, BI) |
-| Container | Docker Compose |
+## Model Performance
 
-## Model
+Evaluation metrics on nested cross-validation and independent test splits (official figures from `ml/reports/angka_resmi.json`):
 
-- Track A (baseline): BirdNET-Analyzer v2.4 zero-shot, aktif untuk 6500+ spesies global.
-- Track B (lokal): classifier di atas embedding BirdNET, terlatih untuk 25 spesies Indonesia, ambang per spesies hasil kalibrasi.
-- F1 makro CV bersarang per perekam 0,729 (CI95 0,690 sampai 0,751). Uji independen 131 klip negara lain: akurasi 0,756. Angka resmi di `ml/reports/angka_resmi.json`.
-- Angka akurasi global sengaja tidak ditampilkan karena menyesatkan pada data imbalanced. Evaluasi per spesies ada di `ml/reports/`.
+| Evaluation Metric | Score | Notes |
+| --- | --- | --- |
+| Macro F1 (Nested CV) | 0.729 | 95% Confidence Interval: [0.690, 0.751] |
+| Independent Accuracy | 0.756 | Evaluated against 131 independent foreign test clips |
+| Independent F1 | 0.607 | Macro F1 on out-of-domain benchmark |
+| End-to-End Precision | 0.677 | Combined detection pipeline precision |
+| End-to-End Recall | 0.729 | Combined detection pipeline recall |
 
-## Dokumentasi
+## Quick Start
 
-| Dokumen | Isi |
-|---------|-----|
-| [ARCHITECTURE.md](docs/ARCHITECTURE.md) | Arsitektur, data model, service |
-| [API.md](docs/API.md) | Kontrak API lengkap |
-| [MANUAL.md](docs/MANUAL.md) | Manual pemakaian |
-| [DECISIONS.md](docs/DECISIONS.md) | Keputusan teknis + alasan |
-| [DEPLOY.md](docs/DEPLOY.md) | Panduan deploy ke VPS |
-| [VISI_DAN_RUANG_LINGKUP.md](docs/VISI_DAN_RUANG_LINGKUP.md) | Visi, pengguna, tahapan, acuan utama |
-| [LICENSES.md](docs/LICENSES.md) | Lisensi pihak ketiga |
+### Local Deployment via Docker Compose
 
-## Status dan batasan
+```bash
+git clone git@github.com:azrahudaya/gemahutan-app.git
+cd gemahutan-app
+cp .env.example .env
+docker compose up -d
+```
 
-- Audio evaluasi berasal dari Xeno-canto dan korpus turunan, bukan rekaman lapangan asli. Angka ditulis apa adanya di `ml/reports/`.
-- Aplikasi Android dan CLI portable masih rencana.
-- Rincian yang dibangun dan yang belum ada tercantum di `docs/VISI_DAN_RUANG_LINGKUP.md`.
+Open `http://localhost:3001` in your browser. All services (API, worker, web interface, PostgreSQL/PostGIS, Redis, and MinIO storage) spin up automatically.
 
-## Tim
+## Documentation Index
 
-USB 2026 kategori Software Development, Universitas Gunadarma.
+- [`ARCHITECTURE.md`](docs/ARCHITECTURE.md): Service architecture, data schemas, and pipeline specifications.
+- [`API.md`](docs/API.md): Full REST API contract and endpoint documentation.
+- [`MANUAL.md`](docs/MANUAL.md): User guide for rangers, researchers, and administrators.
+- [`DEPLOY.md`](docs/DEPLOY.md): Production deployment guide and environment configuration.
+- [`DECISIONS.md`](docs/DECISIONS.md): Architectural decision records (ADR).
+- [`VISI_DAN_RUANG_LINGKUP.md`](docs/VISI_DAN_RUANG_LINGKUP.md): Vision, user personas, and project roadmap.
+- [`LICENSES.md`](docs/LICENSES.md): Third-party licenses and bioacoustic model attribution.
 
-| Nama | NPM | Peran |
-|------|-----|-------|
-| Artya Epriliani | 10124205 | Ketua (Sistem Informasi) |
-| Azra Hudaya | 50423244 | Anggota |
+## Competition & Team
 
-## Lisensi
+Developed for **USB 2026** (Software Development Category), Universitas Gunadarma.
 
-MIT (kode). Lisensi pihak ketiga dicatat di [docs/LICENSES.md](docs/LICENSES.md). BirdNET-Analyzer memakai lisensi CC BY-NC-SA 4.0 (non-komersial); penggunaan dalam konteks lomba atau riset diperbolehkan dengan atribusi.
+- **Artya Epriliani** (NPM: 10124205): Team Lead, Information Systems
+- **Azra Hudaya** (NPM: 50423244): Technical Lead, Informatics
+
+## License
+
+Source code is released under the [MIT License](LICENSE). Third-party dependencies and model licenses are listed in [`docs/LICENSES.md`](docs/LICENSES.md). BirdNET-Analyzer is licensed under CC BY-NC-SA 4.0 for non-commercial research use.
